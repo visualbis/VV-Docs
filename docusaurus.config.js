@@ -2,7 +2,7 @@ module.exports = {
   title: 'BI Hub',
   tagline: 'BI Hub is a web-based Visual BI product',
   url: 'https://github.com/divyabhushan/VV-Docs',
-  baseUrl: '/',
+  baseUrl: '/VV-Docs/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'divyabhushan', // Usually your GitHub org/user name.
