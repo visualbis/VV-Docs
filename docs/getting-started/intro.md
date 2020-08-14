@@ -4,7 +4,8 @@ title: What is BI Hub
 sidebar_label: Introduction
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
 
 BI Hub is a web-based Visual BI product.
 
@@ -32,7 +33,8 @@ import TabItem from '@theme/TabItem';
     {label: 'Admin Guide', value: 'Admin Guide'},
     {label: 'User Guide', value: 'User Guide'},
   ]}>
-  <TabItem value="Installation Guide"><a href="/docs/installation-guide/welcome">Installation Guide</a></TabItem>
-  <TabItem value="Admin Guide"><a href="/docs/admin-guide/getting-started/welcome">Admin Guide</a></TabItem>
-  <TabItem value="User Guide"><a href="/docs/user-guide/dashboard">User Guide</a></TabItem>
+  <TabItem value="Installation Guide"><Link to={useBaseUrl('docs/installation-guide/welcome')}>Installation Guide</Link></TabItem>
+  <TabItem value="Admin Guide"><Link to={useBaseUrl('docs/admin-guide/getting-started/welcome')}>Admin Guide</Link></TabItem>
+  <TabItem value="User Guide"><Link to={useBaseUrl('docs/user-guide/dashboard')}>User Guide</Link></TabItem>
 </Tabs>
+

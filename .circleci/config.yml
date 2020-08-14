@@ -34,6 +34,7 @@ jobs:
             git config --global user.name "divyabhushan"
             echo "machine github.com login divyabhushan password $GITHUB_TOKEN" > ~/.netrc
             GIT_USER=divyabhushan yarn deploy
+            
 workflows:
   version: 2
   build_and_deploy:

@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 * Supported Web Server and Database (see Section 2.4.3)
 
-* SSL certificates -If securecommunication (https) is desired, The Certificate has to be OpenSSL compactable X.509 with the following format (PEM encoded format)
+* SSL certificates -If secure communication (https) is desired, The Certificate has to be OpenSSL compatible X.509 with the following format (PEM encoded format)
 
 | Key | Description |
 | --- | --- |
