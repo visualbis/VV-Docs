@@ -24,14 +24,14 @@ jobs:
       - run:
           name: "Set cname"
           command: |
-            if [ "${CIRCLE_PROJECT_USERNAME}" != "divyahbushan" ]; then
+            if [ "${CIRCLE_PROJECT_USERNAME}" != "divyabhushan" ]; then
                 node set-cname.js
             fi
       - run:
           name: Deploying to GitHub Pages
           command: |
             git config --global user.email "divya_bhushan@hotmail.com"
-            git config --global user.name "divyahbushan"
+            git config --global user.name "divyabhushan"
             echo "machine github.com login divyabhushan password $GITHUB_TOKEN" > ~/.netrc
             GIT_USER=divyabhushan yarn deploy
 workflows:
