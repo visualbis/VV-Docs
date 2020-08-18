@@ -9,8 +9,9 @@ module.exports = {
   projectName: 'VV-Docs', // Usually your repo name.
   themeConfig: {
     navbar: {
+      hideOnScroll: true,
       title: 'BI Hub',
-      logo: {
+      logo: { 
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
@@ -20,6 +21,7 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
+
         },
 /*        {to: 'blog', label: 'Blog', position: 'left'}, */
 /*        {
@@ -32,6 +34,7 @@ module.exports = {
 to: 'docs/installation-guide/welcome',
 label: 'Installation Guide',
 position: 'right',
+
 },
 {
   to: 'docs/admin-guide/getting-started/welcome',
@@ -57,7 +60,7 @@ position: 'right',
             },
             {
               label: 'Docs',
-              to: 'docs/doc1',
+              to: 'docs',
             },
           ],
         },

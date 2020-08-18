@@ -1,9 +1,5 @@
 ---
 id: qliksense
-<<<<<<< HEAD
-sidebar_label: QLIKSENSE 
----
-=======
 sidebar_label: QLIKSENSE
 title: QlikSense Platform Configuration
 ---
@@ -43,4 +39,3 @@ Below are the steps to generate certificates:
 * The certificate will be generated and will be exported to the location shown in that form itself.
 
 * Now copy and paste that certificates to the agent installed machine into the directory `<installation location>/TRUSTED` directory.
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

@@ -1,9 +1,5 @@
 ---
 id: bobj-rest-bi 
-<<<<<<< HEAD
-sidebar_label: BOBJ Rest BI 
----
-=======
 title: BOBJ REST BI Platform Configuration
 sidebar_label: BOBJ Rest BI 
 ---
@@ -83,4 +79,3 @@ Kindly note this parameter name since it will be needed for BOBJ REST Agent crea
   </Zoom>
 </ div>
 
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

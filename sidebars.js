@@ -1,11 +1,10 @@
 module.exports = {
     sideBar: {
-        "Getting Started": ["getting-started/intro"]
+        "Getting Started": ["getting-started/intro"],
     },
 
     installationGuide: {
-        "Getting Started": 
-    [
+        "Getting Started": [
             "installation-guide/welcome",      
         {
             "Supported Platforms": [
@@ -16,11 +15,24 @@ module.exports = {
         "installation-guide/download-bihub",
         "installation-guide/install-pre",
     ],
-           
+    "Installation of BI Hub for Windows Platform": [ 
+        "installation-guide/install-bihub-windows/install",
+    
+
+    {
+        type: "category",
+        label: "Server Installation",
+        items: [ "installation-guide/install-bihub-windows/server/install",
+        "installation-guide/install-bihub-windows/server/config",
+        "installation-guide/install-bihub-windows/server/config-tab",
+        "installation-guide/install-bihub-windows/server/instances-tab",
+        "installation-guide/install-bihub-windows/server/post-config",
+        "installation-guide/install-bihub-windows/server/troubleshooting",
         
-        "Installation of BI Hub for Windows Platform": [ 
-            "installation-guide/install-bihub-windows/install",
-        
+        ],
+       
+    },
+
     
     {
         type: "category",
@@ -32,7 +44,6 @@ module.exports = {
             "installation-guide/install-bihub-windows/web/troubleshooting"
         ]
     },
-
     {
         type: "category",
         label: "Agents Installation",

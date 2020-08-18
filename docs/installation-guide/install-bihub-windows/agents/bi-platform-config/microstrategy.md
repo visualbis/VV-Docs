@@ -1,9 +1,5 @@
 ---
 id: microstrategy
-<<<<<<< HEAD
-sidebar_label: MICROSTRATEGY 
----
-=======
 sidebar_label: MICROSTRATEGY
 title: Microstrategy Platform Configuration
 ---
@@ -76,4 +72,3 @@ The following steps are to be followed to achieve the same:
 :::note
 It is recommended to do the above configuration in IIS Server.
 :::
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

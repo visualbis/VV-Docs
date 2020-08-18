@@ -22,7 +22,7 @@ This tab contains following sections which are as follows.
 
 * [Elastic Search Section](#elastic-search-section)
 
-* [Mail Server Section](#mail-server-section)
+* [Mail Connection Server](#mail-connection-server)
 
 ## General Section
 
@@ -68,18 +68,18 @@ This section will have configuration fields related to the audit database connec
 
 ## SSL Section
 
-This section establishes a secure connection via SSL between browser and VBI View components. To configure the SSL properly, please follow the below listed information:
+This section establishes a secure connection via SSL between browser and BI Hub components. To configure the SSL properly, please follow the below listed information:
 
 - Kindly have a proper valid SSL certificate from an authorized vendor in .crt format. This public certificate should be provided in `<certificate_name>.crt` and private key in `<certificate_name>.key` file format.
 
 - If the customer wishes to use the organization’s own self signed SSL certificate, then necessary steps have to be taken to add the certificate in the trusted certificate key store in all client machine. 
 
-- Making this self-signed certificate as a trusted certificate in all browsers is out of the scope of this documentation.  VBI View recommends having a valid SSL certificate to properly secure the connection.
+- Making this self-signed certificate as a trusted certificate in all browsers is out of the scope of this documentation.  BI Hub recommends having a valid SSL certificate to properly secure the connection.
 
 - Enable the SSL by checking the checkbox. After enabling the SSL, use the file selection browse button to select the files (private.key and public.crt files) and then click continue for the next section.
 
 :::note
-If you are going to configure SSL, please make sure that VBI View Web and VBI View Agents and its respective BI platforms should be also configured with proper SSL. You cannot access http content from the https protocol. Browser will throw the mixed content error, if you try to access http content from the https URL.
+If you are going to configure SSL, please make sure that BI Hub Web and BI Hub Agents and its respective BI platforms should be also configured with proper SSL. You cannot access http content from the https protocol. Browser will throw the mixed content error, if you try to access http content from the https URL.
 :::
 
 ## Elastic Search Section

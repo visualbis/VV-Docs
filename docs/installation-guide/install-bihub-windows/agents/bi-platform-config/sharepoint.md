@@ -1,9 +1,5 @@
 ---
 id: sharepoint 
-<<<<<<< HEAD
-sidebar_label: SHAREPOINT 
----
-=======
 sidebar_label: SHAREPOINT
 title: SharePoint Platform Configuration 
 ---
@@ -137,4 +133,3 @@ If failed to note down the value, please repeat step two to create a new key.
 - **Sharepointid** = 00000003-0000-0ff1-ce00-000000000000 (Common for all)
 
 - **Tenantid** = Tenant ID registered in Azure Portal
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

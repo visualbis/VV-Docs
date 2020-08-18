@@ -1,9 +1,5 @@
 ---
 id: sac 
-<<<<<<< HEAD
-sidebar_label: SAC 
----
-=======
 sidebar_label: SAC
 title: SAC Platform Configuration 
 ---
@@ -86,4 +82,3 @@ In the above steps, we have done some setup for Registering an OAuth Client as a
 - **Secret** – This will be the Client Secret in the `config.json` file of SAC Agent.
 
 - **Token Details** – Defining a lifetime for tokens is optional.
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

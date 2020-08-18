@@ -4,7 +4,10 @@ title: Post Configuration Steps
 sidebar_label: Post Configuration Steps
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 To verify the successful installation and configuration of BI Hub Web, perform the following steps.
 
@@ -14,7 +17,11 @@ To verify the successful installation and configuration of BI Hub Web, perform t
 
 * The webpage with the BI Hub login page as shown in the figure below should appear.
 
-Screenshot
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="img" src={useBaseUrl('/doc-images/fig3.3-web-verification.png')}/>
+  </Zoom>
+</ div>
 
 *Figure: BI Hub Web Verification*
 

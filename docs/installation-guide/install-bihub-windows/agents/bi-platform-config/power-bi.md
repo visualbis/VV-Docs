@@ -1,9 +1,6 @@
 ---
 id: power-bi 
 sidebar_label: POWER BI 
-<<<<<<< HEAD
----
-=======
 title: PowerBI Platform Configuration
 ---
 
@@ -136,4 +133,3 @@ The below listed Permissions need to be given to the BI Hub Power BI Agent servi
 1. Office 365 Global Administrator
 
 1. Power BI Service Administrator
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

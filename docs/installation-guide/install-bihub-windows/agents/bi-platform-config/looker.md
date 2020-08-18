@@ -1,9 +1,5 @@
 ---
 id: looker 
-<<<<<<< HEAD
-sidebar_label: LOOKER 
----
-=======
 sidebar_label: LOOKER
 title: Looker Platform Configuration
 ---
@@ -66,4 +62,3 @@ The Looker’s Secret Key is used to validate the SSO embedding request and embe
 <img alt="Embed Page" src={useBaseUrl('/doc-images/looker/embed-page.png')}/>
   </Zoom>
 </div>
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

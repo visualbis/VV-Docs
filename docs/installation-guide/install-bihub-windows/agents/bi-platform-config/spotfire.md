@@ -1,9 +1,6 @@
 ---
 id: spotfire 
 sidebar_label: SPOTFIRE 
-<<<<<<< HEAD
----
-=======
 title: Spotfire Platform Configuration
 ---
 
@@ -36,4 +33,3 @@ With the external authentication set to "Authentication Filter", the Filter clas
 
 Restart the server for the changes to take place.
 
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

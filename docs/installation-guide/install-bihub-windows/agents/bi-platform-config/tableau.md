@@ -1,9 +1,6 @@
 ---
 id: tableau 
 sidebar_label: TABLEAU 
-<<<<<<< HEAD
----
-=======
 title: Tableau Platform Configuration
 ---
 
@@ -69,4 +66,3 @@ Right-click Command Prompt and select **Run as administrator**.
  tabadmin start
 
  ```
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations

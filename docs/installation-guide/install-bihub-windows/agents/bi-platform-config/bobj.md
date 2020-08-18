@@ -1,9 +1,5 @@
 ---
 id: bobj
-<<<<<<< HEAD
-sidebar_label: BOBJ
----
-=======
 title: BOBJ Platform Configuration
 sidebar_label: BOBJ
 ---
@@ -98,4 +94,3 @@ Create file *p3p.xml* in the folder with the following code in it.
 ```
 
 Save the file and restart the Apache Tomcat server.
->>>>>>> 7cd3941... Restructured BI Hub Agents configurations
