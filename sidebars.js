@@ -109,7 +109,7 @@ module.exports = {
 */
 
     adminGuide: {
-        "Welcome": ["admin-guide/getting-started/welcome"],
+        "Welcome": ["admin-guide/getting-started/welcome", "admin-guide/getting-started/overview"],
         "Dashboard": ["admin-guide/dashboard/new"],
         "Agent Manager": [
             {

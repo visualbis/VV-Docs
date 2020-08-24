@@ -16,9 +16,9 @@ Follow the steps below to upgrade from trial to production:
 
 1. Contact Visual BI support team support@visualbi.com by raising a ticket to upgrade the trial version.
 
-2. The support team will work on trial to production license upgrade and send a confirmation email upon successful upgrade.
+1. The support team will work on trial to production license upgrade and send a confirmation email upon successful upgrade.
 
-3. The application can be checked for the updated license.
+1. The application can be checked for the updated license.
 
 ## Extend the trial period
 
@@ -26,9 +26,8 @@ Follow the steps below to extend the trial period of BI Hub application:
 
 1. Contact Visual BI support team support@visualbi.com and raise a ticket requesting for an extension in trial period with a valid reason.
 
-2. Note that the trial period will be extended only if the reason for the extension is valid.
+1. Note that the trial period will be extended only if the reason for the extension is valid.
 
-3. The support team will work on extending the trial and send a confirmation email.
+1. The support team will work on extending the trial and send a confirmation email.
 
-4. BI Hub can be used with the extended trial period.
-
+1. BI Hub can be used with the extended trial period.
