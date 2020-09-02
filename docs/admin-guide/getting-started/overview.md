@@ -13,10 +13,8 @@ BI Hub is used for only viewing reports and it cannot be used to create/modify/d
 
 The application pane displays all the modules in this application – 
 
-- **[Admin Home page](#admin-home-page)**
-
-- Agent Manager
-
+- <Link to={useBaseUrl('#admin-home-page')}>Admin Home Page</Link>
+- <Link to={useBaseUrl('docs/admin-guide/admin-functions/edit-agent-instance')}>Agent Manager</Link>
 - User manager
 
 - Authentication
@@ -41,24 +39,24 @@ This is the same order in which the modules are displayed in the application pan
 
 BI Hub administrator mode and user mode uses the same product URL and depending on the 
 login (as admin or user name) appropriate modules of the application are rendered. After launching the 
-product, the administrator can log into the application by entering the user ID as vbiview, which is
-the administrator login ID. A Set Admin Password screen opens up during the first login to accept a 
-new password. Note that the administrator does a log in with the authentication type set as Native; 
-Users login with authentication type set as Microsoft AD/LDAP.
+product, the administrator can log into the application by entering the user ID as *vbiview*, which is the administrator login ID. A Set Admin Password screen opens up during the first login to accept a new password.
+>Note that the administrator does a log in with the authentication type set as *Native*; 
+Users login with authentication type set as *Microsoft AD/LDAP*.
 
 ### Forgot Password
 
 If the administrator forgets his/her password or wishes to reset the password for security reasons 
-the Change Password utility can be used. Refer Section :ref:`changepassword`.
+the Change Password utility can be used. Refer Section <Link to={useBaseUrl('#')}>changepassword</Link>. <!-- Administrator Utilities > Change Password -->
+
 
 ### Landing Page
 
 After setup of agents, connectivity with directory services and a few successful synchronizations, the landing page displays four tiles.
 
-- Instances configured – List of instances under the agents being configured and their status
-- Authentications configured – List of authentications 
-- Components configured – List of components like Elastic Search, Message Queue, SMTP
-- Synchronization Information – Synchronization details for users, reports and authentication. The administrator can check here for recent activities that happened in BI Hub. To view the recent activities over a period of time, the administrator can click on the calendar icon and provide a date range as input.
+- **Instances configured** – List of instances under the agents being configured and their status
+- **Authentications configured** – List of authentications 
+- **Components configured** – List of components like Elastic Search, Message Queue, SMTP
+- **Synchronization Information** – Synchronization details for users, reports and authentication. The administrator can check here for recent activities that happened in BI Hub. To view the recent activities over a period of time, the administrator can click on the calendar icon and provide a date range as input.
 
 ### Admin Home Page
 
@@ -68,4 +66,4 @@ After setup of agents, connectivity with directory services and a few successful
   </Zoom>
 </div>
 
-*Screenshot: Landing Page*
+*Landing Page*

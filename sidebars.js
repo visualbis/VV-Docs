@@ -110,6 +110,27 @@ module.exports = {
 
     adminGuide: {
         "Welcome": ["admin-guide/getting-started/welcome", "admin-guide/getting-started/overview"],
+        "Admin Functions": [
+        {    
+            type: "category",
+            label: "Integrating BI Hub with BI Platforms",
+            items: [
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/admin-functions",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/integrate",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/add-new-agent",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/row-level-security",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/synch",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/add-users-bi-platform",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/add-ms-ad",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/synch-ms-ad-bihub",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/logfiles-download"      
+       
+            ]
+        },
+
+        ],
         "Dashboard": ["admin-guide/dashboard/new"],
         "Agent Manager": [
             {
