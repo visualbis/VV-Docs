@@ -13,7 +13,7 @@ The Log details for all the Instances can be downloaded by navigating to **Agent
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Download option for Log Files" src={useBaseUrl('doc-images/admin-guide/admin-functions/log1new.jpg')}/>
+      <img alt="Download option for Log Files" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/log1new.jpg')}/>
     </Zoom>
   </div>
 
@@ -21,6 +21,6 @@ The Instance log files namely the service Manager of the agent, the instance and
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Download Log Files Location" src={useBaseUrl('doc-images/admin-guide/admin-functions/log2.png')}/>
+      <img alt="Download Log Files Location" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/log2.png')}/>
     </Zoom>
   </div>

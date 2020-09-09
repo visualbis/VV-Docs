@@ -20,6 +20,8 @@ followed
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Edit Instance" src={useBaseUrl('doc-images/admin-guide/admin-functions/editinstancenew.jpg')}/>
+      <img alt="Edit Instance" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/editinstancenew.jpg')}/>
     </Zoom>
   </div>
+
+  *Screenshot: Edit Instance*

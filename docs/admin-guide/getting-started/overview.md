@@ -14,7 +14,7 @@ BI Hub is used for only viewing reports and it cannot be used to create/modify/d
 The application pane displays all the modules in this application – 
 
 - <Link to={useBaseUrl('#admin-home-page')}>Admin Home Page</Link>
-- <Link to={useBaseUrl('docs/admin-guide/admin-functions/edit-agent-instance')}>Agent Manager</Link>
+- <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance')}>Agent Manager</Link>
 - User manager
 
 - Authentication

@@ -66,6 +66,8 @@ Security feature has been explained below for each mode:
     </Zoom>
   </div>
 
+  *Power BI Report*
+
 1. In our example, the VBI View Demo user has mapped the Power BI Agent "Power BI QE Test" with the user “powerbiagent” in the Agent Mapping screen in Admin Mode (see Figure below).
 
   <div style={{textAlign: 'center'}}>
@@ -74,7 +76,7 @@ Security feature has been explained below for each mode:
     </Zoom>
   </div>
 
-1. Now when the VBI View Demo user selects the Power BI Report in the User screen (see Figure: Power BI Report \<PowerBI\>) then he needs to provide the powerbiagent login credentials to access the Power BI Report (see Figure below).
+1. Now when the VBI View Demo user selects the Power BI Report in the User screen (see Figure: <Link to={useBaseUrl('#user-mode')}>Power BI Report</Link>) then he needs to provide the powerbiagent login credentials to access the Power BI Report (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -98,5 +100,7 @@ Security feature has been explained below for each mode:
       <img alt="Row Level Security" src={useBaseUrl('doc-images/admin-guide/user-mode/rw10.jpg')}/>
     </Zoom>
   </div>
+
+  *Screenshot: Row Level Security*
 
 

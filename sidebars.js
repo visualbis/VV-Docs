@@ -125,13 +125,55 @@ module.exports = {
                 "admin-guide/admin-functions/integrate-bihub-platform-msad/add-ms-ad",
                 "admin-guide/admin-functions/integrate-bihub-platform-msad/synch-ms-ad-bihub",
                 "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance",
-                "admin-guide/admin-functions/integrate-bihub-platform-msad/logfiles-download"      
-       
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/logfiles-download",              
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-msad-bihub",
+                "admin-guide/admin-functions/integrate-bihub-platform-msad/del-msad-bihub"     
             ]
         },
+        {
+            type: "category",
+            label: "Maintenance of BI Hub",
+            items: [
+                "admin-guide/admin-functions/maintenance-bihub/maintenance-of-bihub",
+                "admin-guide/admin-functions/maintenance-bihub/add-new-user",
+                "admin-guide/admin-functions/maintenance-bihub/add-reports-existing-user",
+                "admin-guide/admin-functions/maintenance-bihub/edit-bihub-users",
+                "admin-guide/admin-functions/maintenance-bihub/edit-password-authenticated-user",
+                "admin-guide/admin-functions/maintenance-bihub/del-user",
+                "admin-guide/admin-functions/maintenance-bihub/configure-smart-search"
+        ]
+        },
+        {
+            type: "category",
+            label: "Reports",
+            items: [
+                "admin-guide/admin-functions/reports/reports",
+                "admin-guide/admin-functions/reports/hub-folders",
+                "admin-guide/admin-functions/reports/upload-metadata-csv",
+                "admin-guide/admin-functions/reports/report-details",
+                "admin-guide/admin-functions/reports/report-thumbnails",
+                "admin-guide/admin-functions/reports/reports-history",
+            ],
+    
+        },
+        "admin-guide/admin-functions/request-access-reports-admin",
+        "admin-guide/admin-functions/custom-url",             
+        {
+            type: "category",
+            label: "Settings",
+            items: [
+                "admin-guide/admin-functions/settings/settings",
+                "admin-guide/admin-functions/settings/general",
+                "admin-guide/admin-functions/settings/report",
+                "admin-guide/admin-functions/settings/theme",
+                "admin-guide/admin-functions/settings/user-dashboard",
+                "admin-guide/admin-functions/settings/email-template"
+            ]
+        },
+        "admin-guide/admin-functions/audit",      
+    
+    ],
 
-        ],
-        "Dashboard": ["admin-guide/dashboard/new"],
         "Agent Manager": [
             {
                 type: "category",
