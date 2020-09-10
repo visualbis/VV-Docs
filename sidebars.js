@@ -170,10 +170,22 @@ module.exports = {
                 "admin-guide/admin-functions/settings/email-template"
             ]
         },
-        "admin-guide/admin-functions/audit",      
+        "admin-guide/admin-functions/audit",   
+        {
+            type: "category",
+            label: "Multiple Instances of BI Hub",
+            items: [
+                "admin-guide/admin-functions/multiple-instances/mult-instances",
+                "admin-guide/admin-functions/multiple-instances/create-cluster",
+                "admin-guide/admin-functions/multiple-instances/synch-users-reports",
+                "admin-guide/admin-functions/multiple-instances/modify-prim-instance",
+                "admin-guide/admin-functions/multiple-instances/delete-instance-cluster",
+            ]
+        }, 
+        "admin-guide/admin-functions/profile-settings"  
     
     ],
-
+/*
         "Agent Manager": [
             {
                 type: "category",
@@ -201,7 +213,7 @@ module.exports = {
     
             }
         ], 
-    
+*/    
     },
 
     userGuide: {

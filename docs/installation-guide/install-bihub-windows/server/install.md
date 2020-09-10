@@ -11,9 +11,9 @@ import "react-medium-image-zoom/dist/styles.css";
 The recommended Port Requirements for the different Components have been listed in the Table below:
 
 | Component      | Default Port |
-| -------------- | ------------ |
+|----------------|--------------|
 | Elastic Search | 9443         |
-| Rabbit         | MQ5672       |
+| Rabbit MQ      | 5672         |
 
 *Table 3.1: Port Requirements for Components*
 
