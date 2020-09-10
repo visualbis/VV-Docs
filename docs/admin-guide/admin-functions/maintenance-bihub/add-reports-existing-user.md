@@ -55,7 +55,9 @@ This section can be used to add reports to an existing user, without using the b
 
 1. The message Action completed successfully flashes on the right top of the page indicating success of the step.
 
-> Note: When the Agent is down/inactive, then the Reports cannot be retrieved. In such a scenario, an Alert Massage will be displayed as shown in the below Figure.
+:::note
+When the Agent is down/inactive, then the Reports cannot be retrieved. In such a scenario, an Alert Massage will be displayed as shown in the below Figure.
+:::
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

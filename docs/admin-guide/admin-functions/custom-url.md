@@ -54,7 +54,10 @@ For our example, set the following details in the Add URL page (see Figure above
 1. Enable the Live Embed option
 1. Enable the Launch in New Tab option
 
-> Note: When the "Live Embed" option is enabled for the Custom URL "Visual BI" in the Add URL page, then you will be able to view the loading page of the Custom URL "Visual BI" as a Thumbnail in the Home Page of the User screen while adding the Reports (see Figure below. 
+:::note
+When the "Live Embed" option is enabled for the Custom URL "Visual BI" in the Add URL page, then you will be able to view the loading page of the Custom URL "Visual BI" as a Thumbnail in the Home Page of the User screen while adding the Reports (see Figure below.)
+:::
+
 If the "Live Embed" option is disabled, then you will be able to view the Custom URL "Visual BI" as customized image or Report Thumbnail based on the settings.
   <div style={{textAlign: 'center'}}>
     <Zoom>

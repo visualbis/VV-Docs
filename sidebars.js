@@ -182,8 +182,14 @@ module.exports = {
                 "admin-guide/admin-functions/multiple-instances/delete-instance-cluster",
             ]
         }, 
-        "admin-guide/admin-functions/profile-settings"  
+        "admin-guide/admin-functions/profile-settings",  
+    ], //End of Admin Functions
+
     
+    "Power Users": [
+                "admin-guide/power-users/power-users",
+                "admin-guide/power-users/dashboard-admin",
+
     ],
 /*
         "Agent Manager": [
