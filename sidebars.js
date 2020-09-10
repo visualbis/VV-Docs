@@ -109,7 +109,7 @@ module.exports = {
 */
 
     adminGuide: {
-        "Welcome": ["admin-guide/getting-started/welcome", "admin-guide/getting-started/overview"],
+        "Welcome": ["admin-guide/getting-started/welcome", "admin-guide/getting-started/overview"],        
         "Admin Functions": [
         {    
             type: "category",
@@ -182,15 +182,16 @@ module.exports = {
                 "admin-guide/admin-functions/multiple-instances/delete-instance-cluster",
             ]
         }, 
-        "admin-guide/admin-functions/profile-settings",  
-    ], //End of Admin Functions
+        "admin-guide/admin-functions/profile-settings"
 
+    ], //End of Admin Functions
     
     "Power Users": [
                 "admin-guide/power-users/power-users",
                 "admin-guide/power-users/dashboard-admin",
 
     ],
+
 /*
         "Agent Manager": [
             {
@@ -220,7 +221,31 @@ module.exports = {
             }
         ], 
 */    
-    },
+"Multiple Administrator Account": [
+    "admin-guide/multiple-admin/multiple-admin-acct"
+],
+
+"Backup and Recovery": [
+    "admin-guide/backup-recovery/backup",
+    "admin-guide/backup-recovery/recovery",
+],
+
+"Log Levels": [
+    "admin-guide/log-levels/log-levels"
+],
+
+"Administrator Utilities": [
+    "admin-guide/admin-utilities/admin-utilities",
+    "admin-guide/admin-utilities/change-passwd",
+    "admin-guide/admin-utilities/scheduled-synch-ad",
+    "admin-guide/admin-utilities/scheduled-synch-bi"
+],
+
+"License Details": [
+    "admin-guide/license/license"
+]
+
+},
 
     userGuide: {
         "Dashboard": ["user-guide/dashboard"]
