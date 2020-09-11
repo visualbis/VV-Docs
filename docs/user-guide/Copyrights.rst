@@ -1,0 +1,20 @@
+Copyrights
+==========
+
+©Visual BI Solutions, Inc. (“Visual BI”). All rights reserved. No part of this document may be reproduced or transmitted in any form or by any means, electronic or mechanical, for any purpose, without the express written permission of Visual BI. Under the law, reproducing includes translating into another language or format.
+As between the parties, Visual BI retains title to, and ownership of, all proprietary rights with respect to the software contained within its products. The software is protected by United States copyright laws and international treaty provision. Therefore, you must treat the software like any other copyrighted material (e.g. a book or sound recording).
+
+Every effort has been made to ensure that the information in this manual is accurate. Visual BI Solutions is not responsible for printing or clerical errors. Information in this document is subject to change without notice. 
+
+
+Trademark Information
+*********************
+
+Visual BI® and the Visual BI logo design are trademarks of Visual BI. in the United States and various other countries. All other trademarks are the property of their respective owners.
+
+
+Patent Information
+******************
+The accompanying product is protected by one or more U.S. and foreign patents and/or pending patent applications held by Visual BI.
+
+

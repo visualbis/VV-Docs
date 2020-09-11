@@ -42,7 +42,7 @@ position: 'right',
   position: 'right',
   },
   {
-    to: 'docs/user-guide/dashboard',
+    to: 'docs/user-guide/onboard',
     label: 'User Guide',
     position: 'right',
     },
