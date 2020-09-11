@@ -19,7 +19,7 @@ Click on the Image Tab. The Image Tab can be also navigated by directly clicking
     </Zoom>
   </div>
 
-  *Screenshot: Select Icon for Image Upload screen*
+  *Select Icon for Image Upload screen*
 
 The Image Menu screen is shown below.
   <div style={{textAlign: 'center'}}>
@@ -28,7 +28,7 @@ The Image Menu screen is shown below.
     </Zoom>
   </div>
 
-  *Screenshot: Select & Upload Image*
+  *Select & Upload Image*
 
 Click on upload image to upload any thumbnail and click submit.
   <div style={{textAlign: 'center'}}>
@@ -37,7 +37,7 @@ Click on upload image to upload any thumbnail and click submit.
     </Zoom>
   </div>
 
-* Screenshot: Uploaded Image*
+ *Uploaded Image*
 
 This thumbnail will be now shown for the report when the user logins. If there is no thumbnail uploaded for a report, then a default image will be shown.
   <div style={{textAlign: 'center'}}>
@@ -46,4 +46,4 @@ This thumbnail will be now shown for the report when the user logins. If there i
     </Zoom>
   </div>
 
-  *Screenshot: Reports Display in User Login*
+  *Reports Display in User Login*

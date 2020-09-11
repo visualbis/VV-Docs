@@ -14,7 +14,6 @@ Admin needs to configure the following keys in Looker platform in order to authe
 **API3 Credentials**
 
 1. Login into Looker Instance as Admin
-
 1. Navigate to **Admin -> Users**
 
   <div style={{textAlign: 'center'}}>
@@ -36,9 +35,7 @@ Admin needs to configure the following keys in Looker platform in order to authe
 API Host URL is used to reach the Looker API server endpoint. It must have host name and port. The default port is 19999. Kindly follow the below steps to setup the URL.
 
 1. Click Admin to open the Admin menu
-
 1. Click API in the Admin panel
-
 1. Set the new API in API Host URL input field
 
   <div style={{textAlign: 'center'}}>
@@ -52,9 +49,7 @@ API Host URL is used to reach the Looker API server endpoint. It must have host 
 The Looker’s Secret Key is used to validate the SSO embedding request and embed the dashboards into application. Follow the below steps to setup the looker’s secret key in looker instance.
 
 1. Go to the Embed page in the Admin section of Looker
-
 1. Select "Enabled" from the Embed Authentication drop-down and the press Update
-
 1. Press the Set Secret button to generate the embed secret. Copy this secret to a secure location, because you will not be able to retrieve it from Looker again without resetting it. Resetting the key will break any embeds using the old key.
 
 <div style={{textAlign: 'center'}}>

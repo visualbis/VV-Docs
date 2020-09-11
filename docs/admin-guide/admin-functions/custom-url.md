@@ -17,7 +17,7 @@ The Admin User can create the Custom URL by navigating to the **Platforms Folder
     </Zoom>
   </div>
 
-  *Screenshot: Custom URL in Platforms Folder*
+  *Custom URL in Platforms Folder*
 
 For our example, click the URL icon and you will be navigated to the URL Folder as shown in the below Figure.
   <div style={{textAlign: 'center'}}>
@@ -26,7 +26,7 @@ For our example, click the URL icon and you will be navigated to the URL Folder 
     </Zoom>
   </div>
 
-  *Screenshot: URL icon in Platforms Folder*
+  *URL icon in Platforms Folder*
 
 Now click the "+ Add" button and then click the "New URL" option (see Figure below).
   <div style={{textAlign: 'center'}}>
@@ -34,7 +34,8 @@ Now click the "+ Add" button and then click the "New URL" option (see Figure bel
       <img alt="Add New URL option" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/csu3.png')}/>
     </Zoom>
   </div>
-  *Screenshot: Add New URL option*
+
+*Add New URL option*
 
 Now you will be navigated to the Add URL page as shown below.
   <div style={{textAlign: 'center'}}>
@@ -43,7 +44,7 @@ Now you will be navigated to the Add URL page as shown below.
     </Zoom>
   </div>
 
-  *Screenshot: Add URL Page*
+  *Add URL Page*
 
 For our example, set the following details in the Add URL page (see Figure above).
 
@@ -65,7 +66,7 @@ If the "Live Embed" option is disabled, then you will be able to view the Custom
     </Zoom>
   </div>
 
-  * Screenshot: Loading Page of the Custom URL in the Home Page of the User screen*
+*Loading Page of the Custom URL in the Home Page of the User screen*
 
 The URL can be also added to the Hub Folder. The URLs created by the Admin User can be viewed by the User in the BI Platfrom pane as shown in the below Figure.
   <div style={{textAlign: 'center'}}>
@@ -74,7 +75,7 @@ The URL can be also added to the Hub Folder. The URLs created by the Admin User 
     </Zoom>
   </div>
 
-  *Screenshot: URLs in BI Platform*
+  *URLs in BI Platform*
 
 You can also add the details for Image and Custom Fields Tabs as the process follows the similar steps given for the other platforms. Now click Submit and the Custom URL "Visual BI" will be updated successfully in the Platform Folders (see Figure below).
   <div style={{textAlign: 'center'}}>
@@ -83,7 +84,7 @@ You can also add the details for Image and Custom Fields Tabs as the process fol
     </Zoom>
   </div>
 
-  *Screenshot: Custom URL in Platform Folders*
+  *Custom URL in Platform Folders*
 
 The Admin User can also edit the Custom URL by clicking the Edit icon as shown below.
   <div style={{textAlign: 'center'}}>
@@ -92,7 +93,7 @@ The Admin User can also edit the Custom URL by clicking the Edit icon as shown b
     </Zoom>
   </div>
 
-  *Screenshot: Edit Custom URL*
+  *Edit Custom URL*
 
 In a similar method, the Custom URL can be also created by the Users and the process for the same has been explained in the BI Hub User Guide.
 

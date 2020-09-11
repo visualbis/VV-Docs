@@ -23,6 +23,6 @@ If the admin wishes to associate all reports to BI Hub users using the single-cl
     </Zoom>
   </div>
 
-  *Screenshot: Synchronization Information*
+  *Synchronization Information*
 
 -   Note that this functionality can be scheduled to be run automatically using the Agent Synchronization utility [Refer Section <Link to={useBaseUrl('#')}>"Scheduled synchronization with BI platforms"</Link>].

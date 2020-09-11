@@ -13,7 +13,7 @@ The user can request access for the specific Report to the Admin from the Inacce
 The following steps explains the Request Access flow:
 
 1. Login into BI Hub Screen as a User.
-1. Navigate to the Inaccessible Reports page by searching with the respective Report Folder Name. In our example, the user has selected Analysis Folder and the Mechanical Downtime Analysis Report has been selected for Access Request (see Figure below).
+1. Navigate to the Inaccessible Reports page by searching with the respective Report Folder Name. In our example, the user has selected **"Analysis"** Folder and the **"Mechanical Downtime Analysis"** Report has been selected for Access Request (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -21,9 +21,9 @@ The following steps explains the Request Access flow:
     </Zoom>
   </div>
 
-*Report selected for Request Access*
+ *Report selected for Request Access*
 
-1. Now click the Request Access as shown in the Figure above. You will be navigated to the Request Access Window and click “Yes” to request access for the Mechanical Downtime Analysis Report (see Figure below).
+1. Now click the Request Access as shown in the Figure above. You will be navigated to the Request Access Window and click "Yes" to request access for the "Mechanical Downtime Analysis" Report (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -31,7 +31,7 @@ The following steps explains the Request Access flow:
     </Zoom>
   </div>
 
-*Request Access Window*
+  *Request Access Window*
 
-1. The Access requested by the user will be triggered as mail message as well as notification pop up to the Admin User and the Access Notification will be sent as mail message as well as notification pop up to the requested user.
+2. The Access requested by the user will be triggered as mail message as well as notification pop up to the Admin User and the Access Notification will be sent as mail message as well as notification pop up to the requested user.
 

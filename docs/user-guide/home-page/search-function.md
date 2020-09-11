@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom"; 
 import "react-medium-image-zoom/dist/styles.css";
 
-Reports can be searched using the parameters Report Name, Report Description, Path, Hub Folders and User Tags associated with the report. User can type the search criterion on the left top of user landing page in the Search box (see Figure below). The matching reports is fetched and displayed on the same page.
+Reports can be searched using the parameters - **Report Name, Report Description, Path, Hub Folders and User Tags** associated with the report. User can type the search criterion on the top left of user landing page in the Search box (see Figure below). The matching reports are fetched and displayed on the same page.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -18,7 +18,7 @@ Reports can be searched using the parameters Report Name, Report Description, Pa
 
 *Common Search Function* 
 
-Reports can be also searched using Tags that were created in BI Platform by the Admin user. The Figure below shows an example that the Tag ‘Sales Performance’ is used as search.
+Reports can also be searched using Tags that were created in BI Platform by the Admin user. The Figure below shows an example that the Tag *'Sales Performance'* is used as search.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -28,7 +28,7 @@ Reports can be also searched using Tags that were created in BI Platform by the 
 
 *Search based on BI Platform Tags*
 
-BI Hub responds that the phrase “Sales Performance” matches with any one of the parameters as discussed above and displays all the corresponding Reports (see Figure below).
+BI Hub responds that the phrase "Sales Performance" matches with any one of the parameters as discussed above and displays all the corresponding Reports (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -38,7 +38,7 @@ BI Hub responds that the phrase “Sales Performance” matches with any one of 
 
 *Search Result*
 
-The Reports will get displayed under the categories as “Accessible” and Inaccessible”. The “Accessible” Report count shows that all the 75 Reports are already assigned to the respective login user.
+The Reports will get displayed under the categories as "Accessible" and "Inaccessible". The "Accessible" Report count shows that all the 75 Reports are already assigned to the respective login user.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -48,7 +48,7 @@ The Reports will get displayed under the categories as “Accessible” and Inac
 
 *Accessible Reports*
 
-The “Inaccessible” count shows that all the 6 Reports are not assigned to the respective login user, but they are accessible to other users. The logged in user can request access for all these 6 reports (see Figure below).
+The "Inaccessible" count shows that all the 6 Reports are not assigned to the respective login user, but they are accessible to other users. The logged in user can request access for all these 6 reports (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

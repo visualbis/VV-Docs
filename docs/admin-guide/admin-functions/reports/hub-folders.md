@@ -19,7 +19,7 @@ New Folder pane opens on the right where you can enter the folder name.
     </Zoom>
   </div>
 
-  *Screenshot: New Folder Pane*
+  *New Folder Pane*
 
 The folders once created will be listed in the Hub Folders page as shown below.
   <div style={{textAlign: 'center'}}>
@@ -28,7 +28,7 @@ The folders once created will be listed in the Hub Folders page as shown below.
     </Zoom>
   </div>
 
-  *Screenshot: Hub Folder page*
+  *Hub Folder page*
 
 To move reports into these folders, click on the Platform Folders tab in Reports Menu. For our example, navigate to **Platform Folders > BOBJ > Analysis for OLAP Samples**. Select the reports and click on **Add to
 Hub Folders** (see Figure below).
@@ -39,7 +39,7 @@ Hub Folders** (see Figure below).
     </Zoom>
   </div>
 
-  *Screenshot: Platform Folders*
+  *Platform Folders*
 
 The move to dialog box opens with the list of Hub Folders present. Move the reports to the required folder.
 
@@ -66,4 +66,4 @@ folder.
     </Zoom>
   </div>
 
-  *Screenshot: Platform Folders*
+  *Platform Folders*

@@ -22,7 +22,7 @@ The Hub Folders column in the CSV file denotes the folders in the Hub Folders ta
     </Zoom>
   </div>
 
-  *Screenshot: Sample CSV File*
+  *Sample CSV File*
 
 The folder names can be entered in the CSV file too. If the folder is available in Hub Folders Tab, then the reports are moved into that folder. If the Hub Folder does not exist, a folder will be created in that name and the reports will be placed under that folder.
   <div style={{textAlign: 'center'}}>
@@ -31,7 +31,7 @@ The folder names can be entered in the CSV file too. If the folder is available 
     </Zoom>
   </div>
 
-  *Screenshot: Hub Folders*
+  *Hub Folders*
 
 Reports menu will also enable the BI Hub administrator to propagate the metadata of reports from BI platforms into BI Hub. Admin can navigate to the report in the Platform folders or search for the reports and select them and click on Sync Metadata. This will import only the metadata for those selected reports from the BI platform into BI Hub.
 
@@ -41,4 +41,4 @@ Reports menu will also enable the BI Hub administrator to propagate the metadata
     </Zoom>
   </div>
 
- * Screenshot: Sync Metadata*
+ *Sync Metadata*

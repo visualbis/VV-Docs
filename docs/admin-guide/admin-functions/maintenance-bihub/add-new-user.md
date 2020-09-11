@@ -19,7 +19,7 @@ This section can be used by administrator to add users manually from Microsoft A
     </Zoom>
   </div>
 
-  *Screenshot: Add User option*
+  *Add User option*
 
 1. Type in the full name, and choose Native to add a user who will be authenticated by BI Hub (because the user is currently authenticated by BI platforms and not AD) OR choose Windows AD to add a user who will be authenticated by Windows AD.
 
@@ -34,6 +34,7 @@ This section can be used by administrator to add users manually from Microsoft A
 1. Click on Submit.
 1. The added user will be reflected in the User Manager Page.
 1. In order to synchronize reports for this user, one of the following actions can be performed
- a. Wait till the next scheduled synchronization activity happens.
- b. Follow steps in Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users')}>Synchronize Reports of Users</Link> to Sync Reports with a single click.
- c. Manually add reports to the user using User Manager as explained in section <Link to={useBaseUrl('docs/admin-guide/admin-functions/maintenance-bihub/add-reports-existing-user')}>Add Reports to an existing user</Link>.
+  
+  - Wait till the next scheduled synchronization activity happens.
+  - Follow steps in Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users')}>Synchronize Reports of Users</Link> to Sync Reports with a single click
+  - Manually add reports to the user using User Manager as explained in section <Link to={useBaseUrl('docs/admin-guide/admin-functions/maintenance-bihub/add-reports-existing-user')}>Add Reports to an existing user</Link>.

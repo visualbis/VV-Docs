@@ -41,7 +41,7 @@ The user can view the Reports in Small Tile and Large Tile Views. For our exampl
     </Zoom>
   </div>
 
-When the user clicks any Report Tile then the user will be able to view the entire Report in full screen mode (see Figure below). The selected Report will be opening in a separate Tab in the BI Hub application. This functionality can be also achieved by disabling the "Open report as new tab" option in the Profile Settings screen (Refer Section: Profile Settings `<OPtab>`).
+When the user clicks any Report Tile then the user will be able to view the entire Report in full screen mode (see Figure below). The selected Report will be opening in a separate Tab in the BI Hub application. This functionality can be also achieved by disabling the "Open report as new tab" option in the Profile Settings screen (Refer <Link to={useBaseUrl('docs/user-guide/profile-settings')}>Section: Profile Settings</Link>).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

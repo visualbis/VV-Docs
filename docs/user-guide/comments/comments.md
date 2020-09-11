@@ -28,7 +28,7 @@ The user can create, edit and delete the comment which was created against the s
 
 *Comments Window*
 
-The Comments are classified as "Public" and "Private" categories. When the user provides the comment as <%22@SRV03>" without selecting the Private option (means that it is Public), then it implies that the comment is provided for the SRV03 User and it can be also viewed by other users too (see Figure below).
+The Comments are classified as "Public" and "Private" categories. When the user provides the comment as @SRV03 without selecting the Private option (means that it is Public), then it implies that the comment is provided for the SRV03 User and it can be also viewed by other users too (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -38,7 +38,7 @@ The Comments are classified as "Public" and "Private" categories. When the user 
 
 *Public Comment*
 
-When the user provides the comment as <%22@SRV03>" by selecting the Private option (means that it is Private), then it implies that the comment is provided for the SRV03 User and it can be viewed only by the User and not the other users (see Figure below).
+When the user provides the comment as @SRV03 by selecting the Private option (means that it is Private), then it implies that the comment is provided for the SRV03 User and it can be viewed only by the User and not the other users (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

@@ -7,8 +7,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
+  /*
   {
-    title: <>Easy to Use</>,
+    title: <>BI Hub Server</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
@@ -17,8 +18,10 @@ const features = [
       </>
     ),
   },
+  */
+ /*
   {
-    title: <>Focus on What Matters</>,
+    title: <>BI Hub Web</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
@@ -27,8 +30,10 @@ const features = [
       </>
     ),
   },
+  */
+ /*
   {
-    title: <>Powered by React</>,
+    title: <>BI Hub Agents</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
@@ -37,6 +42,7 @@ const features = [
       </>
     ),
   },
+  */
 ];
 
 function Feature({imageUrl, title, description}) {

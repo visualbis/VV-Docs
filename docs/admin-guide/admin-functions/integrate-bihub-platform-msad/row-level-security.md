@@ -16,7 +16,7 @@ Security feature has been explained below for each mode:
 
 ## Admin Mode
 
-1.  For Power BI Agent, once the Instance is being newly added, then the status will be in “Yellow” color in the Instance Manager screen (see Figure below). The Yellow color status indicates that the Authentication is pending for the Agent.
+1. For Power BI Agent, once the Instance is being newly added, then the status will be in “Yellow” color in the Instance Manager screen (see Figure below). The Yellow color status indicates that the Authentication is pending for the Agent.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -24,7 +24,7 @@ Security feature has been explained below for each mode:
     </Zoom>
   </div>
 
-1.  Now select the Instance and click the "Login as Admin" button as shown in the below Figure.
+1. Now select the Instance and click the "Login as Admin" button as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -101,6 +101,6 @@ Security feature has been explained below for each mode:
     </Zoom>
   </div>
 
-  *Screenshot: Row Level Security*
+  *Row Level Security*
 
 

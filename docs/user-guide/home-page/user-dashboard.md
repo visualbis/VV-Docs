@@ -17,7 +17,7 @@ In addition to my dashboard, the admin created dashboards will also be seen in t
     </Zoom>
   </div>
 
-If any report is being represented with lock icon, then it indicates that there is no access to the report and the report can be requested for access. By clicking the report with the lock icon, then the access can be requested for that report which follows the same functionality as explained in Section: Request Access for Inaccessible Reports `<RA>`
+If any report is being represented with lock icon, then it indicates that there is no access to the report and the report can be requested for access. By clicking the report with the lock icon, then the access can be requested for that report which follows the same functionality as explained in <Link to={useBaseUrl('docs/user-guide/home-page/request-access-inaccessible')}>Section: Request Access for Inaccessible Reports</Link>.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -35,7 +35,7 @@ Once the Reports have been requested for access, then the Reports will be displa
     </Zoom>
   </div>
 
-When the Admin disables the order preference option and enable my dashboard option in the dashboard settings, then the user cannot set the order and cannot view My Dashboard in the User Page (see Figure below).
+When the Admin disables the order preference option and enable my dashboard option in the <Link to={useBaseUrl('docs/admin-guide/admin-functions/settings/user-dashboard')}>Dashboard settings</Link>, then the user cannot set the order and can only view *My Dashboard* in the User Page (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

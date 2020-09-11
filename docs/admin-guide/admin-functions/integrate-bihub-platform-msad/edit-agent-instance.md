@@ -24,4 +24,4 @@ followed
     </Zoom>
   </div>
 
-  *Screenshot: Edit Instance*
+  *Edit Instance*

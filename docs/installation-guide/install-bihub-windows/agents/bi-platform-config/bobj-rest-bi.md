@@ -10,7 +10,6 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 * Launch Central Management Console.
-
 * Go to Authentication Enterprise.
 
 <div style={{textAlign: 'center'}}>
@@ -50,9 +49,7 @@ import "react-medium-image-zoom/dist/styles.css";
 </ div>
 
 * Copy the downloaded file *TrustedPrincipal.conf* to `<INSTALLDIR>\SAP BusinessObjects Enterprise XI 4.0\java\pjs\container\bin` in Windows.
-
 * Copy the downloaded file *TrustedPrincipal.conf* to `INSTALLDIR>\SAP BusinessObjects Enterprise XI 4.0\win64_x64\` and `<INSTALLDIR>\SAP BusinessObjects Enterprise XI 4.0\win32_x86\`
-
 * Next in CMC go to **Servers -> Core Services -> WebApplicationContainerServer**
 
 <div style={{textAlign: 'center'}}>
@@ -68,7 +65,6 @@ import "react-medium-image-zoom/dist/styles.css";
 </ div>
 
 * Now right click that WACS services and then select properties.
-
 * In that properties, under Trusted Authentication Configuration set Retrieving Method as 'HTTP_HEADER' and User Name Parameter as 'X-SAP-VBI-TRUSTED-USER' or some other name that you want.
 
 Kindly note this parameter name since it will be needed for BOBJ REST Agent creation step.
@@ -78,4 +74,3 @@ Kindly note this parameter name since it will be needed for BOBJ REST Agent crea
 <img alt="img" src={useBaseUrl('/doc-images/trusted-auth-config.png')}/>
   </Zoom>
 </ div>
-

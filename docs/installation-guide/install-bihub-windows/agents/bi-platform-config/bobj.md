@@ -10,40 +10,37 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 1. BOBJ Agent uses Trusted Secret Key file mechanism to authenticate itself with the BOBJ. For this we need to generate and download the Trusted Secret Key for BOBJ authentication. Kindly follow the steps below:
+ - Login to the BOBJ CMC
+ - In the Central Management Console Screen, select Authentication from the top down list.
+ - Select Enterprise from the menu list.
 
-* Login to the BOBJ CMC
-
-* In the Central Management Console Screen, select Authentication from the top down list.
-
-* Select Enterprise from the menu list.
-
-<div style={{textAlign: 'center'}}>
+ <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="img" src={useBaseUrl('/doc-images/bobj-central-management-console.png')}/>
+    <img alt="img" src={useBaseUrl('/doc-images/bobj-central-management-console.png')}/>
   </Zoom>
-</ div>
+ </div>
 
-* Next scroll down to the Trusted Authentication segment and enable the checkbox “Trusted Authentication is enabled”.
+ - Next scroll down to the Trusted Authentication segment and enable the checkbox “Trusted Authentication is enabled”.
 
-<div style={{textAlign: 'center'}}>
+ <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="img" src={useBaseUrl('/doc-images/bobj-trusted1.png')}/>
+    <img alt="img" src={useBaseUrl('/doc-images/bobj-trusted1.png')}/>
   </Zoom>
-</ div>
+ </ div>
 
-* Next select New Shared Secret and click Download Shared Secret.
+ - Next select New Shared Secret and click Download Shared Secret.
 
-<div style={{textAlign: 'center'}}>
+ <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="img" src={useBaseUrl('/doc-images/bobj-trusted2.png')}/>
+    <img alt="img" src={useBaseUrl('/doc-images/bobj-trusted2.png')}/>
   </Zoom>
-</ div>
+ </ div>
 
-<div style={{textAlign: 'center'}}>
+ <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="img" src={useBaseUrl('/doc-images/bobj-trusted3.png')}/>
+    <img alt="img" src={useBaseUrl('/doc-images/bobj-trusted3.png')}/>
   </Zoom>
-</ div>
+ </ div>
 
 The *TrustedPrinciple.conf* will get downloaded. This file must then be copied to the `<agent installation location>/TRUSTED/` directory.
 

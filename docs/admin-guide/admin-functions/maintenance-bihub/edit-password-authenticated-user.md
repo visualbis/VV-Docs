@@ -25,12 +25,13 @@ Administrator can take the following steps to set the password to a generic one 
     </Zoom>
   </div>
 
-  *Screenshot: Edit User*
+  *Edit User*
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
       <img alt="Edit User" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/edituser1.jpg')}/>
     </Zoom>
   </div>
-  *Screenshot: Edit User*
+  
+  *Edit User*
 

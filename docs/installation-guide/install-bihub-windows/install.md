@@ -13,5 +13,4 @@ It is very important that the steps explained in this section are followed in th
 :::
 
 At each stage of the installation, the process to verify the successful installation and details of configuring the components are also explained in detail.
-
 During installation, if there are any issues, the BI Hub support team can be contacted at support@visualbi.com

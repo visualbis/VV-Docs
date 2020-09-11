@@ -18,7 +18,7 @@ The user can create/edit his profile settings by clicking the user icon at the r
 
 *Profile Settings Icon*
 
-For our example, the user has configured the email id as "<Jack@vbi.com>" and Division Name as “VBI User” (see Figure below).
+For our example, the user has configured the email id as "<Jack@vbi.com>" and Division Name as "VBI User" (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -28,7 +28,7 @@ For our example, the user has configured the email id as "<Jack@vbi.com>" and Di
 
 *Profile Settings*
 
-The user image can be also uploaded by clicking the Edit button (see Figure above) so that the image of the user gets displayed as user icon in the right top position of the BI Hub Application and in case if the image file is not uploaded, then the first letter of the user name will be displayed as User Icon (see Figure below).
+The user image can also be uploaded by clicking the Edit button (see Figure above) so that the image of the user gets displayed as user icon in the right top position of the BI Hub Application and in case if the image file is not uploaded, then the first letter of the user name will be displayed as User Icon (see Figure below).
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

@@ -21,22 +21,17 @@ multipleinstances of this document.
 
 Follow the steps below to add a new agent:
 
--   In the Admin Home screen, select Agent Manager Menu from the application pane as shown below.
+- In the Admin Home screen, select Agent Manager Menu from the application pane as shown below.
 
-<div style={{textAlign: 'center'}}>
+ <div style={{textAlign: 'center'}}>
   <Zoom>
     <img alt="Agent Manager Menu" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-menu.jpg')}/>
   </Zoom>
-</div>
-
--   Click on the Agent Manager Tab and then click on Add Agent given on
-    the right top corner to open the Add Agent page.
--   Type agent information such as Agent name, Server and Port. The port
-    number that was given during the installation of the agent should be
-    entered here. Please check the BI Hub\_Installation Guide V1.5.4 for
-    reference. The tool tips will provide necessary guidance.
--   Click on Continue and the Add instance dialog box appears.
--   Attributes will be accepted depending on the agent type being added.
+ </div>
+- Click on the Agent Manager Tab and then click on Add Agent given on the right top corner to open the Add Agent page.
+- Type agent information such as Agent name, Server and Port. The port number that was given during the installation of the agent should be entered here. Please check the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/port')}>BI Hub Installation Guide V1.5.4 - Port Requirements</Link> for reference. The tool tips will provide necessary guidance.
+- Click on Continue and the Add instance dialog box appears.
+- Attributes will be accepted depending on the agent type being added.
     For ex: BOBJ agent instance attributes are very different from Qlik
     agent instance. For easier maintenance, the port number must be
     given in the same series as that of the agent. Ex. If the agent is
@@ -50,16 +45,15 @@ Follow the steps below to add a new agent:
       </Zoom>
     </div>
 
--   Click Submit to add the instance or Click on Submit & Add New
-    Instance to add another instance of the same agent.
--   The Status column of configured instance is displayed in the Home
+- Click Submit to add the instance or Click on Submit & Add New Instance to add another instance of the same agent.
+- The Status column of configured instance is displayed in the Home
     page of that agent. Green status indicates that the Agent and BI
     platform are active. Red status indicates that the Agent and BI
     platform are inactive. Orange status indicates that the Agent is
     active but the BI platform is inactive or it cannot reach the
     platform. Stop/Restart of instance can be done in the Actions
     column.
--   After all the agent instances are successfully created, return to
+- After all the agent instances are successfully created, return to
     Agent Manager to view the status and details of all agents as shown
     below. The number of instances configured for the agent will also be
     displayed.
@@ -69,4 +63,3 @@ Follow the steps below to add a new agent:
         <img alt="Agent Manager New" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-new.jpg')}/>
       </Zoom>
     </div>
-

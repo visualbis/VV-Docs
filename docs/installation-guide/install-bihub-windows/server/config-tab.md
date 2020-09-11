@@ -7,22 +7,15 @@ sidebar_label: Config Tab
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 Changing the value of Properties in this tab affects BI Hub server. 
-
 Since changing the configuration affects all the BI Hub server instances they need to be restarted for the configuration changes to take effect. 
 
 This tab contains following sections which are as follows.
-
-* [General Section](#general-section)
-
-* [Database Section](#database-section)
-
-* [Audit Database Section](#audit-database-section)
-
-* [SSL Section](#ssl-section)
-
-* [Elastic Search Section](#elastic-search-section)
-
-* [Mail Connection Server](#mail-connection-server)
+- [General Section](#general-section)
+- [Database Section](#database-section)
+- [Audit Database Section](#audit-database-section)
+- [SSL Section](#ssl-section)
+- [Elastic Search Section](#elastic-search-section)
+- [Mail Connection Server](#mail-connection-server)
 
 ## General Section
 
@@ -71,11 +64,8 @@ This section will have configuration fields related to the audit database connec
 This section establishes a secure connection via SSL between browser and BI Hub components. To configure the SSL properly, please follow the below listed information:
 
 - Kindly have a proper valid SSL certificate from an authorized vendor in .crt format. This public certificate should be provided in `<certificate_name>.crt` and private key in `<certificate_name>.key` file format.
-
 - If the customer wishes to use the organization’s own self signed SSL certificate, then necessary steps have to be taken to add the certificate in the trusted certificate key store in all client machine. 
-
 - Making this self-signed certificate as a trusted certificate in all browsers is out of the scope of this documentation.  BI Hub recommends having a valid SSL certificate to properly secure the connection.
-
 - Enable the SSL by checking the checkbox. After enabling the SSL, use the file selection browse button to select the files (private.key and public.crt files) and then click continue for the next section.
 
 :::note

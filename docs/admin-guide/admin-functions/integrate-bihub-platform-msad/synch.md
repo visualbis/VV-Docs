@@ -23,7 +23,7 @@ the BI platform and not a directory service like Microsoft AD/LDAP.
     </Zoom>
   </div>
 
-  *Screenshot: Sync Users*
+  *Sync Users*
 
 1.  The application shows a list of users imported from BI platforms to BI Hub and this list can be seen by selecting the User Manager page. 
 The agent icon against a user name indicates the number of agents (BI platforms) in which the user account was present. The types of Authentication assigned for the users can be also viewed in this page. You can select the user and click on the Agent Users tab on the right pane to visualize the BI platforms and the name of the user in that platform.
@@ -34,7 +34,7 @@ The agent icon against a user name indicates the number of agents (BI platforms)
     </Zoom>
   </div>
 
-  *Screenshot: User Manager*
+  *User Manager*
 
   The number of users mentioned in parenthesis near the User Manager Label represents the total number of users who exist in BI Hub (see Figure above). The Users can also be filtered based on the platforms and the Authentication types (see Figures below).
 
@@ -44,7 +44,7 @@ The agent icon against a user name indicates the number of agents (BI platforms)
     </Zoom>
   </div>
 
-  *Screenshot: User Manager with Agents Filtering*
+  *User Manager with Agents Filtering*
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -52,7 +52,7 @@ The agent icon against a user name indicates the number of agents (BI platforms)
     </Zoom>
   </div>
 
-  *Screenshot: User Manager with Authentication Filtering*
+  *User Manager with Authentication Filtering*
 
   The user details such as Instance Name, Username and Environment can also be seen by just clicking on the username (see Figure below).
 
@@ -62,7 +62,7 @@ The agent icon against a user name indicates the number of agents (BI platforms)
     </Zoom>
   </div>
 
-  *Screenshot: User Manager with User details*
+  *User Manager with User details*
 
 1. It should be noted that when users are added via “Sync User” operation, the default login password for the added users will be <username@123> (e.g. <adrian@123> for username ‘adrian’). During the first login, the users will be asked to change to a new password.
 1. If the user names are different between BI platforms, to import users from the other BI platform(s), Click Save and proceed to Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/add-users-bi-platform')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link>. If user names are identical across platforms, then upon completion of Step:2 go to Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users')}>Synchronize Reports of Users</Link>.

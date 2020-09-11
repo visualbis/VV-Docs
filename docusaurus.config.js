@@ -8,6 +8,13 @@ module.exports = {
   organizationName: 'divyabhushan', // Usually your GitHub org/user name.
   projectName: 'VV-Docs', // Usually your repo name.
   themeConfig: {
+    /*
+    algolia: {
+      apiKey: "api-key",
+      indexName: "index-name",
+      algoliaOptions: {}, // Optional, if provided by Algolia
+  },
+  */
     navbar: {
       hideOnScroll: true,
       title: 'BI Hub',
@@ -64,6 +71,7 @@ position: 'right',
             },
           ],
         },
+        /*
         {
           title: 'Community',
           items: [
@@ -81,6 +89,7 @@ position: 'right',
             },
           ],
         },
+        */
         {
           title: 'More',
           items: [
@@ -90,7 +99,7 @@ position: 'right',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/visualbis/VV-Docs',
             },
           ],
         },
@@ -110,12 +119,14 @@ position: 'right',
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
+        /*
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
+        */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

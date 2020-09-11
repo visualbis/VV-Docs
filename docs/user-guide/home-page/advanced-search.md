@@ -39,9 +39,8 @@ The user can search the Reports based on the Report Name as shown in the below F
   </div>
 
 *Search input for Report Name*
-(_static/avs2.png)
 
-For our example, the input for the Report Name field has been set as “sales marketing”. By clicking Search button, the list of reports having Report Name as “sales marketing” will be displayed as shown in the below Figure.
+For our example, the input for the Report Name field has been set as "sales marketing". By clicking Search button, the list of reports having Report Name as "sales marketing" will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -63,7 +62,7 @@ The user can search the Reports based on the Report Description as shown in the 
 
 *Search input for Report Description*
 
-For our example, the input for the Report Description field has been set as “product”. By clicking Search button, the list of reports having Report Description as “product” will be displayed as shown in the below Figure.
+For our example, the input for the Report Description field has been set as "product”. By clicking Search button, the list of reports having Report Description as "product” will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -85,7 +84,7 @@ The user can search the Reports based on the Report Owner as shown in the below 
 
 *Search input for Report Owner*
 
-For our example, the input for the Report Owner field has been set as “Administrator”. By clicking Search button, the list of reports having Report Owner as “Administrator” will be displayed as shown in the below Figure.
+For our example, the input for the Report Owner field has been set as "Administrator”. By clicking Search button, the list of reports having Report Owner as "Administrator” will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -107,7 +106,7 @@ The user can search the Reports based on the Platform as shown in the below Figu
 
 *Search input for Platform*
 
-For our example, the input for the Platform field has been set as “BOBJ”. By clicking Search button, the list of reports having the Platform as “BOBJ” will be displayed as shown in the below Figure.
+For our example, the input for the Platform field has been set as "BOBJ”. By clicking Search button, the list of reports having the Platform as "BOBJ” will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -129,7 +128,7 @@ The user can search the Reports based on the Report Tags as shown in the below F
 
 *Search input for Report Tags*
 
-For our example, the input for the Report Tags field has been set as “Sales Performance”. By clicking Search button, the list of reports having Report Tags as “Sales Performance” will be displayed as shown in the below Figure.
+For our example, the input for the Report Tags field has been set as "Sales Performance”. By clicking Search button, the list of reports having Report Tags as "Sales Performance” will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -161,7 +160,7 @@ The user can search the Reports based on the Subject Matter Expert (default Cust
 
 *Search input for Subject Matter Expert*
 
-For our example, the input for the Subject Matter Expert field has been set as “SRV01”. By clicking Search button, the list of reports having Subject Matter Expert as “SRV01” will be displayed as shown in the below Figure.
+For our example, the input for the Subject Matter Expert field has been set as "SRV01”. By clicking Search button, the list of reports having Subject Matter Expert as "SRV01” will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -179,7 +178,7 @@ The user can search the Reports based on the Certification (default Custom Attri
     </Zoom>
   </div>
 
-For our example, the input for the Certification field has been set to the option “All”. By clicking Search button, the list of reports having all the Certificate options will be displayed as shown in the below Figure.
+For our example, the input for the Certification field has been set to the option "All”. By clicking Search button, the list of reports having all the Certificate options will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -201,7 +200,7 @@ The user can also search the Reports based on the user defined Custom Attributes
 
 *Search input for Custom Attribute*
 
-For our example, the user defined Custom Attribute namely “Group Member Name” has been selected (see Figure above).
+For our example, the user defined Custom Attribute namely "Group Member Name” has been selected (see Figure above).
 
 Now the input for the Group Member Name field has been set to VBI as shown in the below Figure.
 
@@ -213,7 +212,7 @@ Now the input for the Group Member Name field has been set to VBI as shown in th
 
 *Search input for Group Member Name as VBI*
 
-By clicking Search button, the list of reports having the Group Member Name as “VBI” will be displayed as shown in the below Figure.
+By clicking Search button, the list of reports having the Group Member Name as "VBI” will be displayed as shown in the below Figure.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

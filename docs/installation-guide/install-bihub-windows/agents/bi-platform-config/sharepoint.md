@@ -10,10 +10,8 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 There are two ways to access SharePoint data as listed below:
-
 1. Microsoft Graph API
-
-2. SharePoint REST API
+1. SharePoint REST API
 
 We have integrated SharePoint in our BIHub using the second method.
 
@@ -69,6 +67,8 @@ We need to do OAuth for the user, so we need to set up Azure Active Directory.
 
 :::important
 The below listed steps need to be followed for the registration of the Azure Active Directory:
+:::
+
 [x] Set up the Application in Azure.
 
 [x] Go to https://portal.azure.com
@@ -76,7 +76,6 @@ The below listed steps need to be followed for the registration of the Azure Act
 [x] Navigate to Azure Active Directory and select App Registrations
 
   - Click on New Applicant registration.
-:::
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -84,7 +83,7 @@ The below listed steps need to be followed for the registration of the Azure Act
   </Zoom>
 </div>
 
-Set  the  name,  type  and  redirect  URI  of  the  application.  The  type  should  be  Native  and  the  Redirect  URI  must  be formatted as follows: `https://servername:port/Redirect`.
+Set  the  name, type  and  redirect  URI  of  the  application. The type should be  Native  and  the  Redirect  URI  must  be formatted as follows: `https://servername:port/Redirect`.
 
 Once the data is entered, click on Create. This URI should reflect the SharePoint Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
 
@@ -115,21 +114,12 @@ If failed to note down the value, please repeat step two to create a new key.
 - **Sharepointsite** = Your sharepoint site url (For eg: https://yoursite.sharepoint.com/sites/test)
 
 - **ClientId** = Client ID Registered in sharepoint app 
-
 - **Clientsecret** = Client Secret Registered in sharepoint app 
-
 - **Userclientid** = Client ID Registered in Azure Portal
-
 - **Userclientsecret** = Client Secret Registered in Azure Portal
-
 - **Tokenurl** = https://login.microsoftonline.com/{azure_tenantID}/oauth2/token
-
 - **Redirecturl** = Redirect URL mentioned in Azure Portal
-
 - **Resource** = Your sharepoint domain url(For eg: `https://yourdomain.sharepoint.com`)
-
 - **Host** = Your sharepoint domain name without http/https. (For eg: `yourdomain.sharepoint.com`)
-
 - **Sharepointid** = 00000003-0000-0ff1-ce00-000000000000 (Common for all)
-
 - **Tenantid** = Tenant ID registered in Azure Portal

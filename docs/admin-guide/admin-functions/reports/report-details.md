@@ -18,4 +18,4 @@ Click on Details icon for the report **Cycle time_demo**. The report details wil
     </Zoom>
   </div>
 
-  *Screenshot: Report Details Pane*
+  *Report Details Pane*

@@ -22,7 +22,7 @@ In the Navigation category, the Admin will be able to rename and enable/disable 
     </Zoom>
   </div>
 
-  *Screenshot: Navigation Tab in User Screen - Rename and Enable/Disable Navigation Menu Items*
+  *Navigation Tab in User Screen - Rename and Enable/Disable Navigation Menu Items*
 
 Based on the above configuration, you will be able to view the Navigation Menu items for the Users as shown below.
   <div style={{textAlign: 'center'}}>
@@ -31,7 +31,8 @@ Based on the above configuration, you will be able to view the Navigation Menu i
     </Zoom>
   </div>
   
-  *Screensho: Navigation Menu Items in User Screen*
+
+*Navigation Menu Items in User Screen*
 
 ## Search
 
@@ -42,7 +43,7 @@ In Search category, the Admin can enable the Show Inaccessible Reports option as
     </Zoom>
   </div>
 
-  *Screenshot: Search - Show Inaccessible Reports*
+  *Search - Show Inaccessible Reports*
 
 Based on the above configuration, the users will be able to view the
 Inaccessible Reports in the User pages (see Figure below).
@@ -52,7 +53,7 @@ Inaccessible Reports in the User pages (see Figure below).
     </Zoom>
   </div>
 
-  *Screenshot: Inaccessible Reports*
+  *Inaccessible Reports*
 
 ## Views
 
@@ -63,7 +64,7 @@ In Views category, the Admin will be able to enable the Show Agent Instance opti
     </Zoom>
   </div>
 
-  *Screenshot: View - Show Agent Instance option*
+  *View - Show Agent Instance option*
 
 When the Show Agent Instance option is activated, the user can view the Report with the Instance Agent details in the User pages (see Figure below).
   <div style={{textAlign: 'center'}}>
@@ -72,7 +73,7 @@ When the Show Agent Instance option is activated, the user can view the Report w
     </Zoom>
   </div>
 
-  *Screenshot: Report with Instance Agent Display*
+  *Report with Instance Agent Display*
 
 ## Customization
 
@@ -84,5 +85,5 @@ choice.
     </Zoom>
   </div>
 
-  *Screenshot: Customization – Launch Reports in New Tab*
+  *Customization – Launch Reports in New Tab*
 

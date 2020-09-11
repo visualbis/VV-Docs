@@ -16,5 +16,5 @@ The history for all the Reports will be displayed in this window. It highlights 
     </Zoom>
   </div>
 
-  *Screenshot: Reports History*
+  *Reports History*
 

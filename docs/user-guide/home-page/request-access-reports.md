@@ -18,7 +18,7 @@ The user will be able to view the status of the Reports for which the Access for
 
 *Request Access option for the Users*
 
-In My Requests Window, the users will be able to view the list of Reports based on the Request Access statuses namely Pending, Granted and Rejected (see Figure below). For our example, the Reports which are in Pending status have been shown below.
+In My Requests Window, the users will be able to view the list of Reports based on the Request Access statuses namely **Pending, Granted and Rejected** (see Figure below). For our example, the Reports which are in Pending status have been shown below.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

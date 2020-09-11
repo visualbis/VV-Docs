@@ -18,4 +18,4 @@ allows all users to utilize the ‘Not Accessible’ feature. Administrator can 
     </Zoom>
   </div>
 
-  *Screenshot: Smart Search toggle in Instance Manager*
+  *Smart Search toggle in Instance Manager*

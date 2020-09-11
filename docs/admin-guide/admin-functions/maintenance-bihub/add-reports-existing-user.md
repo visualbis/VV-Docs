@@ -19,7 +19,7 @@ This section can be used to add reports to an existing user, without using the b
     </Zoom>
   </div>
 
-  *Screenshot: Manage Reports*
+  *Manage Reports*
 
 2. A list of agents configured for the user will be displayed on the left and assigned reports will be on the right.
 3. Select the agent from the Agent List whose reports need to be added. Click on Add/Remove Reports.
@@ -29,7 +29,7 @@ This section can be used to add reports to an existing user, without using the b
       <img alt="Agent User Mapping" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/agentusermapping.jpg')}/>
     </Zoom>
   </div>
-  *Screenshot: Agent User Mapping*
+  *Agent User Mapping*
 
 1.  A list of unassigned reports will be on the left and assigned reports on the right.
 2.  Select the reports or folders on the Unassigned Reports pane and click Move to move them to the right. The Search Reports box can be used to search for reports in both Assigned and Unassigned columns. The breadcrumb on the top sets the context by displaying **BI Hub user name > Agent Name > BI platform user name**.
@@ -39,7 +39,7 @@ This section can be used to add reports to an existing user, without using the b
     </Zoom>
   </div>
 
-  *Screenshot: Assigning Reports*
+  *Assigning Reports*
 
 1. If the requirement is to remove reports from user then select the reports or folders on the Assigned Reports pane and click on Remove to move them to the left. Upon successful completion of this operation, the message ‘Action Completed successfully’ flashes on the right top.
 1. Click Back to assign/unassign reports for the other agents against the same user. Now click on User Manager to repeat the assign/unassign steps for all the other users in BI Hub.
@@ -51,7 +51,7 @@ This section can be used to add reports to an existing user, without using the b
     </Zoom>
   </div>
 
-  *Screenshot: Sync Metadata*
+  *Sync Metadata*
 
 1. The message Action completed successfully flashes on the right top of the page indicating success of the step.
 
@@ -61,8 +61,8 @@ When the Agent is down/inactive, then the Reports cannot be retrieved. In such a
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Reports in disabled status" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/alert1.jpg')}/>
+      <img alt="Reports in disabled status" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/alert1.png')}/>
     </Zoom>
   </div>
 
-  *Screenshot: Reports in disabled status*
+  *Reports in disabled status*

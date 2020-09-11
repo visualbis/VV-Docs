@@ -16,7 +16,7 @@ The Admin will be able to view the status of the Reports for which the Access fo
     </Zoom>
   </div>
 
-  *Screenshot: User Request option in Main Menu*
+  *User Request option in Main Menu*
 
 In the User Request screen, you will be able to view the list of Reports with different Request Access statuses (see Figure below).
   <div style={{textAlign: 'center'}}>
@@ -34,7 +34,7 @@ The Admin user can also view the list of Reports using the filters based on the 
     </Zoom>
   </div>
 
-  *Screenshot: User Request screen with Filters*
+  *User Request screen with Filters*
 
 The Reports which are under the “Pending” Status can be Rejected by the Admin using the Reject option as shown in the below Figure.
   <div style={{textAlign: 'center'}}>
@@ -43,7 +43,7 @@ The Reports which are under the “Pending” Status can be Rejected by the Admi
     </Zoom>
   </div>
 
-  *Screenshot: Reject Request for Pending Status*
+  *Reject Request for Pending Status*
 
 The Admin can specify the reason for Rejecting the Report as shown below
 
@@ -53,7 +53,7 @@ The Admin can specify the reason for Rejecting the Report as shown below
     </Zoom>
   </div>
 
-  *Screenshot: Reason for Reject Request*
+  *Reason for Reject Request*
 
 After rejecting the Request for the Reports you will be able to view the screen as shown below.
   <div style={{textAlign: 'center'}}>
@@ -62,4 +62,4 @@ After rejecting the Request for the Reports you will be able to view the screen 
     </Zoom>
   </div>
 
-  *Screenshot: Reports for which Request being rejected*
+  *Reports for which Request being rejected*

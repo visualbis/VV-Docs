@@ -16,15 +16,10 @@ The application pane displays all the modules in this application –
 - <Link to={useBaseUrl('#admin-home-page')}>Admin Home Page</Link>
 - <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance')}>Agent Manager</Link>
 - User manager
-
 - Authentication
-
 - Audit
-
 - Reports
-
 - User Request
-
 - Customization
 
 This is the same order in which the modules are displayed in the application pane as shown below. Functionality of these modules are covered in subsequent sections of this document.
@@ -46,8 +41,7 @@ Users login with authentication type set as *Microsoft AD/LDAP*.
 ### Forgot Password
 
 If the administrator forgets his/her password or wishes to reset the password for security reasons 
-the Change Password utility can be used. Refer Section <Link to={useBaseUrl('#')}>changepassword</Link>. <!-- Administrator Utilities > Change Password -->
-
+the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>changepassword</Link>. 
 
 ### Landing Page
 

@@ -18,5 +18,5 @@ import "react-medium-image-zoom/dist/styles.css";
     </Zoom>
   </div>
 
-  *Screenshot: User Manager*
+  *User Manager*
 

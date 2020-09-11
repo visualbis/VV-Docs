@@ -19,7 +19,7 @@ The user will be able to perform the following actions using the Report Icons as
 
 ## Comments
 
-The user can also create, edit and delete the comments for the selected Reports using the Comment icon shown below. For further details you can refer Section: Comments `<Comment>`.
+The user can also create, edit and delete the comments for the selected Reports using the Comment icon shown below. For further details you can refer <Link to={useBaseUrl('docs/user-guide/comments/comments')}>Section: Comments</Link>.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

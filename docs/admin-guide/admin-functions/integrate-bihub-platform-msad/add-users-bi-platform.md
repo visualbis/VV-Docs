@@ -22,7 +22,7 @@ If the Admin wishes to map users who have different user names across BI Platfor
     </Zoom>
   </div>
 
-  *Screenshot: Edit User*
+  *Edit User*
 
 -   Click Update. Now the BI Hub user chosen in User Manager page has been mapped to the user name from the BI platform. Repeat the steps until users of all BI platforms are mapped. Upon completion, proceed with Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users')}>Synchronize reports of Users</Link> to synchronize reports to BI platform.
 
