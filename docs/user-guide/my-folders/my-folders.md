@@ -12,7 +12,7 @@ In addition to retaining folders-reports hierarchy of the source BI platforms, B
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="My Folders" src={useBaseUrl('doc-images/user-guide/folder1.png')}/>
+      <img alt="My Folders" src={useBaseUrl('doc-images/user-guide/folder1_.png')}/>
     </Zoom>
   </div>
 

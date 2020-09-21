@@ -12,7 +12,7 @@ You can also move the already created Folder/Reports to a different Folder based
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Move To Folder" src={useBaseUrl('doc-images/user-guide/folder5.png')}/>
+      <img alt="Move To Folder" src={useBaseUrl('doc-images/user-guide/folder5_.png')}/>
     </Zoom>
   </div>
 
@@ -22,7 +22,7 @@ After clicking the “Move To” option then you need to specify to which Folder
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Move To Folder" src={useBaseUrl('doc-images/user-guide/folder6.png')}/>
+      <img alt="Move To Folder" src={useBaseUrl('doc-images/user-guide/folder6_.png')}/>
     </Zoom>
   </div>
 
@@ -32,7 +32,7 @@ For our example Folder 1 has been selected and now the Folder 2 has been moved t
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Move To Folder" src={useBaseUrl('doc-images/user-guide/folder7.png')}/>
+      <img alt="Move To Folder" src={useBaseUrl('doc-images/user-guide/folder7_.png')}/>
     </Zoom>
   </div>
 

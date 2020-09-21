@@ -13,7 +13,7 @@ BI Hub can be integrated with Directory Service and SSO server. If it runs in th
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Home Page" src={useBaseUrl('doc-images/user-guide/home1.png')}/>
+      <img alt="Home Page" src={useBaseUrl('doc-images/user-guide/home1_.png')}/>
     </Zoom>
   </div>
 
@@ -21,7 +21,7 @@ User can add the Reports which are accessible by the respective login users. By 
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Add Reports" src={useBaseUrl('doc-images/user-guide/home2.png')}/>
+      <img alt="Add Reports" src={useBaseUrl('doc-images/user-guide/home2_.png')}/>
     </Zoom>
   </div>
 
@@ -29,7 +29,7 @@ After selecting the respective Reports, the Dashboard will contain all the selec
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="My Dashboard wit Large Tile View" src={useBaseUrl('doc-images/user-guide/home3.png')}/>
+      <img alt="My Dashboard wit Large Tile View" src={useBaseUrl('doc-images/user-guide/home3_.png')}/>
     </Zoom>
   </div>
 
@@ -37,7 +37,7 @@ The user can view the Reports in Small Tile and Large Tile Views. For our exampl
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="My Dashboard with Small Tile View" src={useBaseUrl('doc-images/user-guide/home4.png')}/>
+      <img alt="My Dashboard with Small Tile View" src={useBaseUrl('doc-images/user-guide/home4_.png')}/>
     </Zoom>
   </div>
 
@@ -45,7 +45,7 @@ When the user clicks any Report Tile then the user will be able to view the enti
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="My Dashboard with selected Report" src={useBaseUrl('doc-images/user-guide/home5.png')}/>
+      <img alt="My Dashboard with selected Report" src={useBaseUrl('doc-images/user-guide/home5_.png')}/>
     </Zoom>
   </div>
 

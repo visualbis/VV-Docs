@@ -35,6 +35,6 @@ import TabItem from '@theme/TabItem';
   ]}>
   <TabItem value="Installation Guide"><Link to={useBaseUrl('docs/installation-guide/welcome')}>Installation Guide</Link></TabItem>
   <TabItem value="Admin Guide"><Link to={useBaseUrl('docs/admin-guide/getting-started/welcome')}>Admin Guide</Link></TabItem>
-  <TabItem value="User Guide"><Link to={useBaseUrl('docs/user-guide/dashboard')}>User Guide</Link></TabItem>
+  <TabItem value="User Guide"><Link to={useBaseUrl('docs/user-guide/onboard')}>User Guide</Link></TabItem>
 </Tabs>
 

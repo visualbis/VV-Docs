@@ -13,7 +13,7 @@ In addition to my dashboard, the admin created dashboards will also be seen in t
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="User Dashboard with Reports" src={useBaseUrl('doc-images/user-guide/userdb1.png')}/>
+      <img alt="User Dashboard with Reports" src={useBaseUrl('doc-images/user-guide/userdb1_.png')}/>
     </Zoom>
   </div>
 

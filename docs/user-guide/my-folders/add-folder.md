@@ -12,7 +12,7 @@ You can add many Folders and place the Reports in the respective folders as per 
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Add Folder" src={useBaseUrl('doc-images/user-guide/folder2.png')}/>
+      <img alt="Add Folder" src={useBaseUrl('doc-images/user-guide/folder2_.png')}/>
     </Zoom>
   </div>
 
@@ -33,7 +33,7 @@ Once the folder is added you can view the added folder in My Folder screen as sh
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Add Folder" src={useBaseUrl('doc-images/user-guide/folder4.png')}/>
+      <img alt="Add Folder" src={useBaseUrl('doc-images/user-guide/folder4_.png')}/>
     </Zoom>
   </div>
 

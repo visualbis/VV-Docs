@@ -12,7 +12,7 @@ You can also delete a Folder based on your choice as shown in the below screen.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder11.png')}/>
+      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder11_.png')}/>
     </Zoom>
   </div>
 
@@ -22,7 +22,7 @@ For our example, the selected Folder 2.1 as shown in the above screen has been d
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder12.png')}/>
+      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder12_.png')}/>
     </Zoom>
   </div>
 

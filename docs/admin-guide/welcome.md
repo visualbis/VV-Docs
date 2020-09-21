@@ -24,15 +24,3 @@ BI Hub a Visual BI product, is a web-based application which enables users to vi
 
 * Incredibly easy setup and maintenance – Easy to setup and 100% automated synchronization between BI Hub and BI platforms
 
-## Contents:
-
-### [Dashboard](dashboard/new)
-
-### [Agent Manager](#)
-
-#### [Add Agent]()
-
-#### Edit Agent
-
-### [Authentication](#)
-
