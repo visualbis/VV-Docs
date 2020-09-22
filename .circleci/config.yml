@@ -22,11 +22,6 @@ jobs:
           command: yarn install
 
       - run:
-          name: "Set cname"
-          command: 
-            node set-cname.js
-            
-      - run:
           name: Deploying to GitHub Pages
           command: |
             git config --global user.email "divya_bhushan@hotmail.com"
