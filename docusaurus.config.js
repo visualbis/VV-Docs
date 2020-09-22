@@ -1,11 +1,11 @@
 module.exports = {
   title: 'BI Hub',
-  tagline: 'BI Hub is a web-based Visual BI product',
-  url: 'https://github.com/divyabhushan/VV-Docs',
-  baseUrl: '/VV-Docs/',
+  tagline: 'Your BI Search Engine',
+  url: 'https://github.com/visualbis/VV-Docs',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'divyabhushan', // Usually your GitHub org/user name.
+  organizationName: 'visualbis', // Usually your GitHub org/user name.
   projectName: 'VV-Docs', // Usually your repo name.
   themeConfig: {
     /*
@@ -19,7 +19,7 @@ module.exports = {
       hideOnScroll: true,
       title: 'BI Hub',
       logo: { 
-        alt: 'My Site Logo',
+        alt: 'BI Hub',
         src: 'img/logo.svg',
       },
       items: [
@@ -104,7 +104,7 @@ position: 'right',
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Visual BI Solutions.`,
     },
   },
   presets: [
