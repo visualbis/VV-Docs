@@ -32,7 +32,7 @@ The deleted folder cannot be viewed in My Folder screen as shown below
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder13.png')}/>
+      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder13_.png')}/>
     </Zoom>
   </div>
 

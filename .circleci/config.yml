@@ -13,7 +13,7 @@ jobs:
     docker:
       # specify the version you desire here
       # - image: circleci/node:10.6.0
-      - image: circleci/node:12.18.2
+       - image: circleci/node:12.18.2
 
     steps:
       - checkout
@@ -23,15 +23,16 @@ jobs:
 
       - run:
           name: "Set cname"
-          command: |
+          command: 
             node set-cname.js
+            
       - run:
           name: Deploying to GitHub Pages
           command: |
-            git config --global user.email "mohanrex@outlook.com"
-            git config --global user.name "mohanrex"
-            echo "machine github.com login mohanrex password $GITHUB_TOKEN" > ~/.netrc
-            GIT_USER=mohanrex yarn deploy
+            git config --global user.email "divya_bhushan@hotmail.com"
+            git config --global user.name "divyabhushan"
+            echo "machine github.com login divyabhushan password $GITHUB_TOKEN" > ~/.netrc
+            GIT_USER=divyabhushan yarn deploy
             
 workflows:
   version: 2
