@@ -8,36 +8,54 @@ import styles from './styles.module.css';
 
 const features = [
     {
-        title: <>Installation Guide</>,
-        link: "/docs/installation-guide/welcome",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-visualization.png',
+        link: '/docs/installation-guide/welcome',
         description: (
             <>
-                Installation Guide
+                        <div>
+                            <img src="img/installer-guide.svg" />
+                            <h2>Installation Guide</h2>
+                            <p>
+                                Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.
+                                <br></br> 
+                                <button><a>Open Guide</a></button>
+                            </p>
+                        </div>
             </>
         ),
     },
     {
-        title: <>Administration Guide</>,
-        link: "/docs/admin-guide/getting-started/welcome",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
+        link: 'docs/admin-guide/getting-started/welcome',
         description: (
             <>
-            Administration Guide
+                    <div>
+                            <img src="img/admin-guide.svg" />
+                            <h2>Adminstration Guide</h2>
+                            <p>
+                            Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.
+                                <br></br>
+                                <button><a>Open Guide</a></button>
+                            </p>
+                    </div>
             </>
         ),
     },
     {
-        title: <>User Guide</>,
-        link: "/docs/admin-guide/getting-started/welcome",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
+        link: 'docs/user-guide/onboard',
         description: (
             <>
-                User Guide
+                        <div>
+                        <img src="img/user-guide.svg" />
+                            <h2>User Guide</h2>
+                            <p>
+                            Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.
+                                <br></br>
+                                <button><a>Open Guide</a></button>
+                            </p>
+                        </div>
             </>
+
         ),
-    },
-    
+    },                                        
 ];
 
 function Feature({ imageUrl, title, description, link }) {
@@ -45,7 +63,7 @@ function Feature({ imageUrl, title, description, link }) {
     const linkUrl = useBaseUrl(link);
 
     return (
-        <Link className={classnames('col col--4', styles.feature)} to={linkUrl} >
+        <Link className={classnames('col col--4', styles.feature, styles.footer)} to={linkUrl} >
             {imgUrl && (
                 <div className="text--center">
                     <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -69,7 +87,7 @@ function Home() {
                 <div className="container">
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
-                                        
+                                       
                 </div>
             </header>
             <main>

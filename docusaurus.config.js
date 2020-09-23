@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'BI Hub',
-  tagline: 'Your BI Search Engine',
-  url: 'https://github.com/divyabhushan/VV-Docs',
-  baseUrl: '/VV-Docs/',
-  onBrokenLinks: 'throw',
-  favicon: 'img/buhub-logo.svg',
-  organizationName: 'divyabhushan', // Usually your GitHub org/user name.
-  projectName: 'VV-Docs', // Usually your repo name.
+  title: "BI Hub",
+  tagline: "Your BI Search Engine",
+  url: "https://github.com/divyabhushan/VV-Docs",
+  baseUrl: "/VV-Docs/",
+  onBrokenLinks: "throw",
+  favicon: "img/favicon.ico",
+  organizationName: "divyabhushan", // Usually your GitHub org/user name.
+  projectName: "VV-Docs", // Usually your repo name.
   themeConfig: {
     /*
     algolia: {
@@ -17,10 +17,10 @@ module.exports = {
   */
     navbar: {
       hideOnScroll: true,
-      title: 'BI Hub',
-      logo: { 
-        alt: 'BI Hub',
-        src: 'img/logo.svg',
+      logo: {
+        alt: "BI Hub",
+        src: "img/buhub-logo.svg",
+        srcDark: "img/logo-darkmode.svg",
       },
       items: [
         /*
@@ -32,91 +32,57 @@ module.exports = {
 
         },
         */
-/*        {to: 'blog', label: 'Blog', position: 'left'}, */
-/*        {
+        /*        {to: 'blog', label: 'Blog', position: 'left'}, */
+        /*        {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
 */
-{
-to: 'docs/installation-guide/welcome',
-label: 'Installation Guide',
-position: 'right',
-
-},
-{
-  to: 'docs/admin-guide/getting-started/welcome',
-  label: 'Admin Guide',
-  position: 'right',
-  },
-  {
-    to: 'docs/user-guide/onboard',
-    label: 'User Guide',
-    position: 'right',
-    },
+        {
+          to: "docs/installation-guide/welcome",
+          label: "Installation Guide",
+          position: "right",
+        },
+        {
+          to: "docs/admin-guide/getting-started/welcome",
+          label: "Admin Guide",
+          position: "right",
+        },
+        {
+          to: "docs/user-guide/onboard",
+          label: "User Guide",
+          position: "right",
+        },
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'BI Hub',
-          items: [
-            {
-              label: 'BI Hub',
-              to: 'docs/',
-            },
-            {
-              label: 'Docs',
-              to: 'docs',
-            },
-          ],
-        },
-        /*
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        */
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/visualbis/VV-Docs',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Visual BI Solutions.`,
+      style: "dark",
+
+      copyright: `
+    <div class="row" id="footer">
+      <div class="col" style="text-align:left; font-color: #FFFFFF;">
+        <a href="#" style="float:left">Blogs</a>
+        <a href="#" style="float:left; padding-left:2px; margin-left:15px;">Product Website</a>
+      </div>
+      <div class="col" style="text-align:center">Copyright © ${new Date().getFullYear()} Visual BI Solutions.</div>
+      <div class="col" style="text-align:right">
+        <a href="#"><img src="img/twitter.svg" width="21px" height="16px"></a>
+        <a href="#" style="padding-left:10px"><img src="img/facebook.svg" width="18px" height="17px"></a>
+        <a href="#" style="padding-left:10px"><img src="img/linkedin.svg" width="18px" height="17px"></a>
+      </div>
+    </div>
+      `,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'getting-started/intro',
-          sidebarPath: require.resolve('./sidebars.js'),          
+          homePageId: "getting-started/intro",
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         /*
         blog: {
@@ -127,7 +93,7 @@ position: 'right',
         },
         */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
