@@ -9,70 +9,38 @@ import styles from './styles.module.css';
 const features = [
     {
         link: '/docs/installation-guide/welcome',
-        description: (
-            <>
-                        <div>
-                            <img src="img/installer-guide.svg" />
-                            <h2>Installation Guide</h2>
-                            <p>
-                                Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.
-                                <br></br> 
-                                <button><a>Open Guide</a></button>
-                            </p>
-                        </div>
-            </>
-        ),
+        title: 'Installation Guide',
+        image: 'img/installer-guide.svg',
+        description: 'Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.',
     },
     {
-        link: 'docs/admin-guide/getting-started/welcome',
-        description: (
-            <>
-                    <div>
-                            <img src="img/admin-guide.svg" />
-                            <h2>Adminstration Guide</h2>
-                            <p>
-                            Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.
-                                <br></br>
-                                <button><a>Open Guide</a></button>
-                            </p>
-                    </div>
-            </>
-        ),
+        link: '/docs/admin-guide/getting-started/welcome',
+        title: 'Administration Guide',
+        image: 'img/admin-guide.svg',
+        description: 'Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.',
     },
     {
-        link: 'docs/user-guide/onboard',
-        description: (
-            <>
-                        <div>
-                        <img src="img/user-guide.svg" />
-                            <h2>User Guide</h2>
-                            <p>
-                            Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.
-                                <br></br>
-                                <button><a>Open Guide</a></button>
-                            </p>
-                        </div>
-            </>
-
-        ),
-    },                                        
+        link: '/docs/user-guide/onboard',
+        title: 'User Guide',
+        image: 'img/user-guide.svg',
+        description: 'Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.',
+    }
 ];
 
-function Feature({ imageUrl, title, description, link }) {
-    const imgUrl = useBaseUrl(imageUrl);
+function Feature({ image, title, description, link }) {
+    const imgUrl = useBaseUrl(image);
     const linkUrl = useBaseUrl(link);
 
     return (
-        <Link className={classnames('col col--4', styles.feature, styles.footer)} to={linkUrl} >
-            {imgUrl && (
+        <Link className={classnames("col col--4")} to={linkUrl} >
+            <div className={styles.features}>
                 <div className="text--center">
                     <img className={styles.featureImage} src={imgUrl} alt={title} />
                 </div>
-            )}
-            <h3>{title}</h3>
-            <p>{description}</p>
+                <h3>{title}</h3>
+                <p>{description}</p>
+            </div>
         </Link>
-
     );
 }
 
@@ -92,7 +60,7 @@ function Home() {
             </header>
             <main>
                 {features && features.length && (
-                    <section className={styles.features}>
+                    <section className={classnames(styles.mainContainer)}>
                         <div className="container">
                             <div className="row">
                                 {features.map((props, idx) => (

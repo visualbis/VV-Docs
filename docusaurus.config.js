@@ -60,16 +60,12 @@ module.exports = {
       style: "dark",
 
       copyright: `
-    <div class="row" id="footer">
-      <div class="col" style="text-align:left; font-color: #FFFFFF;">
-        <a href="#" style="float:left">Blogs</a>
-        <a href="#" style="float:left; padding-left:2px; margin-left:15px;">Product Website</a>
-      </div>
-      <div class="col" style="text-align:center">Copyright © ${new Date().getFullYear()} Visual BI Solutions.</div>
+    <div class="row">
+      <div class="col" style="text-align:left">Copyright © ${new Date().getFullYear()} Visual BI Solutions.</div>
       <div class="col" style="text-align:right">
-        <a href="#"><img src="img/twitter.svg" width="21px" height="16px"></a>
-        <a href="#" style="padding-left:10px"><img src="img/facebook.svg" width="18px" height="17px"></a>
-        <a href="#" style="padding-left:10px"><img src="img/linkedin.svg" width="18px" height="17px"></a>
+        <a href="https://twitter.com/vbi_hub" target="_blank"><img src="img/twitter.svg" width="21px" height="16px"></a>
+        <a href="https://www.facebook.com/vbihub/" target="_blank" style="padding-left:10px"><img src="img/facebook.svg" width="18px" height="17px"></a>
+        <a href="https://www.linkedin.com/company/bi-hub/" target="_blank" style="padding-left:10px"><img src="img/linkedin.svg" width="18px" height="17px"></a>
       </div>
     </div>
       `,

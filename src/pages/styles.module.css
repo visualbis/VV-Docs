@@ -14,100 +14,75 @@
 }
 */
 
-.heroBanner {  
-  margin-top: 0px;
-  top: 54px;
-  left: 0px;
+.heroBanner {
   text-align: center;
-  width: 100%;
-  height: 175px;
   background: #2565AB 0% 0% no-repeat padding-box;
-  opacity: 1;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
-.buttons {
-  left: 170px;
-  width: 297px;
-  height: 41px;
-  background: #2565AB 0% 0% no-repeat padding-box;
-  border: 1px solid #2565AB;
-  opacity: 1;
+a:hover {
+  text-decoration: none;
 }
 
-.buttons a {
-left: 274px;
-width: 90px;
-height: 22px;
-text-align: left;
-font: normal normal normal 16px/22px Open Sans;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+.mainContainer {
+  background: #F9FAFB 0% 0% no-repeat padding-box;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+html[data-theme="dark"] .mainContainer {
+  background: #121212 0% 0% no-repeat padding-box;
 }
 
 .features {
-margin-top: 75px;
-  margin-left: 155px;
-  margin-right: 155px;
-  margin-bottom: 0px;
-width: relative;
-height: 300px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-box-shadow: 0px 0px 8px #00000014;
-border-radius: 10px;
-opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #00000014;
+  border-radius: 10px;
+  padding: 1.5rem;
 }
 
-.features dev {
-  padding: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: relative;
+html[data-theme="dark"] .features {
+  background: #1F1F1F 0% 0% no-repeat padding-box;
 }
 
-.featureImage {
-  width: 10px;
-  height: 20px;
-  text-align: left;
-  background: #000000 0% 0% no-repeat padding-box;
-  opacity: 1;  
-  display: block;
+.features:hover {
+  box-shadow: 0px 0px 10px #2566ab77;
 }
 
-.features h2 {
-  top: 397px;
-  left: 175px;
-  width: 159px;
-  height: 24px;
-  text-align: left;
-  font: normal normal 600 18px/24px Open Sans;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
+html[data-theme="dark"] .features:hover {
+  box-shadow: 0px 0px 10px #FFFFFF77;
+}
+
+.features img {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.features p,
+.features h3 {
+  color: #303030;
+}
+
+html[data-theme="dark"] .features p,
+html[data-theme="dark"] .features h3 {
+  color: #f5f6f7;
 }
 
 .features p {
-  top: 431px;
-  left: 907px;
-  width: 292px;
-  height: 126px;
-  text-align: left;
-  font: normal normal normal 14px/25px Open Sans;
-  letter-spacing: 0px;
-  color: #242424;
   opacity: 0.75;
 }
 
-#footer {
-  margin:0px;
-  padding:0px;
+.footer {
   background-color:#303846;
-  height: 10px;
-  opacity:100%;
-}   
+  color: #ebedf0;
+}
+
+.footer a{
+  color: #ebedf0;
+}

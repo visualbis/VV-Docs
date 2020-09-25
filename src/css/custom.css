@@ -24,3 +24,11 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+
+
+html[data-theme="dark"] h1.hero__title,
+html[data-theme="dark"] p.hero__subtitle {
+  color: #FFFFFF !important;
+}
+
+
