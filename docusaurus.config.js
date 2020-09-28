@@ -1,11 +1,11 @@
 module.exports = {
   title: "BI Hub",
   tagline: "Your BI Search Engine",
-  url: "https://github.com/divyabhushan/VV-Docs",
+  url: "https://github.com/visualbis/VV-Docs",
   baseUrl: "/VV-Docs/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "divyabhushan", // Usually your GitHub org/user name.
+  organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "VV-Docs", // Usually your repo name.
   themeConfig: {
     /*
