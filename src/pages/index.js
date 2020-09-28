@@ -11,7 +11,7 @@ const features = [
         link: '/docs/installation-guide/welcome',
         title: 'Installation Guide',
         image: 'img/installer-guide.svg',
-        description: 'Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.',
+        description: 'Installation guide with pre-requisities, installation, and configuration steps for downloading the BI Hub components - BI Hub Server, Web, and Agents.',
     },
     {
         link: '/docs/admin-guide/getting-started/welcome',
