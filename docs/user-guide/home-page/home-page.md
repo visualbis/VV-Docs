@@ -53,6 +53,6 @@ You have the option to reload the selected Report by clicking the "Reload Button
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Selected Report with Reload button" src={useBaseUrl('doc-images/user-guide/reload.png')}/>
+      <img alt="Selected Report with Reload button" src={useBaseUrl('doc-images/user-guide/reload_.png')}/>
     </Zoom>
   </div>

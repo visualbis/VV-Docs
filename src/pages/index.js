@@ -11,19 +11,19 @@ const features = [
         link: '/docs/installation-guide/welcome',
         title: 'Installation Guide',
         image: 'img/installer-guide.svg',
-        description: 'Installation guide with pre-requisities, installation, and configuration steps for downloading the BI Hub components - BI Hub Server, Web, and Agents.',
+        description: 'Guide with pre-requisities, installation, and configuration steps for all the BI Hub components - BI Hub Server, Web, and Agents',
     },
     {
         link: '/docs/admin-guide/getting-started/welcome',
         title: 'Administration Guide',
         image: 'img/admin-guide.svg',
-        description: 'Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.',
+        description: 'Guide with administration tasks like configuring agents, authentication, adding users and reports, and on-going maintenance',
     },
     {
         link: '/docs/user-guide/onboard',
         title: 'User Guide',
         image: 'img/user-guide.svg',
-        description: 'Eos laborum aut sequi cupiditate et rerum delectus asperiores. Est sed incidunt doloremque. Voluptas similique expedita. Eligendi aut eveniet quidem eius temporibus recusandae.',
+        description: 'BI Hub application guide with User related configurations including the Dashboard, Reports, Hub folders, and BI Platform',
     }
 ];
 
