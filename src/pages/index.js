@@ -23,8 +23,7 @@ const features = [
         link: '/docs/user-guide/onboard',
         title: 'User Guide',
         image: 'img/user-guide.svg',
-        description: 'BI Hub application guide with User related configurations including the Dashboard, Reports, Hub folders, and BI Platform',
-    }
+        description: 'User Guide on how to configure every section in the BI Hub application such as the Dashboard, Reports, Hub folders, and BI Platform.',    }
 ];
 
 function Feature({ image, title, description, link }) {
