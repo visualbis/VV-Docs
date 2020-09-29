@@ -7,13 +7,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "VV-Docs", // Usually your repo name.
-  plugins: [['@docusaurus/plugin-google-analytics',{id:'bih-plugin-ga'}]],
   themeConfig: {
-    googleAnalytics: {
-      trackingID: 'UA-159436808-1',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
     /*
     algolia: {
       apiKey: "api-key",
