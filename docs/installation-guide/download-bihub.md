@@ -5,8 +5,9 @@ sidebar_label: Downloading BI Hub
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
-* Launch the website mentioned in the e-mail (https://products.visualbi.com/bi-hub/downloads/), and download the latest version of: 
+Go to the BI Hub <Link to={useBaseUrl('https://products.visualbi.com/bi-hub/downloads/')}>Download page</Link>, and download the latest version of: 
   1. BI Hub Web
   2. BI Hub Server
-  3. Respective BI Hub Agent configured by the Admininstrator
+  3. BI Hub Agents with respect to BI Platform that you are using
