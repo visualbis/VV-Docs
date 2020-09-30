@@ -24,10 +24,10 @@ jobs:
       - run:
           name: Deploying to GitHub Pages
           command: |
-            git config --global user.email "divya_bhushan@hotmail.com"
-            git config --global user.name "divyabhushan"
-            echo "machine github.com login divyabhushan password $GITHUB_TOKEN" > ~/.netrc
-            GIT_USER=divyabhushan yarn deploy
+            git config --global user.email "mohanrex@outlook.com"
+            git config --global user.name "mohanrex"
+            echo "machine github.com login mohanrex password $GITHUB_TOKEN" > ~/.netrc
+            GIT_USER=mohanrex yarn deploy
             
 workflows:
   version: 2
