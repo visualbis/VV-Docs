@@ -6,14 +6,9 @@ sidebar_label: Installation Pre-requisites
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-* Access to internet for registration of license.
-* Access to license key information obtained in the email.
-* Microsoft .NET Framework 3.5. This should be enabled by using add or remove roles/features in server manager in the server management tools.
-* Microsoft Visual C++ Redistributable for Visual Studio 2015 (https://www.microsoft.com/en-in/download/details.aspx?id=48145) 
-* Supported Web Server and Database (see Section 2.4.3)
+* Obtain the License Key information for BI Hub. You should have received it through the registered email. If not please contact your sales representative.
+* You need to have an administrator access to the server in which you are going to install BI Hub.
+* Microsoft .NET Framework 3.5 should be enabled by using add or remove roles/features in server manager in the server management tools.
+* You need to have the Database connection string details if you are installing for production. If you are installing for a POC then you can use the embedded database which will come with BI Hub Server.
 * SSL certificates -If secure communication (https) is desired, The Certificate has to be OpenSSL compatible X.509 with the following format (PEM encoded format)
-
-| Key | Description |
-| --- | --- |
-| private.key | Private Key |
-| public.crt | Public Certificate file |
+* If you want to enable the SMTP you need to have the SMTP Server connection details.

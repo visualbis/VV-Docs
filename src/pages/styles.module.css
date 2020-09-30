@@ -5,33 +5,84 @@
  * and scoped locally.
  */
 
+/*
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+*/
+
+.heroBanner {
+  text-align: center;
+  background: #2565AB 0% 0% no-repeat padding-box;
+  padding: 2rem;
+}
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+a:hover {
+  text-decoration: none;
+}
+
+.mainContainer {
+  background: #F9FAFB 0% 0% no-repeat padding-box;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+html[data-theme="dark"] .mainContainer {
+  background: #121212 0% 0% no-repeat padding-box;
 }
 
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #00000014;
+  border-radius: 10px;
+  padding: 1.5rem;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
+html[data-theme="dark"] .features {
+  background: #1F1F1F 0% 0% no-repeat padding-box;
+}
+
+.features:hover {
+  box-shadow: 0px 0px 10px #2566ab77;
+}
+
+html[data-theme="dark"] .features:hover {
+  box-shadow: 0px 0px 10px #FFFFFF77;
+}
+
+.features img {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.features p,
+.features h3 {
+  color: #303030;
+}
+
+html[data-theme="dark"] .features p,
+html[data-theme="dark"] .features h3 {
+  color: #f5f6f7;
+}
+
+.features p {
+  opacity: 0.75;
+}
+
+.footer {
+  background-color:#303846;
+  color: #ebedf0;
+}
+
+.footer a{
+  color: #ebedf0;
 }

@@ -1,6 +1,7 @@
 ---
 id: welcome
-title: Welcome to BI Hub Installation Guide!
+hide_title: BI Hub Installation Guide!
+sidebar_label: BI Hub Installation Guide
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -10,18 +11,26 @@ The Installation Guide for BI Hub application offered by Visual BI is meant for 
 
 ## What is BI Hub
 
-BI Hub is a web-based Visual BI application product.
+> BI Hub is a web-based Visual BI application product.
 
-BI Hub enables users to view and analyse reports built in various BI platforms in one page, without having to login into those platforms individually. 
+BI Hub is a BI Reporting portal with a one-Stop Solution to all your BI content supporting On-prem, Cloud, Self-Service BI and Modern Data Analytics deployment. 
+Discover, Consume, Organize, Collaborate and optimize your BI assets using our Unified BI Platform by ensuring Report Governance.
 
-Highlights of this product includes but not limited to:
+**Key Features**
 
-* **Smart view and Discovery of BI assets** – Discover not accessible assets and request access
+- **Easy access**: Single sign-on BI portal dashboard to all your Analytics Assests in BI Hub.
+- **Report Governance**: A simplified Report governance to view and authorize the respective users and collaborate the reports with other users.
+- **Smart Search** - Search reports and dashboards from all your BI systems with a single click. Request access for other reports within one BI portal with the advanced search option.
+- **Ensures Security** - BI Hub imports all the user accounts and their security from each reporting tool.
+- **Compatability** - BI Hub reports are easily compatible on mobile devices or tablets device with touch-enabled gestures.
+- **Personalization** - BI Hub dashboard is configurable to match up to your company's theme.
 
-* **Unified view of BI assets** – A consolidated view of reports from multiple BI platforms in onepage.
+BI Hub comprises of 3 components - **BI Hub Server, BI Hub Web**, and **BI Hub Agents**.
 
-* **Incredibly easy setup and maintenance** - Easy to setup and 100% automated synchronization between BI Hub and BI platforms
+:::important
+Follow the sequence of steps explained in this Installation guide for a smooth installation of BI Hub.
+:::
 
-BI Hub 1.5 consists of **BI Hub Server, BI Hub Web, BI Hub Agents**.
-
-This installation document explains the steps involved in installation of the three components and procedure to check the success/failure of the installation process.
+:::note
+Every installation step also carry out the success/failure checks of the installation process.
+:::

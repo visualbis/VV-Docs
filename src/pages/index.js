@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -7,97 +7,71 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
-  /*
-  {
-    title: <>BI Hub Server</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  */
- /*
-  {
-    title: <>BI Hub Web</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  */
- /*
-  {
-    title: <>BI Hub Agents</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-  */
+    {
+        link: '/docs/installation-guide/welcome',
+        title: 'Installation Guide',
+        image: 'img/installer-guide.svg',
+        description: 'Guide with pre-requisities, installation, and configuration steps for all the BI Hub components - BI Hub Server, Web, and Agents',
+    },
+    {
+        link: '/docs/admin-guide/getting-started/welcome',
+        title: 'Administration Guide',
+        image: 'img/admin-guide.svg',
+        description: 'Guide with administration tasks like configuring agents, authentication, adding users and reports, and on-going maintenance',
+    },
+    {
+        link: '/docs/user-guide/onboard',
+        title: 'User Guide',
+        image: 'img/user-guide.svg',
+        description: 'User Guide on how to configure every section in the BI Hub application such as the Dashboard, Reports, Hub folders, and BI Platform.',    }
 ];
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
+function Feature({ image, title, description, link }) {
+    const imgUrl = useBaseUrl(image);
+    const linkUrl = useBaseUrl(link);
+
+    return (
+        <Link className={classnames("col col--4")} to={linkUrl} >
+            <div className={styles.features}>
+                <div className="text--center">
+                    <img className={styles.featureImage} src={imgUrl} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <p>{description}</p>
+            </div>
+        </Link>
+    );
 }
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  return (
-    <Layout
-      title={`${siteConfig.title} Docs`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </header>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
-    </Layout>
-  );
+    const context = useDocusaurusContext();
+    const { siteConfig = {} } = context;
+    return (
+        <Layout
+            title={`${siteConfig.title} - BI Hub Documentation`}
+            description="Your BI Search Engine">
+            <header className={classnames('hero hero--primary', styles.heroBanner)}>
+                <div className="container">
+                    <h1 className="hero__title">{siteConfig.title}</h1>
+                    <p className="hero__subtitle">{siteConfig.tagline}</p>
+                                       
+                </div>
+            </header>
+            <main>
+                {features && features.length && (
+                    <section className={classnames(styles.mainContainer)}>
+                        <div className="container">
+                            <div className="row">
+                                {features.map((props, idx) => (
+                                    <Feature key={idx} {...props} />
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                )}
+            </main>
+        </Layout>
+    );
 }
 
 export default Home;

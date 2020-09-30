@@ -1,3 +1,3 @@
 const fs = require("fs");
-fs.writeFileSync("./static/CNAME", "docs.bihub.com");
+fs.writeFileSync("./static/CNAME", "staging.docs.bihub-new.com");
 console.log("cname removed")

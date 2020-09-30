@@ -6,11 +6,17 @@ sidebar_label: Installation
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-BI Hub installation consists of installation of three components: **BI Hub Server, BI Hub Web and BI Hub agents**.
+BI Hub installation process consists of installing three components: **BI Hub Server, BI Hub Web**, and **BI Hub agents**.
 
-:::important
-It is very important that the steps explained in this section are followed in the order given below.
+:::warning
+Follow the sequence of steps explained in this Installation guide for a smooth installation of BI Hub.
 :::
 
-At each stage of the installation, the process to verify the successful installation and details of configuring the components are also explained in detail.
-During installation, if there are any issues, the BI Hub support team can be contacted at support@visualbi.com
+:::note
+Every installation step also carry out the success/failure checks of the installation process.
+:::
+
+:::important
+If you face any installation issues, kindly contact the BI Hub support team with complete failure log details at support@bihub.com.
+:::
+
