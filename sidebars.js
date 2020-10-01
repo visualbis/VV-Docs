@@ -17,23 +17,24 @@ module.exports = {
     ],
     "Installation of BI Hub for Windows Platform": [ 
         "installation-guide/install-bihub-windows/install",
-    
-
     {
         type: "category",
         label: "Server Installation",
         items: [ "installation-guide/install-bihub-windows/server/install",
-        "installation-guide/install-bihub-windows/server/config",
-        "installation-guide/install-bihub-windows/server/config-tab",
-        "installation-guide/install-bihub-windows/server/instances-tab",
+        {
+            type: "category",
+            label: "Server Configuration",
+            items: [
+                "installation-guide/install-bihub-windows/server/config/config",
+                "installation-guide/install-bihub-windows/server/config/config-tab",
+                "installation-guide/install-bihub-windows/server/config/instances-tab",
+            ],
+        },  
         "installation-guide/install-bihub-windows/server/post-config",
         "installation-guide/install-bihub-windows/server/troubleshooting",
-        
         ],
-       
     },
 
-    
     {
         type: "category",
         label: "Web Installation",
