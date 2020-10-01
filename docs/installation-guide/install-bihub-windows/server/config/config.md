@@ -1,7 +1,7 @@
 ---
 id: config
 title: BI Hub Server Configuration
-sidebar_label: BI Hub Server Configuration
+sidebar_label: Server Configuration
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
