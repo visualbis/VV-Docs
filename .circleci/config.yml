@@ -20,6 +20,10 @@ jobs:
       - run:
           name: Yarn Install
           command: yarn install
+      
+      - run:
+          name: "Set cname"
+          command: node set-cname.js
 
       - run:
           name: Deploying to GitHub Pages
