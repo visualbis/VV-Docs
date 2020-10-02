@@ -2,7 +2,7 @@ module.exports = {
   title: "BI Hub",
   tagline: "Your BI Search Engine",
   url: "https://github.com/visualbis/VV-Docs",
-  baseUrl: "/VV-Docs/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
   organizationName: "visualbis", // Usually your GitHub org/user name.
