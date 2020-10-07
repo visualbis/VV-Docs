@@ -94,18 +94,18 @@ After configuring all this section, press save and continue to start configuring
 
 ## Web Config
 
-| | |
-| --- | --- |
-| URL | |
-| Port | |
+| Type | Purpose | Description |
+| --- | --- | --- |
+| URL | Provide the DNS resolvable URL for the BI Hub Web | This is the DNS resolvable URL for logging into BI Hub Web application |
+| Port | Provide the Port number for the BI Hub Web | Default value for HTTP is 80, for HTTPS is 443 |
 
 ## Message Queue
 
-| | |
-| --- | --- |
-| Host | |
-| Username | |
-| Password | |
-| Port | | 
+| Type | Purpose | Description |
+| --- | --- | --- |
+| Host | Hostname for the machine where you have installed the Message Queue | Enter localhost as its value (change required only while configuring high availability configuration)|
+| Username | Username to login | Enter the same username you provided while installing BI Hub Server |
+| Password | Password to login | Enter the same password you provided while installing BI Hub Server |
+| Port | Message Queue Port value | Default value 5672 | 
 
 
