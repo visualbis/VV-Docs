@@ -16,15 +16,22 @@ To verify the successful installation and configuration of BI Hub Server,  perfo
 * If SSL is not enabled, go to URL `http://<hostname>:<instance_port>`
 * The webpage with the message Welcome to BI Hub as shown in the figure below should appear.
 
+> Replace the image
   <div style={{textAlign: 'center'}}>
     <Zoom>
       <img alt="BI Hub Server Verification Screen" src={useBaseUrl('doc-images/welcome.png')}/>
     </Zoom>
   </div>
 
-*Figure 3.2: BI Hub Server Verification Screen*
+*BI Hub Server Verification Screen*
 
-If the above webpage is seen, then BI Hub server installation and configuration is successfully completed.
+:::success
+The webpage shown indicates that you have successfully completed the BI Hub server installation and configuration.
+:::
 
 The next component to be installed is, BI Hub Web, which is explained in the section <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/web/install')}>Installation of BI Hub Web</Link>
 
+:::note
+- Verify all the instances are in running state by following the above mentioned steps
+- After a restart, the server takes a bit longer time to warm up the first time. Kindly be patient.
+:::
