@@ -12,13 +12,19 @@ But if there is additional SSL configuration or to change the configuration that
 
 ## Changing BI Hub Server URL Details
 
-BI Hub Web will be configured with provided URL details of BI Hub Server in the installation step number 4. But if you want to change the configuration for any reasons, then you need to follow the steps below.
+BI Hub Web will be configured with the URL details provided in the section [Installation of BI Hub Web](install), step number 4.
+If you want to change the configuration, follow the below steps:
 
-* Open the config.json file in administrator mode. If you have installed the bundled Nginx version of BI Hub Web, then the config.json file could be found in the `<installation folder>/nginx/nginx/html/`. You can open it by using the `openconfig.bat` which will be found in the same location. It will help you to open the configuration file.
+* Open the `config.json` file in administrator mode. If you have installed the bundled Nginx version of BI Hub Web, then the config.json file could be found in the `<installation folder>/nginx/nginx/html/`. To open the configuration file, right click `openconfig.bat` and choose *run as administrator* from the same location. 
 * If you have installed the non-bundled version of BI Hub Web, then the config.json file could be found in the `<installation folder>/`.
 * Replace the host with the desired URL of BI Hub Server URL. Please note that the URL should be DNS resolvable and it should be accessible for all client machines.
-* Replace the port with the desired BI Hub Server port. Save the file. There is no need for restarting the server. Make sure that the client browser cache has been cleared or restart the client browser for the new configuration to take effect.
+* Replace the port with the desired BI Hub Server port. Save the file. 
 
+:::note
+There is no need for restarting the server. Make sure that the client browser cache has been cleared or restart the client browser for the new configuration to take effect.
+:::
+
+<!-- 
 ## SSL Configuration
 
 If you have installed BI Hub Web without Nginx, then configuring SSL will be out of the scope for this documentation. If you have installed BI Hub Web with Nginx, then follow the steps below to properly configure SSL.
@@ -35,6 +41,7 @@ By default,the bundled Nginx will contain the self-signed SSL certificate issued
 
 If you continue to have the problem, you could raise the support ticket in support portal or by sending email to support@visualbi.comwith supported log files and error images.
 
-:::important
+:::importantw
 If you are going to configure SSL, please make sure that BI Hub Server and BI Hub Agents and its respective BI platforms should be also configured with proper SSL. You cannot access http content from the https protocol. Browser will throw the mixed content error, if you try to access http content from the https URL.
 :::
+-->
