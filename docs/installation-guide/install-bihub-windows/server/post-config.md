@@ -16,10 +16,9 @@ To verify the successful installation and configuration of BI Hub Server,  perfo
 * If SSL is not enabled, go to URL `http://<hostname>:<instance_port>`
 * The webpage with the message Welcome to BI Hub as shown in the figure below should appear.
 
-> Replace the image
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="BI Hub Server Verification Screen" src={useBaseUrl('doc-images/welcome.png')}/>
+      <img alt="BI Hub Server Verification Screen" src={useBaseUrl('/doc-images/installation-guide/bihub-web-welcome-verification.png')}/>
     </Zoom>
   </div>
 

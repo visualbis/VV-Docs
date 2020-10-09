@@ -50,8 +50,6 @@ module.exports = {
         label: "Agents Installation",
         items: [
             "installation-guide/install-bihub-windows/agents/install",
-            "installation-guide/install-bihub-windows/agents/port",
-            "installation-guide/install-bihub-windows/agents/config",
             {
                 type: "category",
                 label: "BI Platform Agent Configuration",
@@ -73,7 +71,7 @@ module.exports = {
             "installation-guide/install-bihub-windows/agents/post-config",
         ]
     },
-    "installation-guide/install-bihub-windows/synch-bihub-platforms",
+/*    "installation-guide/install-bihub-windows/synch-bihub-platforms", */
 
     
 /*        {
@@ -81,6 +79,10 @@ module.exports = {
 */
 
 
+    ],
+    "Advanced": [
+        "installation-guide/advanced/ssl-config",
+        "installation-guide/advanced/agent-config"
     ],
     "Upgrade Trial Version": [
         "installation-guide/upgrade-trial/upgrade-trial"

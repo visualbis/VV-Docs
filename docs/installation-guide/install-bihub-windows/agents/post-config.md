@@ -14,16 +14,20 @@ After successfully configuring the agent and its respective BI Platforms, you ca
 * If you have configured agent with SSL, use https instead of http.
 * You should see the screen as shown in the figure below.
 
+> Change image
+
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="Agent Success Screen" src={useBaseUrl('/doc-images/post-config/agent-success.png')}/>
   </Zoom>
 </div>
 
-*Figure 3.9: Agent Success Screen*
+*Agent Success Screen*
 
 If you didn’t get the success screen, kindly follow the troubleshooting steps given below.
 
+:::warning
+REWRITE
 ### Troubleshooting Steps
 
 - Verify whether the instance is in running state in Agent Instance Manager in BI Hub Web.
@@ -32,5 +36,6 @@ If you didn’t get the success screen, kindly follow the troubleshooting steps 
 - If you have enabled SSL, verify whether you have valid SSL certificate. Check the logs for any SSL certificate error. If there is SSL certificate error, Server instance will fall back to http. You could verify by visiting the http URL
 - Verify any BI Platform connection or authentication errors have occurred in log.
 - Change the log level to Info in `manager.ini` and try to restart the agent service manager. After that check whether any errors have occurred in the log.
+:::
 
 If you are not able to successfully connect the server after following this steps, kindly contact the BI Hub Support Team by raising ticket in the support portal or by sending email to support@visualbi.com with the supporting log files with the logger level set to Info.

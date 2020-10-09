@@ -1,5 +1,5 @@
 ---
-id: config
+id: agent-config
 title: BI Hub Agent Configuration
 sidebar_label: BI Hub Agent Configuration
 ---
