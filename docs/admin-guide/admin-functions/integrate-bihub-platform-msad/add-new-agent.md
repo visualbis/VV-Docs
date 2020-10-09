@@ -29,7 +29,7 @@ Follow the steps below to add a new agent:
   </Zoom>
  </div>
 - Click on the Agent Manager Tab and then click on Add Agent given on the right top corner to open the Add Agent page.
-- Type agent information such as Agent name, Server and Port. The port number that was given during the installation of the agent should be entered here. Please check the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/port')}>BI Hub Installation Guide V1.5.4 - Port Requirements</Link> for reference. The tool tips will provide necessary guidance.
+- Type agent information such as Agent name, Server and Port. The port number that was given during the installation of the agent should be entered here. Please check the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide V1.5.4 - Port Requirements</Link> for reference. The tool tips will provide necessary guidance.
 - Click on Continue and the Add instance dialog box appears.
 - Attributes will be accepted depending on the agent type being added.
     For ex: BOBJ agent instance attributes are very different from Qlik

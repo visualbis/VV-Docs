@@ -33,7 +33,7 @@ Every newly added instance has to be started and must be in the running state
 :::
 
 * To start the instances press the play button ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/start.svg')} width="15"/></Zoom> ) for that instance.
-* To restart the instance, press the reload icon ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/refresh.svg')} width="15" height="15"/></Zoom> ) for that instance.
+* To restart the instance, press the reload icon ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/refresh.svg')} width="20" height="20"/></Zoom> ) for that instance.
 * To stop the already started instances, press the stop button ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/stop.svg')} width="15"/></Zoom> ) for that instance.
 
 :::note

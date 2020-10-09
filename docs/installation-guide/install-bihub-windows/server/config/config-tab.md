@@ -5,6 +5,7 @@ sidebar_label: Config Tab
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from "@docusaurus/Link";
 
 Editing the configuration properties affects the BI Hub server and requires a restart of BI Hub Server instances.
 
@@ -13,16 +14,18 @@ Kindly click the **Continue** button upon changing the instances configuration p
 :::
 
 This tab contains following sections which are as follows.
-- [General Section](#general-section): This section will have configuration fields which are general to the server.
-- [Database Section](#database-section)
-- [Audit Database Section](#audit-database-section)
-- [SSL Section](#ssl-section)
-- [Elastic Search Section](#elastic-search-section)
-- [Mail Connection Server](#mail-connection-server)
+- [General Section](#general-section): Configuration fields general to the BI Hub server.
+- [Database Section](#database-section): Configuration fields of the main database connection to the server.
+- [Audit Database Section](#audit-database-section): Configuration fields of the audit database connection to the server.
+- [SSL Section](#ssl-section): Establish a secure connection via SSL between browser and BI Hub Server.
+- [Elastic Search Section](#elastic-search-section): Configure the Elastic Search details.
+- [Mail Connection Server](#mail-connection-server): Configure Mail connection server.
+- [Web Config](#web-config): BI Hub Web configuration.
+- [Message Queue](#message-queue): Message Queue configurations
 
 ## General Section
 
-This section will have configuration fields which are general to the server.
+This section lists out the general BI Hub Server configuration fields.
 
 | Property | Purpose | Description |
 | --- | --- | --- |
@@ -35,12 +38,11 @@ This section will have configuration fields which are general to the server.
 
 ## Database Section
 
-This section will have configuration fields related to the main database connection to the server.
-
+This section defines the configuration fields related to the main database connection to the BI Hub server.
 
 ## Audit Database Section
 
-This section will have configuration fields related to the audit database connection to the server.
+This section defines configuration fields related to the audit database connection to the server.
 
 | Property | Purpose | Description |
 | :--- | :--- | :--- |
@@ -60,7 +62,7 @@ This section will have configuration fields related to the audit database connec
 
 This section establishes a secure connection via SSL between browser and BI Hub Server. 
 For the initial configuration please skip this section without any changes.
-To configure SSL in all the BI Hub configuration, please follow the [SSL Configuration](#).
+To configure SSL in all the BI Hub configuration, please follow the <Link to={useBaseUrl('docs/installation-guide/advanced/ssl-config')}>SSL Configuration</Link> section.
 
 ## Elastic Search Section
 
@@ -94,12 +96,16 @@ After configuring all this section, press save and continue to start configuring
 
 ## Web Config
 
+This section defines the URL and Port configuration required to setup BI Hub Web.
+
 | Type | Purpose | Description |
 | --- | --- | --- |
 | URL | Provide the DNS resolvable URL for the BI Hub Web | This is the DNS resolvable URL for logging into BI Hub Web application |
 | Port | Provide the Port number for the BI Hub Web | Default value for HTTP is 80, for HTTPS is 443 |
 
 ## Message Queue
+
+Message Queue configuration parameters and their description.
 
 | Type | Purpose | Description |
 | --- | --- | --- |
