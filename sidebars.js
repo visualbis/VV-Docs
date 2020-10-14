@@ -82,7 +82,13 @@ module.exports = {
     ],
     "Advanced": [
         "installation-guide/advanced/ssl-config",
-        "installation-guide/advanced/agent-config"
+        "installation-guide/advanced/agent-config",
+        "installation-guide/advanced/load-balance",
+        "installation-guide/advanced/architecture",
+        "installation-guide/advanced/backup-restore",
+        "installation-guide/advanced/db-purge",
+        "installation-guide/advanced/services-info",
+        "installation-guide/advanced/server-restart-checklist",
     ],
     "Upgrade Trial Version": [
         "installation-guide/upgrade-trial/upgrade-trial"
