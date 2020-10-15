@@ -1,7 +1,7 @@
 ---
 id: power-bi 
 sidebar_label: POWER BI 
-title: PowerBI Platform Configuration
+title: Power BI Platform Configuration
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";

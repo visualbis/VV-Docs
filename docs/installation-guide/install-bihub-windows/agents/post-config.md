@@ -14,7 +14,9 @@ After successfully configuring the agent and its respective BI Platforms, you ca
 * If you have configured agent with SSL, use https instead of http.
 * You should see the screen as shown in the figure below.
 
-> Change image
+:::warning
+Check with the developer team/Nithya for the change in text in the image - "VBI View" to "BI Hub"
+:::
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
