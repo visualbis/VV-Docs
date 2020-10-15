@@ -42,9 +42,12 @@ import "react-medium-image-zoom/dist/styles.css";
   </Zoom>
  </ div>
 
-The *TrustedPrinciple.conf* will get downloaded. This file must then be copied to the `<agent installation location>/TRUSTED/` directory.
+:::success
+The *TrustedPrinciple.conf* will get downloaded. 
+:::
 
-2. Next, we need to disable the CORS settings by editing the *crossdomain.xml* file.
+<!-- Obselete step ? Confirm with Nithya 
+1. Next, we need to disable the CORS settings by editing the *crossdomain.xml* file.
  Location of the *crossdomain.xml* file: `<Business Objects installation directory>\Tomcat55\webapps\ROOT\`.
 
  Change the following section.
@@ -65,6 +68,7 @@ The *TrustedPrinciple.conf* will get downloaded. This file must then be copied t
  ```
 
 Save the file after making changes and proceed to the next step.
+
 
 3. Next we need to make the dashboards and reports in iframe compatibility (Web standards).
 Create a folder 'w3c' in `<Business Objects Installation directory>\Tomcat55\webapps\>`.
@@ -91,3 +95,8 @@ Create file *p3p.xml* in the folder with the following code in it.
 ```
 
 Save the file and restart the Apache Tomcat server.
+-->
+
+:::note
+Copy the *TrustedPrinciple.conf* file to the `<agent installation location>/TRUSTED/` directory to ensure that BOBJ instance is started.
+:::
