@@ -11,14 +11,22 @@ import "react-medium-image-zoom/dist/styles.css";
 
 We need to Setup the application in Azure Active Directory 
 
-This application will be the communication point for the PowerBIAgent. All calls to the Microsoft API's will be made on behalf of this application. This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenantfor steps to acquire a tenant.
+This application will be the communication point for the PowerBIAgent. All calls to the Microsoft API's will be made on behalf of this application. 
 
-Please contact the Active Directory Administrator to do the steps since some actions will require administrator consent.
+:::note
+This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant for steps to acquire a tenant.
+:::
 
-There are 3 main steps:
+:::important
+Contact the Active Directory Administrator to perform the following steps as some of the actions will require administrator consent.
+:::
 
-1. Set up the Application in Azure.
+There are 3 main steps to configure Power BI agent:
+- [Set up the Application in Azure](#set-up-the-application-in-azure)
+- [Create the Application Secret](#create-the-application-secret)
+- [Configure Permissions for the Application](#configure-permissions-for-the-application)
 
+### Set up the Application in Azure
  - Go to https://portal.azure.com
  - Navigate to Azure Active Directory and select App Registrations
  - Click on New Applicant registration.
@@ -29,9 +37,13 @@ There are 3 main steps:
   </Zoom>
   </ div>
 
- *Figure 3.4: Azure Application setup*
+ *Azure Application setup*
 
- - Set the name, type and redirect URI of the application. The type should be Native and the Redirect URI must be formatted as follows:https://servername:port/Redirect. Once the data is entered, click on Create. This URI should reflect the PowerBI Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
+ - Set the name, type and redirect URI of the application. 
+ :::note
+ The type should be Native and the Redirect URI must be formatted as `https://servername:port/Redirect` 
+ :::
+ - Once the data is entered, click on Create. This URI should reflect the PowerBI Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
 
   <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -39,7 +51,7 @@ There are 3 main steps:
   </Zoom>
   </ div>
 
- Figure 3.5: Application Registration
+ *Application Registration*
 
  - Note the Application ID upon successfully registering the application.
 
@@ -48,40 +60,56 @@ There are 3 main steps:
       <img alt="New Application Id" src={useBaseUrl('/doc-images/powerbi/new-app-id.png')}/>
   </Zoom>
   </ div>
-
- - Provide this under the key "CLIENTID" in the *config.json* file in the PowerBI agent.
- - To verify the Redirect URI, Click on the application and go to Settings. Select Redirect URI. The URI given during create will be reflected here.
-
+ 
+ :::note
+ Provide this under the key "CLIENTID" during the configuration of Power BI agent in BI Hub. 
+ :::
+ - To verify the Redirect URI, Click on the application and go to Authentication. 
+ > The URL shown here is the one that you entered while creating the new application. 
+ 
   <div style={{textAlign: 'center'}}>
    <Zoom>
     <img alt="Settings page & Redirect URI" src={useBaseUrl('/doc-images/powerbi/settings-redirect.png')}/>
    </Zoom>
   </ div>
 
- *Figure 3.6: Settings page & Redirect URI*
+ *Settings page & Redirect URI*
 
-2. Create the Application Secret.
+### Create the Application Secret
    
- - Open the application inAzure Portal. Navigate to All Settings →Keys and create a new key.
- - Specify a desired value for the key name and note down the value provided.
-
+ - Go to **Azure portal > azure active directory > App registrations** and click on your application.
+ - Navigate to Certificates & secrets and click on **New Client secret** to add a new key.
+ - Specify a description and duration for client secret and click on **Add**.  
+ 
   <div style={{textAlign: 'center'}}>
   <Zoom>
-    <img alt="Application Key setup" src={useBaseUrl('/doc-images/powerbi/app-key-setup.png')}/>
+    <img alt="Client secret setup" src={useBaseUrl('/doc-images/powerbi/app-key-setup.png')}/>
   </Zoom>
   </ div>
 
-  *Figure 3.7: Application Key setup*
+  *Client secret setup*
 
- - Note that, this value will be displayed only once and will not be displayed again after we close the blade. This value will be the CLIENTSECRET in the config.json file of Power BI Agent.
- - If failed to note down the value, please repeat step two to create a new key.
+ The Client secret is added and the value is displayed.
 
-3. Configure Permissions for the Application
+   <div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="Client Secret" src={useBaseUrl('/doc-images/powerbi/client-secret.png')}/>
+  </Zoom>
+  </div>
 
- - The application requires some permission to do the actions on behalf of the user. 
- - Click on the application and go to settings →required permissions. 
+ *Client Secret* 
+
+ :::note
+ Provide this under the key "CLIENTSECRET" during the configuration of Power BI agent in BI Hub.
+ If failed to note down the value, please repeat the step [Create the Application Secret](#create-the-application-secret) to create a new key.
+ :::
+
+### Configure Permissions for the Application
+
+ The application requires some permission level actions on behalf of the user. 
+ - Go to **Azure portal > azure active directory > App registrations** and click on your application and select **API permissions**.
  - Click on Add.
- - Map the permissions for the API's referring to the table below for Microsoft Graph API , Windows Azure Active Directory APIand Microsoft Power BI API .
+ - Map the permissions for the API's referring to the table below for **Microsoft Graph API , Windows Azure Active Directory API** and **Microsoft Power BI** API.
 
 | **API**                              | **Permissions**            | **Access Details**                         |
 | ------------------------------------ | -------------------------- | ------------------------------------------ |
@@ -96,30 +124,27 @@ There are 3 main steps:
 |                                      | Directory.AccessAsUser.All | Access the directory as the signed-in user |
 | **Power BI Service**                 | Dashboard.Read.All         | View All Dashboards                        |
 |                                      | Dataset.Read.All           | View all datasets                          |
-|                                      | Dataset.ReadWrite.All      | Read and write all datasets                |
 |                                      | Metadata.View_Any          | View Content Properties                    |
 |                                      | Report.Read.All            | View All Reports                           |
 |                                      | Group.Read.All             | View All Groups                            |
 |                                      | Group.Read                 | View User's Group                          |
-|                                      | Report.ReadWrite.All       | Read and write all reports                 |
 |                                      | App.Read.All               | View All PowerBI Apps                      |
 |                                      | Capacity.Read.All          | View all capacities                        |
 |                                      | Tenant.Read.All            | View All content in tenant                 |
 |                                      | Workspace.Read.All         | View all workspaces                        |
 
- *Table 3.3: Permissions to be given*
+ *Permissions to be given*
 
- - Click Save. Upon granting the permissions, click Grant Permissions to delegate the permissions to the service account.
+ - Click Save. Upon granting the permissions, click **Grant Permissions** to delegate the permissions to the service account.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="Permissions to be given" src={useBaseUrl('/doc-images/powerbi/permission.png')}/>
+<img alt="Permissions to be given" src={useBaseUrl('/doc-images/powerbi/permissions-consolidated.png')}/>
   </Zoom>
 </ div>
 
-  *Figure 3.8: Permissions*
+  *Permissions*
 
-The below listed Permissions need to be given to the BI Hub Power BI Agent service account
-
-1. Office 365 Global Administrator
-1. Power BI Service Administrator
+The permissions must be given to the BI Hub Power BI Agent service account:
+- Office 365 Global Administrator
+- Power BI Service Administrator
