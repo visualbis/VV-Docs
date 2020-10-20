@@ -27,9 +27,8 @@ There are 3 main steps to configure Power BI agent:
 - [Configure Permissions for the Application](#configure-permissions-for-the-application)
 
 ### Set up the Application in Azure
- - Go to https://portal.azure.com
- - Navigate to Azure Active Directory and select App Registrations
- - Click on New Applicant registration.
+ - Open the Azure portal > https://portal.azure.com
+ - Go to **Azure Active Directory > App Registrations > New Application registration**
 
   <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -39,11 +38,7 @@ There are 3 main steps to configure Power BI agent:
 
  *Azure Application setup*
 
- - Set the name, type and redirect URI of the application. 
- :::note
- The type should be Native and the Redirect URI must be formatted as `https://servername:port/Redirect` 
- :::
- - Once the data is entered, click on Create. This URI should reflect the PowerBI Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
+- Set the name, type and redirect URI of the application. 
 
   <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -52,6 +47,15 @@ There are 3 main steps to configure Power BI agent:
   </ div>
 
  *Application Registration*
+
+ :::note
+ The type should be Native and the Redirect URI must be formatted as `https://servername:port/Redirect` 
+ :::
+
+- Click **Create**.
+  :::note
+  This URI should reflect the PowerBI Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
+  :::
 
  - Note the Application ID upon successfully registering the application.
 
@@ -78,7 +82,7 @@ There are 3 main steps to configure Power BI agent:
 ### Create the Application Secret
    
  - Go to **Azure portal > azure active directory > App registrations** and click on your application.
- - Navigate to Certificates & secrets and click on **New Client secret** to add a new key.
+ - Navigate to **Certificates & Secrets** and click on **New Client secret** to add a new key.
  - Specify a description and duration for client secret and click on **Add**.  
  
   <div style={{textAlign: 'center'}}>
@@ -135,7 +139,7 @@ There are 3 main steps to configure Power BI agent:
 
  *Permissions to be given*
 
- - Click Save. Upon granting the permissions, click **Grant Permissions** to delegate the permissions to the service account.
+ - Click **Save** and then click **Grant Permissions** to delegate the permissions to the service account.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>

@@ -15,47 +15,58 @@ There are two ways to access SharePoint data as listed below:
 
 We have integrated SharePoint in our BIHub using the second method.
 
-**SharePoint App Registration**
+## SharePoint App Registration
 
-To register an app in SharePoint,navigate to the "New App Registration" page. The URL of that page will be similar to https://yourtenantname.sharepoint.com/_layouts/15/appregnew.aspx.
+ - Open the Azure portal > https://portal.azure.com
+ - Go to **Azure Active Directory > App Registrations > New Application registration**
+ - The URL of the page will be similar to https://yourtenantname.sharepoint.com/_layouts/15/appregnew.aspx.
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="App Registeration" src={useBaseUrl('/doc-images/sharepoint/app-register.png')}/>
-  </Zoom>
-</div>
+ <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="App Registration" src={useBaseUrl('/doc-images/sharepoint/app-register.png')}/>
+   </Zoom>
+ </div>
 
-This will be the client id and client secret, you will be provided in `config.json`.
+ > The **Client Id** and **Client Secret** generated above will be used for configuration of Sharepoint in BI Hub.
+ 
+ :::note
+ Copy and save the **Client Id** and **Client Secret** to be used in further configuration screens.
+ :::
 
-Fill the details in that page as per the following table and click "Create".
+ - Fill the details in the page as per the following table and click **Create**.
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="App Registeration Fields" src={useBaseUrl('/doc-images/sharepoint/app-register-fields.png')}/>
-  </Zoom>
-</div>
+ <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="App Registration Fields" src={useBaseUrl('/doc-images/sharepoint/app-register-fields.png')}/>
+   </Zoom>
+ </div>
 
-Copy the generated Client Id and Client Secret into notepad (or any of your favorite editor) as we will need these later.
+ Now, the app is being registered and we need to provide the app with some permissions so that it can access data. 
+ - Click on the **appinv.aspx** page (with which you can grant permissions to an app). The URL of that page will be similar to `https://yourtenantname.sharepoint.com/_layouts/15/appinv.aspx`
+   - Paste the Client Id in the **App Id** text box and click on **Lookup**. This will load the details of the app that we registered previously.
 
-Now,the app is being registered and we need to provide the app with some permissions so that it can access data. In order to do that, navigate to the "appinv.aspx" page (with which you can grant permissions to an app). The URL of that page will be similar to the one given below https://yourtenantname.sharepoint.com/_layouts/15/appinv.aspx
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="AppInv App Details" src={useBaseUrl('/doc-images/sharepoint/appinv-details.png')}/>
+    </Zoom>
+  </div>
 
-On that page, paste the Client Id in the "App Id" text box and click on "Lookup". This will load the details of the app that we registered previously.
+   - In the **Permission Request XML** textbox paste the following XML and click **Create**
+   <div style={{textAlign: 'center'}}>
+    <Zoom>
+     <img alt="XML" src={useBaseUrl('/doc-images/sharepoint/xml.png')}/>
+    </Zoom>
+   </div>
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="AppInv App Details" src={useBaseUrl('/doc-images/sharepoint/appinv-details.png')}/>
-  </Zoom>
-</div>
+   :::tip
+    The XML provides full control to the app over the current web (this is the main permission required to configure the Sharepoint agent)
+   :::
 
-In the "Permission Request XML",paste the following XML. This XML says that the app can have full control over the current web (which is all that is needed for this case). If you need to give different permissions,then please take a look at [this article](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/add-in-permissions-in-sharepoint) by Microsoft.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="XML" src={useBaseUrl('/doc-images/sharepoint/xml.png')}/>
-  </Zoom>
-</div>
-
-Once XMLis added, click on "Create". In the next screen click on "Trust It" and this will mean that the app will have the required permissions.
+   :::note
+    If you want to provide different permissions,then please take a look at [this article](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/add-in-permissions-in-sharepoint) by Microsoft.
+    :::
+  
+- In the next screen click on **Trust It** to allow the app to have the required permissions.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -63,29 +74,42 @@ Once XMLis added, click on "Create". In the next screen click on "Trust It" and 
   </Zoom>
 </div>
 
-We need to do OAuth for the user, so we need to set up Azure Active Directory.
+## Setup the application in Azure
+
+To enable OAuth for the user, set up Azure Active Directory.
 
 :::important
 The below listed steps need to be followed for the registration of the Azure Active Directory:
 :::
 
-[x] Set up the Application in Azure.
+* Go to https://portal.azure.com
+* Click on **Azure Active Directory > App Registrations > New application registration**
 
-[x] Go to https://portal.azure.com
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="New App Registration" src={useBaseUrl('/doc-images/powerbi/azure-app-setup.png')}/>
+    </Zoom>
+  </div>
 
-[x] Navigate to Azure Active Directory and select App Registrations
-
-  - Click on New Applicant registration.
-
-<div style={{textAlign: 'center'}}>
+* Set  the  name, type  and  redirect  URI  of  the  application. 
+  
+  <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="New App Registeration" src={useBaseUrl('/doc-images/sharepoint/new-app-registeration.png')}/>
+    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/application-registeration.png')}/>
   </Zoom>
-</div>
+  </ div>
 
-Set  the  name, type  and  redirect  URI  of  the  application. The type should be  Native  and  the  Redirect  URI  must  be formatted as follows: `https://servername:port/Redirect`.
+ *Application Registration*
+  
+  :::note
+  The type should be  Native and  the  Redirect  URI  must  be formatted as: `https://servername:port/Redirect`.
+  :::
 
-Once the data is entered, click on Create. This URI should reflect the SharePoint Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
+* Click **Create**. 
+  
+  :::note
+  This URI should reflect the SharePoint Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
+  :::
 
 Note the Application ID upon successfully registering the application.
 
@@ -95,24 +119,40 @@ Note the Application ID upon successfully registering the application.
   </Zoom>
 </div>
 
-- Provide this under the key "userclientid" in the `config.json` file in the SharePoint agent.
+- Provide this under the key "userclientid" in the configuration of SharePoint in BI Hub
 
-Create the Application Secret -> Open the application in Azure Portal. 
+## Create the Application Secret 
 
-Navigate to **All Settings -> Keys** and create a **new key -> Specify a desired value for the key name** and note down the value provided.
-
-<div style={{textAlign: 'center'}}>
+ - Go to **Azure portal > azure active directory > App registrations** and click on your application.
+ - Navigate to Certificates & secrets and click on **New Client secret** to add a new key.
+ - Specify a description and duration for client secret and click on **Add**.  
+ 
+  <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="Keys" src={useBaseUrl('/doc-images/sharepoint/keys.png')}/>
+    <img alt="User Client secret setup" src={useBaseUrl('/doc-images/powerbi/app-key-setup.png')}/>
   </Zoom>
-</div>
+  </ div>
 
-Note that, this value will be displayed only once and will not be displayed again after we close the blade. This value will be the **userclientsecret** in the `config.json` file of SharePoint Agent.
+  *User client secret setup*
 
-If failed to note down the value, please repeat step two to create a new key.
+ The UserClient secret is added and the value is displayed.
 
+   <div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="Client Secret" src={useBaseUrl('/doc-images/powerbi/client-secret.png')}/>
+  </Zoom>
+  </div>
+
+ *Client Secret* 
+
+ :::note
+ Provide this under the key "USERCLIENTSECRET" during the configuration of Sharepoint agent in BI Hub.
+ If failed to note down the value, please repeat the step [Setup the application in Azure](#setup-the-application-in-azure) to create a new key.
+ :::
+
+<!-- A screenshot -->
+<!-- Confirm with Mohan if this is needed
 - **Sharepointsite** = Your sharepoint site url (For eg: https://yoursite.sharepoint.com/sites/test)
-
 - **ClientId** = Client ID Registered in sharepoint app 
 - **Clientsecret** = Client Secret Registered in sharepoint app 
 - **Userclientid** = Client ID Registered in Azure Portal
@@ -123,3 +163,4 @@ If failed to note down the value, please repeat step two to create a new key.
 - **Host** = Your sharepoint domain name without http/https. (For eg: `yourdomain.sharepoint.com`)
 - **Sharepointid** = 00000003-0000-0ff1-ce00-000000000000 (Common for all)
 - **Tenantid** = Tenant ID registered in Azure Portal
+-->
