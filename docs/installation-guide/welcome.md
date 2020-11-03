@@ -11,7 +11,7 @@ The Installation Guide for BI Hub application offered by Visual BI is meant for 
 
 ## What is BI Hub
 
-> BI Hub is a web-based Visual BI application product.
+BI Hub is a web-based Visual BI application product.
 
 BI Hub is a BI Reporting portal with a one-Stop Solution to all your BI content supporting On-prem, Cloud, Self-Service BI and Modern Data Analytics deployment. 
 Discover, Consume, Organize, Collaborate and optimize your BI assets using our Unified BI Platform by ensuring Report Governance.

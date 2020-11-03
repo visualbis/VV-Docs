@@ -14,7 +14,7 @@ This takes advantage of multi-threading processing and increases the CPU utiliza
 
 When you provide multiple instances, you need to load balance the instances on your own.
 
-:::warning
+:::caution
  At least one instance is required to run the BI Hub Server.
 :::
 
