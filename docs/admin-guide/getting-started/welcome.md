@@ -20,18 +20,8 @@ BI Hub a Visual BI product, is a web-based application which enables users to vi
 
 * Smart view and Discovery of BI assets – Discover not accessible assets and request access
 * Unified view of BI assets – A consolidated view of reports from multiple BI platforms in one page.
-* Incredibly easy setup and maintenance – Easy to setup and 100% automated synchronization between BI Hub and BI platforms
+* Incredibly easy setup and maintenance – Easy to setup and 100% automated synchronization between BI Hub and BI platforms.
 
-## Contents:
-
-Overview of BI Hub
-
-First time login
-
-Forgot Password
-
-Landing Page
-
-Admin Home Page
-
-
+:::important
+BI Hub app requires the Agents to be configured with the BI Hub Platform. Please refer the <Link to>BI Platform Agent Configuration</Link> section to configure the agents.
+:::

@@ -11,4 +11,4 @@ The following table shows the various Browsers compatible with BI Hub
 | Chrome      | Mozilla Firefox | Internet Explorer | Edge        |
 |-------------|-----------------|-------------------|-------------|
 | 35 or above | 30 or above     | 11.xxx            | 40 or above |
-*Table : Browser Compatibility*
+*Browser Compatibility*

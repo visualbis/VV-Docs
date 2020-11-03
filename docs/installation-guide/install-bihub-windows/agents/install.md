@@ -50,3 +50,7 @@ The recommended Port Requirements for the different Platforms have been listed i
 | Microstrategy | 13600 |
 
 *Port Requirements for Platforms*
+
+:::note
+A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
+:::
