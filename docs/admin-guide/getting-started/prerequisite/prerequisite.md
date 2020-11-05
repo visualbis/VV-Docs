@@ -5,7 +5,7 @@ sidebar_label: Administration Pre-requisite Guide
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Link from '@docusaurus/link';
+import Link from '@docusaurus/Link';
 
 BI Hub application requires the below components:
 - [x] BI Hub Server installed
@@ -16,7 +16,7 @@ Next, an *Agents* instance must be created and configured with the BI Hub Platfo
 * <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>Add new Agent</Link>
 * Agent configuration with BI Platform
 
-Kindly follow the steps given below to configure the BI Platform properly and make the trusted connection between the respective BI Hub Agent and its BI Platform:
+Kindly follow the steps given below to configure the BI Platform and make the trusted connection between the respective BI Hub Agent and its BI Platform:
 
 | Agent Name    | Configuration                                                                                                                                              |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -8,10 +8,11 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-To verify the successful installation of BI Hub Agents follow the steps below:
-* Open the Browser and navigate to `http://<agent_hostname>:<agent_instance_port>`
-* If you have configured agent with SSL, use https instead of http.
-* You should see the screen as shown in the figure below.
+To verify the successful installation of BI Hub Agents, open the Browser and navigate to the link `http://<agent_hostname>:<agent_instance_port>`.
+
+> Use `https` instead of `http` if you have configured the agents with SSL
+
+You should see the screen as shown in the figure below.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -20,6 +21,10 @@ To verify the successful installation of BI Hub Agents follow the steps below:
 </div>
 
 *Agent Success Screen*
+
+:::note
+A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
+:::
 
 If you didn’t get the success screen, kindly follow the troubleshooting steps given below.
 
