@@ -15,7 +15,7 @@ scenarios. The first step involved in setting up BI Hub is creating
 agents and its instances necessary to connect with BI platforms.
 Multiple instances of BI Hub agents are required for load balancing and
 high availability purposes and these are covered in detail in Section
-multipleinstances of this document.
+multiple instances of this document.
 
 ## Adding the Agent/Instances
 
