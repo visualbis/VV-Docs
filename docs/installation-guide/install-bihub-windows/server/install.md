@@ -25,11 +25,12 @@ Follow the steps below to install the BI Hub Server:
 1. Read through the license terms and conditions. To proceed further accept the license terms and click next to continue.
 1. In the next **Component Selection** screen - 
    - If you want to install the bundled *MySql database*, select **MySQL component** 
-   - If you have your database, click **Next** to continue to the **Directory Selection** screen
-1. In the Directory Selection screen, choose the directory to install BI Hub Server. The default directory is `C:\Program Files\Visual BI Solutions\BI Hub\BIHubServer`.
+   - If you have your own database, click **Next** to continue to the **Directory Selection** screen
+1. In the Directory Selection screen, choose the directory to install the BI Hub Server. The default directory is `C:\Program Files\Visual BI Solutions\BI Hub\BIHubServer`
+1. In the next **Message Queue** screen, you have to provide the Port number, username, and password which will be used in the configuration page of BI Hub Server. The default port number is 5672.
 1. Select the preferred License activation step and click Next
-   - *Online Mode* - Choose this option if this machine is connected to internet. If this machine is behind the firewall, make sure to whitelist the URL https://products.visualbi.com. If the installer can reach the BI Hub activation server, then it will navigate to the next screen.
-   - *Offline Mode* - Choose this option if this machine is not connected to internet. License can be activated offline.
+   - *Online Mode* - Choose this option if this machine is connected to the internet. If this machine is behind the firewall, make sure to whitelist the URL https://products.visualbi.com. If the installer can reach the BI Hub activation server, then it will navigate to the next screen.
+   - *Offline Mode* - Choose this option if this machine is not connected to the internet. The license can be activated offline.
 1. If *Offline mode* is chosen, continue with this step, else skip to Step 12. The next screen will give a unique activation key for this installation instance. Open https://products.visualbi.com/license-generator (Refer the screenshot below) in another computer which has internet connection. In that page, type the registered email address, the license key, and copy paste the activation key generated into the Key code box.
    <div>
      <Zoom>

@@ -10,7 +10,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 :::note
-To integrate QlikView into BIHUB, you must first install the the QlikView Agent. 
+To integrate QlikView into BIHUB, you must first install the QlikView Agent. 
 :::
 
 ## Configuration for QlikView

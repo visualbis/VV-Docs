@@ -22,9 +22,9 @@ Below are the steps to generate certificates:
 
 * Certificate generation form opens.
 * Click on Add machine name to which the certificate needs to be generated.
-* In the export file format for certificate dropdown, select platform independent PEM-format.
+* In the export file format for certificate dropdown, select platform-independent PEM-format.
 * Fill in other additional optional fields, but it’s not necessary.
-* Click export certificate button in the bottom.
+* Click the export certificate button in the bottom.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>

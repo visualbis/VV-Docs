@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 
 BI Hub is a web-based Visual BI product.
 
-BI Hub enables users to view and analyse reports built in various BI platforms in one page, without having to login into those platforms individually.
+BI Hub enables users to view and analyze reports built-in various BI platforms in one page, without having to login into those platforms individually.
 
 Highlights of this product includes but not limited to:
 
@@ -21,7 +21,7 @@ Highlights of this product includes but not limited to:
 
 BI Hub consists of **BI Hub Server, BI Hub Web, and BI Hub Agents**.
 
-This installation document explains the steps involved in installation of the three components and procedure to check the success/failure of the installation process.
+This installation document explains the steps involved in the installation of the three components and the procedure to check the success/failure of the installation process.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

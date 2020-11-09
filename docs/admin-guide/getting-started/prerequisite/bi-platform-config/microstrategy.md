@@ -14,7 +14,7 @@ To access MicroStrategy reports through BI Hub, SSO should be configured and ena
 The following steps are to be followed to achieve the same:
 
 * Mapping Windows AD users:
-  - In MicroStrategy Developer, select a user group under **Administration > User Manager**, right click on each user and select Edit
+  - In MicroStrategy Developer, select a user group under **Administration > User Manager**, right-click on each user and select Edit
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -56,7 +56,7 @@ The following steps are to be followed to achieve the same:
     </Zoom>
   </div>
 
-* In **MicroStrategy Web Administrator > Default Properties**, Enable the Windows Authentication and make it default and uncheck all the other login mode and change the '‘Trusted Authentication Providers' to Custom SSO
+* In **MicroStrategy Web Administrator > Default Properties**, Enable the Windows Authentication and make it default and un-check all the other login mode and change the '‘Trusted Authentication Providers' to Custom SSO
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
