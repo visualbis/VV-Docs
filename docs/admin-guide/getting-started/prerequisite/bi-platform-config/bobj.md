@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-1. BOBJ Agent uses Trusted Secret Key file mechanism to authenticate itself with the BOBJ. For this we need to generate and download the Trusted Secret Key for BOBJ authentication. Kindly follow the steps below:
+1. BOBJ Agent uses the Trusted Secret Key file mechanism to authenticate itself with the BOBJ. For this we need to generate and download the Trusted Secret Key for BOBJ authentication. Kindly follow the steps below:
  - Login to the BOBJ CMC
  - In the Central Management Console Screen, select Authentication from the top down list.
  - Select Enterprise from the menu list.
@@ -98,5 +98,5 @@ Save the file and restart the Apache Tomcat server.
 -->
 
 :::note
-Copy the *TrustedPrinciple.conf* file to the `<agent installation location>/TRUSTED/` directory to ensure that BOBJ instance is started.
+Copy the *TrustedPrinciple.conf* file to the `<agent installation location>/TRUSTED/` directory to ensure that the BOBJ instance is started.
 :::

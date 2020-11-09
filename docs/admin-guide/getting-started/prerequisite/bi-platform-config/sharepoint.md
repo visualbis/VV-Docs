@@ -27,7 +27,7 @@ We have integrated SharePoint in our BIHub using the second method.
    </Zoom>
  </div>
 
- > The **Client Id** and **Client Secret** generated above will be used for configuration of Sharepoint in BI Hub.
+ > The **Client Id** and **Client Secret** generated above will be used for the configuration of Sharepoint in BI Hub.
  
  :::note
  Copy and save the **Client Id** and **Client Secret** to be used in further configuration screens.
@@ -76,7 +76,7 @@ We have integrated SharePoint in our BIHub using the second method.
 
 ## Setup the application in Azure
 
-To enable OAuth for the user, set up Azure Active Directory.
+To enable OAuth for the user, set up the Azure Active Directory.
 
 :::important
 The below listed steps need to be followed for the registration of the Azure Active Directory:

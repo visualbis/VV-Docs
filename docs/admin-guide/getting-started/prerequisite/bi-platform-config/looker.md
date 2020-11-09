@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-Admin needs to configure the following keys in Looker platform in order to authenticate the application and fetch the Dashboards and Users from it.
+Admin needs to configure the following keys in the Looker platform in order to authenticate the application and fetch the Dashboards and Users from it.
 
 **API3 Credentials**
 
@@ -32,11 +32,11 @@ Admin needs to configure the following keys in Looker platform in order to authe
 
 **API Host URL**
 
-API Host URL is used to reach the Looker API server endpoint. It must have host name and port. The default port is 19999. Kindly follow the below steps to setup the URL.
+API Host URL is used to reach the Looker API server endpoint. It must have a hostname and port. The default port is 19999. Kindly follow the below steps to setup the URL.
 
 1. Click Admin to open the Admin menu
 1. Click API in the Admin panel
-1. Set the new API in API Host URL input field
+1. Set the new API in the API Host URL input field
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
@@ -46,7 +46,7 @@ API Host URL is used to reach the Looker API server endpoint. It must have host 
 
 **Looker’s Secret Key**
 
-The Looker’s Secret Key is used to validate the SSO embedding request and embed the dashboards into application. Follow the below steps to setup the looker’s secret key in looker instance.
+The Looker’s Secret Key is used to validate the SSO embedding request and embed the dashboards into the application. Follow the below steps to setup the looker’s secret key in the looker instance.
 
 1. Go to the Embed page in the Admin section of Looker
 1. Select "Enabled" from the Embed Authentication drop-down and the press Update

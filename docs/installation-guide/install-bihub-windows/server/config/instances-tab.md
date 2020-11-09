@@ -10,7 +10,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 Instances tab is used to configure **BI Hub Server Instances**. 
-This takes advantage of multi-threading processing and increases the CPU utilization.
+This takes advantage of multi-threading processing and increases CPU utilization.
 
 When you provide multiple instances, you need to load balance the instances on your own.
 
@@ -26,7 +26,7 @@ When you provide multiple instances, you need to load balance the instances on y
 
 *BI Hub Server Instances*
 
-* To add new instance press, Add New Instances button in the top right corner to launch New form. In that form, provide name of the instance and the port number at which the Instance will need to run.
+* Click the **Add instance** button in the top right corner to add a new instance. In the pop window, enter an *instance* name and the *Port* number at which the instance will run.
 
 :::note
 Every newly added instance has to be started and must be in the running state
@@ -42,5 +42,5 @@ Deleting any instance will not delete data, but just the snapshot of it. The dat
 
 * To delete an instance press trash icon ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/delete.svg')} width="15"/></Zoom> ) for that instance.
 
-With the adding of instances, configuration of BI Hub Server is completed.
+With the adding of instances, the configuration of the BI Hub Server is completed.
 To verify the configuration, kindly follow the next section.

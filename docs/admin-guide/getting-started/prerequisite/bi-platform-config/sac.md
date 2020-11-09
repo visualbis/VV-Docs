@@ -11,11 +11,11 @@ import "react-medium-image-zoom/dist/styles.css";
 
 SAC allows third-party applications to access its web services by using the authorization protocol [OAuth2.0](https://oauth.net/2/). With OAuth 2.0, we can make web service calls without exchanging user credentials between applications.
 
-To integrate SAC Platform with BI Hub, you need to do some setup in your SAC tenant. There are 2 authorization methods available.
+To integrate the SAC Platform with BI Hub, you need to do some setup in your SAC tenant. There are 2 authorization methods available.
 * Step 1: Register a new client with grant type as 'Authorization Code' - User
 * Step 2: Register a new client with grant type as 'Client Credentials' – Resource Owner
 
-User needs to do OAuth to access a SAC resource, To Register an OAuth client, follow the below steps.
+The user needs to do OAuth to access a SAC resource, To Register an OAuth client, follow the below steps.
  * Login to your SAC tenant as an admin.
  * Navigate to the administration page by clicking on ** ≡ (Main Menu) > System > Administration**.
 

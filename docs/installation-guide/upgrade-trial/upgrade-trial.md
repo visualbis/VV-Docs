@@ -6,10 +6,10 @@ sidebar_label: Upgrade of BI Hub
 
 The user can upgrade the trial version to either the production version or extend the trial period.
 
-## Upgrade from previous version to new version
+## Upgrade from the previous version to the new version
 
 * Download and install all the agents, BI Hub Web and BI Hub Server
-* Click new version of the installer and it will automatically update all our components and migrate the old data to the new version.
+* Click a new version of the installer and it will automatically update all our components and migrate the old data to the new version.
 > BI Hub Server steps > Demo from Testing team
 
 ## Upgrade from trial to production
@@ -21,9 +21,9 @@ Follow the steps below to upgrade from trial to production:
 
 ## Extend the trial period
 
-Follow the steps below to extend the trial period of BI Hub application:
+Follow the steps below to extend the trial period of the BI Hub application:
 
-1. For any further questions or queries contact the Visual BI sales team at sales@bihub.com. Raise a ticket requesting for an extension in trial period with a valid reason.
+1. For any further questions or queries contact the Visual BI sales team at sales@bihub.com. Raise a ticket requesting for an extension in the trial period with a valid reason.
 1. Note that the trial period will be extended only if the reason for the extension is valid.
 1. The support team will work on extending the trial and send a confirmation email.
 1. BI Hub can be used with the extended trial period.

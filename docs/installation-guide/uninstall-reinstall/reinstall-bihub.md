@@ -9,5 +9,5 @@ import Link from '@docusaurus/Link';
 
 Follow the steps below to re-install the application.
 
-1. Uninstall the entire application by following the steps given under the section <Link to={useBaseUrl('docs/installation-guide/uninstall-reinstall/uninstall-bihub')}>"Uninstallation of the BI Hub"</Link>
+1. Uninstall the entire application by following the steps given under the section <Link to={useBaseUrl('docs/installation-guide/uninstall-reinstall/uninstall-bihub')}>"Un-installation of the BI Hub"</Link>
 1. The next step is to Install the application again by following the steps given under the section <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/install')}>"Installation of BI Hub for Windows Platform"</Link>
