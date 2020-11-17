@@ -6,19 +6,12 @@ module.exports = {
     installationGuide: {
         "Getting Started": [
             "installation-guide/welcome",
-            {
-                "Supported Platforms": [
-                    "installation-guide/supported-platforms/sys-req",
-                    "installation-guide/supported-platforms/browser-compatibility",
-                    "installation-guide/supported-platforms/db-web"
-                ],
-            },
+            "installation-guide/changelog",
+            "installation-guide/sys-req",
             "installation-guide/download-bihub",
             "installation-guide/install-pre",
         ],
-        "Installation of BI Hub for Windows Platform": [
-            "installation-guide/install-bihub-windows/install",
-            {
+        "Installation of BI Hub for Windows Platform": [{
                 type: "category",
                 label: "Server Installation",
                 items: ["installation-guide/install-bihub-windows/server/install",
