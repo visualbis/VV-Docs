@@ -5,24 +5,33 @@ sidebar_label: BI Hub Web Configuration
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
-BI Hub Web has been configured with the default basic configuration in the installer phase itself. There is no need for other configuration required for the normal working of HTTP version of BI Hub Web. 
+:white_check_mark: In the previous section, you installed *BI Hub Web* and configured with basic default configurations.
 
-But if there is an additional SSL configuration or to change the configuration that you need, kindly follow the section below.
+Follow the *BI Hub Web* advanced configuration steps, if you need additional SSL configuration or want to change the default configuration.
 
-## Changing BI Hub Server URL Details
+## Edit BI Hub Server URL Details
 
-BI Hub Web will be configured with the URL details provided in the section [Installation of BI Hub Web](install), step number 4.
-If you want to change the configuration, follow the below steps:
+*BI Hub Web* is configured with the *URL* details as entered in step:4 of <Link to={useBaseUrl('#')}>Installation of BI Hub Web</Link> section.
 
-* Open the `config.json` file in administrator mode. If you have installed the bundled Nginx version of BI Hub Web, then the config.json file could be found in the `<installation folder>/nginx/nginx/html/`. To open the configuration file, right-click `openconfig.bat` and choose *run as administrator* from the same location. 
-* If you have installed the non-bundled version of BI Hub Web, then the config.json file could be found in the `<installation folder>/`.
-* Replace the host with the desired URL of BI Hub Server URL. Please note that the URL should be DNS resolvable and it should be accessible for all client machines.
-* Replace the port with the desired BI Hub Server port. Save the file. 
+1. Open the `config.json` file in administrator mode. 
+   - For *bundled NGINX* version of BI Hub Web:
+     1. The `config.json` file is found in the `<installation folder>/nginx/nginx/html/`. 
+     1. To open the configuration file, right-click `openconfig.bat` and choose *run as administrator* from the same location. 
+   - For *non-bundled* version of BI Hub Web:
+     The `config.json` file is found in the `<installation folder>/`.
+1. Replace the **Host** with the desired URL of BI Hub Server URL.
+  :::note
+  The URL should be DNS resolvable and it should be accessible for all client machines.
+  :::
+* Replace the **Port** with the desired BI Hub Server port. **Save** the file. 
 
 :::note
 There is no need for restarting the server. Make sure that the client browser cache has been cleared or restart the client browser for the new configuration to take effect.
 :::
+
+:white_check_mark: BI Hub Server URL details have been updated.
 
 <!-- 
 ## SSL Configuration

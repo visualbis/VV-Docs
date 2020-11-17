@@ -10,10 +10,10 @@ import Link from "@docusaurus/Link";
 Editing the configuration properties affects the BI Hub server and requires a restart of BI Hub Server instances.
 
 :::note
-Kindly click the **Continue** button upon changing the instances configuration properties after each section.
+Click the **Continue** button upon changing the instances configuration properties after each section.
 :::
 
-This tab contains the following sections which are as follows.
+The *Config* tab allows the configuration of the following:
 - [General Section](#general-section): Configuration fields general to the BI Hub server.
 - [Database Section](#database-section): Configuration fields of the main database connection to the server.
 - [Audit Database Section](#audit-database-section): Configuration fields of the audit database connection to the server.
@@ -34,15 +34,15 @@ This section lists out the general BI Hub Server configuration fields.
 | Log Level | Level of detail at which the log is written | <ul><li>**Info** – Will log all the available information</li><li>**Warning** – Will log all the warnings and errors</li><li>**Error** (Default) – Will log only errors.</li></ul> |
 | Agent Timeout | Timeout for the Agent health check in seconds | Default value - 5 | 
 | Cache Timeout | Timeout for the cache storage of BI Hub Server | Default value - 1 hour | 
-| CORS (Cross-origin resource sharing) | Settings for the BI Hub Server. To be more secure please set this value of the DNS url of your machine. | Default value - * |
+| CORS (Cross-origin resource sharing) | Settings for the BI Hub Server. To be more secure please set this value of the DNS URL of your machine. | Default value - * |
 
 ## Database Section
 
-This section defines the configuration fields related to the main database connection to the BI Hub server.
+This section defines the configuration fields (same as audit database below) related to the main database connection to the BI Hub server. 
 
 ## Audit Database Section
 
-This section defines configuration fields related to the audit database connection to the server.
+Audit database connection to the server configurations.
 
 | Property | Purpose | Description |
 | :--- | :--- | :--- |
@@ -68,7 +68,7 @@ To configure SSL in all the BI Hub configuration, please follow the <Link to={us
 
 This section helps to configure the connection details of the Elastic Search which is pre-installed with the BI Hub Server.
 :::note
-If you want to use your own Elastic Search instance, you will be able to provide the details below.
+If you want to use your Elastic Search instance, you will be allowed to provide the details below.
 :::
 
 | Property | Purpose | Description |
@@ -80,7 +80,7 @@ If you want to use your own Elastic Search instance, you will be able to provide
 
 ## Mail Connection Server
 
-This section helps to configure the mail server connection details. Mail server connection will be used to send emails from the Smart Search feature of BI Hub.
+Configure the mail server connection details that is used to send emails from the Smart Search feature of BI Hub.
 
 | Type | Purpose | Description |
 | :--- | :--- | :--- |

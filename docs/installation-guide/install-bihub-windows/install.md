@@ -17,6 +17,6 @@ Every installation step also carry out the success/failure checks of the install
 :::
 
 :::important
-If you face any installation issues, kindly contact the BI Hub support team with complete failure log details at support@bihub.com.
+In case of installation issues, kindly contact the BI Hub support team with complete failure log details at support@bihub.com.
 :::
 

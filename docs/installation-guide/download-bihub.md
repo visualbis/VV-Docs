@@ -1,7 +1,7 @@
 ---
 id: download-bihub
-title: Downloading BI Hub
-sidebar_label: Downloading BI Hub
+title: Download BI Hub
+sidebar_label: Download BI Hub
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -21,3 +21,5 @@ Go to the BI Hub <Link to={useBaseUrl('https://products.visualbi.com/bi-hub/down
 </div>
 
 *BI Hub download page*
+
+The respective executables are downloaded in your system: `BIHubServer-X.X.X-windows-installer.exe`, `BIHubWeb-X.X.X-windows-installer.exe`, and `<desired agent name>Agent-X.X.X-windows-installer.exe`.
