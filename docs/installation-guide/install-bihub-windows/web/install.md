@@ -5,7 +5,7 @@ sidebar_label: Installation of BI Hub Web
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Link from '@docusaurus/link';
+import Link from '@docusaurus/Link';
 
 Before you install and configure the **BI Hub Web** the following prerequisites are met:
 

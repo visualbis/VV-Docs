@@ -1,7 +1,7 @@
 ---
-id: post-config
-title: Post Configuration Steps
-sidebar_label: Post Configuration Steps
+id: post-install
+title: Post Installation Steps
+sidebar_label: Post Installation Steps
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from '@docusaurus/Link';
@@ -23,7 +23,7 @@ You should see the screen as shown in the figure below.
 *Agent Success Screen*
 
 :::note
-A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
+- [ ] A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
 :::
 
 If you didn’t get the success screen, kindly follow the troubleshooting steps given below.

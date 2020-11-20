@@ -44,7 +44,7 @@ module.exports = {
                 label: "Agents Installation",
                 items: [
                     "installation-guide/install-bihub-windows/agents/install",
-                    "installation-guide/install-bihub-windows/agents/post-config",
+                    "installation-guide/install-bihub-windows/agents/post-install",
                 ]
             },
             /*    "installation-guide/install-bihub-windows/synch-bihub-platforms", */
