@@ -123,8 +123,8 @@ module.exports = {
                     },
                 ],
             },
-            "admin-guide/getting-started/overview",
         ],
+        "Getting Started": ["admin-guide/overview"],
         "Admin Functions": [{
                 type: "category",
                 label: "Integrating BI Hub with BI Platforms",

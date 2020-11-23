@@ -9,10 +9,12 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-1. BOBJ Agent uses the Trusted Secret Key file mechanism to authenticate itself with the BOBJ. For this we need to generate and download the Trusted Secret Key for BOBJ authentication. Kindly follow the steps below:
- - Login to the BOBJ CMC
- - In the Central Management Console Screen, select Authentication from the top down list.
- - Select Enterprise from the menu list.
+BOBJ Agent uses the Trusted Secret Key file mechanism to authenticate itself with the BOBJ. 
+Generate and download the Trusted Secret Key for BOBJ authentication with the following steps:
+
+1. **Log-in** to the **BOBJ CMC**
+ - In the **Central Management Console** Screen, select **Authentication** from drop-down list.
+ - Select **Enterprise** in the *Title* drop-down menu list.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -20,7 +22,7 @@ import "react-medium-image-zoom/dist/styles.css";
   </Zoom>
  </div>
 
- - Next scroll down to the Trusted Authentication segment and enable the checkbox “Trusted Authentication is enabled”.
+ - Next scroll down to the **Trusted Authentication** segment and enable the checkbox **Trusted Authentication is enabled**.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -28,7 +30,7 @@ import "react-medium-image-zoom/dist/styles.css";
   </Zoom>
  </ div>
 
- - Next select New Shared Secret and click Download Shared Secret.
+ - Next click on the **New Shared Secret** button and click **Download Shared Secret**.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -42,9 +44,7 @@ import "react-medium-image-zoom/dist/styles.css";
   </Zoom>
  </ div>
 
-:::success
-The *TrustedPrinciple.conf* will get downloaded. 
-:::
+- :white_check_mark: The `TrustedPrinciple.conf` file will get downloaded. 
 
 <!-- Obselete step ? Confirm with Nithya 
 1. Next, we need to disable the CORS settings by editing the *crossdomain.xml* file.
