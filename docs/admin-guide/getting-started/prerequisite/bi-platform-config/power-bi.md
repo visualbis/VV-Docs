@@ -9,9 +9,9 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-We need to Setup the application in Azure Active Directory 
+- [ ] We need to Setup the application in Azure Active Directory 
 
-This application will be the communication point for the PowerBIAgent. All calls to the Microsoft API's will be made on behalf of this application. 
+This application will be the communication point for the PowerBIAgent. All calls to the Microsoft API's will be made on behalf of this application.
 
 :::note
 This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant for steps to acquire a tenant.

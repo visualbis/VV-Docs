@@ -21,23 +21,23 @@ multiple instances of this document.
 
 Follow the steps below to add a new agent:
 
-- In the Admin Home screen, select Agent Manager Menu from the application pane as shown below.
+- In the **Admin Home** screen, select **Agent Manager Menu** from the application pane as shown below.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
     <img alt="Agent Manager Menu" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-menu.jpg')}/>
   </Zoom>
  </div>
-- Click on the Agent Manager Tab and then click on Add Agent given on the right top corner to open the Add Agent page.
-- Type agent information such as Agent name, Server and Port. The port number that was given during the installation of the agent should be entered here. Please check the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide V1.5.4 - Port Requirements</Link> for reference. The tool tips will provide the necessary guidance.
-- Click on Continue and the Add instance dialog box appears.
-- Attributes will be accepted depending on the agent type being added.
-    For ex: BOBJ agent instance attributes are very different from the Qlik
-    agent instance. For easier maintenance, the port number must be
-    given in the same series as that of the agent. Ex. If the agent is
-    at 12100, then the instances must be in 12101,12102 etc. The tool
-    tips provide necessary guidance and shows screenshots of the BI platform
-    which provides the values.
+- Click on the **Agent Manager** tab and then click **Add Agent** at the top right corner.
+- Type *Agent* information such as **Agent name, Server**, and **Port** (This is the same *Port* number entered while installing the *Agents*. Refer the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for reference).
+> The tool tips provide the necessary guidance.
+- Click **Continue**, and the **Add instance** dialog box appears.
+  - Attributes will be accepted depending on the agent type being added.
+    > For example: *BOBJ* agent instance attributes are different from the *Qlik* agent instance. 
+  
+   For easier maintenance, the *Port* number must be entered in the same series as that of the agent.
+    > For example; If the agent is at *12100*, then the instances must be in *12101,12102,...* series. 
+      The *Tool* tips provide necessary guidance and show screenshots of the BI platform with the values.
 
     <div style={{textAlign: 'center'}}>
       <Zoom>
@@ -45,21 +45,30 @@ Follow the steps below to add a new agent:
       </Zoom>
     </div>
 
-- Click Submit to add the instance or Click on Submit & Add New Instance to add another instance of the same agent.
-- The Status column of the configured instance is displayed in the Home
-    page of that agent. Green status indicates that the Agent and BI
-    platform are active. Red status indicates that the Agent and BI
-    platforms are inactive. Orange status indicates that the Agent is
-    active but the BI platform is inactive or it cannot reach the
-    platform. Stop/Restart of instance can be done in the Actions
-    column.
-- After all the agent instances are successfully created, return to
-    Agent Manager to view the status and details of all agents as shown
-    below. The number of instances configured for the agent will also be
-    displayed.
+    *Agent and the Instances on the similar Port number and Port series*
 
-    <div style={{textAlign: 'center'}}>
+- Click **Submit** to add the instance or click **Submit** & **Add New Instance** to add another instance of the same agent.
+ - The **Status** column of the configured instance is displayed in the **Home** page of that agent. Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
+   - **Green** - active
+   - **Red** - inactive
+   - **Orange** - *Agent* is active but the *BI platform* is inactive or it cannot reach the
+    platform.
+ - In the **Actions** column, you can *Stop/Restart* the instance.
+
+After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents as shown below. 
+
+<div style={{textAlign: 'center'}}>
       <Zoom>
         <img alt="Agent Manager New" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-new.jpg')}/>
       </Zoom>
-    </div>
+</div>
+
+*Agent Manager with list of Agents installed and their details*
+
+:white_check_mark: Agents are successfully *installed* and are in the *running* state.
+
+## Next Steps
+
+- [ ] Agent Configuration with BI Platform
+
+Follow the next section to **Configure the BI Platform** and make the trusted connection between the respective *BI Hub Agent* and its *BI Platform*.

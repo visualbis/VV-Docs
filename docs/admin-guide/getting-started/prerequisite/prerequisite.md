@@ -8,13 +8,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
 BI Hub application requires the below components:
-- [x] BI Hub Server installed
-- [x] BI Hub Web installed
-- [x] BI Hub Agents installed
 
-Next, an *Agents* instance must be created and configured with the BI Hub Platform.
-* <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>Add new Agent</Link>
-* Agent configuration with BI Platform
+:white_check_mark: BI Hub Server installed
+
+:white_check_mark: BI Hub Web installed
+
+:white_check_mark: BI Hub Agents installed
+
+## Next Steps
+
+- [ ] <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>Add new Agent</Link>: An Agent instance must be created and configured with the BI Hub Platform.
+
+<!-- Moving in the of "Add New Agent" section
+### Agent Configuration with BI Platform
 
 Kindly follow the steps given below to configure the BI Platform and make the trusted connection between the respective BI Hub Agent and its BI Platform:
 
@@ -31,3 +37,4 @@ Kindly follow the steps given below to configure the BI Platform and make the tr
 | SAC           | <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/sac')}>SAC Platform Configuration</Link>                     |
 | Sharepoint    | <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/sharepoint')}>Sharepoint Platform Configuration</Link>       |
 | Looker        | <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/looker')}>Looker Platform Configuration</Link>               |
+-->
