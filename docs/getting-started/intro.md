@@ -2,6 +2,7 @@
 id: intro
 title: What is BI Hub
 sidebar_label: Introduction
+slug: /
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
