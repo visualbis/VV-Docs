@@ -15,9 +15,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 * Support for File BI Agent long file path
 
 <details>
-<ul><li>asset1</li><li>asset 2</li></ul>
+<ul><a href="https://bihub.com/blogs/">BI Hub Blogs</a></ul>
 <summary>
-assets
+resources
 </summary>
 </details>
 
@@ -35,6 +35,24 @@ assets
 * Settings to disable or enable Agent down notification mail has been implemented
 * Custom CSS feature which enables the User to implement their own advanced CSS styles and colors
 * Agent Instance Health Check algorithm has been improved to provide a better health check.
+
+### Important Fixes
+We have also fixed a good amount of bugs with this release. Some important bugs or issues that have been fixed in this version:
+
+* Custom URL with special characters validation bug fixed
+* Admin mode, Advance sync info calendar related issues
+* User Mode, search and advanced search performance fixes
+* CSS changes due to the latest chrome changes
+* Clustered agent Instances, issues with Pre Sync Action while syncing reports
+* Power User, dashboard related fixes
+* Admin Mode, Edit User related fixes
+* SAC and Tableau agent related fixes with latest changes in the BI Platform
+
+<details>
+<summary>
+<a href="https://bihub.com/whats-new-in-bi-hub-2-4-0/">What’s new in BI Hub v2.4.0?</a>
+</summary>
+</details>
 
 ## v2.3.1 (Jun 01, 2020)
 
@@ -56,6 +74,23 @@ assets
 * Breadcrumb will show from where it is launched instead of the actual location of the folder. CSS issue with Notification count
 * SSRS / PBIRS issue with the group access control has been fixed
 * Multiple Socket issue and audit user tab performance issue
+
+### Important Fixes
+We have also squashed some bugs with this release. Some of the important fixes are:
+
+* Fix for dangling BOBJ Sessions
+* Fix for special character in folder names causing navigation issues
+* CSS issue with notification count and other minor tweaks
+* SSRS / PBIRS issue with the group access control has been fixed
+* Multiple Socket issue
+* Improved the performance of the Audit user tab
+* A few cross-browser issues on Postgres and MS SQL have been fixed.
+
+<details>
+<summary>
+<a href="https://bihub.com/whats-new-in-bi-hub-v2-3-0/">What’s new in BI Hub v2.3.0?</a>
+</summary>
+</details>
 
 ## v2.2.3 (Mar 06 2020)
 

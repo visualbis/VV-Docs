@@ -49,11 +49,10 @@ Follow the steps below to add a new agent:
 
 - Click **Submit** to add the instance or click **Submit** & **Add New Instance** to add another instance of the same agent.
  - The **Status** column of the configured instance is displayed in the **Home** page of that agent. Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
-   - **Green** - active
-   - **Red** - inactive
-   - **Orange** - *Agent* is active but the *BI platform* is inactive or it cannot reach the
-    platform.
- - In the **Actions** column, you can *Stop/Restart* the instance.
+   - <a id="color-green"><b>Green</b></a> : active
+   - <a id="color-red"><b>Red</b></a> : inactive
+   - <a id="color-orange"><b>Orange</b></a> : The Agent is active but the BI platform is inactive or it cannot reach the platform.
+ - In the **Actions** column, you can *Stop ( <img src={useBaseUrl('/img/stop.svg')} width="15"/> )/Restart ( <img src={useBaseUrl('/img/restart.svg')} width="15"/> )* the instance.
 
 After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents as shown below. 
 

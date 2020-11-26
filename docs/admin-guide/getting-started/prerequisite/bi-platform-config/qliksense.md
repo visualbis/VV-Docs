@@ -9,10 +9,10 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-Below are the steps to generate certificates:
+Follow the below steps to **Generate Qliksense Certificates**:
 
-* Log in to Qlik Sense QMC as an administrator.
-* In the left side menu bar click Certificates menu under the configure system menu sections.
+1. Log in to **Qlik Sense QMC** as an *Administrator*.
+1. In the **Configure System** menu on the left, click **Certificates**.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -20,17 +20,17 @@ Below are the steps to generate certificates:
   </Zoom>
  </ div>
 
-* Certificate generation form opens.
-* Click on Add machine name to which the certificate needs to be generated.
-* In the export file format for certificate dropdown, select platform-independent PEM-format.
-* Fill in other additional optional fields, but it’s not necessary.
-* Click the export certificate button in the bottom.
+1. In the **Certificates** generation window click **Add machine name**.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
     <img alt="certificates" src={useBaseUrl('/doc-images/qliksense/certificates.png')}/>
   </Zoom>
  </ div>
+
+  - Select **Platform Independent PEM-format** in the **Export file format for certificates** drop-down list.
+  - Fill in the other additional optional fields.
+  - Click **Export certificates**.
 
 * The certificate files will be generated and will be exported to the location shown in that form itself.
 > Here is a list of the files that will be generated-

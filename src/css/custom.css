@@ -60,3 +60,15 @@ html[data-theme="dark"] p.hero__subtitle {
     clear: both;
     display: table;
 }
+
+#color-red {
+    color: #FC0102;
+}
+
+#color-green {
+    color: #66C245;
+}
+
+#color-orange {
+    color: #FCA620;
+}

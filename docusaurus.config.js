@@ -71,13 +71,14 @@ module.exports = {
       `,
     },
   },
+  plugins: ["docusaurus-lunr-search"],
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "getting-started/intro",
+          
           sidebarPath: require.resolve("./sidebars.js"),
         },
         /*
