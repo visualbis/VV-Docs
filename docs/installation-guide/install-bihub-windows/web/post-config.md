@@ -28,7 +28,13 @@ To verify the successful installation and configuration of BI Hub Web, perform t
 
 This brings you to the **Admin Dashboard** page on the BI Hub Web application.
 
-- [ ] Dashboard screenshot
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/on1.png')}/>
+  </Zoom>
+</div>
+
+*BI Hub Dashboard*
 
 :white_check_mark: **BI Hub Web** is successfully installed and configured.
 
