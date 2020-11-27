@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 * SAML Login Integration support
 * Agent Sync Users flow changed which includes Windows AD Authentication
-* Support for Tableau Agent Sub project
+* Support for Tableau Agent sub-project
 * Support for File BI Agent long file path
 
 <details>
@@ -41,7 +41,7 @@ We have also fixed a good amount of bugs with this release. Some important bugs 
 
 * Custom URL with special characters validation bug fixed
 * Admin mode, Advance sync info calendar related issues
-* User Mode, search and advanced search performance fixes
+* User Mode, search, and advanced search performance fixes
 * CSS changes due to the latest chrome changes
 * Clustered agent Instances, issues with Pre Sync Action while syncing reports
 * Power User, dashboard related fixes
@@ -70,10 +70,10 @@ We have also fixed a good amount of bugs with this release. Some important bugs 
 * Thumbnail priority of the dashboard has been changed with respect to the admin side settings
 * Certification, the default attribute was made configurable
 * Support for LDAPS was implemented in Windows AD
-* BOBJ Sessions were handled perfectly, here after there won't be any dangling sessions Special Character and navigation issue in the folder names issue
+* BOBJ Sessions were handled perfectly, hereafter there won't be any dangling sessions Special Character and navigation issue in the folder names issue
 * Breadcrumb will show from where it is launched instead of the actual location of the folder. CSS issue with Notification count
-* SSRS / PBIRS issue with the group access control has been fixed
-* Multiple Socket issue and audit user tab performance issue
+* SSRS/PBIRS issue with the group access control has been fixed
+* Multiple Socket issue and audit user tab performance issues.
 
 ### Important Fixes
 We have also squashed some bugs with this release. Some of the important fixes are:
@@ -81,7 +81,7 @@ We have also squashed some bugs with this release. Some of the important fixes a
 * Fix for dangling BOBJ Sessions
 * Fix for special character in folder names causing navigation issues
 * CSS issue with notification count and other minor tweaks
-* SSRS / PBIRS issue with the group access control has been fixed
+* SSRS/PBIRS issue with the group access control has been fixed
 * Multiple Socket issue
 * Improved the performance of the Audit user tab
 * A few cross-browser issues on Postgres and MS SQL have been fixed.
@@ -124,7 +124,7 @@ We have also squashed some bugs with this release. Some of the important fixes a
 
 * User Dashboard – Custom Dashboard can be created and shared by admin User Dashboard – More settings and power user options for Admin Looker Agent
 * SharePoint Agent
-* Smart Search – Refined to bring more accurate result when searching from textbox
+* Smart Search – Refined to bring more accurate result when searching from the textbox
 * SSRS Agent – Report URL Format changed
 * Windows AD User Sync improvement
 * Power BI Agent – Optimization and Groups changed
@@ -178,7 +178,7 @@ We have also squashed some bugs with this release. Some of the important fixes a
 * Added support for notifications for comments, request access
 * Added support for themes
 * Added support for List and User Selector Custom Attributes
-* Added out-of-the-box custom attributes for Certification Level, Subject Matter Expert and Documentation URL
+* Added out-of-the-box custom attributes for Certification Level, Subject Matter Expert, and Documentation URL
 * Added support for Tableau thumbnails
 * Added support for Power BI Reporting Server
 * Added support for AD integration with File BI and SSRS agent
@@ -211,10 +211,10 @@ We have also squashed some bugs with this release. Some of the important fixes a
 
 ## v1.3 - BI Hub (Jun 30, 2017)
 
-* BI Hub leverages the user authentication store of Microsoft AD. By integrating with SSO, further login prompt is eliminated.
+* BI Hub leverages the user authentication store of Microsoft AD. By integrating with SSO, a further login prompt is eliminated.
 * BI Hub uses Microsoft AD to authenticate users. If there is no AD, then BI Hub leverages the BI platform authentication.
 * BI Hub supports environments in which one BI platform is integrated with AD and the other ones may use Native authentication.
-* Scheduled/Automated synchronization with AD, BI platform authentication store. Scheduled/Automated synchronization with addition/deletions of reports in BI platform. Launches SAP WebI, Lumira, Design Studio, Crystal, Tableau, Qlik Sense reports in one page. Support for more BI platforms in future releases.
+* Scheduled/Automated synchronization with AD, BI platform authentication store. Scheduled/Automated synchronization with addition/deletions of reports in the BI platform. Launches SAP WebI, Lumira, Design Studio, Crystal, Tableau, Qlik Sense reports in one page. Support for more BI platforms in future releases.
 * Users can create/delete folders and reorganize reports as per their requirements
 * Ability to mark reports as favorites so that they appear at the top and can be easily accessed. Ability to search for reports/folders based on names.
 * Recently launched reports appear on the landing page of the user.
@@ -224,5 +224,5 @@ We have also squashed some bugs with this release. Some of the important fixes a
 ## Known Issues
 
 1. Multiple mapping of users for the same agent when manual mapping is done to another user account which is not listed in the user manager.
-1. Tableau report shows log-in screen in Iframe when it is opened in the Chrome Incognito which is inconsistent.
-1. One Drive/Sharepoint – When reports are opened for the first time, the login prompts inside the same tab rather than in new tab.
+1. Tableau report shows a log-in screen in Iframe when it is opened in the Chrome Incognito which is inconsistent.
+1. One Drive/Sharepoint – When reports are opened for the first time, the login prompts inside the same tab rather than in the new tab.

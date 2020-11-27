@@ -4,12 +4,15 @@ title: Upgrade Of BI Hub
 sidebar_label: Upgrade of BI Hub
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
+
 The user can upgrade the trial version to either the production version or extend the trial period.
 
 ## Upgrade from the previous version to the new version
 
-* Download and install all the agents, BI Hub Web and BI Hub Server
-* Click a new version of the installer and it will automatically update all our components and migrate the old data to the new version.
+* <Link to={useBaseUrl('docs/installation-guide/download-bihub')}>Download</Link> and install the latest versions of BI Hub Web, BI Hub Server, and BI Hub agents.
+* The newer version of the installer will automatically update all the BI Hub components and migrate the old data to the new version.
 > BI Hub Server steps > Demo from Testing team
 
 ## Upgrade from trial to production
