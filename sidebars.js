@@ -75,24 +75,7 @@ module.exports = {
 
 
     },
-
-    /*    platformConfig: {
-            "BI Platform Agent Configuration": [
-                "bi-platform-config/bobj", 
-                "bi-platform-config/bobj-rest-bi", 
-                "bi-platform-config/tableau",
-                "bi-platform-config/qliksense",
-                "bi-platform-config/power-bi",
-                "bi-platform-config/file-bi",
-                "bi-platform-config/ssrs",
-                "bi-platform-config/microstrategy",
-                "bi-platform-config/sac",
-                "bi-platform-config/sharepoint",
-                "bi-platform-config/looker"
-            ]
-        },
-    */
-
+/*
     adminGuide: {
         "Welcome": ["admin-guide/getting-started/welcome",
             {
@@ -205,7 +188,7 @@ module.exports = {
 
         ],
 
-        /*
+        
                 "Agent Manager": [
                     {
                         type: "category",
@@ -233,7 +216,7 @@ module.exports = {
             
                     }
                 ], 
-        */
+        
         "Multiple Administrator Account": [
             "admin-guide/multiple-admin/multiple-admin-acct"
         ],
@@ -259,7 +242,8 @@ module.exports = {
         ]
 
     },
-
+*/
+/*
     userGuide: {
         "Getting Started": [
             "user-guide/onboard",
@@ -308,5 +292,5 @@ module.exports = {
             "user-guide/history/history"
         ]
     },
-
+*/
 }
