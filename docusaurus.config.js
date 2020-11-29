@@ -45,12 +45,12 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/admin-guide/getting-started/welcome",
+          to: "/",
           label: "Admin Guide",
           position: "right",
         },
         {
-          to: "docs/user-guide/onboard",
+          to: "/",
           label: "User Guide",
           position: "right",
         },
