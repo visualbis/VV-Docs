@@ -3,7 +3,7 @@ module.exports = {
   tagline: "Your BI Search Engine",
   url: "https://github.com/divyabhushan/VV-Docs",
   baseUrl: "/VV-Docs/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   favicon: "img/favicon.ico",
   organizationName: "divyabhushan", // Usually your GitHub org/user name.
   projectName: "VV-Docs", // Usually your repo name.
@@ -51,7 +51,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "/",
+          to: "docs/user-guide/onboard-info",
           label: "User Guide",
           position: "right",
         },

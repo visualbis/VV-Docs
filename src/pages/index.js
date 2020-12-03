@@ -19,7 +19,7 @@ const features = [{
         description: "Guide with administration tasks like configuring agents, authentication, adding users and reports, and on-going maintenance",
     },
     {
-        link: "/",
+        link: "/docs/user-guide/onboard-info",
         title: "User Guide",
         image: "img/user-guide.svg",
         description: "User Guide on how to configure every section in the BI Hub application such as the Dashboard, Reports, Hub folders, and BI Platform.",
