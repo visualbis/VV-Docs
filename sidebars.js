@@ -75,7 +75,7 @@ module.exports = {
 
 
     },
-/*
+
     adminGuide: {
         "Welcome": ["admin-guide/getting-started/welcome",
             {
@@ -106,7 +106,10 @@ module.exports = {
                     },
                 ],
             },
+            
         ],
+    },
+        /*
         "Getting Started": ["admin-guide/overview"],
         "Admin Functions": [{
                 type: "category",

@@ -13,7 +13,7 @@ const features = [{
         description: "Guide with pre-requisites, installation, and configuration steps for all the BI Hub components - BI Hub Server, Web, and Agents",
     },
     {
-        link: "/",
+        link: "/docs/admin-guide/getting-started/welcome",
         title: "Administration Guide",
         image: "img/admin-guide.svg",
         description: "Guide with administration tasks like configuring agents, authentication, adding users and reports, and on-going maintenance",
