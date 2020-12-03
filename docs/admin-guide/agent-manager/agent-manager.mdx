@@ -1,7 +1,7 @@
 ---
-id: synch
-title: Synchronize Users between Agent and BI Hub
-sidebar_label: Synchronize Users between Agent and BI Hub
+id: agent-manager
+sidebar_label: Agent Manager
+title: Agent Manager
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -9,7 +9,50 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-This feature is used by administrator to import users from the BI
+The **Agent Manager** screen provides 2 features:
+
+* Agent Manager: 
+* Cluster Manager: 
+
+## Agent Manager 
+
+Following are the tasks allowed in the **Agent Manager** feature:
+
+1. **Add Agents** that are configured with the BI Platform.
+1. **Instance Manager**: Manage(add/edit/delete) instances of an Agent.
+* **Edit** agent's *Name, Server*, and *Port* details.
+* **Delete** an agent.
+1. [Synch Users](#synchronize-users): Synchronize Users between Agent and BI Hub.
+* Synch Users, and Reports.
+* Manage an agent **Cluster**.
+
+[Synch Users](#synch)
+
+### Instance Manager
+
+To edit the *Instances* configured with an *Agent*:
+
+1. Select the Agent **Name** in the **Agent Manager** screen.
+1. In the **Instances** tab, click the number on the right.
+1. In the **Agent Manager > Instance Manager** screen, select the *Instance* and click **Edit** at the top right corner.
+1. In the **Edit Instance** sidebar, edit the instance details such as - *Instance Name, Email, Agent Port*, and rest of the required details.
+1. Click **Submit** to save the changes.
+
+You can also **Delete**, **Synch Users**, and **Synch Reports** for the selected instance.
+
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="Edit Instance" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/editinstancenew.jpg')}/>
+    </Zoom>
+  </div>
+
+  *Edit Instance*
+
+### Synchronize Users
+
+### 1.1 Synchronize Users between Agent and BI Hub
+
+This feature is used by an administrator to import users from the BI
 platform into the portal. It is only used in scenarios when the BI
 platform stores all user credentials and users are authenticated using
 the BI platform and not a directory service like Microsoft AD/LDAP.
@@ -67,3 +110,5 @@ The agent icon against a user name indicates the number of agents (BI platforms)
 1. It should be noted that when users are added via “Sync User” operation, the default login password for the added users will be <username@123> (e.g. <adrian@123> for username ‘adrian’). During the first login, the users will be asked to change to a new password.
 1. If the user names are different between BI platforms, to import users from the other BI platform(s), Click Save and proceed to Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/add-users-bi-platform')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link>. If user names are identical across platforms, then upon completion of Step:2 go to Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users')}>Synchronize Reports of Users</Link>.
 1. Note that this functionality can be scheduled to be run automatically as and when required using the Agent Synchronization utility. Refer Section [Scheduled synchronization with AD](#)
+
+### 

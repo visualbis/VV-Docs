@@ -6,8 +6,11 @@ sidebar_label: Change Password
 
 To reset the admin password, follow the steps below:
 
-1. Navigate to the following location to locate the Change Password utility:
-   1. `<VBI View Server installation directory>/utilities/ChangePassword.exe`
-1. Click on **File > Open in command prompt > Open command prompt as administrator**. Enter the following command: ChangePassword.exe
-1. A prompt to enter the new password appears. Type the password and press ENTER
-1. A prompt to confirm the password appears. Once confirmed, the admin password will be reset.
+1. Go to **<C:\Program Files\Visual BI Solutions\BI Hub\BIHubServer>\utilities** directory:
+   
+ ```
+ cd <C:\Program Files\Visual BI Solutions\BI Hub\BIHubServer>\utilities\
+ ```
+2. Click on **File > Open in command prompt > Open command prompt as administrator** from the above location. Type the command: `ChangePassword.exe` and press Enter.
+3. In the **Change Password utility**, a prompt to enter the new password appears. Type the new password and press **ENTER**.
+4. Confirm the password, and your *Admin* password is now reset.

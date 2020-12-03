@@ -8,6 +8,7 @@ module.exports = {
   organizationName: "divyabhushan", // Usually your GitHub org/user name.
   projectName: "VV-Docs", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: true,
     /*
     algolia: {
       apiKey: "api-key",

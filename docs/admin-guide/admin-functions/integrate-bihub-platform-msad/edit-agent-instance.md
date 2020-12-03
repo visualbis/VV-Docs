@@ -1,6 +1,6 @@
 ---
 id: edit-agent-instance
-title: Editing Agent/Instance Details
+title: DELETE > Editing Agent/Instance Details
 sidebar_label: Editing Agent/Instance Details
 ---
 

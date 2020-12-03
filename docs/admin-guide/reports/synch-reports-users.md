@@ -19,7 +19,7 @@ If the admin wishes to associate all reports to BI Hub users using the single-cl
 
   <div style={{textAlign: 'center'}}>
     <Zoom>
-      <img alt="Synchronization Information" src={useBaseUrl('doc-images/admin-guide/admin-functions/ion.jpg')}/>
+      <img alt="Synchronization Information" src={useBaseUrl('doc-images/admin-guide/dashboard-sync-info.png')}/>
     </Zoom>
   </div>
 

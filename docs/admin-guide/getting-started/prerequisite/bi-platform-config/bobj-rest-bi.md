@@ -87,14 +87,6 @@ import "react-medium-image-zoom/dist/styles.css";
 
 3. Go to the location: `<BOBJ-Installation-Directory>\tomcat\webapps\BOE\WEB-INF\config\custom`.
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="Global properties file location" src={useBaseUrl('/doc-images/global-properties.png')}/>
-  </Zoom>
-</ div>
-
-*Global properties file location*
-
  - Edit the `global.properties` file as shown below:
   
 <div style={{textAlign: 'center'}}>
@@ -104,6 +96,8 @@ import "react-medium-image-zoom/dist/styles.css";
 </ div>
 
 *Global properites file content*
+
+Click below to copy the content of the file:
 
   ```text
   sso.enabled=true 
