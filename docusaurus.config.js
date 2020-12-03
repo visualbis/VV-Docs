@@ -45,7 +45,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "/",
+          to: "docs/admin-guide/getting-started/welcome",
           label: "Admin Guide",
           position: "right",
         },
