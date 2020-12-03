@@ -1,13 +1,14 @@
 module.exports = {
   title: "BI Hub",
   tagline: "Your BI Search Engine",
-  url: "https://github.com/visualbis/VV-Docs",
+  url: "https://github.com/divyabhushan/VV-Docs",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   favicon: "img/favicon.ico",
   organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "VV-Docs", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: true,
     /*
     algolia: {
       apiKey: "api-key",
@@ -50,7 +51,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "/",
+          to: "docs/user-guide/onboard-info",
           label: "User Guide",
           position: "right",
         },

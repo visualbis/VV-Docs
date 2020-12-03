@@ -107,56 +107,53 @@ module.exports = {
                 ],
             },
             
-        ],
-    },
-        /*
-        "Getting Started": ["admin-guide/overview"],
-        "Admin Functions": [{
+        ],        
+        "Getting Started": [
+            "admin-guide/overview", 
+            {
                 type: "category",
-                label: "Integrating BI Hub with BI Platforms",
-                items: [
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/admin-functions",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/integrate",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/row-level-security",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/synch",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/add-users-bi-platform",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/add-ms-ad",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/synch-ms-ad-bihub",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/logfiles-download",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-msad-bihub",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/del-msad-bihub"
-                ]
+                label: "Agent Manager",
+                items: ["admin-guide/agent-manager/agent-manager",
+            "admin-guide/agent-manager/logfiles-download",
+            "admin-guide/agent-manager/delete-instance-cluster"
+        ],
             },
             {
                 type: "category",
-                label: "Maintenance of BI Hub",
+                label: "User Manager",
+                items: ["admin-guide/user-manager/user-manager",
+                 "admin-guide/user-manager/add-reports-existing-user",
+                "admin-guide/user-manager/add-users-bi-platform",
+                "admin-guide/user-manager/edit-bihub-users",
+                "admin-guide/user-manager/power-users",
+                "admin-guide/user-manager/dashboard-admin",
+                "admin-guide/user-manager/create-cluster",
+            ],
+            },
+            {
+                type: "category",
+                label: "Authentication",
                 items: [
-                    "admin-guide/admin-functions/maintenance-bihub/maintenance-of-bihub",
-                    "admin-guide/admin-functions/maintenance-bihub/add-new-user",
-                    "admin-guide/admin-functions/maintenance-bihub/add-reports-existing-user",
-                    "admin-guide/admin-functions/maintenance-bihub/edit-bihub-users",
-                    "admin-guide/admin-functions/maintenance-bihub/edit-password-authenticated-user",
-                    "admin-guide/admin-functions/maintenance-bihub/del-user",
-                    "admin-guide/admin-functions/maintenance-bihub/configure-smart-search"
-                ]
+                    "admin-guide/authenticate/authenticate",
+                "admin-guide/authenticate/synch-ms-ad-bihub",
+                "admin-guide/authenticate/add-ms-ad"
+            ],
             },
             {
                 type: "category",
                 label: "Reports",
                 items: [
-                    "admin-guide/admin-functions/reports/reports",
-                    "admin-guide/admin-functions/reports/hub-folders",
-                    "admin-guide/admin-functions/reports/upload-metadata-csv",
-                    "admin-guide/admin-functions/reports/report-details",
-                    "admin-guide/admin-functions/reports/report-thumbnails",
-                    "admin-guide/admin-functions/reports/reports-history",
+                    "admin-guide/reports/reports",
+                    "admin-guide/reports/hub-folders",
+                    "admin-guide/reports/upload-metadata-csv",
+                    "admin-guide/reports/report-details",
+                    "admin-guide/reports/report-thumbnails",
+                    "admin-guide/reports/reports-history",
+                    "admin-guide/reports/custom-url",
+                    "admin-guide/reports/synch-reports-users"
                 ],
 
             },
-            "admin-guide/admin-functions/request-access-reports-admin",
-            "admin-guide/admin-functions/custom-url",
             {
                 type: "category",
                 label: "Settings",
@@ -169,60 +166,48 @@ module.exports = {
                     "admin-guide/admin-functions/settings/email-template"
                 ]
             },
-            "admin-guide/admin-functions/audit",
+            "admin-guide/request-access-reports-admin",
+            "admin-guide/audit",
+            
+    ],
+        "Admin Functions": [{
+                type: "category",
+                label: "Integrating BI Hub with BI Platforms",
+                items: [
+                    "admin-guide/admin-functions/integrate-bihub-platform-msad/admin-functions",
+                    "admin-guide/admin-functions/integrate-bihub-platform-msad/integrate",
+                    "admin-guide/admin-functions/integrate-bihub-platform-msad/row-level-security",
+                    "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance",
+                    "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-msad-bihub",
+                    "admin-guide/admin-functions/integrate-bihub-platform-msad/del-msad-bihub"
+                ]
+            },
+            
+            {
+                type: "category",
+                label: "Maintenance of BI Hub",
+                items: [
+                    "admin-guide/admin-functions/maintenance-bihub/maintenance-of-bihub",
+                    "admin-guide/admin-functions/maintenance-bihub/edit-password-authenticated-user",
+                    "admin-guide/admin-functions/maintenance-bihub/del-user",
+                    "admin-guide/admin-functions/maintenance-bihub/configure-smart-search"
+                ]
+            },            
+            
             {
                 type: "category",
                 label: "Multiple Instances of BI Hub",
                 items: [
                     "admin-guide/admin-functions/multiple-instances/mult-instances",
-                    "admin-guide/admin-functions/multiple-instances/create-cluster",
+                    
                     "admin-guide/admin-functions/multiple-instances/synch-users-reports",
                     "admin-guide/admin-functions/multiple-instances/modify-prim-instance",
-                    "admin-guide/admin-functions/multiple-instances/delete-instance-cluster",
+       
                 ]
             },
             "admin-guide/admin-functions/profile-settings"
 
         ], //End of Admin Functions
-
-        "Power Users": [
-            "admin-guide/power-users/power-users",
-            "admin-guide/power-users/dashboard-admin",
-
-        ],
-
-        
-                "Agent Manager": [
-                    {
-                        type: "category",
-                        label: "Add Agent",
-                        items: ["admin-guide/agent-manager/add-agent/bobj"]
-                    },
-                    {
-                        type: "category",
-                        label: "Agent Manager",
-                        items: [
-                            "admin-guide/agent-manager/agent-manager/edit",
-                            "admin-guide/agent-manager/agent-manager/delete",
-                            "admin-guide/agent-manager/agent-manager/synch-users",
-                            "admin-guide/agent-manager/agent-manager/synch-reports"
-                                        ],
-                    },
-                    {
-                        type: "category",
-                        label: "Cluster Management",
-                        items: [
-                            "admin-guide/agent-manager/cluster-management/add-cluster",
-                            "admin-guide/agent-manager/cluster-management/edit-cluster",
-                            "admin-guide/agent-manager/cluster-management/del-cluster"
-                        ]
-            
-                    }
-                ], 
-        
-        "Multiple Administrator Account": [
-            "admin-guide/multiple-admin/multiple-admin-acct"
-        ],
 
         "Backup and Recovery": [
             "admin-guide/backup-recovery/backup",
@@ -237,7 +222,8 @@ module.exports = {
             "admin-guide/admin-utilities/admin-utilities",
             "admin-guide/admin-utilities/change-passwd",
             "admin-guide/admin-utilities/scheduled-synch-ad",
-            "admin-guide/admin-utilities/scheduled-synch-bi"
+            "admin-guide/admin-utilities/scheduled-synch-bi",
+            "admin-guide/admin-utilities/multiple-admin-acct"
         ],
 
         "License Details": [
@@ -245,11 +231,11 @@ module.exports = {
         ]
 
     },
-*/
-/*
+
+
     userGuide: {
         "Getting Started": [
-            "user-guide/onboard",
+            "user-guide/onboard-info",
         ],
         "Home Page": [
 
@@ -295,5 +281,4 @@ module.exports = {
             "user-guide/history/history"
         ]
     },
-*/
 }
