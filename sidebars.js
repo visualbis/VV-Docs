@@ -124,6 +124,7 @@ module.exports = {
                 items: ["admin-guide/user-manager/user-manager",
                  "admin-guide/user-manager/add-reports-existing-user",
                 "admin-guide/user-manager/add-users-bi-platform",
+                "admin-guide/user-manager/edit-bihub-users",
                 "admin-guide/user-manager/power-users",
                 "admin-guide/user-manager/dashboard-admin",
                 "admin-guide/user-manager/create-cluster",
@@ -135,19 +136,21 @@ module.exports = {
                 items: [
                     "admin-guide/authenticate/authenticate",
                 "admin-guide/authenticate/synch-ms-ad-bihub",
+                "admin-guide/authenticate/add-ms-ad"
             ],
             },
             {
                 type: "category",
                 label: "Reports",
                 items: [
-                    "admin-guide/admin-functions/reports/reports",
-                    "admin-guide/admin-functions/reports/hub-folders",
-                    "admin-guide/admin-functions/reports/upload-metadata-csv",
-                    "admin-guide/admin-functions/reports/report-details",
-                    "admin-guide/admin-functions/reports/report-thumbnails",
-                    "admin-guide/admin-functions/reports/reports-history",
-                    "admin-guide/admin-functions/reports/custom-url"
+                    "admin-guide/reports/reports",
+                    "admin-guide/reports/hub-folders",
+                    "admin-guide/reports/upload-metadata-csv",
+                    "admin-guide/reports/report-details",
+                    "admin-guide/reports/report-thumbnails",
+                    "admin-guide/reports/reports-history",
+                    "admin-guide/reports/custom-url",
+                    "admin-guide/reports/synch-reports-users"
                 ],
 
             },
@@ -174,8 +177,6 @@ module.exports = {
                     "admin-guide/admin-functions/integrate-bihub-platform-msad/admin-functions",
                     "admin-guide/admin-functions/integrate-bihub-platform-msad/integrate",
                     "admin-guide/admin-functions/integrate-bihub-platform-msad/row-level-security",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/add-ms-ad",                    
                     "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance",
                     "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-msad-bihub",
                     "admin-guide/admin-functions/integrate-bihub-platform-msad/del-msad-bihub"
@@ -186,8 +187,6 @@ module.exports = {
                 label: "Maintenance of BI Hub",
                 items: [
                     "admin-guide/admin-functions/maintenance-bihub/maintenance-of-bihub",
-              
-                    "admin-guide/admin-functions/maintenance-bihub/edit-bihub-users",
                     "admin-guide/admin-functions/maintenance-bihub/edit-password-authenticated-user",
                     "admin-guide/admin-functions/maintenance-bihub/del-user",
                     "admin-guide/admin-functions/maintenance-bihub/configure-smart-search"
@@ -232,10 +231,10 @@ module.exports = {
 
     },
 
-/*
+
     userGuide: {
         "Getting Started": [
-            "user-guide/onboard",
+            "user-guide/onboard-info",
         ],
         "Home Page": [
 
@@ -281,5 +280,4 @@ module.exports = {
             "user-guide/history/history"
         ]
     },
-*/
 }
