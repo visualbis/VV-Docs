@@ -48,7 +48,7 @@ By default,the bundled Nginx will contain the self-signed SSL certificate issued
 * If you couldn’t trouble shoot the errors, kindly replace the old SSL file with the new one and restart the server.
 * If the server starts successfully, then the problem will be mostly with the SSL file. Kindly verify the SSL certificate format and have a proper SSL format.
 
-If you continue to have the problem, you could raise the support ticket in the support portal or by sending an email to support@visualbi.comwith supported log files and error images.
+If you continue to have the problem, you could raise the support ticket in the support portal or by sending an email to support@bihub.com with supported log files and error images.
 
 :::important
 If you are going to configure SSL, please make sure that BI Hub Server and BI Hub Agents and its respective BI platforms should be also configured with proper SSL. You cannot access HTTP content from the https protocol. The browser will throw the mixed content error if you try to access HTTP content from the https URL.

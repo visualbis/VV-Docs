@@ -6,7 +6,7 @@ sidebar_label: Recovery (in the event of a system crash)
 
 Follow the steps below in case of a Recovery:
 
--  In the event of a system crash and if the application needs to be re-installed OR if the application needs to be migrated from one server to another, contact Visual BI support (<support@visualbi.com>) to deactivate the current instance details and activate a new one.
+-  In the event of a system crash and if the application needs to be re-installed OR if the application needs to be migrated from one server to another, contact Visual BI support (<support@bihub.com>) to deactivate the current instance details and activate a new one.
 -  BI Hub Server:
  1. As a part of your application recovery, when you configure the application database, use the recent database backup.
  2. Replace the backup files in the appropriate folder and create the instances BI Hub Agents:

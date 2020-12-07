@@ -13,12 +13,11 @@ The user can upgrade the trial version to either the production version or exten
 
 * <Link to={useBaseUrl('docs/installation-guide/download-bihub')}>Download</Link> and install the latest versions of BI Hub Web, BI Hub Server, and BI Hub agents.
 * The newer version of the installer will automatically update all the BI Hub components and migrate the old data to the new version.
-> BI Hub Server steps > Demo from Testing team
 
 ## Upgrade from trial to production
 
 Follow the steps below to upgrade from trial to production:
-1. Contact Visual BI support team support@visualbi.com by raising a ticket to upgrade the trial version.
+1. Contact Visual BI support team support@bihub.com by raising a ticket to upgrade the trial version.
 1. Contact the Sales representative to purchase the new order, Licensing of the new BI Hub version.
 1. The application can be checked for the updated license.
 
