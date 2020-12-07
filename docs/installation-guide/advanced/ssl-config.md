@@ -25,7 +25,7 @@ By default,the bundled Nginx will contain the self-signed SSL certificate issued
   - If you couldn’t troubleshoot the errors, kindly replace the old SSL file with the new one and restart the server.
   - If the server starts successfully, then the problem will be mostly with the SSL file. Kindly verify the SSL certificate format and have a proper SSL format.
 
-If you continue to have the problem, you could raise the support ticket in the support portal or by sending an email to support@visualbi.comwith supported log files and error images.
+If you continue to have the problem, you could raise the support ticket in the support portal or by sending an email to support@bihub.com with supported log files and error images.
 :::
 
 :::important

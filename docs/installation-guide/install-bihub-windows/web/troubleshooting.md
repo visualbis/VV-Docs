@@ -34,4 +34,4 @@ The **BI Hub Login** screen should appear now, if not continue with the next ste
 > If the *Login* page appears on the server but not on your local machine, the problem is related to your firewall or proxy settings or DNS settings. Contact your network Administrator/team to resolve this problem.
 
 If the problem persis
-If you still do not get the *BI Hub Web* login screen after following the above troubleshooting steps, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@visualbi.com with the supporting log files and images.
+If you still do not get the *BI Hub Web* login screen after following the above troubleshooting steps, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@bihub.com with the supporting log files and images.
