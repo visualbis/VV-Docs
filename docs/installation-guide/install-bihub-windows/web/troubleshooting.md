@@ -8,14 +8,30 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-If you didn’t get the webpage response as shown in the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/web/post-config')}>figure number 3.3</Link>, then kindly follow the steps below to troubleshoot on your own.
+Follow the below troubleshooting steps, if you did not get the BI Hub welcome webpage response as indicated in the below screenshot.
 
-* If you are trying with https version of URL, make sure that the BI Hub Server is also configured with SSL properly. You cannot have BI Hub Web in https and BI Hub Server in http protocol. Mixed content error will be thrown by the browser, if you try to mix these two protocols.
-* Verify whether the BI Hub Web server machine is reachable by using ping test from the command prompt.
-* If you see the webpage response with the Error Connecting to Backend error message, then open new tab in the browser and type the BI Hub Server URL which has been configured during the installation step number 4. You should see the webpage with the message Welcome to BI Hub as shown in the figure 3.2.
-* If you couldn’t get that page, then check whether the BI Hub Server machine is reachable by doing ping test from the command prompt. Also check whether the URL is resolvable with your DNS settings.
-* Check the firewall or antivirus for rules which may block the BI Hub Web and BI Hub Server incoming and outgoing connections.
-* Open the browser console by pressing F12 and check for any mixed content error or insecure response error.
-* If you are using Self Signed SSL certificate, make sure that the SSL certificate has been added to trusted certificate store, to avoid insecure response error.
+ <div style={{textAlign: 'center'}}>
+   <Zoom>
+     <img alt="img" src={useBaseUrl('/doc-images/fig3_3-web-verification.png')}/>
+   </Zoom>
+ </div>
 
-If you are not able to successfully connect the BI Hub Web after following this steps, kindly contact the BI Hub Support Team by raising ticket in the support portal or by sending email to support@visualbi.comwith the supporting log files and images.
+ *BI Hub Web welcome page*
+
+1. To enable the login for the `https` version of URL `https://<BI Hub Web full URL>`, ensure that both **BI Hub Web** and **BI Hub Server** are configured with SSL protocols.
+> A mixed content error is thrown by the browser if *BI Hub Web* and *BI Hub Server* are configured for different protocols.
+1. Verify if the *BI Hub Web server* machine is reachable by entering a `ping` command in the command prompt.
+  - For "*Error Connecting to BI Hub Server*" error message, open a new tab in the browser and type the BI Hub Server URL including the *Port*, example: `http://bihub.com:12000` which has been configured in step:4 of <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/web/install')}>Installation of BI Hub Web</Link> section.
+
+The **BI Hub Login** screen should appear now, if not continue with the next steps.
+
+1. Verify if the *BI Hub Server* machine is reachable by entering a `ping` command in the command prompt, and if the URL is resolvable with your DNS settings.
+1. Check the firewall or antivirus for rules which may block the *BI Hub Web* and *BI Hub Server* incoming and outgoing connections.
+1. Open the browser console by pressing `F12` and check for any mixed content error or insecure response error.
+1. If you are using Self Signed SSL certificate, make sure that the SSL certificate has been added to the trusted certificate store, to avoid "insecure response error".
+
+> If none of the above steps worked, login into the server where you have installed BI Hub and try the same steps above in the browser.
+> If the *Login* page appears on the server but not on your local machine, the problem is related to your firewall or proxy settings or DNS settings. Contact your network Administrator/team to resolve this problem.
+
+If the problem persis
+If you still do not get the *BI Hub Web* login screen after following the above troubleshooting steps, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@visualbi.com with the supporting log files and images.

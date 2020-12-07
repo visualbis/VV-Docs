@@ -1,34 +1,74 @@
 /* stylelint-disable docusaurus/copyright-header */
+
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
+
 /* You can override the default Infima variables here. */
+
 :root {
-  --ifm-color-primary: #2565ab;
-  --ifm-color-primary-dark: #215b9a;
-  --ifm-color-primary-darker: #1f5691;
-  --ifm-color-primary-darkest: #1a4778;
-  --ifm-color-primary-light: #296fbc;
-  --ifm-color-primary-lighter: #2b74c5;
-  --ifm-color-primary-lightest: #3a84d4;
-  --ifm-code-font-size: 95%;
+    --ifm-color-primary: #2565ab;
+    --ifm-color-primary-dark: #215b9a;
+    --ifm-color-primary-darker: #1f5691;
+    --ifm-color-primary-darkest: #1a4778;
+    --ifm-color-primary-light: #296fbc;
+    --ifm-color-primary-lighter: #2b74c5;
+    --ifm-color-primary-lightest: #3a84d4;
+    --ifm-code-font-size: 95%;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }
-
-
 
 html[data-theme="dark"] h1.hero__title,
 html[data-theme="dark"] p.hero__subtitle {
-  color: #FFFFFF !important;
+    color: #FFFFFF !important;
 }
 
+* {
+    box-sizing: border-box;
+}
 
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 40px 40px 20px 20px;
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+    color: rgb(33, 175, 144);
+    transition: box-shadow .3s;
+}
+
+.box:hover {
+    box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+}
+
+#toc {
+    background-color: whitesmoke;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#color-red {
+    color: #FC0102;
+}
+
+#color-green {
+    color: #66C245;
+}
+
+#color-orange {
+    color: #FCA620;
+}

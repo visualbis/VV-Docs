@@ -1,19 +1,14 @@
 module.exports = {
   title: "BI Hub",
   tagline: "Your BI Search Engine",
-  url: "https://github.com/visualbis/VV-Docs",
+  url: "https://github.com/divyabhushan/VV-Docs",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   favicon: "img/favicon.ico",
   organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "VV-Docs", // Usually your repo name.
-  plugins: [['@docusaurus/plugin-google-analytics',{id:'bih-plugin-ga'}]],
   themeConfig: {
-    googleAnalytics: {
-      trackingID: 'UA-159436808-1',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
+    sidebarCollapsible: true,
     /*
     algolia: {
       apiKey: "api-key",
@@ -56,7 +51,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/user-guide/onboard",
+          to: "docs/user-guide/onboard-info",
           label: "User Guide",
           position: "right",
         },
@@ -77,13 +72,14 @@ module.exports = {
       `,
     },
   },
+  plugins: ["docusaurus-lunr-search"],
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "getting-started/intro",
+          
           sidebarPath: require.resolve("./sidebars.js"),
         },
         /*
