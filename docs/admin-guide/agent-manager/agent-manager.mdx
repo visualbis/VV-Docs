@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The **Agent Manager** screen provides 2 features:
+The **Agent Manager** screen provides *Agent* and *Cluster* management features:
 
 * Agent Manager: 
 * Cluster Manager: 
@@ -111,4 +111,22 @@ The agent icon against a user name indicates the number of agents (BI platforms)
 1. If the user names are different between BI platforms, to import users from the other BI platform(s), Click Save and proceed to Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/add-users-bi-platform')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link>. If user names are identical across platforms, then upon completion of Step:2 go to Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/synch-reports-users')}>Synchronize Reports of Users</Link>.
 1. Note that this functionality can be scheduled to be run automatically as and when required using the Agent Synchronization utility. Refer Section [Scheduled synchronization with AD](#)
 
-### 
+### Editing Agent/Instance Details
+
+
+When the Admin wants to make some changes to an already configured Agent
+(i.e. editing the agent configuration), the following steps are to be
+followed
+
+1.  Click on Agent Manager from the application pane
+1.  Select the agent that you want to modify and click on the count that shows the number of instances. The instance manager opens.
+1.  Select the agent instance and click on the Edit icon in the Instance details tab. Make the necessary changes and click on submit.
+1.  The agent will be modified accordingly, and the changes will be reflected in the Agent Manager page.
+
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="Edit Instance" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/editinstancenew.jpg')}/>
+    </Zoom>
+  </div>
+
+  *Edit Instance*
