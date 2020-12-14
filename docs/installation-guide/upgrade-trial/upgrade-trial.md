@@ -27,32 +27,39 @@ The user can upgrade the trial version to either the production version or exten
 
 Similar steps need to be followed for all other agents, BI Hub Web and BI Hub Server.
 
-* For BI Hub Server, you will be prompted to stop the backend to proceed with the update.
+* For BI Hub Server, you will be prompted to stop the backend instances to proceed with the update.
    <div>
      <Zoom>
        <img alt="Stop backend instances" src={useBaseUrl('/doc-images/installation-guide/stop-backend-instance.png')}/>
      </Zoom>
    </div>
-* Click **Next** and stop the backend in the **Config utility**. 
-  Close the **Config utility** after you stop the backend server before you proceed with the installer, if not an error will be thrown during the upgrade.
+* Click **Next**. Go to the **Instances** tab in the **Config utility** and stop ( <img src="/static/doc-images/installation-guide/stop.svg" height="18" width="12"/> ) all the running *instances*.
+
+   <div>
+     <Zoom>
+       <img alt="BI Hub Server instances" src={useBaseUrl('/doc-images/installation-guide/bihub-server-instances.png')}/>
+     </Zoom>
+   </div>
+
+   *BI Hub Server instances*
+
+:::warning
+Ensure all the instances listed in the *Config utility* are stopped before proceeding.
+The below screenshot indicates the above *Backend* instance is stopped and the *Play* button ( <img src="/static/doc-images/installation-guide/start.svg" height="18"/> ) is now highlighted.
+   <div>
+     <Zoom>
+       <img alt="BI Hub Server instances" src={useBaseUrl('/doc-images/installation-guide/stopped-instances.png')}/>
+     </Zoom>
+   </div>
+
+:::
+
+:::note
+Close the **Config utility** after you stop the backend instances before you proceed with the installer, if not an error will be thrown during the upgrade.
+:::
+
 * Click **Next** to complete the upgrade process.
 
 :::note
 No *Port* number should be asked during the upgrade. If you are prompted for the *port* number, kindly contact the support team at support@bihub.com.
 :::
-
-## Upgrade from trial to production
-
-Follow the steps below to upgrade from trial to production:
-1. Contact Visual BI support team support@bihub.com by raising a ticket to upgrade the trial version.
-1. Contact the Sales representative to purchase the new order, Licensing of the new BI Hub version.
-1. The application can be checked for the updated license.
-
-## Extend the trial period
-
-Follow the steps below to extend the trial period of the BI Hub application:
-
-1. For any further questions or queries contact the Visual BI sales team at sales@bihub.com. Raise a ticket requesting for an extension in the trial period with a valid reason.
-1. Note that the trial period will be extended only if the reason for the extension is valid.
-1. The support team will work on extending the trial and send a confirmation email.
-1. BI Hub can be used with the extended trial period.
