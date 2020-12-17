@@ -72,3 +72,7 @@ html[data-theme="dark"] p.hero__subtitle {
 #color-orange {
     color: #FCA620;
 }
+
+img[alt="icon"] {
+    width: 14px;
+}

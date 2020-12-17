@@ -60,8 +60,8 @@ module.exports = {
             "installation-guide/advanced/services-info",
             "installation-guide/advanced/server-restart-checklist",
         ],
-        "Upgrade Trial Version": [
-            "installation-guide/upgrade-trial/upgrade-trial"
+        "Upgrade of BI Hub": [
+            "installation-guide/upgrade/upgrade-bihub"
         ],
 
         "Moving BI Hub instance": ["installation-guide/move-instance/move-instance"],
