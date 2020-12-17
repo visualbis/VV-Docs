@@ -61,7 +61,7 @@ module.exports = {
             "installation-guide/advanced/server-restart-checklist",
         ],
         "Upgrade of BI Hub": [
-            "installation-guide/upgrade-trial/upgrade-trial"
+            "installation-guide/upgrade/upgrade-bihub"
         ],
 
         "Uninstall BI Hub": ["installation-guide/uninstall-reinstall/uninstall-bihub"]
