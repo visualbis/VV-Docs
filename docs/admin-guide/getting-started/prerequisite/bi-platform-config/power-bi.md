@@ -42,7 +42,7 @@ There are 3 main steps to configure Power BI agent:
 
   <div style={{textAlign: 'center'}}>
   <Zoom>
-    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/application-registeration.png')}/>
+    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/application-registration.png')}/>
   </Zoom>
   </ div>
 
