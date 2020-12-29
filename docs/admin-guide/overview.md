@@ -42,5 +42,4 @@ Users login with authentication type set as *Microsoft AD/LDAP*.
 
 ### Forgot Password
 
-If the administrator forgets his/her password or wishes to reset the password for security reasons 
-the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link>.
+If the administrator forgets his/her password or wishes to reset the password for security reasons, the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link>.
