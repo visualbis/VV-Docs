@@ -49,14 +49,8 @@ module.exports = {
             },
             /*    "installation-guide/install-bihub-windows/synch-bihub-platforms", */
 
-
-            /*        {
-                },
-            */
-
-
         ],
- /*       "Advanced": [
+        "Advanced": [
             "installation-guide/advanced/ssl-config",
             "installation-guide/advanced/agent-config",
             "installation-guide/advanced/load-balance",
@@ -65,9 +59,9 @@ module.exports = {
             "installation-guide/advanced/db-purge",
             "installation-guide/advanced/services-info",
             "installation-guide/advanced/server-restart-checklist",
-        ], */
-        "Upgrade Trial Version": [
-            "installation-guide/upgrade-trial/upgrade-trial"
+        ],
+        "Upgrade of BI Hub": [
+            "installation-guide/upgrade/upgrade-bihub"
         ],
 
         "Moving BI Hub instance": ["installation-guide/move-instance/move-instance"],
@@ -109,13 +103,17 @@ module.exports = {
             
         ],        
         "Getting Started": [
-            "admin-guide/overview", 
+            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/maintenance-of-bihub",
             {
                 type: "category",
                 label: "Agent Manager",
                 items: ["admin-guide/agent-manager/agent-manager",
             "admin-guide/agent-manager/logfiles-download",
-            "admin-guide/agent-manager/delete-instance-cluster"
+            "admin-guide/agent-manager/modify-prim-instance",
+            "admin-guide/agent-manager/delete-instance-cluster",
+            "admin-guide/agent-manager/synch-users-reports",
+            "admin-guide/agent-manager/configure-smart-search",
+            "admin-guide/agent-manager/synch-reports-users"
         ],
             },
             {
@@ -125,6 +123,8 @@ module.exports = {
                  "admin-guide/user-manager/add-reports-existing-user",
                 "admin-guide/user-manager/add-users-bi-platform",
                 "admin-guide/user-manager/edit-bihub-users",
+                "admin-guide/user-manager/edit-password-authenticated-user",
+                "admin-guide/user-manager/del-user",
                 "admin-guide/user-manager/power-users",
                 "admin-guide/user-manager/dashboard-admin",
                 "admin-guide/user-manager/create-cluster",
@@ -136,7 +136,8 @@ module.exports = {
                 items: [
                     "admin-guide/authenticate/authenticate",
                 "admin-guide/authenticate/synch-ms-ad-bihub",
-                "admin-guide/authenticate/add-ms-ad"
+                "admin-guide/authenticate/add-ms-ad",
+                "admin-guide/authenticate/del-msad-bihub",
             ],
             },
             {
@@ -150,7 +151,6 @@ module.exports = {
                     "admin-guide/reports/report-thumbnails",
                     "admin-guide/reports/reports-history",
                     "admin-guide/reports/custom-url",
-                    "admin-guide/reports/synch-reports-users"
                 ],
 
             },
@@ -158,57 +158,22 @@ module.exports = {
                 type: "category",
                 label: "Settings",
                 items: [
-                    "admin-guide/admin-functions/settings/settings",
-                    "admin-guide/admin-functions/settings/general",
-                    "admin-guide/admin-functions/settings/report",
-                    "admin-guide/admin-functions/settings/theme",
-                    "admin-guide/admin-functions/settings/user-dashboard",
-                    "admin-guide/admin-functions/settings/email-template"
+                    "admin-guide/settings/settings",
+                    "admin-guide/settings/general",
+                    "admin-guide/settings/report",
+                    "admin-guide/settings/theme",
+                    "admin-guide/settings/user-dashboard",
+                    "admin-guide/settings/email-template",
                 ]
             },
             "admin-guide/request-access-reports-admin",
             "admin-guide/audit",
-            
+            "admin-guide/getting-started/profile-settings",
+            "admin-guide/getting-started/mult-instances",
+            "admin-guide/admin-functions",
+            "admin-guide/row-level-security",
+            "admin-guide/integrate"
     ],
-        "Admin Functions": [{
-                type: "category",
-                label: "Integrating BI Hub with BI Platforms",
-                items: [
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/admin-functions",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/integrate",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/row-level-security",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/edit-msad-bihub",
-                    "admin-guide/admin-functions/integrate-bihub-platform-msad/del-msad-bihub"
-                ]
-            },
-            
-            {
-                type: "category",
-                label: "Maintenance of BI Hub",
-                items: [
-                    "admin-guide/admin-functions/maintenance-bihub/maintenance-of-bihub",
-                    "admin-guide/admin-functions/maintenance-bihub/edit-password-authenticated-user",
-                    "admin-guide/admin-functions/maintenance-bihub/del-user",
-                    "admin-guide/admin-functions/maintenance-bihub/configure-smart-search"
-                ]
-            },            
-            
-            {
-                type: "category",
-                label: "Multiple Instances of BI Hub",
-                items: [
-                    "admin-guide/admin-functions/multiple-instances/mult-instances",
-                    
-                    "admin-guide/admin-functions/multiple-instances/synch-users-reports",
-                    "admin-guide/admin-functions/multiple-instances/modify-prim-instance",
-       
-                ]
-            },
-            "admin-guide/admin-functions/profile-settings"
-
-        ], //End of Admin Functions
-
         "Backup and Recovery": [
             "admin-guide/backup-recovery/backup",
             "admin-guide/backup-recovery/recovery",

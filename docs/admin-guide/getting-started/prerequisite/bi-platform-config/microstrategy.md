@@ -21,6 +21,7 @@ The following steps are to be followed to achieve the same:
       <img alt="Microstrategy Developer" src={useBaseUrl('/doc-images/microstrategy/microstrategy-developer.png')}/>
     </Zoom>
   </div>
+
   - Go to **Authentication > Metadata** and select the corresponding Windows AD user in the Link Windows user section
 
   <div style={{textAlign: 'center'}}>
@@ -30,15 +31,16 @@ The following steps are to be followed to achieve the same:
   </div>
 
 * Create a Group Policy object for Internet Explorer:
-  - In the Group Policy Management, go to **User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page > Site** to Zone Assignment List and Enable Site to Zone Assignment list as in the screenshot
-
+  
+  - In the Group Policy Management, go to **User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page > Site to Zone Assignment List**, and select the **Enabled** option.
+  
   <div style={{textAlign: 'center'}}>
     <Zoom>
       <img alt="" src={useBaseUrl('/doc-images/microstrategy/site-zone-assign.png')}/>
     </Zoom>
   </div>
 
-  *Figure: Site to Zone Assignment List*
+  *Site to Zone Assignment List*
 
   - Click on the show button and add MicroStrategy Server URL in Value Name and 2 in value to mark it as a trusted Server
 
@@ -48,7 +50,7 @@ The following steps are to be followed to achieve the same:
     </Zoom>
   </ div>
 
-* In Windows **Control Panel > Internet Options >Advanced**, check Enable Integrated Windows Authentication
+* In Windows **Control Panel > Internet Options >Advanced**, check *Enable Integrated Windows Authentication*.
 
   <div style={{textAlign: 'center'}}>
     <Zoom>

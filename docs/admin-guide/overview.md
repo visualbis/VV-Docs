@@ -30,6 +30,8 @@ This is the same order in which the modules are displayed in the application pan
   </Zoom>
 </div>
 
+*Admin sidebar menus*
+
 ### First-time Login
 
 BI Hub administrator mode and user mode uses the same product URL and depending on the 
@@ -41,23 +43,4 @@ Users login with authentication type set as *Microsoft AD/LDAP*.
 ### Forgot Password
 
 If the administrator forgets his/her password or wishes to reset the password for security reasons 
-the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link>. 
-
-### Landing Page
-
-After setup of agents, connectivity with directory services and a few successful synchronizations, the landing page displays four tiles.
-
-- **Instances configured** – List of instances under the agents being configured and their status
-- **Authentications configured** – List of authentications 
-- **Components configured** – List of components like Elastic Search, Message Queue, SMTP
-- **Synchronization Information** – Synchronization details for users, reports and authentication. The administrator can check here for recent activities that happened in BI Hub. To view the recent activities over a period of time, the administrator can click on the calendar icon and provide a date range as input.
-
-### Admin Home Page
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="Landing Page New" src={useBaseUrl('/doc-images/admin-guide/overview/landing-page-new.png')}/>
-  </Zoom>
-</div>
-
-*Landing Page*
+the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link>.

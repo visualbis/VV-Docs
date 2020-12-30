@@ -26,4 +26,4 @@ You should see the screen as shown in the figure below.
 - [ ] A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
 :::
 
-If you are unable to successfully connect to the server, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@visualbi.com with the supporting log files with the logger level set to Info.
+If you are unable to successfully connect to the server, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@bihub.com with the supporting log files with the logger level set to Info.
