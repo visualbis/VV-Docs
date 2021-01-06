@@ -1,7 +1,7 @@
 ---
-id: ssl-config
-title: SSL Configuration
-sidebar_label: SSL Configuration
+id: ssl-web
+title: Configure SSL for BI Hub Web
+sidebar_label: Configure SSL for BI Hub Web
 ---
 
 This section explains the steps to *configure the SSL*, if you have installed *BI Hub Web with Nginx*.

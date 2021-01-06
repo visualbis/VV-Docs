@@ -51,8 +51,17 @@ module.exports = {
 
         ],
         "Advanced": [
-            "installation-guide/advanced/ssl-config",
-            "installation-guide/advanced/agent-config",
+            {
+                type: "category",
+                label: "SSL",
+                items: ["installation-guide/advanced/ssl/ssl",
+                "installation-guide/advanced/ssl/ssl-server",
+                "installation-guide/advanced/ssl/ssl-web",                
+                "installation-guide/advanced/ssl/ssl-agents",
+                "installation-guide/advanced/ssl/ssl-advanced",
+            ]
+            },            
+            
             "installation-guide/advanced/load-balance",
             "installation-guide/advanced/architecture",
             "installation-guide/advanced/backup-restore",
