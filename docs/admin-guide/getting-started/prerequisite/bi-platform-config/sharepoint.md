@@ -59,7 +59,7 @@ Before we connect *SharePoint* site to BI Hub, we need to setup the **Sharepoint
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="Trust SharePoint App" src={useBaseUrl('/doc-images/sharepoint/trust-app.png')}/>
+<img alt="Trust SharePoint App" src={useBaseUrl('/doc-images/sharepoint/trust-app.jpg')}/>
   </Zoom>
 </div>
 

@@ -9,7 +9,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 If you didn’t get the webpage response then kindly follow the steps below to troubleshoot 
 
 * Check if the instance is in running state in the **Configuration Utility**.
-* Go to `Start > Run > Services.msc` utility, and check if the **Server instance service** is running.
+* Go to **Start > Run > Services.msc** utility, and check if the **Server instance service** is running.
 * Open the log files from the location (default) `<installation folder>/server/log/app-log/<instance_name>.log` and check for any errors. 
 :::note
 For more information you have to set the log type. Please change the **Log Level** as **info** in the **General Section** of the **Configuration Utility**.
