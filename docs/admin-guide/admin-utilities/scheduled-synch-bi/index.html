@@ -6,8 +6,8 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.69">
 <title data-react-helmet="true">Scheduled synchronization with BI platforms | BI Hub</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_language" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Scheduled synchronization with BI platforms | BI Hub"><meta data-react-helmet="true" name="description" content="To synchronize the users or reports from one or more agent instances,"><meta data-react-helmet="true" property="og:description" content="To synchronize the users or reports from one or more agent instances,"><meta data-react-helmet="true" property="og:url" content="https://github.com/divyabhushan/VV-Docs/docs/admin-guide/admin-utilities/scheduled-synch-bi"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://github.com/divyabhushan/VV-Docs/docs/admin-guide/admin-utilities/scheduled-synch-bi"><link rel="stylesheet" href="/styles.e5ac38c5.css">
 <link rel="preload" href="/styles.6be0ae8c.js" as="script">
-<link rel="preload" href="/runtime~main.731bcd87.js" as="script">
-<link rel="preload" href="/main.5b722c60.js" as="script">
+<link rel="preload" href="/runtime~main.6000013e.js" as="script">
+<link rel="preload" href="/main.bc751030.js" as="script">
 <link rel="preload" href="/common.d63fc071.js" as="script">
 <link rel="preload" href="/2.f8678ee0.js" as="script">
 <link rel="preload" href="/143.3ed923ec.js" as="script">
@@ -22,7 +22,7 @@
 follow the steps below.</p><ol><li>Navigate to the following location to locate the Instance Synchronization utility: <code>&lt;VBI View Server installation directory&gt;/utilities/InstanceSynchronization.exe</code></li><li>Click on <strong>File &gt; Open in command prompt &gt; Open command prompt as administrator</strong></li><li>Two parameters need to be passed. They are:</li></ol><ul><li>Synchronization option - It can either be users or reports to synchronize users and reports respectively.</li><li>Instance list - list of configured instances for which the synchronization process should take place</li></ul><p>Any instance name having a space in between its name should be enclosed in double quotes. There is an optional “all” parameter which can be passed instead of individual instance names to synchronize all the
 configured instances. Given below are some sample commands which can be stored in a batch file and it can be scheduled to run using the organization’s scheduling tool:</p><ul><li>To synchronize users from all instances <code>InstanceSynchronization.exe --u --i all</code></li><li>To synchronize reports from all instances <code>InstanceSynchronization.exe --r --i all</code></li><li>To synchronize users from certain instances <code>InstanceSynchronization.exe --u –i BOBJ</code>, Tableau and “Qlik Sense” where BOBJ, Tableau and Qlik Sense are names of some of the instances configured in BI Hub</li><li>To synchronize reports from certain instances <code>InstanceSynchronization.exe --r –i BOBJ</code>, Tableau where BOBJ and Tableau are names of some of the agents configured in BI Hub</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/admin-guide/admin-utilities/scheduled-synch-ad"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Scheduled synchronization with AD</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/admin-guide/admin-utilities/multiple-admin-acct"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Multiple Administrator Account »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_ thin-scrollbar"></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>
     <div class="row">
-      <div class="col" style="text-align:left">Copyright © 2020 Visual BI Solutions.</div>
+      <div class="col" style="text-align:left">Copyright © 2021 Visual BI Solutions.</div>
       <div class="col" style="text-align:right">
         <a href="https://twitter.com/vbi_hub" target="_blank"><img src="img/twitter.svg" width="21px" height="16px"></a>
         <a href="https://www.facebook.com/vbihub/" target="_blank" style="padding-left:10px"><img src="img/facebook.svg" width="18px" height="17px"></a>
@@ -31,8 +31,8 @@ configured instances. Given below are some sample commands which can be stored i
     </div>
       </div></div></div></footer></div>
 <script src="/styles.6be0ae8c.js"></script>
-<script src="/runtime~main.731bcd87.js"></script>
-<script src="/main.5b722c60.js"></script>
+<script src="/runtime~main.6000013e.js"></script>
+<script src="/main.bc751030.js"></script>
 <script src="/common.d63fc071.js"></script>
 <script src="/2.f8678ee0.js"></script>
 <script src="/143.3ed923ec.js"></script>
