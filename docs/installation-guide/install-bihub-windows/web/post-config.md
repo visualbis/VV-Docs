@@ -13,13 +13,12 @@ To verify the successful installation and configuration of BI Hub Web, perform t
 
 1. Go to the URL at `https://<BI Hub Web full URL>` (if SSL is enabled), or `http://<BI Hub Web full URL>` (if SSL is not enabled).
 1. A **BI Hub** login page must load up as shown in the below screenshot:
- <div style={{textAlign: 'center'}}>
+ <div class="center">
    <Zoom>
      <img alt="img" src={useBaseUrl('/doc-images/fig3_3-web-verification.png')}/>
    </Zoom>
+   <p>BI Hub Web Verification</p>
  </div>
-
- *BI Hub Web Verification*
  
 2. Log in to BI Hub with the default super administrator USERNAME: `bihubadmin`, default PASSWORD: `password`. Select the AUTHENTICATION method as *Native* and click **LOGIN**.
 > If there is no *Native* authentication method in the dropdown box or the error connecting to the backend error message is shown, follow the troubleshooting steps provided in the next section.
@@ -28,13 +27,12 @@ To verify the successful installation and configuration of BI Hub Web, perform t
 
 This brings you to the **Admin Dashboard** page on the BI Hub Web application.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
     <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/on1.png')}/>
   </Zoom>
+  <p>BI Hub Dashboard</p>
 </div>
-
-*BI Hub Dashboard*
 
 :white_check_mark: **BI Hub Web** is successfully installed and configured.
 

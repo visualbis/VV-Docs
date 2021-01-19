@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 1. Click on Authentication Menu from the application pane as shown below.
 
-    <div style={{textAlign: 'center'}}>
+    <div class="center">
     <Zoom>
       <img alt="Authentication Manager Menu" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/authentication-manager-menu.jpg')}/>
     </Zoom>
@@ -25,7 +25,7 @@ Step:2 above would have imported users only with Microsoft AD authentication. In
 1. Note that this functionality can be scheduled to be run automatically using the Authentication Synchronization utility. [Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-synch-ad')}> Scheduled synchronization with AD</Link>].
 In Authentication Manager screen, you will be able to set the Default Authentication Type as shown in the Figure below. In our example, Windows AD has been selected as the Default Authentication Type.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Authentication Manager - Default Authentication Type" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/amg1.jpg')}/>
     </Zoom>
@@ -35,7 +35,7 @@ In Authentication Manager screen, you will be able to set the Default Authentica
 
 After selecting the Windows AD as Default Authentication Type, you will be able to see the Auhthentication Manager screen with Windows AD being selected as Default Authentication type (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Authentication Manager - Default Authentication Type as Windows AD" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/amg2.jpg')}/>
     </Zoom>

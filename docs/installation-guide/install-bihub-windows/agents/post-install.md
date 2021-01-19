@@ -14,7 +14,7 @@ To verify the successful installation of BI Hub Agents, open the Browser and nav
 
 You should see the screen as shown in the figure below.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="Agent Success Screen" src={useBaseUrl('/doc-images/post-config/agent-success.jpg')}/>
   </Zoom>

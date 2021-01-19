@@ -24,13 +24,13 @@ Following are the modules displayed in the application side panel:
 
 This is the same order in which the modules are displayed in the application pane as shown below. The functionality of these modules are covered in subsequent sections of this document.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-<img alt="Admin Menu" src={useBaseUrl('/doc-images/admin-guide/overview/admin-menu.png')}/>
+<img alt="Admin Menu" height="400" src={useBaseUrl('/doc-images/admin-guide/overview/admin-menu.png')}/>
   </Zoom>
+	<p>Admin sidebar menus</p>
 </div>
 
-*Admin sidebar menus*
 
 ### First-time Login
 

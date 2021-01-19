@@ -13,7 +13,6 @@ The following table shows the various scenarios of application installation and 
 | **Operating System** | Windows Server 2008 or later | Windows Server 2008 or later | Windows Server 2008 or later |
 | **Processor**        | 2.4 GHz, Quadcore            | 2 GHz, Quadcore              | 2 GHz, Quadcore              |
 | **RAM**              | 16 GB                        | 8 GB                         | 8 GB                         |
-*System Requirements*
 
 ## Browser Compatibility
 
@@ -22,7 +21,6 @@ The following table shows the various Browsers compatible with BI Hub:
 | Chrome      | Mozilla Firefox | Internet Explorer | Edge        |
 |-------------|-----------------|-------------------|-------------|
 | 35 or above | 30 or above     | 11.xxx            | 40 or above |
-*Browser Compatibility*
 
 ## Databases and Webservers
 

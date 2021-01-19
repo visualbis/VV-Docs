@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 The power users can also have permissions related to dashboard. In our example, the User Group has been created as Dashboard Manager (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
           <img alt="Manage Permissions for Dashboard Manager User Group" src={useBaseUrl('doc-images/admin-guide/power-users/pdm1.png')}/>
     </Zoom>
@@ -21,7 +21,7 @@ The power users can also have permissions related to dashboard. In our example, 
 
 Once when the Manage Permissions option is clicked, you will be able to view the Dashboard Administration Settings in Manage Permissions screen (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Dashboard Administration Settings" src={useBaseUrl('doc-images/admin-guide/power-users/pdm2.png')}/>
     </Zoom>
@@ -55,7 +55,7 @@ When the option "None" is selected, then the complete Dashboard Administration s
 It is to be noted that the Reports for which the Power User has access in the User Mode will be live loaded and the Reports for which the Power User has no access in the User Mode will be shown as default thumbnail reports (see Figure below).
 :::
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Reports View for Power User" src={useBaseUrl('doc-images/admin-guide/power-users/pdm3.png')}/>
     </Zoom>

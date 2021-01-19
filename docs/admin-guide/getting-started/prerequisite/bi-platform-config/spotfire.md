@@ -27,13 +27,13 @@ import "react-medium-image-zoom/dist/styles.css";
   - Open the **Spotfire Server Configuration** utility.
   - Click on the **Configuration** tab and select **External Authentication** in the left panel.
  
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
      <img alt="Enable External Authentication and configure" src={useBaseUrl('/doc-images/admin-guide/spotfire-config-tool.png')}/>
     </Zoom>
+  <p>Spotfire External Authentication configurations</p>
   </div>
 
-  *Spotfire External Authentication configurations*
 
     - Select **Yes** to **Enable external authentication** in the right panel.
     -  In the **Type** label, select **Custom Authenticator** from the dropdown list.
@@ -59,21 +59,22 @@ Following are the configuration fields details required from the BI Platform:
 * Go to **Spotfire Server Configuration > External Authentication**, and set the **Type** as **Authentication Filter**. This will enable Spotfire Server to use the custom Java authentication filter.
 * Enter the **Class Name** as - **vbi.spotfireagent.VbiExtAuthenticator**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="Users and Groups" src={useBaseUrl('/doc-images/spotfire/users-groups.jpg')}/>
   </Zoom>
+ 	<p>Manage Users and Groups account</p>
  </ div>
 
- *Manage Users and Groups account*
 
 * Create a **Service account** for the *Spotfire* agent with both **API User**, and **Impersonator** user roles.
 * Click **Add Users** and add the user members with the *Display name*, and *Composite name*.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="Add Users" src={useBaseUrl('/doc-images/spotfire/add-users.png')}/>
   </Zoom>
+	<p>Add Users</p>
  </ div>
 
 Restart the server for the changes to take place.

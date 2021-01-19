@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 The Column Headers displaying all the Reports can be sorted in ascending order. For our example, the Column Header Report Name has been sorted in Ascending Order (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Ascending Order" src={useBaseUrl('doc-images/user-guide/cf27.png')}/>
     </Zoom>
@@ -21,7 +21,7 @@ The Column Headers displaying all the Reports can be sorted in ascending order. 
 
 In the below Figure the Column Header Report Name has been sorted in Descending Order.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Descending Orde" src={useBaseUrl('doc-images/user-guide/cf28.png')}/>
     </Zoom>
@@ -31,7 +31,7 @@ In the below Figure the Column Header Report Name has been sorted in Descending 
 
 Using the Filter Icon, the user can filter the reports as shown in the below figures.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Filter Icon" src={useBaseUrl('doc-images/user-guide/cf29.png')}/>
     </Zoom>
@@ -39,7 +39,7 @@ Using the Filter Icon, the user can filter the reports as shown in the below fig
 
 *Filter Icon*
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Filter Window" src={useBaseUrl('doc-images/user-guide/cf30.png')}/>
     </Zoom>

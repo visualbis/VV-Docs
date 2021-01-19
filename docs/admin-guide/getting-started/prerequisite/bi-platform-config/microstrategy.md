@@ -16,7 +16,7 @@ The following steps are to be followed to achieve the same:
 * Mapping Windows AD users:
   - In MicroStrategy Developer, select a user group under **Administration > User Manager**, right-click on each user and select Edit
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Microstrategy Developer" src={useBaseUrl('/doc-images/microstrategy/microstrategy-developer.png')}/>
     </Zoom>
@@ -24,7 +24,7 @@ The following steps are to be followed to achieve the same:
 
   - Go to **Authentication > Metadata** and select the corresponding Windows AD user in the Link Windows user section
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="User Editor" src={useBaseUrl('/doc-images/microstrategy/user-editor.png')}/>
     </Zoom>
@@ -34,17 +34,16 @@ The following steps are to be followed to achieve the same:
   
   - In the Group Policy Management, go to **User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page > Site to Zone Assignment List**, and select the **Enabled** option.
   
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="" src={useBaseUrl('/doc-images/microstrategy/site-zone-assign.png')}/>
     </Zoom>
+  	<p>Site to Zone Assignment List</p>
   </div>
-
-  *Site to Zone Assignment List*
 
   - Click on the show button and add MicroStrategy Server URL in Value Name and 2 in value to mark it as a trusted Server
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Show Content" src={useBaseUrl('/doc-images/microstrategy/show-content.png')}/>
     </Zoom>
@@ -52,15 +51,15 @@ The following steps are to be followed to achieve the same:
 
 * In Windows **Control Panel > Internet Options >Advanced**, check *Enable Integrated Windows Authentication*.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="IE properties" src={useBaseUrl('/doc-images/microstrategy/internet-properties.png')}/>
     </Zoom>
   </div>
 
-* In **MicroStrategy Web Administrator > Default Properties**, Enable the Windows Authentication and make it default and un-check all the other login mode and change the '‘Trusted Authentication Providers' to Custom SSO
+* In **MicroStrategy Web Administrator > Default Properties**, Enable the Windows Authentication and make it default and un-check all the other login mode and change the 'Trusted Authentication Providers' to Custom SSO
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="Admin page" src={useBaseUrl('/doc-images/microstrategy/admin-page.png')}/>
   </Zoom>

@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 The license details of the product can be seen in the admin dashboard. The license of the whole product can be seen on the top right.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="License Details" src={useBaseUrl('doc-images/admin-guide/lc1.png')}/>
     </Zoom>
@@ -22,7 +22,7 @@ The license details of the product can be seen in the admin dashboard. The licen
 We can also check the license of individual agents. To view the agent license, click on the help icon on the top right and choose License Details. The list of agents with their start date and end date can be
 seen.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="License Details with Sync Online and Sync Offline options" src={useBaseUrl('doc-images/admin-guide/lc2.png')}/>
     </Zoom>
@@ -46,7 +46,7 @@ Sync offline is done when there is no internet connection in the server hosting 
 
 1. Click on the help icon > License Details > Sync Offline. The below screen appears
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="License Details - General Key and Upload" src={useBaseUrl('doc-images/admin-guide/lc3.png')}/>
     </Zoom>
@@ -61,7 +61,7 @@ The license changes will now be reflected in the license details.
 
 It is to be noted that when the License Period is expired in the Server Level, then you will be able to view the License Expired Message in the Admin page shown in the below Figure.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="License Expired Alert" src={useBaseUrl('doc-images/admin-guide/le1.png')}/>
     </Zoom>

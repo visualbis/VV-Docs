@@ -23,11 +23,12 @@ Follow the steps below to add a new agent:
 
 - In the **Admin Home** screen, select **Agent Manager Menu** from the application pane as shown below.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
-    <img alt="Agent Manager Menu" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-menu.jpg')}/>
+    <img alt="Agent Manager Menu" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-menu.png')}/>
   </Zoom>
  </div>
+
 - Click on the **Agent Manager** tab and then click **Add Agent** at the top right corner.
 - Type *Agent* information such as **Agent name, Server**, and **Port** (This is the same *Port* number entered while installing the *Agents*. Refer the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for reference).
 > The tool tips provide the necessary guidance.
@@ -39,13 +40,13 @@ Follow the steps below to add a new agent:
     > For example; If the agent is at *12100*, then the instances must be in *12101,12102,...* series. 
       The *Tool* tips provide necessary guidance and show screenshots of the BI platform with the values.
 
-    <div style={{textAlign: 'center'}}>
+    <div class="center">
       <Zoom>
         <img alt="Instance Manager" src={useBaseUrl('/doc-images/admin-guide/agent/instance-manager.jpg')}/>
       </Zoom>
+    <p>Agent and the Instances on the similar Port number and Port series</p>
     </div>
 
-    *Agent and the Instances on the similar Port number and Port series*
 
 - Click **Submit** to add the instance or click **Submit** & **Add New Instance** to add another instance of the same agent.
  - The **Status** column of the configured instance is displayed in the **Home** page of that agent. Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
@@ -56,13 +57,13 @@ Follow the steps below to add a new agent:
 
 After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents as shown below. 
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
       <Zoom>
         <img alt="Agent Manager New" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-new.jpg')}/>
       </Zoom>
+	<p>Agent Manager with list of Agents installed and their details</p>
 </div>
 
-*Agent Manager with list of Agents installed and their details*
 
 :white_check_mark: Agents are successfully *installed* and are in the *running* state.
 

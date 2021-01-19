@@ -18,13 +18,13 @@ When you provide multiple instances, you need to load balance the instances on y
  At least one instance is required to run the BI Hub Server.
 :::
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="BI Hub Server Instances Configuration" src={useBaseUrl('doc-images/installation-guide/bihub-server-instances.png')}/>
     </Zoom>
+	<p>BI Hub Server Instances</p>
   </div>
 
-*BI Hub Server Instances*
 
 * Click the **Add instance** button in the top right corner to add a new instance. In the pop-up window, enter an *instance* name and the *Port* number at which the instance will run.
 

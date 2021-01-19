@@ -32,13 +32,13 @@ Following are the sequence of steps to install the BI Hub Server:
    - *Online Mode* - Choose this option if this machine is connected to the internet. If this machine is behind the firewall, make sure to whitelist the URL https://products.visualbi.com. If the installer can reach the BI Hub activation server, then it will navigate to the next screen.
    - *Offline Mode* - Choose this option if this machine is not connected to the internet. The license can be activated offline.
 5.  If *Offline mode* is chosen, continue with this step, else skip to Step 12. The next screen will give a unique activation key for this installation instance. Open https://products.visualbi.com/license-generator (Refer the screenshot below) in another computer which has internet connection. In that page, type the registered email address, the license key, and copy & paste the activation key generated into the Key code box.
-   <div>
+   <div class="center">
      <Zoom>
        <img alt="License File Generator" src={useBaseUrl('/doc-images/fig3.1-licence-generator.png')}/>
      </Zoom>
+     <p>Offline License Generator Webpage</p>
    </div>
 
-   *Offline License Generator Webpage*
 11. Click the **Download File** button that generates the `license.licx` file and prompt you to download the file on your system.
 12. Download the file and save it on the system where the installer is currently running and click **Next**.
 13. Browse and select the correct downloaded license file (`license.licx`). 

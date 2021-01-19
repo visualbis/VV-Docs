@@ -18,7 +18,7 @@ The user can view all the Reports in three different views as listed below. This
 
 The Reports will be displayed in the form of List when the List View option is selected (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="List View" src={useBaseUrl('doc-images/user-guide/cf13.png')}/>
     </Zoom>
@@ -30,7 +30,7 @@ The Reports will be displayed in the form of List when the List View option is s
 
 The Reports will be displayed in the form of Large Tiles when the Large Tiles View option is selected (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Large Tiles View" src={useBaseUrl('doc-images/user-guide/cf14.png')}/>
     </Zoom>
@@ -42,7 +42,7 @@ The Reports will be displayed in the form of Large Tiles when the Large Tiles Vi
 
 The Reports will be displayed in the form of Large Tiles when the Small Tiles View option is selected (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Small Tiles View" src={useBaseUrl('doc-images/user-guide/cf15.png')}/>
     </Zoom>

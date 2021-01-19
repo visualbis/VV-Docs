@@ -17,12 +17,11 @@ If the admin wishes to associate all reports to BI Hub users using the single-cl
 -   The initial setup is completed, and the users can now login into BI Hub and execute reports.
 -   Administrator can switch to the home page and view the number of reports synchronized in the Reports Information tile and the details in Synchronization Information tile.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Synchronization Information" src={useBaseUrl('doc-images/admin-guide/dashboard-sync-info.png')}/>
     </Zoom>
+  	<p>Synchronization Information</p>
   </div>
-
-  *Synchronization Information*
 
 -   Note that this functionality can be scheduled to be run automatically using the Agent Synchronization utility [Refer Section <Link to={useBaseUrl('#')}>"Scheduled synchronization with BI platforms"</Link>].

@@ -10,7 +10,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 1. Click on *Agent Manager* from the menu pane. Click on the *Cluster Manager* Tab and then click *Add cluster*.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Cluster Manager Tab" src={useBaseUrl('doc-images/admin-guide/admin-functions/mult-instances/cluster-manager-tab.jpg')}/>
     </Zoom>
@@ -22,7 +22,7 @@ import "react-medium-image-zoom/dist/styles.css";
 3. Choose the required instances (These instances should have been created already in the Agent Manager) and mark one of them as Primary and click save and then click Submit. This creates a cluster of that agent (type).
 4. The cluster manager home page lists all the clusters created in BI Hub and selecting a cluster reveals the details of the instances of that cluster.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Add Clusters" src={useBaseUrl('doc-images/admin-guide/admin-functions/mult-instances/cluster-manager2.png')}/>
     </Zoom>

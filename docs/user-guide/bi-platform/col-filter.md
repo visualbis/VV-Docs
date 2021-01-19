@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 Using the “Column Filter" option the user will be able to select the Column Headers which would get displayed in the Menu screens. The Custom Attributes which have been added by the Admin will be also listed here (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Column Filter" src={useBaseUrl('doc-images/user-guide/cf31.png')}/>
     </Zoom>

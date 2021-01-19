@@ -13,11 +13,11 @@ BI Hub accepts administrator profile information such as picture, email address,
 
 BI Hub administrator can modify the email address, division, picture and theme using Profile Settings. Administrator can modify his/her password using instructions available in Section adminutilities of this document.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
-      <img alt="Profile Settings" src={useBaseUrl('doc-images/admin-guide/admin-functions/profile-settings.png')}/>
+      <img height="400" alt="Profile Settings" src={useBaseUrl('doc-images/admin-guide/admin-functions/profile-settings.png')}/>
     </Zoom>
+	<p>Profile Settings</p>
   </div>
 
-*Profile Settings*
 

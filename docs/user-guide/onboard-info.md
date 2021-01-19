@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 When logged in for the first time the users will be able to view their User screen with some Onboarding information as shown in the below Figure.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
     <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/on1.png')}/>
   </Zoom>
@@ -29,7 +29,7 @@ By clicking the respective options as shown above, a demo video file will be pro
 
 The above listed options can be also navigated through the “Next” button that exists in the demo video file.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
     <img alt="Next option in Demo Video File" src={useBaseUrl('doc-images/user-guide/dv.png')}/>
   </Zoom>
