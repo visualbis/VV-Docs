@@ -13,7 +13,7 @@ When logged in for the first time the users will be able to view their User scre
 
 <div class="center">
   <Zoom>
-    <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/on1.png')}/>
+    <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/dashboard.png')}/>
   </Zoom>
 </div>
 

@@ -29,7 +29,7 @@ This brings you to the **Admin Dashboard** page on the BI Hub Web application.
 
 <div class="center">
   <Zoom>
-    <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/on1.png')}/>
+    <img alt="Onboarding Information – Options" src={useBaseUrl('doc-images/user-guide/dashboard.png')}/>
   </Zoom>
   <p>BI Hub Dashboard</p>
 </div>
