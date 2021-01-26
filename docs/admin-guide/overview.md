@@ -19,7 +19,7 @@ Following are the modules displayed in the application side panel:
 - Authentication
 - Audit
 - Reports
-- User Request
+- User Requests
 - Settings
 
 This is the same order in which the modules are displayed in the application pane as shown below. The functionality of these modules are covered in subsequent sections of this document.
@@ -44,5 +44,4 @@ Users login with authentication type set as *Microsoft AD/LDAP*.
 
 ### Forgot Password
 
-If the administrator forgets his/her password or wishes to reset the password for security reasons 
-the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link>.
+To recover a lost password or reset password for security reasons, an administrator can use the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link> utility.

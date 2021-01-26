@@ -6,33 +6,42 @@ sidebar_label: General Tab
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-In General Tab, you have four different categories as listed below:
+The **General** tab, has four different categories:
 1. <Link to={useBaseUrl('#navigation')}>Navigation</Link>
-1. <Link to={useBaseUrl('#search')}>Search</Link>
-1. <Link to={useBaseUrl('#views')}>Views</Link>
-1. <Link to={useBaseUrl('#customization')}>Customization</Link>
+2. <Link to={useBaseUrl('#search')}>Search</Link>
+3. <Link to={useBaseUrl('#views')}>Views</Link>
+4. <Link to={useBaseUrl('#customization')}>Customization</Link>
 
 ## Navigation
 
-In the Navigation category, the Admin will be able to rename and enable/disable the Navigation Menu items for the Users. For our example, the Navigation Menu item "Favorites" has been renamed as "My Favorites" and the Menu items "BI Platform" and "History" have been disabled.
+To customize the **Navigation Panel** for other users, the super Admin can:
+
+- **Drag to rearrange** the navigation menus,
+- **Rename** the navigation labels,
+- Enable/disable the navigation menus with the **ON/OFF** toggle.
+
+Let's consider the highlighted changes done by the Admin:
+
   <div class="center">
     <Zoom>
-      <img alt="" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/nav1.png')}/>
+      <img alt="Admin customizes Navigation Panel" src={useBaseUrl('doc-images/admin-guide/navpanel-customized.png')}/>
     </Zoom>
+    <p>Admin customizes the Navigation Panel</p>
   </div>
 
-  *Navigation Tab in User Screen - Rename and Enable/Disable Navigation Menu Items*
+The **Navigation** menu items change will reflect for all the other users as indicated in the screenshot:
 
-Based on the above configuration, you will be able to view the Navigation Menu items for the Users as shown below.
   <div class="center">
     <Zoom>
-      <img alt="Navigation Menu Items in User Screen" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/nav2.png')}/>
+      <img alt="Navigation Panel for other users" src={useBaseUrl('doc-images/admin-guide/navpanel-users.png')}/>
     </Zoom>
+    <p>Navigation Panel as seen by all other users</p>
   </div>
-  
 
-*Navigation Menu Items in User Screen*
+'Favorites' renamed as 'My Favorites', 'BI Platform', and 'History' menus disabled.
 
 ## Search
 

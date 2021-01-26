@@ -12,41 +12,41 @@ module.exports = {
             "installation-guide/install-pre",
         ],
         "Installation of BI Hub for Windows Platform": [{
-                type: "category",
-                label: "Server Installation",
-                items: ["installation-guide/install-bihub-windows/server/install",
-                    {
-                        type: "category",
-                        label: "Server Configuration",
-                        items: [
-                            "installation-guide/install-bihub-windows/server/config/config",
-                            "installation-guide/install-bihub-windows/server/config/config-tab",
-                            "installation-guide/install-bihub-windows/server/config/instances-tab",
-                        ],
-                    },
-                    "installation-guide/install-bihub-windows/server/post-config",
-                    "installation-guide/install-bihub-windows/server/troubleshooting",
-                ],
-            },
+            type: "category",
+            label: "Server Installation",
+            items: ["installation-guide/install-bihub-windows/server/install",
+                {
+                    type: "category",
+                    label: "Server Configuration",
+                    items: [
+                        "installation-guide/install-bihub-windows/server/config/config",
+                        "installation-guide/install-bihub-windows/server/config/config-tab",
+                        "installation-guide/install-bihub-windows/server/config/instances-tab",
+                    ],
+                },
+                "installation-guide/install-bihub-windows/server/post-config",
+                "installation-guide/install-bihub-windows/server/troubleshooting",
+            ],
+        },
 
-            {
-                type: "category",
-                label: "Web Installation",
-                items: [
-                    "installation-guide/install-bihub-windows/web/install",
-                    "installation-guide/install-bihub-windows/web/config",
-                    "installation-guide/install-bihub-windows/web/post-config",
-                    "installation-guide/install-bihub-windows/web/troubleshooting"
-                ]
-            },
-            {
-                type: "category",
-                label: "Agents Installation",
-                items: [
-                    "installation-guide/install-bihub-windows/agents/install",
-                    "installation-guide/install-bihub-windows/agents/post-install",
-                ]
-            },
+        {
+            type: "category",
+            label: "Web Installation",
+            items: [
+                "installation-guide/install-bihub-windows/web/install",
+                "installation-guide/install-bihub-windows/web/config",
+                "installation-guide/install-bihub-windows/web/post-config",
+                "installation-guide/install-bihub-windows/web/troubleshooting"
+            ]
+        },
+        {
+            type: "category",
+            label: "Agents Installation",
+            items: [
+                "installation-guide/install-bihub-windows/agents/install",
+                "installation-guide/install-bihub-windows/agents/post-install",
+            ]
+        },
             /*    "installation-guide/install-bihub-windows/synch-bihub-platforms", */
 
         ],
@@ -55,13 +55,13 @@ module.exports = {
                 type: "category",
                 label: "SSL",
                 items: ["installation-guide/advanced/ssl/ssl",
-                "installation-guide/advanced/ssl/ssl-server",
-                "installation-guide/advanced/ssl/ssl-web",                
-                "installation-guide/advanced/ssl/ssl-agents",
-                "installation-guide/advanced/ssl/ssl-advanced",
-            ]
-            },            
-            
+                    "installation-guide/advanced/ssl/ssl-server",
+                    "installation-guide/advanced/ssl/ssl-web",
+                    "installation-guide/advanced/ssl/ssl-agents",
+                    "installation-guide/advanced/ssl/ssl-advanced",
+                ]
+            },
+
             "installation-guide/advanced/load-balance",
             "installation-guide/advanced/architecture",
             "installation-guide/advanced/backup-restore",
@@ -108,14 +108,17 @@ module.exports = {
                     },
                 ],
             },
-            
-        ],        
+
+        ],
         "Getting Started": [
-            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/maintenance-of-bihub",
-            {
-                type: "category",
-                label: "Agent Manager",
-                items: ["admin-guide/agent-manager/agent-manager",
+            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/maintenance-of-bihub",
+            "admin-guide/admin-functions",
+            "admin-guide/row-level-security",
+            "admin-guide/integrate"
+        ],
+        "Agent Manager": [
+            "admin-guide/agent-manager/agent-manager",
+            "admin-guide/agent-manager/mult-instances",
             "admin-guide/agent-manager/logfiles-download",
             "admin-guide/agent-manager/modify-prim-instance",
             "admin-guide/agent-manager/delete-instance-cluster",
@@ -123,65 +126,43 @@ module.exports = {
             "admin-guide/agent-manager/configure-smart-search",
             "admin-guide/agent-manager/synch-reports-users"
         ],
-            },
-            {
-                type: "category",
-                label: "User Manager",
-                items: ["admin-guide/user-manager/user-manager",
-                 "admin-guide/user-manager/add-reports-existing-user",
-                "admin-guide/user-manager/add-users-bi-platform",
-                "admin-guide/user-manager/edit-bihub-users",
-                "admin-guide/user-manager/edit-password-authenticated-user",
-                "admin-guide/user-manager/del-user",
-                "admin-guide/user-manager/power-users",
-                "admin-guide/user-manager/dashboard-admin",
-                "admin-guide/user-manager/create-cluster",
-            ],
-            },
-            {
-                type: "category",
-                label: "Authentication",
-                items: [
-                    "admin-guide/authenticate/authenticate",
-                "admin-guide/authenticate/synch-ms-ad-bihub",
-                "admin-guide/authenticate/add-ms-ad",
-                "admin-guide/authenticate/del-msad-bihub",
-            ],
-            },
-            {
-                type: "category",
-                label: "Reports",
-                items: [
-                    "admin-guide/reports/reports",
-                    "admin-guide/reports/hub-folders",
-                    "admin-guide/reports/upload-metadata-csv",
-                    "admin-guide/reports/report-details",
-                    "admin-guide/reports/report-thumbnails",
-                    "admin-guide/reports/reports-history",
-                    "admin-guide/reports/custom-url",
-                ],
+        "User Manager": ["admin-guide/user-manager/user-manager",
+            "admin-guide/user-manager/add-reports-existing-user",
+            "admin-guide/user-manager/add-users-bi-platform",
+            "admin-guide/user-manager/edit-bihub-users",
+            "admin-guide/user-manager/edit-password-authenticated-user",
+            "admin-guide/user-manager/del-user",
+            "admin-guide/user-manager/power-users",
+            "admin-guide/user-manager/dashboard-admin",
+            "admin-guide/user-manager/create-cluster",
+        ],
+        "Authentication": [
+            "admin-guide/authenticate/authenticate",
+            "admin-guide/authenticate/synch-ms-ad-bihub",
+            "admin-guide/authenticate/add-ms-ad",
+            "admin-guide/authenticate/del-msad-bihub",
+        ],
+        "Reports": [
+            "admin-guide/reports/reports",
+            "admin-guide/reports/hub-folders",
+            "admin-guide/reports/upload-metadata-csv",
+            "admin-guide/reports/report-details",
+            "admin-guide/reports/report-thumbnails",
+            "admin-guide/reports/reports-history",
+            "admin-guide/reports/custom-url",
+        ],
+        "Audit": ["admin-guide/audit"],
+        "User Requests": ["admin-guide/request-access-reports-admin"],
 
-            },
-            {
-                type: "category",
-                label: "Settings",
-                items: [
-                    "admin-guide/settings/settings",
-                    "admin-guide/settings/general",
-                    "admin-guide/settings/report",
-                    "admin-guide/settings/theme",
-                    "admin-guide/settings/user-dashboard",
-                    "admin-guide/settings/email-template",
-                ]
-            },
-            "admin-guide/request-access-reports-admin",
-            "admin-guide/audit",
-            "admin-guide/getting-started/profile-settings",
-            "admin-guide/getting-started/mult-instances",
-            "admin-guide/admin-functions",
-            "admin-guide/row-level-security",
-            "admin-guide/integrate"
-    ],
+        "Settings": [
+            "admin-guide/settings/settings",
+            "admin-guide/settings/general",
+            "admin-guide/settings/report",
+            "admin-guide/settings/theme",
+            "admin-guide/settings/user-dashboard",
+            "admin-guide/settings/email-template",
+        ],
+
         "Backup and Recovery": [
             "admin-guide/backup-recovery/backup",
             "admin-guide/backup-recovery/recovery",
