@@ -14,12 +14,15 @@ Go to the BI Hub <Link to={useBaseUrl('https://products.visualbi.com/bi-hub/down
 1. <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/web/install')}>BI Hub Web</Link>
 1. <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Agents with respect to BI Platform that you are using</Link>
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="BI Hub Download Page" src={useBaseUrl('/doc-images/installation-guide/bihub-download-page.png')}/>
   </Zoom>
+<p>BI Hub download page</p>
 </div>
 
-*BI Hub download page*
 
-The respective executables are downloaded in your system: `BIHubServer-X.X.X-windows-installer.exe`, `BIHubWeb-X.X.X-windows-installer.exe`, and `<desired agent name>Agent-X.X.X-windows-installer.exe`.
+The respective executables are downloaded in your system: 
+- `BIHubServer-X.X.X-windows-installer.exe`, 
+- `BIHubWeb-X.X.X-windows-installer.exe`,
+- `<desired agent name>Agent-X.X.X-windows-installer.exe`.

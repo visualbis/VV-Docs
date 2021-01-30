@@ -62,7 +62,7 @@ Audit database connection to the server configurations.
 
 This section establishes a secure connection via SSL between browser and BI Hub Server. 
 For the initial configuration please skip this section without any changes.
-To configure SSL in all the BI Hub configuration, please follow the <Link to={useBaseUrl('docs/installation-guide/advanced/ssl-config')}>SSL Configuration</Link> section.
+To configure SSL in all the BI Hub configuration, please follow the <Link to={useBaseUrl('docs/installation-guide/advanced/ssl/ssl')}>SSL Configuration</Link> section.
 
 ## Elastic Search Section
 

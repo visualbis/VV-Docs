@@ -10,13 +10,13 @@ import "react-medium-image-zoom/dist/styles.css";
 
 Follow the below troubleshooting steps, if you did not get the BI Hub welcome webpage response as indicated in the below screenshot.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
    <Zoom>
      <img alt="img" src={useBaseUrl('/doc-images/fig3_3-web-verification.png')}/>
    </Zoom>
+ <p>BI Hub Web welcome page</p>
  </div>
 
- *BI Hub Web welcome page*
 
 1. To enable the login for the `https` version of URL `https://<BI Hub Web full URL>`, ensure that both **BI Hub Web** and **BI Hub Server** are configured with SSL protocols.
 > A mixed content error is thrown by the browser if *BI Hub Web* and *BI Hub Server* are configured for different protocols.
