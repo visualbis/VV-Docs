@@ -9,12 +9,12 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-- [ ] We need to Setup the application in Azure Active Directory 
+To configure Power BI, We need to set the application in Azure Active Directory.
 
 This application will be the communication point for the PowerBIAgent. All calls to the Microsoft API's will be made on behalf of this application.
 
 :::note
-This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant for steps to acquire a tenant.
+This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer [How to set up an Azure tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant) for steps to acquire a tenant.
 :::
 
 :::important
@@ -28,91 +28,97 @@ There are 3 main steps to configure Power BI agent:
 
 ### Set up the Application in Azure
  - Open the Azure portal > https://portal.azure.com
- - Go to **Azure Active Directory > App Registrations > New Application registration**
+ - Go to **Azure Active Directory > App registrations > New registration**.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
   <Zoom>
-    <img alt="Azure Application setup" src={useBaseUrl('/doc-images/powerbi/azure-app-setup.png')}/>
+    <img alt="Azure Application Registration" src={useBaseUrl('/doc-images/powerbi/azure-new-registration.png')}/>
   </Zoom>
+ 	<p>Azure new application registration</p>
   </ div>
 
- *Azure Application setup*
-
-- Set the name, type and redirect URI of the application. 
-
-  <div style={{textAlign: 'center'}}>
+* Set **Name, Supported account types**, and **Redirect URI** of the application:
+  
+  <div class="center">
   <Zoom>
-    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/application-registration.png')}/>
+    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/register_app.png')}/>
   </Zoom>
+ 	<p>Application Registration</p>
   </ div>
 
- *Application Registration*
+:::note
+The type should be Native and the Redirect URI must be formatted as `https://servername:port/Redirect` 
+:::
 
- :::note
- The type should be Native and the Redirect URI must be formatted as `https://servername:port/Redirect` 
- :::
+- Click **Register**.
 
-- Click **Create**.
-  :::note
-  This URI should reflect the PowerBI Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
-  :::
+> Note the **Application (client) ID** upon successfully registering the application.
 
- - Note the Application ID upon successfully registering the application.
-
-  <div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-      <img alt="New Application Id" src={useBaseUrl('/doc-images/powerbi/new-app-id.png')}/>
+<img alt="Application registered" src={useBaseUrl('/doc-images/sharepoint/app-registered.png')}/>
   </Zoom>
-  </ div>
- 
- :::note
- Provide this under the key "CLIENTID" during the configuration of Power BI agent in BI Hub. 
- :::
- - To verify the Redirect URI, Click on the application and go to Authentication. 
- > The URL shown here is the one that you entered while creating the new application. 
- 
-  <div style={{textAlign: 'center'}}>
-   <Zoom>
-    <img alt="Settings page & Redirect URI" src={useBaseUrl('/doc-images/powerbi/settings-redirect.png')}/>
-   </Zoom>
-  </ div>
+	<p>Application registered</p>
+</div>
 
- *Settings page & Redirect URI*
+- Provide the **Application (client) ID** under the key **userclientid** in the configuration of SharePoint in BI Hub.
+- Click on the newly created Application and go to **Authentication**.
+
+<div class="center">
+  <Zoom>
+<img alt="Authentication" src={useBaseUrl('/doc-images/sharepoint/authentication.png')}/>
+  </Zoom>
+	<p>Authentication</p>
+</div>
+
+- Select the tokens to be issued at authorization endpoints and also choose the supported account types. 
+
+<div class="center">
+  <Zoom>
+<img alt="Authentication access tokens" src={useBaseUrl('/doc-images/sharepoint/azapp5.png')}/>
+  </Zoom>
+	<p>Authentication access tokens</p>
+</div>
 
 ### Create the Application Secret
    
  - Go to **Azure portal > azure active directory > App registrations** and click on your application.
  - Navigate to **Certificates & Secrets** and click on **New Client secret** to add a new key.
- - Specify a description and duration for client secret and click on **Add**.  
- 
-  <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
-    <img alt="Client secret setup" src={useBaseUrl('/doc-images/powerbi/app-key-setup.png')}/>
+    <img alt="User client secret setup" src={useBaseUrl('/doc-images/sharepoint/azapp6.png')}/>
   </Zoom>
-  </ div>
-
-  *Client secret setup*
-
- The Client secret is added and the value is displayed.
-
-   <div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="Client Secret" src={useBaseUrl('/doc-images/powerbi/client-secret.png')}/>
-  </Zoom>
+  	<p>User client secret setup</p>
   </div>
 
- *Client Secret* 
+ - Specify a **Description** and **Expiry** duration for client secret and click **Add**.
 
- :::note
- Provide this under the key "CLIENTSECRET" during the configuration of Power BI agent in BI Hub.
- If failed to note down the value, please repeat the step [Create the Application Secret](#create-the-application-secret) to create a new key.
- :::
+   <div class="center">
+  <Zoom>
+    <img alt="Client Secret" src={useBaseUrl('/doc-images/sharepoint/azapp7.png')}/>
+  </Zoom>
+  	<p>Client secret submission</p>
+  </div>
+
+The UserClient secret is added and the value is displayed. Provide this under the key "USERCLIENTSECRET" during the configuration of Sharepoint agent in BI Hub
+
+   <div class="center">
+  <Zoom>
+    <img alt="Copy the client Secret" src={useBaseUrl('/doc-images/sharepoint/azapp8.png')}/>
+  </Zoom>
+  	<p>Copy the Client secret ID</p>
+  </div>
+
+:::note
+Copy the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
+:::
 
 ### Configure Permissions for the Application
 
  The application requires some permission level actions on behalf of the user. 
- - Go to **Azure portal > azure active directory > App registrations** and click on your application and select **API permissions**.
- - Click on Add.
+ - Go to **[Azure portal](https://portal.azure.com) > Azure Active Directory > App registrations**.
+ - Click on your application and select **API permissions**.
+ - Click **Add a permission**.
  - Map the permissions for the API's referring to the table below for **Microsoft Graph API , Windows Azure Active Directory API** and **Microsoft Power BI** API.
 
 | **API**                              | **Permissions**            | **Access Details**                         |
@@ -137,17 +143,16 @@ There are 3 main steps to configure Power BI agent:
 |                                      | Tenant.Read.All            | View All content in tenant                 |
 |                                      | Workspace.Read.All         | View all workspaces                        |
 
- *Permissions to be given*
+<div class="center"><p>API Permissions</p></div>
 
  - Click **Save** and then click **Grant Permissions** to delegate the permissions to the service account.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="Permissions to be given" src={useBaseUrl('/doc-images/powerbi/permissions-consolidated.png')}/>
   </Zoom>
-</ div>
-
-  *Permissions*
+	<p>Permissions granted</p>
+</div>
 
 The permissions must be given to the BI Hub Power BI Agent service account:
 - Office 365 Global Administrator

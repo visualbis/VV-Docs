@@ -19,23 +19,22 @@ The user needs to do OAuth to access a SAC resource, To Register an OAuth client
  * Login to your SAC tenant as an admin.
  * Navigate to the administration page by clicking on ** ≡ (Main Menu) > System > Administration**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="SAC Admin Page" src={useBaseUrl('/doc-images/sac/admin-page.png')}/>
   </Zoom>
+ 	<p>SAC Admin Page</p>
  </div>
-
- *SAC Admin Page*
 
 * Select the **AppIntegration** tab and click the button **Add a New OAuth Client**. Fill out the form fields to register a **New OAuth Client**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="New OAuth Client" src={useBaseUrl('/doc-images/sac/new-oauth-client.png')}/>
   </Zoom>
+ 	<p>New OAuth Client</p>
  </div>
 
- *New OAuth Client*
 
 :::note
 Authorization URL and Token URL show in the form is required in your `config.json` file of the SAC Agent.
@@ -45,13 +44,13 @@ Authorization URL and Token URL show in the form is required in your `config.jso
 
 Register an **OAuth Client** as a grant type **'Authorization Code'** as shown in the image below.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="New OAuth Client Form" src={useBaseUrl('/doc-images/sac/new-oauth-client-form.png')}/>
   </Zoom>
+ 	<p>New OAuth Client form</p>
  </div>
 
- *New OAuth Client form*
 
 
  - **Name** – Enter any relevant name.
@@ -69,16 +68,15 @@ This flow does not belong to a specific user. This configuration is for the reso
 You need to pass the resource owner(admin) credentials to access and get all users available on SAC.
 Register an **OAuth Client** as a grant type **'Client Credentials'** as shown in the image below.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="New OAuth Client Credentials" src={useBaseUrl('/doc-images/sac/new-oauth-client-credentials.png')}/>
   </Zoom>
+	<p>New OAuth Client Credentials form</p>
 </div>
-
-*New OAuth Client Credentials form*
 
 - **Name** – Enter any relevant name.
 - **OAuth Client ID** – This will be the Client ID in the `config.json` file of SAC Agent.
-- **Authorization Grant** – set it as a "Client Credentials".
-- **Secret** – This will be the Client Secret in the `config.json` file of SAC Agent.
+- **Authorization Grant** – set it as "Client Credentials".
+- **Secret** – This will be the Client Secret in the `config.json` file of the SAC Agent.
 - **Token Details** – Defining a lifetime for tokens is optional.

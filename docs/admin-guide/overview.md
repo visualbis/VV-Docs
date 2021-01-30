@@ -19,18 +19,18 @@ The application pane displays all the modules in this application –
 - Authentication
 - Audit
 - Reports
-- User Request
-- Customization
+- User Requests
+- Settings
 
 This is the same order in which the modules are displayed in the application pane as shown below. The functionality of these modules are covered in subsequent sections of this document.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-<img alt="Admin Menu" src={useBaseUrl('/doc-images/admin-guide/overview/admin-menu.png')}/>
+<img alt="Admin Menu" height="400" src={useBaseUrl('/doc-images/admin-guide/overview/admin-menu.png')}/>
   </Zoom>
+	<p>Admin sidebar menus</p>
 </div>
 
-*Admin sidebar menus*
 
 ### First-time Login
 
@@ -42,5 +42,4 @@ Users login with authentication type set as *Microsoft AD/LDAP*.
 
 ### Forgot Password
 
-If the administrator forgets his/her password or wishes to reset the password for security reasons 
-the Change Password utility can be used. Refer Section <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link>.
+To recover a lost password or reset password for security reasons, an administrator can use the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link> utility.

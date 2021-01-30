@@ -13,10 +13,10 @@ BOBJ Agent uses the Trusted Secret Key file mechanism to authenticate itself wit
 Generate and download the Trusted Secret Key for BOBJ authentication with the following steps:
 
 1. **Log-in** to the **BOBJ CMC**
- - In the **Central Management Console** Screen, select **Authentication** from drop-down list.
+ - In the **Central Management Console** Screen, select **Authentication** from the drop-down list.
  - Select **Enterprise** in the *Title* drop-down menu list.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="img" src={useBaseUrl('/doc-images/bobj-central-management-console.png')}/>
   </Zoom>
@@ -24,7 +24,7 @@ Generate and download the Trusted Secret Key for BOBJ authentication with the fo
 
  - Next scroll down to the **Trusted Authentication** segment and enable the checkbox **Trusted Authentication is enabled**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="img" src={useBaseUrl('/doc-images/bobj-trusted1.png')}/>
   </Zoom>
@@ -32,13 +32,13 @@ Generate and download the Trusted Secret Key for BOBJ authentication with the fo
 
  - Next click on the **New Shared Secret** button and click **Download Shared Secret**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="img" src={useBaseUrl('/doc-images/bobj-trusted2.png')}/>
   </Zoom>
  </ div>
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="img" src={useBaseUrl('/doc-images/bobj-trusted3.png')}/>
   </Zoom>

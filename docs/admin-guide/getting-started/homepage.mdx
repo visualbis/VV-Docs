@@ -6,18 +6,19 @@ sidebar_label: Admin Guide Dashboard
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-After setup of agents, connectivity with directory services and a few successful synchronizations, the landing page displays four tiles.
+Upon successfully configuring the Agents, connecting the directory services, and a few successful synchronizations, the landing page displays four tiles:
 
-- **Instances configured** – List of instances under the agents being configured and their status
-- **Authentications configured** – List of authentications 
-- **Components configured** – List of components like Elastic Search, Message Queue, SMTP
-- **Synchronization Information** – Synchronization details for users, reports and authentication. The administrator can check here for recent activities that happened in BI Hub. To view the recent activities over a period of time, the administrator can click on the calendar icon and provide a date range as input.
+- **Instances configured** – List of instances under the agents being configured and their status.
+- **Authentications configured** – List of user authentications.
+- **Components configured** – List of components like Elastic Search, Message Queue, and SMTP.
+- **Synchronization Information** – Synchronization details for users, reports and authentication. The administrator can check here for recent activities that happened in BI Hub. To view the recent activities over a period, the administrator can click on the calendar icon and provide a date range as input.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="Landing Page New" src={useBaseUrl('/doc-images/admin-guide/admin-landing-page.png')}/>
   </Zoom>
+	<p>Admin Landing Page</p>
 </div>
-
-*Admin Landing Page*
