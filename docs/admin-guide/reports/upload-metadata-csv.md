@@ -16,7 +16,7 @@ Once the metadata information is updated, BI Hub admin can navigate to **Reports
 
 The Hub Folders column in the CSV file denotes the folders in the Hub Folders tab of the Reports Menu.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Sample CSV File" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp6.png')}/>
     </Zoom>
@@ -25,7 +25,7 @@ The Hub Folders column in the CSV file denotes the folders in the Hub Folders ta
   *Sample CSV File*
 
 The folder names can be entered in the CSV file too. If the folder is available in Hub Folders Tab, then the reports are moved into that folder. If the Hub Folder does not exist, a folder will be created in that name and the reports will be placed under that folder.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Hub Folders" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp7.png')}/>
     </Zoom>
@@ -35,7 +35,7 @@ The folder names can be entered in the CSV file too. If the folder is available 
 
 Reports menu will also enable the BI Hub administrator to propagate the metadata of reports from BI platforms into BI Hub. Admin can navigate to the report in the Platform folders or search for the reports and select them and click on Sync Metadata. This will import only the metadata for those selected reports from the BI platform into BI Hub.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Synch Metadata" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp8.png')}/>
     </Zoom>

@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 
 The History Menu will list down all the Reports which have been viewed by the user recently and most frequently. The below Figure represents the History Menu screen highlighting the Recently Viewed Reports.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Recently viewed Reports" src={useBaseUrl('doc-images/user-guide/ht2.png')}/>
     </Zoom>
@@ -20,7 +20,7 @@ The History Menu will list down all the Reports which have been viewed by the us
 
 The below Figure represents the History Menu screen highlighting the Most Viewed Reports.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Most viewed Reports" src={useBaseUrl('doc-images/user-guide/ht3.png')}/>
     </Zoom>

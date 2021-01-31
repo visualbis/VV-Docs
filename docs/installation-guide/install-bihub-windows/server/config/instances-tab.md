@@ -18,13 +18,13 @@ When you provide multiple instances, you need to load balance the instances on y
  At least one instance is required to run the BI Hub Server.
 :::
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="BI Hub Server Instances Configuration" src={useBaseUrl('doc-images/installation-guide/bihub-server-instances.png')}/>
     </Zoom>
+	<p>BI Hub Server Instances</p>
   </div>
 
-*BI Hub Server Instances*
 
 * Click the **Add instance** button in the top right corner to add a new instance. In the pop-up window, enter an *instance* name and the *Port* number at which the instance will run.
 
@@ -33,8 +33,8 @@ Every newly added instance has to be started and must be in the running state.
 :::
 
 * To start the instances press the play button ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/start.svg')} width="15"/></Zoom> ) for that instance.
-* To restart the instance, press the reload icon ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/refresh.svg')} width="20" height="20"/></Zoom> ) for that instance.
-* To stop the already started instances, press the stop button ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/stop.svg')} width="15"/></Zoom> ) for that instance.
+* To restart the instance, press the reload icon ( <Zoom><img alt="Refresh" src={useBaseUrl('doc-images/installation-guide/refresh.svg')} width="20" height="20"/></Zoom> ) for that instance.
+* To stop the already started instances, press the stop button ( <Zoom><img alt="Stop" src={useBaseUrl('doc-images/installation-guide/stop.svg')} width="15"/></Zoom> ) for that instance.
 
 :::note
 Deleting any instance will not delete data, but just the snapshot of it. The data is safely backed up on the database that you configured.
@@ -43,5 +43,7 @@ Deleting any instance will not delete data, but just the snapshot of it. The dat
 * To delete an instance press trash icon ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/delete.svg')} width="15"/></Zoom> ) for that instance.
 
 :white_check_mark: BI Hub Server instance is installed and configured.
+
+## Next Steps
 
 - [ ] To verify the configuration, kindly follow the next section.

@@ -14,7 +14,7 @@ Follow the below steps to **Generate Qliksense Certificates**:
 1. Log in to **Qlik Sense QMC** as an *Administrator*.
 1. In the **Configure System** menu on the left, click **Certificates**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="img" src={useBaseUrl('/doc-images/qliksense/qlicksense-governance.png')}/>
   </Zoom>
@@ -22,7 +22,7 @@ Follow the below steps to **Generate Qliksense Certificates**:
 
 1. In the **Certificates** generation window click **Add machine name**.
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
     <img alt="certificates" src={useBaseUrl('/doc-images/qliksense/certificates.png')}/>
   </Zoom>

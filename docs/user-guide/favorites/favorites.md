@@ -17,7 +17,7 @@ The Favorites Folder menu will list down all the Reports which has been selected
 
 For our example, navigate to the BI Platform --> Tableau --> Default --> Superstore Folder and enable “Favorite” for the Report “Forecast” (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Report selected as Favorite" src={useBaseUrl('doc-images/user-guide/fav1.png')}/>
     </Zoom>
@@ -27,7 +27,7 @@ For our example, navigate to the BI Platform --> Tableau --> Default --> Superst
 
 Now navigate to the Favorites Menu. You can view the selected Report “Forecast” being listed in the Favorites Menu screen (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Report display in My Favorite Folder" src={useBaseUrl('doc-images/user-guide/fav2.png')}/>
     </Zoom>

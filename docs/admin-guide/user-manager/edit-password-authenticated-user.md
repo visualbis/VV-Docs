@@ -19,19 +19,15 @@ Administrator can take the following steps to set the password to a generic one 
 1. Click the Authentication tab and expand the Native option. Now provide the new password as received from administrator and click on Update.
 1. When the user does a login next time, he/she will be prompted to change the password which can be used in future.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
-      <img alt="Edit User" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/edituserpwd.jpg')}/>
+      <img alt="Edit User" height="400" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/edituserpwd.jpg')}/>
     </Zoom>
+	<p>Edit User</p>
   </div>
 
-  *Edit User*
-
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Edit User" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/edituser1.jpg')}/>
     </Zoom>
   </div>
-  
-  *Edit User*
-

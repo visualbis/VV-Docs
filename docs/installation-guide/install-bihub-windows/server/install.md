@@ -21,24 +21,24 @@ The recommended Port Requirements for the different Components have been listed 
 Following are the sequence of steps to install the BI Hub Server:
 
 1. Double click the installer <Link to={useBaseUrl('docs/installation-guide/download-bihub')}>BIHubServer-X.X.X-windows-installer.exe</Link> file that you downloaded to start the installation process.
-4. Click **Next** in the **Startup Info** page.
-5. Read through the license terms and conditions. To proceed further accept the license terms and click next to continue.
-6. In the next **Component Selection** screen:
+1. Click **Next** in the **Startup Info** page.
+1. Read through the license terms and conditions. To proceed further accept the license terms and click next to continue.
+1. In the next **Component Selection** screen:
    - Select **MySQL component** to install the bundled *MySql database*
    - Click **Next** to install your own database.
-7. In the **Directory Selection** screen, choose the directory to install the BI Hub Server. The default directory is `C:\Program Files\Visual BI Solutions\BI Hub\BIHubServer`
-8. In the next **Message Queue** screen, enter the *Port number (default: 5672), Username*, and *Password* to be used in <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/server/config/config')}>BI Hub Server Configuration</Link>.
-9. Select the preferred License activation step and click **Next**:
+2. In the **Directory Selection** screen, choose the directory to install the BI Hub Server. The default directory is `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer`.
+3. In the next **Message Queue** screen, enter the *Port number (default: 5672), Username*, and *Password* to be used in <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/server/config/config')}>BI Hub Server Configuration</Link>.
+4. Select the preferred License activation step and click **Next**:
    - *Online Mode* - Choose this option if this machine is connected to the internet. If this machine is behind the firewall, make sure to whitelist the URL https://products.visualbi.com. If the installer can reach the BI Hub activation server, then it will navigate to the next screen.
    - *Offline Mode* - Choose this option if this machine is not connected to the internet. The license can be activated offline.
-10. If *Offline mode* is chosen, continue with this step, else skip to Step 12. The next screen will give a unique activation key for this installation instance. Open https://products.visualbi.com/license-generator (Refer the screenshot below) in another computer which has internet connection. In that page, type the registered email address, the license key, and copy & paste the activation key generated into the Key code box.
-   <div>
+5.  If *Offline mode* is chosen, continue with this step, else skip to Step 12. The next screen will give a unique activation key for this installation instance. Open https://products.visualbi.com/license-generator (Refer the screenshot below) in another computer which has internet connection. In that page, type the registered email address, the license key, and copy & paste the activation key generated into the Key code box.
+   <div class="center">
      <Zoom>
        <img alt="License File Generator" src={useBaseUrl('/doc-images/fig3.1-licence-generator.png')}/>
      </Zoom>
+     <p>Offline License Generator Webpage</p>
    </div>
 
-   *Offline License Generator Webpage*
 11. Click the **Download File** button that generates the `license.licx` file and prompt you to download the file on your system.
 12. Download the file and save it on the system where the installer is currently running and click **Next**.
 13. Browse and select the correct downloaded license file (`license.licx`). 

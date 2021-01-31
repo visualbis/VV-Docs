@@ -6,59 +6,66 @@ sidebar_label: General Tab
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-In General Tab, you have four different categories as listed below:
+The **General** tab, has four different categories:
 1. <Link to={useBaseUrl('#navigation')}>Navigation</Link>
-1. <Link to={useBaseUrl('#search')}>Search</Link>
-1. <Link to={useBaseUrl('#views')}>Views</Link>
-1. <Link to={useBaseUrl('#customization')}>Customization</Link>
+2. <Link to={useBaseUrl('#search')}>Search</Link>
+3. <Link to={useBaseUrl('#views')}>Views</Link>
+4. <Link to={useBaseUrl('#customization')}>Customization</Link>
 
 ## Navigation
 
-In the Navigation category, the Admin will be able to rename and enable/disable the Navigation Menu items for the Users. For our example, the Navigation Menu item "Favorites" has been renamed as "My Favorites" and the Menu items "BI Platform" and "History" have been disabled.
-  <div style={{textAlign: 'center'}}>
+To customize the **Navigation Panel** for other users, the super Admin can:
+
+- **Drag to rearrange** the navigation menus,
+- **Rename** the navigation labels,
+- Enable/disable the navigation menus with the **ON/OFF** toggle.
+
+Let's consider the highlighted changes done by the Admin:
+
+  <div class="center">
     <Zoom>
-      <img alt="" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/nav1.png')}/>
+      <img alt="Admin customizes Navigation Panel" src={useBaseUrl('doc-images/admin-guide/navpanel-customized.png')}/>
     </Zoom>
+    <p>Admin customizes the Navigation Panel</p>
   </div>
 
-  *Navigation Tab in User Screen - Rename and Enable/Disable Navigation Menu Items*
+The **Navigation** menu items change will reflect for all the other users as indicated in the screenshot:
 
-Based on the above configuration, you will be able to view the Navigation Menu items for the Users as shown below.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
-      <img alt="Navigation Menu Items in User Screen" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/nav2.png')}/>
+      <img alt="Navigation Panel for other users" src={useBaseUrl('doc-images/admin-guide/navpanel-users.png')}/>
     </Zoom>
+    <p>Navigation Panel as seen by all other users</p>
   </div>
-  
 
-*Navigation Menu Items in User Screen*
+'Favorites' renamed as 'My Favorites', 'BI Platform', and 'History' menus disabled.
 
 ## Search
 
-In Search category, the Admin can enable the Show Inaccessible Reports option as shown in the Figure below.
-  <div style={{textAlign: 'center'}}>
+In the **Search** category, the Admin can enable the Show Inaccessible Reports option as shown in the Figure below.
+  <div class="center">
     <Zoom>
-      <img alt="Search - Show Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/sea1.png')}/>
+      <img alt="Search - Show Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/settings/enable-inaccessible-reports.png')}/>
     </Zoom>
+    <p>Enable Inaccessible reports</p>
   </div>
 
-  *Search - Show Inaccessible Reports*
+When the users search for the reports, they will also be able to view the **Inaccessible Reports**.
 
-Based on the above configuration, the users will be able to view the
-Inaccessible Reports in the User pages (see Figure below).
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
-      <img alt="Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/ina.png')}/>
+      <img alt="Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/settings/inaccessible-reports.png')}/>
     </Zoom>
+    <p>Inaccessible Reports view</p>
   </div>
-
-  *Inaccessible Reports*
 
 ## Views
 
 In Views category, the Admin will be able to enable the Show Agent Instance option (see Figure below). The Show Agent Instance option is activated as shown in the below Figure.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="View - Show Agent Instance option" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/vw2.png')}/>
     </Zoom>
@@ -67,7 +74,7 @@ In Views category, the Admin will be able to enable the Show Agent Instance opti
   *View - Show Agent Instance option*
 
 When the Show Agent Instance option is activated, the user can view the Report with the Instance Agent details in the User pages (see Figure below).
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Report with Instance Agent Display" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/newad2.png')}/>
     </Zoom>
@@ -79,7 +86,7 @@ When the Show Agent Instance option is activated, the user can view the Report w
 
 In the Customization category, the Admin will be now able to enable the “Launch Reports in New Tab” option (see Figure below). When this option is enabled by the Admin, the user will be able to view the “Launch Reports in New Tab” option being enabled in the Profile Settings for his first login and by later the user can configure the same based on his
 choice.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Customization – Launch Reports in New Tab" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/cust.png')}/>
     </Zoom>

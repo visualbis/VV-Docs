@@ -13,7 +13,7 @@ In addition to classifying the reports by platform, they can also be classified 
 To add any functional folder, click on "Add" in Reports Menu. A create
 New Folder pane opens on the right where you can enter the folder name.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="New Folder Pane" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp1.png')}/>
     </Zoom>
@@ -22,7 +22,7 @@ New Folder pane opens on the right where you can enter the folder name.
   *New Folder Pane*
 
 The folders once created will be listed in the Hub Folders page as shown below.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="New Folder Page" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp2.png')}/>
     </Zoom>
@@ -33,7 +33,7 @@ The folders once created will be listed in the Hub Folders page as shown below.
 To move reports into these folders, click on the Platform Folders tab in Reports Menu. For our example, navigate to **Platform Folders > BOBJ > Analysis for OLAP Samples**. Select the reports and click on **Add to
 Hub Folders** (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Platform Folders" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp2a.png')}/>
     </Zoom>
@@ -43,7 +43,7 @@ Hub Folders** (see Figure below).
 
 The move to dialog box opens with the list of Hub Folders present. Move the reports to the required folder.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Move to Pane" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp3.png')}/>
     </Zoom>
@@ -60,7 +60,7 @@ Platform Path are displayed here. Select the reports that you wish to
 classify and click on **Add to Hub Folders** and move to the required
 folder.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Platform Folders" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp5.png')}/>
     </Zoom>

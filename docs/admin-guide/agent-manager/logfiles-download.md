@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 The Log details for all the Instances can be downloaded by navigating to **Agent Manager > Instance Manager** and by using the Download option (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Download option for Log Files" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/log1new.jpg')}/>
     </Zoom>
@@ -19,7 +19,7 @@ The Log details for all the Instances can be downloaded by navigating to **Agent
 
 The Instance log files namely the service Manager of the agent, the instance and the backend log will be downloaded in your system as shown in the Figure below.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Download Log Files Location" src={useBaseUrl('doc-images/admin-guide/admin-functions/integrate-bihub/log2.png')}/>
     </Zoom>

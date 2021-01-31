@@ -14,8 +14,8 @@ previous section.
 You need to have the Administrator privilege to run the Configuration Utility.
 :::
 
-* Go to the *BI Hub Server Installation* folder.
-* Right-click on the *Configuration utility* and select the *Run as Administrator* option.
+* Go to **BI Hub Server Installation** directory > `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer`.
+* Right-click on the **Configuration Utility** and select *Run as Administrator*.
 * There are 2 main tabs in the utility:
   - <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/server/config/config-tab')}>Config Tab</Link> - Configure the BI Hub Server.
   - <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/server/config/instances-tab')}>Instances Tab</Link> - Create multiple instances of BI Hub Server with the same configurations in a single machine.

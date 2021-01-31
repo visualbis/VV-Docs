@@ -14,16 +14,17 @@ To verify the successful installation of BI Hub Agents, open the Browser and nav
 
 You should see the screen as shown in the figure below.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
 <img alt="Agent Success Screen" src={useBaseUrl('/doc-images/post-config/agent-success.jpg')}/>
   </Zoom>
+  <p>Agent Success Screen</p>
 </div>
 
-*Agent Success Screen*
+## Next Steps
+
+- [ ] A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
 
 :::note
-- [ ] A new *Agent* instance must be added and each agent must be configured with the the BI Platform. These steps are covered in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/prerequisite')}>Administration Guide - pre-requisite</Link> section.
+If you are unable to successfully connect to the server, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@bihub.com with the supporting log files with the logger level set to *INFO*.
 :::
-
-If you are unable to successfully connect to the server, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@bihub.com with the supporting log files with the logger level set to Info.

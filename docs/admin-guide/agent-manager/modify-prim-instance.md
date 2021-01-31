@@ -16,13 +16,12 @@ TableauCluster is created. When the cluster is selected in the Cluster
 Manager page, the Cluster details tab shows the Primary instance and the
 other instances are secondary/fallback.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Edit Cluster" src={useBaseUrl('doc-images/admin-guide/admin-functions/mult-instances/clusters.jpg')}/>
     </Zoom>
+	<p>Edit Cluster</p>
   </div>
-
-*Edit Cluster*
 
 BI Hub administrator can modify this definition of cluster use the steps below:
 

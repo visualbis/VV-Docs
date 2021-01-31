@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 You can also delete a Folder based on your choice as shown in the below screen.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder11_.png')}/>
     </Zoom>
@@ -20,7 +20,7 @@ You can also delete a Folder based on your choice as shown in the below screen.
 
 For our example, the selected Folder 2.1 as shown in the above screen has been deleted (see Figure below).
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder12_.png')}/>
     </Zoom>
@@ -30,7 +30,7 @@ For our example, the selected Folder 2.1 as shown in the above screen has been d
 
 The deleted folder cannot be viewed in My Folder screen as shown below
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/folder13_.png')}/>
     </Zoom>

@@ -76,3 +76,18 @@ html[data-theme="dark"] p.hero__subtitle {
 img[alt="icon"] {
     width: 14px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: center;
+    padding: 0px 70px; 
+    width: 80%;
+}
+
+.center p{
+    text-align: center;
+    color: slategray;
+}

@@ -5,7 +5,14 @@ sidebar_label: Changelog
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## v2.5.0 - BI Hub (Oct 13, 2020)
+## v2.6.0 (Jan 25, 2021)
+
+* Email Notifications whenever there is a failure in Sync Jobs
+* Passwords are not shown for the agents instance configurations page
+* Ability to set the native user password strength validator
+* User Preferences options to set the landing page
+
+## v2.5.0 (Oct 13, 2020)
 
 ### Features
 
@@ -14,14 +21,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 * Support for Tableau Agent sub-project
 * Support for File BI Agent long file path
 
-<details>
-<ul><a href="https://bihub.com/blogs/">BI Hub Blogs</a></ul>
-<summary>
-resources
-</summary>
-</details>
-
-## v2.4.0 - BI Hub (Jul 20, 2020)
+## v2.4.0 (Jul 20, 2020)
 
 ### Features
 

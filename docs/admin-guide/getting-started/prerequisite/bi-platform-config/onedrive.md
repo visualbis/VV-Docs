@@ -9,65 +9,101 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
+The Onedrive agent needs no special configuration, apart from setting the application in Azure and creating the application secret.
+
 ## Set up the Application in Azure.
 
 * Go to https://portal.azure.com
-* Click on **Azure Active Directory > App Registrations > New application registration**
+* Click on **Azure Active Directory > App registrations > New registration**.
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New App Registration" src={useBaseUrl('/doc-images/powerbi/azure-app-setup.png')}/>
-  </Zoom>
-</div>
+  <div class="center">
+    <Zoom>
+      <img alt="New App Registration" src={useBaseUrl('/doc-images/powerbi/azure-new-registration.png')}/>
+    </Zoom>
+  	<p>Azure new application registration</p>
+  </div>
 
-*Azure new App Registration*
-
-* Set  the  name, type  and  redirect  URI  of  the  application. 
+* Set **Name, Supported account types**, and **Redirect URI** of the application:
   
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
   <Zoom>
-    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/application-registeration.png')}/>
+    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/register_app.png')}/>
   </Zoom>
+ 	<p>Application Registration</p>
   </ div>
 
- *Application Registration*
   
  :::note
  The type should be  Native and  the  Redirect  URI  must  be formatted as: `https://servername:port/Redirect`.
  :::
 
-* Click **Create**. 
+* Click **Register**. 
   
-  :::note
-  This URI should reflect the OneDrive Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
-  :::
+:::note
+This URI should reflect the OneDrive Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
+:::
 
-Note the Application ID upon successfully registering the application.
+> Note the **Application (client) ID** upon successfully registering the application.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-<img alt="App registered" src={useBaseUrl('/doc-images/sharepoint/app-registered.png')}/>
+<img alt="Application registered" src={useBaseUrl('/doc-images/sharepoint/app-registered.png')}/>
   </Zoom>
+	<p>Application registered</p>
 </div>
 
-- Provide this under the key **clientid** in the configuration of OneDrive in BI Hub
+- Provide the **Application (client) ID** under the key **userclientid** in the configuration of SharePoint in BI Hub.
+- Click on the newly created Application and go to **Authentication**.
+
+<div class="center">
+  <Zoom>
+<img alt="Authentication" src={useBaseUrl('/doc-images/sharepoint/authentication.png')}/>
+  </Zoom>
+	<p>Authentication</p>
+</div>
+
+- Select the tokens to be issued at authorization endpoints and also choose the supported account types. 
+
+<div class="center">
+  <Zoom>
+<img alt="Authentication access tokens" src={useBaseUrl('/doc-images/sharepoint/azapp5.png')}/>
+  </Zoom>
+	<p>Authentication access tokens</p>
+</div>
 
 ## Create the Application Secret 
 
-* Open the application in Azure Portal
-* Go to **All Settings > Keys** and create a **New key**
-* Specify a desired value for the key name and note down the value provided.
-
-<div style={{textAlign: 'center'}}>
+ - Go to **Azure portal > azure active directory > App registrations** and click on your application.
+ - Navigate to **Certificates & secrets** and click on **New Client secret** to add a new key.
+ 
+  <div class="center">
   <Zoom>
-<img alt="Keys" src={useBaseUrl('/doc-images/sharepoint/keys.png')}/>
+    <img alt="User client secret setup" src={useBaseUrl('/doc-images/sharepoint/azapp6.png')}/>
   </Zoom>
-</div>
+  	<p>User client secret setup</p>
+  </div>
+
+
+ - Specify a **Description** and **Expiry** duration for client secret and click **Add**.
+
+   <div class="center">
+  <Zoom>
+    <img alt="Client Secret" src={useBaseUrl('/doc-images/sharepoint/azapp7.png')}/>
+  </Zoom>
+  	<p>Client secret submission</p>
+  </div>
+
+The UserClient secret is added and the value is displayed. Provide this under the key "USERCLIENTSECRET" during the configuration of Sharepoint agent in BI Hub
+
+   <div class="center">
+  <Zoom>
+    <img alt="Copy the client Secret" src={useBaseUrl('/doc-images/sharepoint/azapp8.png')}/>
+  </Zoom>
+  	<p>Copy the Client secret ID</p>
+  </div>
 
 :::note
-The **Value** text will be displayed only once and will not be displayed again after we close the blade. This value will be the **clientsecret** in the configuration of OneDrive in BI Hub.
-
-If failed to note down the value, please repeat the step [Setup the application in Azure](#set-up-the-application-in-azure) to create a new key.
+Copy the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
 :::
 
 <!-- Check with Mohan if required?
