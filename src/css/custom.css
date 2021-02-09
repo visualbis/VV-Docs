@@ -62,15 +62,20 @@ html[data-theme="dark"] p.hero__subtitle {
 }
 
 #color-red {
-    color: #FC0102;
+    color: #e6531a;
 }
 
 #color-green {
-    color: #66C245;
+/*    color: #66C245; */
+    color: #6ac44d;
 }
 
 #color-orange {
-    color: #FCA620;
+    color: #ff7200;
+}
+
+#color-yellow {
+    color: #fd0;
 }
 
 img[alt="icon"] {
@@ -81,10 +86,10 @@ img[alt="icon"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-text-align: center;
+    text-align: center;
     position: center;
     padding: 0px 70px; 
-    width: 75%;
+    width: 80%;
 }
 
 .center p{

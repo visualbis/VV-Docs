@@ -58,10 +58,9 @@ module.exports = {
                     "installation-guide/advanced/ssl/ssl-server",
                     "installation-guide/advanced/ssl/ssl-web",
                     "installation-guide/advanced/ssl/ssl-agents",
-                    "installation-guide/advanced/ssl/ssl-advanced",
                 ]
             },
-
+            "installation-guide/advanced/advanced",
             "installation-guide/advanced/load-balance",
             "installation-guide/advanced/architecture",
             "installation-guide/advanced/backup-restore",
@@ -83,7 +82,10 @@ module.exports = {
             {
                 type: "category",
                 label: "Prerequisite",
-                items: ["admin-guide/getting-started/prerequisite/prerequisite", "admin-guide/getting-started/prerequisite/add-new-agent",
+                items: ["admin-guide/getting-started/prerequisite/prerequisite",
+                    "admin-guide/getting-started/prerequisite/user-role" ,
+                    "admin-guide/multiple-admin-acct",
+                    "admin-guide/getting-started/prerequisite/add-new-agent",
 
                     {
                         type: "category",
@@ -113,20 +115,23 @@ module.exports = {
         "Getting Started": [
             "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/maintenance-of-bihub",
             "admin-guide/admin-functions",
-            "admin-guide/row-level-security",
             "admin-guide/integrate"
         ],
         "Agent Manager": [
-            "admin-guide/agent-manager/agent-manager",
-            "admin-guide/agent-manager/mult-instances",
-            "admin-guide/agent-manager/logfiles-download",
-            "admin-guide/agent-manager/modify-prim-instance",
-            "admin-guide/agent-manager/delete-instance-cluster",
-            "admin-guide/agent-manager/synch-users-reports",
-            "admin-guide/agent-manager/configure-smart-search",
-            "admin-guide/agent-manager/synch-reports-users"
+            "admin-guide/agent-manager/agent-manager-main",
+            {
+                type: "category",
+                label: "Agent Manager",
+                items: [            
+                    "admin-guide/agent-manager/agent/agent-management",
+                    "admin-guide/agent-manager/agent/row-level-security",
+                    "admin-guide/agent-manager/agent/modify-prim-instance",
+                        ],
+            },
+            "admin-guide/agent-manager/cluster",            
         ],
-        "User Manager": ["admin-guide/user-manager/user-manager",
+        "User Manager": ["admin-guide/user-manager/user-manager-main",
+            "admin-guide/user-manager/user-manager",
             "admin-guide/user-manager/add-reports-existing-user",
             "admin-guide/user-manager/add-users-bi-platform",
             "admin-guide/user-manager/edit-bihub-users",
@@ -175,9 +180,9 @@ module.exports = {
         "Administrator Utilities": [
             "admin-guide/admin-utilities/admin-utilities",
             "admin-guide/admin-utilities/change-passwd",
-            "admin-guide/admin-utilities/scheduled-synch-ad",
-            "admin-guide/admin-utilities/scheduled-synch-bi",
-            "admin-guide/admin-utilities/multiple-admin-acct"
+            "admin-guide/admin-utilities/scheduled-sync-ad",
+            "admin-guide/admin-utilities/scheduled-sync-bi",
+            "admin-guide/admin-utilities/troubleshoot",
         ],
 
         "License Details": [

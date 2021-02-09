@@ -1,0 +1,51 @@
+---
+id: user-manager-main
+sidebar_label: User Manager Welcome Screen
+title: User Manager Welcome Screen
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+
+- In the **Agents** column, the Agent icons next to each username indicate the number of agents (BI platforms) in which the user account is present.
+- The **Authentication** column, lists the type of authentication assigned to each user.
+- You can select the user and click on the Agent Users tab on the right pane to visualize the BI platforms and the name of the user in that platform.
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager" src={useBaseUrl('doc-images/admin-guide/synch/user-manager.jpg')}/>
+    </Zoom>
+  </div>
+
+  *User Manager*
+
+  The number of users mentioned in parenthesis near the User Manager Label represents the total number of users who exist in BI Hub (see Figure above). The Users can also be filtered based on the platforms and the Authentication types (see Figures below).
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager with Agents Filtering" src={useBaseUrl('doc-images/admin-guide/synch/um2.jpg')}/>
+    </Zoom>
+  </div>
+
+  *User Manager with Agents Filtering*
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager with Authentication Filtering" src={useBaseUrl('doc-images/admin-guide/synch/umauth.jpg')}/>
+    </Zoom>
+  </div>
+
+  *User Manager with Authentication Filtering*
+
+  The user details such as Instance Name, Username and Environment can also be seen by just clicking on the username (see Figure below).
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager with User details" src={useBaseUrl('doc-images/admin-guide/synch/um3new.jpg')}/>
+    </Zoom>
+  </div>
+
+  *User Manager with User details*
