@@ -11,14 +11,29 @@ import "react-medium-image-zoom/dist/styles.css";
 
 Upon successfully configuring the Agents, connecting the directory services, and a few successful synchronizations, the landing page displays four tiles:
 
-- **Instances configured** – List of instances under the agents being configured and their status.
-- **Authentications configured** – List of user authentications.
-- **Components configured** – List of components like Elastic Search, Message Queue, and SMTP.
-- **Synchronization Information** – Synchronization details for users, reports and authentication. The administrator can check here for recent activities that happened in BI Hub. To view the recent activities over a period, the administrator can click on the calendar icon and provide a date range as input.
-
 <div class="center">
   <Zoom>
 <img alt="Landing Page New" src={useBaseUrl('/doc-images/admin-guide/admin-landing-page.png')}/>
   </Zoom>
 	<p>Admin Landing Page</p>
 </div>
+
+## 1. Instances Configured
+
+List of instances under the agents being configured, number of **Reports** synched, the Agent **Server** URL, the Instance **Port** number, and Instance **Status** is also displayed.
+
+
+## 2. Authentications Configured
+
+List of user authentications **Name**, **Type**, and **Status**.
+
+## 3. Components Configured
+
+List of components like Elastic Search, Message Queue, and SMTP that were configured during Server configuration.
+
+## 4. Synchronization Information
+
+Synchronization details for users, reports and authentication. 
+
+- To view the recent activities over a period, click on the calendar icon and provide a date range as input.
+- To get a detailed information click on **Sync Users**, or **Sync Reports** or **Sync Authentication**, and the **Synchronization information** window pops up.

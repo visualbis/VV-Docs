@@ -1,0 +1,150 @@
+---
+id: cluster
+title: Multiple Instances of BI Hub
+sidebar_label: Cluster Manager
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+To ensure high availability or perform load balancing when a large number of concurrent users (excess of 800) use BI Hub, multiple instances of BI Hub agents are required. Two or more instances of the same agent type can be clustered together and they point to the same BI
+platform. 
+
+For example, two *Tableau* agents are created to form a cluster and these two agents point to the same Tableau platform. If one agent fails, the load will be taken by another instance, thus ensuring high availability. 
+Similarly, if a large number of BI Hub concurrent users launch Tableau reports, these two agents perform load balancing. Tying up the two agents to form an agent cluster is accomplished using the BI Hub cluster manager. This BI Hub agent cluster interacts with the cluster/load balancer already setup in the enterprise to handle load balancing/high availability. In fact, the details entered during BI Hub cluster setup such as URL, Port etc., is based on the configuration of
+the Load Balancer used in the enterprise.
+
+## Pre-requisite
+
+To create a Cluster, the agents should not have any users mapped to them.
+Or in other words, you can only create clusters on one or more newly created instances.
+
+## Create a Cluster
+
+1. Configure the nginx conf file to include the instances to be clustered and the cluster port number.
+ - Go to the Server location `C:\nginx-1.14.2\nginx-1.15.12\conf`, and open the `nginx.conf` file.
+ - In the `http` section, enter the instances `<url>:<port number>` to be clustered.
+ ```json title="nginx.conf" {3,4,7-9}
+ http {
+   upstream cluster {
+     server solutionsdevtest.product.solutions:13414;
+     server solutionsdevtest.product.solutions:13417;
+   }
+   upstream cluster1 {
+     server solutionsdevtest.product.solutions:12601;
+     server solutionsdevtest.product.solutions:12602;
+     server solutionsdevtest.product.solutions:12603;
+   }
+ }
+ ```
+ - In the `server` section, give the port number for the Cluster in the same sequence as that of the Instance port number.
+ This port number is used in the BI Hub "Add Cluster" form.
+ ```json title="nginx.conf" {2,11}
+    server {
+        listen  13415; //Cluster port number
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+ 
+        location / {
+            proxy_pass http://cluster;
+        }
+
+        #error_page  404              /404.html;
+ ```
+> The "proxy_pass" name and upstream function name should be the same.
+
+Save and close the `nginx.conf` file.
+
+2. In the nginx directory `C:\nginx-1.14.2\nginx-1.15.12`. Click `nginx.exe`, go to **File > Open command prompt > Open command prompt as administrator**.
+```bash
+#For config changes done while nginx is stopped
+C:\nginx-1.14.2\nginx-1.15.12>start nginx 
+
+#For config changes done while nginx is running
+C:\nginx-1.14.2\nginx-1.15.12>nginx -s reload 
+```
+:white_check_mark: You have successfully added the instance clusters in the backend.
+
+3. In BI Hub, go to **Agent Manager > Cluster Manager** screen, click **Add Cluster**.
+  <div class="center">
+    <Zoom>w
+      <img alt="Add a Cluster" src={useBaseUrl('doc-images/admin-guide/agent/add-cluster.png')}/>
+    </Zoom>
+	<p>Add a Cluster</p>
+  </div>
+
+ - Enter **Name, URL, Port** (Cluster port number entered in the `nginx.conf` file), and **Type**.
+
+   - Click on the **Type** drop-down list to select the agent, and click **Add clusters**.
+   - Select a minimum of 2 Agent clusters on the left and click **Save**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Enter Cluster details" src={useBaseUrl('doc-images/admin-guide/agent/create-cluster-form.png')}/>
+    </Zoom>
+	<p>Enter Cluster details</p>
+  </div>
+ - Click **Submit**.
+  <div class="center">
+    <Zoom>
+      <img alt="QlikView instances Cluster created" src={useBaseUrl('doc-images/admin-guide/agent/cluster-added.png')}/>
+    </Zoom>
+	<p>QlikView instances Cluster created</p>
+  </div>
+
+:white_check_mark: You have created a cluster of 2 QlikView instances.
+
+<!--
+## Deleting instances of a Cluster
+
+Instances of the clusters are the same as other agent instances and the **Agent Manager > Instance Manager** lists those instances, with the primary instance marked with an asterisk. BI Hub enables the administrator to delete the instances and/or add new instances to the cluster. The deletion step happens in the **Agent Manager > Instance Manager** by selecting the instance and clicking delete and adding new instances to the cluster happens in Cluster Manager as indicated in Section <Link to={useBaseUrl('docs/admin-guide/admin-functions/multiple-instances/modify-prim-instance')}>Modifying Primary instance of a cluster</Link>. If the Primary is deleted, BI Hub automatically makes the secondary instance as Primary and it is the responsibility of
+the administrator to add a second instance to the cluster.
+  
+  <div class="center">
+    <Zoom>
+      <img alt="Cluster Instances" src={useBaseUrl('doc-images/admin-guide/admin-functions/mult-instances/delete-instance.png')}/>
+    </Zoom>
+	<p>Cluster Instances</p>
+  </div>
+
+## Synchronizing users and reports in BI Hub cluster
+
+The Agent Manager contains the definition of the agent instances. 
+For example, TableauPrimary and TableauFallback are two Tableau instances and they belong to an agent named as Tableau. 
+Both the Tableau agent instances point to the same Tableau BI platform as illustrated by the Tableau Server URL in the Agent Instance definition page. 
+So, the agent is a logical group of agent instances and is used to Synchronize Users and Reports. Activities such as Report synchronization, User synchronization can be executed at the Agent level or in the Instance level by selecting the Primary instance only. 
+When the secondary instance is chosen, Sync Reports and Sync Users are not available.
+
+## Modifying Primary instance of a cluster
+
+A cluster is a grouping of agent instances for performance, availability
+and load-balancing purposes. Using the above-mentioned tableau
+instances, TableauPrimary and TableauFallback, a cluster called
+TableauCluster is created. When the cluster is selected in the Cluster
+Manager page, the Cluster details tab shows the Primary instance and the
+other instances are secondary/fallback.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Edit Cluster" src={useBaseUrl('doc-images/admin-guide/admin-functions/mult-instances/clusters.jpg')}/>
+    </Zoom>
+	<p>Edit Cluster</p>
+  </div>
+
+BI Hub administrator can modify this definition of cluster use the steps below:
+
+1. Click on the Edit icon on the Cluster Details tab shown above to launch the Edit Cluster 
+   page and further click on the Manage Clusters page. The Primary instance of the agent is marked green tick on the left top of the instance. The other instance can be made primary
+    by clicking the check box on the left top. 
+1. Click Save, Submit. BI Hub will treat the selected instance as the Primary and this can
+   be visualized in the Cluster Details tab.
+
+Users wouldn’t even notice this re-definition of a cluster and they can continue to launch reports, dashboards.
+
+-->

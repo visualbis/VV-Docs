@@ -9,20 +9,18 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-BI Hub is used for only viewing reports and it cannot be used to create/modify/delete reports. Those tasks will have to be done from the BI platform. Most of the features explained in this guide are launched from the application pane after the user/admin does a successful login.
+BI Hub is used only for viewing reports and it cannot be used to create/modify/delete reports. Those tasks will have to be done from the BI platform. Most of the features explained in this guide are launched from the application pane after the user/admin does a successful login.
 
 Following are the modules displayed in the application side panel:
 
 - <Link to={useBaseUrl('#admin-home-page')}>Admin Home Page</Link>
-- <Link to={useBaseUrl('docs/admin-guide/admin-functions/integrate-bihub-platform-msad/edit-agent-instance')}>Agent Manager</Link>
+- <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent-manager-main')}>Agent Manager</Link>
 - User manager
 - Authentication
 - Audit
 - Reports
 - User Requests
 - Settings
-
-This is the same order in which the modules are displayed in the application pane as shown below. The functionality of these modules are covered in subsequent sections of this document.
 
 <div class="center">
   <Zoom>

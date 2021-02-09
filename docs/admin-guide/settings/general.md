@@ -45,54 +45,60 @@ The **Navigation** menu items change will reflect for all the other users as ind
 
 ## Search
 
-In Search category, the Admin can enable the Show Inaccessible Reports option as shown in the Figure below.
+By default the **Search** section allows users to search and request the reports they do not have access to.
+
+If the Admin wishes to hide the inaccessible report, the Admin can turn OFF the **Show Inaccessible reports** toggle.
+
   <div class="center">
     <Zoom>
-      <img alt="Search - Show Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/sea1.png')}/>
+      <img alt="Search - Show Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/settings/enable-inaccessible-reports.png')}/>
     </Zoom>
+    <p><b>Show Inaccessible reports</b> enabled by default</p>
   </div>
 
-  *Search - Show Inaccessible Reports*
+When the users search for the reports, the **Inaccessible** reports would be visible or hidden based on the selection made by the Admin.
 
-Based on the above configuration, the users will be able to view the
-Inaccessible Reports in the User pages (see Figure below).
   <div class="center">
     <Zoom>
-      <img alt="Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/ina.png')}/>
+      <img alt="Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/settings/inaccessible-reports.png')}/>
     </Zoom>
+    <p>Inaccessible Reports view</p>
   </div>
-
-  *Inaccessible Reports*
 
 ## Views
 
-In Views category, the Admin will be able to enable the Show Agent Instance option (see Figure below). The Show Agent Instance option is activated as shown in the below Figure.
+By default, the **Show Agent Instance** is enabled for each report for all the users.
+Admin can choose to hide the agent instance by turning this toggle OFF.
+
   <div class="center">
     <Zoom>
-      <img alt="View - Show Agent Instance option" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/vw2.png')}/>
+      <img alt="View - Show Agent Instance option" src={useBaseUrl('doc-images/admin-guide/settings/general-settings-views.png')}/>
     </Zoom>
+    <p>Agent Instance display ON</p>
   </div>
 
-  *View - Show Agent Instance option*
+When the **Show Agent Instance** is enabled, the *user* can view the Report with the **Instance Agent** details:
 
-When the Show Agent Instance option is activated, the user can view the Report with the Instance Agent details in the User pages (see Figure below).
   <div class="center">
     <Zoom>
-      <img alt="Report with Instance Agent Display" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/newad2.png')}/>
+      <img alt="Report with Instance Agent Display" src={useBaseUrl('doc-images/admin-guide/settings/view-instance-name.png')}/>
     </Zoom>
+    <p>Report with Instance Agent name</p>
   </div>
-
-  *Report with Instance Agent Display*
 
 ## Customization
 
-In the Customization category, the Admin will be now able to enable the “Launch Reports in New Tab” option (see Figure below). When this option is enabled by the Admin, the user will be able to view the “Launch Reports in New Tab” option being enabled in the Profile Settings for his first login and by later the user can configure the same based on his
-choice.
+The Admin can allow users to **Launch Reports In New Tab** with the ON/OFF toggle:
+
   <div class="center">
     <Zoom>
-      <img alt="Customization – Launch Reports in New Tab" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/cust.png')}/>
+      <img alt="Customization – Launch Reports in New Tab" src={useBaseUrl('doc-images/admin-guide/settings/settings-customization.png')}/>
     </Zoom>
+    <p>Customization – Launch Reports in New Tab</p>
   </div>
 
-  *Customization – Launch Reports in New Tab*
+- When Admin enables this option, by default **Open Report in new tab** is enabled for the users when they login for the first time.
 
+- The user can later choose to enable/disable this option from the **Settings > Customization Settings** section.
+
+> User customized settings take precedence over customizations done by Admin.

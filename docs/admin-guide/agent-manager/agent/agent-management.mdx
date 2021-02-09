@@ -1,0 +1,335 @@
+---
+id: agent-management
+title: Agent Management
+sidebar_label: Agent Management
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+In the **Agent Manager** screen, an Admin can:
+
+1. [Add Agents](#add-agent) that are configured with the BI Platform.
+1. [Edit Agent](#edit-agent): Agent's *Name, Server*, and *Port* details.
+1. [Delete Agent](#delete-agent)
+1. [Sync Users](#sync-users-between-agent-and-bi-hub): Synchronize Users between Agent and BI Hub.
+1. [Sync Reports](#sync-reports): Synchronize Reports with the BI Hub users
+1. [Instance Manager](#instance-manager): Manage(add/edit/delete) instances of an Agent.
+
+## Add Agent
+
+Admins can <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>add new Agents</Link> and assign *Agent Name*, *Server URL*, and *Port* number.
+
+## Edit Agent
+
+Select the **Agent** name and click **Edit**. You can edit the Agent details such as - **Agent Name**, **Server** URL, and the Agent **Port** number.
+Click **Save**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Edit Agent" src={useBaseUrl('doc-images/admin-guide/edit-agent.png')}/>
+    </Zoom>
+    <p>Edit Agent screen</p>
+  </div>
+
+## Delete Agent
+
+Select the **Agent** name and click **Delete**. In the popup screen, click **Delete** to confirm.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Delete Agent" src={useBaseUrl('doc-images/admin-guide/delete-agent.png')}/>
+    </Zoom>
+    <p>Delete Agent screen</p>
+  </div>
+
+> Deleting an agent will remove all the users and reports associated with it and cannot be undone.
+
+## Sync Users between Agent and BI Hub
+
+This feature is used by an administrator to import users from the BI platform into the portal. It is only used in scenarios when the BI platform stores all user credentials and users are authenticated using the BI platform and not a directory service like Microsoft AD/LDAP.
+
+An Admin can either synchronize users for a single Agent or multiple Agents.
+
+- **Sync Users for a single Agent**: Select the Agent and click **Sync Users**.
+  <div class="center">
+    <Zoom>
+      <img alt="Select a single Agent" src={useBaseUrl('doc-images/admin-guide/agent/sync-users-single-agent.png')}/>
+    </Zoom>
+    <p>Sync users for a single Agent</p>
+  </div>
+
+> All users from the selected agent will be synchronized with BI Hub.
+
+- **Sync users for multiple Agents**: If the user names are the same across all BI platforms, then select all Agents (except the one that points to a file system folder).
+  If the user names are different between BI platforms, then select the agent, which has the most number of users.
+  Click **Sync Users**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Select multiple Agents" src={useBaseUrl('doc-images/admin-guide/agent/sync-users-many-agents.png')}/>
+    </Zoom>
+    <p>Sync users for multiple Agents</p>
+  </div>
+
+> Only users with matching user names across the selected agents will be synchronized with BI Hub.
+
+Go to <Link to={useBaseUrl('docs/admin-guide/user-manager/user-manager-main')}>User Manager</Link> screen to view a list of users imported from BI platforms to BI Hub.
+You can filter the list with the Agent's name.
+
+:::note
+When users are added via the "Sync Users" feature, the default login password for the added users will be `<username@123>` (e.g. <adrian@123> for username 'adrian'). During the first login, the users will be asked to change to a new password.
+:::
+
+Go to **Home > Synchronization Information** and click on **Sync Users** to get a detailed summary: 
+
+ <div class="center">
+   <Zoom>
+     <img alt="Users sync information" src={useBaseUrl('/doc-images/admin-guide/synch/sync-users-info.png')}/>
+   </Zoom>
+	 <p>Sync information for Users</p>
+ </div>
+
+A list of users is displayed as:
+- **Inserted**: New Users added to the Agents
+- **Updated**: Users common to the selected Agents
+- **Excluded**: Users not common to the selected Agents
+ 
+Admin can also click on the download icon to **Download Logs** for the sync.
+
+> - If the user names are different between BI platforms, to import users from the other BI platform(s), Click Save and proceed to Section <Link to={useBaseUrl('docs/admin-guide/user-manager/add-users-bi-platform')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link>.
+> - If user names are identical across platforms, after synching the users synchronize Reports of Users as explained in the next section.
+
+:::note
+An Admin can also schedule an automatic users sync with the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-ad')}>Scheduled synchronization with AD/LDAP</Link> section.
+:::
+
+## Sync Reports
+
+Admin uses the **Sync Reports** feature to sync all the reports with the BI Hub users.
+To manually add reports to users, follow the <Link to={useBaseUrl('#')}>Add reports to an existing user</Link> section.
+
+- Select single/multiple Agents whose user’s reports are to be imported (synchronized) into BI Hub and click **Sync Reports**
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Reports" src={useBaseUrl('doc-images/admin-guide/agent/sync-reports.png')}/>
+    </Zoom>
+  	<p>Sync Reports</p>
+  </div>
+
+  >All reports of the users of the selected agents will be synchronized with BI Hub. 
+  > This synchronization only brings in reports of users with identical user names in BI platforms.
+
+An Administrator can switch to the **Home** page and view the number of reports synchronized. Click on **Sync Reports** to get a detailed summary:
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Reports" src={useBaseUrl('doc-images/admin-guide/agent/sync-reports-info.png')}/>
+    </Zoom>
+  	<p>Sync Reports</p>
+  </div>
+
+A list of Reports is displayed as:
+- **New**: New reports added to the Agent and number of users who have access to the reports.
+- **Updated**: User's access updates on the agent's reports.
+- **Revoked**: Users whose access have been revoked on the reports
+
+Admin can also click on the download icon to **Download Logs** for the sync.
+
+The users can now login into BI Hub and execute the reports they have access to.
+
+:::note
+Admin can also schedule to run **Sync Reports** automatically using the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-bi')}>Scheduled Synchronization with BI platforms</Link> section.
+:::
+---
+
+## Instance Manager
+
+To edit Instances configured with an Agent, an Admin can either click on the Agent **Name** or click on the count that shows the number of **Instances**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Select Agent Instance" src={useBaseUrl('doc-images/admin-guide/agent/select-instance.png')}/>
+    </Zoom>
+    <p>Select Agent Instance</p>
+  </div>
+
+The **Agent Manager > Instance Manager** screen displays the Instance(s) configured for the selected Agent.
+  <div class="center">
+    <Zoom>
+      <img alt="Instance Details" src={useBaseUrl('doc-images/admin-guide/agent/instance-manager.png')}/>
+    </Zoom>
+    <p>Instance Details</p>
+  </div>
+
+You can view the **Instance Name**, **Port** number, **Status**, and **Metadata**.
+
+Admin can perform the following actions:
+
+### Add Instance
+
+An Instance is a running state of an Agent. You can have multiple instances of a single Agent, all pointing to the same Agent in the BI Platform.
+
+1. Click on an Agent and then click **Add Instance** at the top right corner.
+  <div class="center">
+    <Zoom>
+      <img alt="Add a new Instance" src={useBaseUrl('doc-images/admin-guide/agent/add-instance.png')}/>
+    </Zoom>
+    <p>New Instance fields</p>
+  </div>
+
+ Enter the **Instance Name**, **Email**, and **Agent Port**. The **Agent Down Notification**, **Metadata**, and **Smart Search** toggles are **ON** by default and can be disabled.
+ Enter the remaining Agent specific fields and click **Submit**.
+ > Each field provides the necessary message needed to fill the value.
+  
+  <div class="center">
+    <Zoom>
+      <img alt="New Instance in running state" src={useBaseUrl('doc-images/admin-guide/agent/new-instance-running.png')}/>
+    </Zoom>
+    <p>New Instance in running state</p>
+  </div>
+
+### Edit Instance
+
+Select an Agent and select the Instance. Click **Edit** below the **Add Instance** button.
+Once you finish updating the instance properties, click **Submit** to save the changes.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Edit Instance" src={useBaseUrl('doc-images/admin-guide/agent/edit-instance.png')}/>
+    </Zoom>
+  	<p>Edit Instance</p>
+  </div>
+
+### Configure Smart Search
+
+**Smart Search** is a feature by which the users can see a set of reports that are not accessible to them but accessible to other users and can request access for the reports. 
+This can be configured at the agent level. 
+- The **Smart Search** toggle in the **Instance Manager > Edit Instance** is enabled by default which
+allows all users to utilize the "Not Accessible" Reports. 
+- An administrator can turn off this toggle for an agent and that will prevent all users of BI Hub from seeing a list of not accessible reports for that agent.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Smart Search toggle in Instance Manager" src={useBaseUrl('doc-images/admin-guide/agent/instance-smart-search.png')}/>
+    </Zoom>
+  	<p>Smart Search toggle in Instance Manager</p>
+  </div>
+
+### Delete Instance
+
+Deleting an agent instance will remove all the users and reports associated(mapped) with the instance and cannot be undone.
+
+Click on an Agent name, select the Instance and click **Delete**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Delete Instance" src={useBaseUrl('doc-images/admin-guide/agent/del-instance.png')}/>
+    </Zoom>
+  	<p>Delete Instance</p>
+  </div>
+
+If there is another instance configured for the same agent, the users and reports will be accessible on that running instance.
+
+### Stop the Instance
+
+When an instance is stopped, the features like **Sync Users**, and **Sync Reports** are also disabled for that instance.
+Admin is notified in the **Home Page > Instances Configured** section about the stop instance.
+
+To stop an instance, select the instance and click the stop( <img width="15" src={useBaseUrl('img/stop.svg')} /> ) icon.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Stop Instance" src={useBaseUrl('doc-images/admin-guide/agent/stop-instance.png')}/>
+    </Zoom>
+  	<p>Stop Instance</p>
+  </div>
+
+> Users cannot access the reports for the Agent whose instance is stopped.
+
+### Start the Instance
+
+Admin can start the Agent's instance to make the Reports accessible to the users by clicking on the start icon.
+  <div class="center">
+    <Zoom>
+      <img alt="Start Instance" src={useBaseUrl('doc-images/admin-guide/agent/start-instance.png')}/>
+    </Zoom>
+  	<p>Start Instance</p>
+  </div>
+
+To start an Instance with a "Yellow" status:
+  <div class="center">
+    <Zoom>
+      <img alt="New Instance added, but not started" src={useBaseUrl('doc-images/admin-guide/agent/instance-orange.png')}/>
+    </Zoom>
+    <p>New Instance added, but not started</p>
+  </div>  
+
+ > The Instance is unable to reach the platform until the Agent service is restarted.
+
+Restart the Agent's Instance Service from the backend Server. 
+
+Go to `Start > run > services.msc` and **Restart** the `VBIQlikViewAgent_QlickView_Dev` ( `VBI<agent-name>Agent_<instance-name>` ) service.
+
+The Instance will now be in the **running** state.
+  <div class="center">
+    <Zoom>
+      <img alt="Instance started" src={useBaseUrl('doc-images/admin-guide/agent/instance-started.png')}/>
+    </Zoom>
+    <p>Instance started</p>
+  </div>  
+
+### Restart Instance
+
+Select an Instance and click restart ( <img width="15" src={useBaseUrl('img/restart.svg')} /> ) icon.
+  <div class="center">
+    <Zoom>
+      <img alt="Restart Instance" src={useBaseUrl('doc-images/admin-guide/agent/restart-instance.png')}/>
+    </Zoom>
+  	<p>Restart Instance</p>
+  </div>
+
+### Download Logs for Agent Instance
+
+Select an Agent and click the **Download Logs** icon next to an instance.
+  <div class="center">
+    <Zoom>
+      <img alt="Download option for Log Files" src={useBaseUrl('doc-images/admin-guide/agent/download-logs.png')}/>
+    </Zoom>
+    <p>Download Instance Logs</p>
+  </div>
+
+This downloads the Service Manager logs, the instance and backend logs for the Agent.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Instance logs" src={useBaseUrl('doc-images/admin-guide/agent/instance-logs.png')}/>
+    </Zoom>
+    <p>Instance Logs</p>
+  </div>
+
+### Sync Instance Users
+
+All users from the selected instances will be synchronized with BI Hub.
+
+Click on the Agent and select an Instance. Click **Sync Users**.
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Instance Users" src={useBaseUrl('doc-images/admin-guide/agent/instance-sync-users.png')}/>
+    </Zoom>
+    <p>Sync Instance Users</p>
+  </div>
+
+### Sync Instance Reports
+
+From the selected instance(s), only reports which are accessible to the users already imported into BI Hub will be synchronized.
+
+Click on the Agent and select an Instance. Click **Sync Reports**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Instance Reports" src={useBaseUrl('doc-images/admin-guide/agent/sync-reports-instance.png')}/>
+    </Zoom>
+    <p>Sync Instance Reports</p>
+  </div>

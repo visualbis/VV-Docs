@@ -125,7 +125,6 @@ module.exports = {
                 items: [            
                     "admin-guide/agent-manager/agent/agent-management",
                     "admin-guide/agent-manager/agent/row-level-security",
-                    "admin-guide/agent-manager/agent/modify-prim-instance",
                         ],
             },
             "admin-guide/agent-manager/cluster",            
