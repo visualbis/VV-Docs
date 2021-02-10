@@ -133,12 +133,9 @@ module.exports = {
             "admin-guide/user-manager/user-manager",
             "admin-guide/user-manager/add-reports-existing-user",
             "admin-guide/user-manager/add-users-bi-platform",
-            "admin-guide/user-manager/edit-bihub-users",
             "admin-guide/user-manager/edit-password-authenticated-user",
-            "admin-guide/user-manager/del-user",
             "admin-guide/user-manager/power-users",
             "admin-guide/user-manager/dashboard-admin",
-            "admin-guide/user-manager/create-cluster",
         ],
         "Authentication": [
             "admin-guide/authenticate/authenticate",
