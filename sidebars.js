@@ -61,12 +61,6 @@ module.exports = {
                 ]
             },
             "installation-guide/advanced/advanced",
-            "installation-guide/advanced/load-balance",
-            "installation-guide/advanced/architecture",
-            "installation-guide/advanced/backup-restore",
-            "installation-guide/advanced/db-purge",
-            "installation-guide/advanced/services-info",
-            "installation-guide/advanced/server-restart-checklist",
         ],
         "Upgrade of BI Hub": [
             "installation-guide/upgrade/upgrade-bihub"
