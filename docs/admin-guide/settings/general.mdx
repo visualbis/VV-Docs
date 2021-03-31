@@ -11,9 +11,10 @@ import "react-medium-image-zoom/dist/styles.css";
 
 The **General** tab, has four different categories:
 1. <Link to={useBaseUrl('#navigation')}>Navigation</Link>
-2. <Link to={useBaseUrl('#search')}>Search</Link>
-3. <Link to={useBaseUrl('#views')}>Views</Link>
-4. <Link to={useBaseUrl('#customization')}>Customization</Link>
+1. Security
+1. <Link to={useBaseUrl('#search')}>Search</Link>
+1. <Link to={useBaseUrl('#views')}>Views</Link>
+1. <Link to={useBaseUrl('#customization')}>Customization</Link>
 
 ## Navigation
 
@@ -42,6 +43,20 @@ The **Navigation** menu items change will reflect for all the other users as ind
   </div>
 
 'Favorites' renamed as 'My Favorites', 'BI Platform', and 'History' menus disabled.
+
+## Security - Password Strength Validator
+
+Admin can set the native user password strength validator under **Settings > General > Security** section.
+The values can be set to "Low/Medium/High".
+
+  <div class="center">
+    <Zoom>
+      <img alt="Native user password validator" src={useBaseUrl('doc-images/admin-guide/settings/passwd-strength.png')}/>
+    </Zoom>
+    <p>Native user password validator</p>
+  </div>
+
+> Any new user created must adhere to the password validation.
 
 ## Search
 

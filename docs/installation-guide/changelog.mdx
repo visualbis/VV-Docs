@@ -4,26 +4,30 @@ title: Changelog
 sidebar_label: Changelog
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
 ## v2.6.0 (Jan 25, 2021)
 
-* Email Notifications whenever there is a failure in Sync Jobs
-* Passwords are not shown for the agents instance configurations page
-* Ability to set the native user password strength validator
-* User Preferences options to set the landing page
+#### New
+* Set the native user <Link to={useBaseUrl('docs/admin-guide/settings/general#security')}>Password Strength Validator</Link>.
+* User can now prefer to <Link to={useBaseUrl('docs/user-guide/settings#preferences')}>choose the Landing Page</Link>.
+
+#### Enhancements
+* Enabled <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-failure-mail-notification')}>email notifications for failed Sync jobs(Reports/Users)</Link>.
+* Agent's edit Instance configuration screen now encrypts the password inside the agent and restricts updating the password. [Refer the section <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#encrypted-password-non-updatable')}>Encrypted Password non-updatable</Link>].
 
 ## v2.5.0 (Oct 13, 2020)
 
-### Features
+#### Features
 
 * SAML Login Integration support
-* Agent Sync Users flow changed which includes Windows AD Authentication
+* Agent Sync Users flow now includes Windows AD Authentication
 * Support for Tableau Agent sub-project
 * Support for File BI Agent long file path
 
 ## v2.4.0 (Jul 20, 2020)
 
-### Features
+#### Features
 
 * Enables Admin to logout from the agents which requires admin login
 * Implemented User Settings page where User can go and configure available options
@@ -36,7 +40,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 * Custom CSS feature which enables the User to implement their own advanced CSS styles and colors
 * Agent Instance Health Check algorithm has been improved to provide a better health check.
 
-### Important Fixes
+#### Important Fixes
 We have also fixed a good amount of bugs with this release. Some important bugs or issues that have been fixed in this version:
 
 * Custom URL with special characters validation bug fixed
@@ -75,7 +79,7 @@ We have also fixed a good amount of bugs with this release. Some important bugs 
 * SSRS/PBIRS issue with the group access control has been fixed
 * Multiple Socket issue and audit user tab performance issues.
 
-### Important Fixes
+#### Important Fixes
 We have also squashed some bugs with this release. Some of the important fixes are:
 
 * Fix for dangling BOBJ Sessions
@@ -198,7 +202,7 @@ We have also squashed some bugs with this release. Some of the important fixes a
 * Enhanced UI with the Dark and Light themes
 * Theme generator which enables the administrator to generate corporate themes
 
-## v1.4 - BI Hub (Sep 30, 2017)
+## v1.4 (Sep 30, 2017)
 
 * Detailed status regarding scheduled and manual synchronization of users and reports in admin landing page
 * Bulk upload and download of reports metadata in Admin mode
@@ -209,7 +213,7 @@ We have also squashed some bugs with this release. Some of the important fixes a
 * User guide launched from the product
 * Smart Search feature enables searching for reports the user doesn’t have access to, displays the accessible and not accessible reports in separate tabs.
 
-## v1.3 - BI Hub (Jun 30, 2017)
+## v1.3 (Jun 30, 2017)
 
 * BI Hub leverages the user authentication store of Microsoft AD. By integrating with SSO, a further login prompt is eliminated.
 * BI Hub uses Microsoft AD to authenticate users. If there is no AD, then BI Hub leverages the BI platform authentication.
@@ -221,8 +225,10 @@ We have also squashed some bugs with this release. Some of the important fixes a
 * Admin landing page shows a high-level status of agents and # of users.
 * Ability to manually add/delete Users and assign Reports to the users. This is used to override the automated synchronization with BI platforms.
 
+<!--
 ## Known Issues
 
 1. Multiple mapping of users for the same agent when manual mapping is done to another user account which is not listed in the user manager.
 1. Tableau report shows a log-in screen in Iframe when it is opened in the Chrome Incognito which is inconsistent.
 1. One Drive/Sharepoint – When reports are opened for the first time, the login prompts inside the same tab rather than in the new tab.
+-->

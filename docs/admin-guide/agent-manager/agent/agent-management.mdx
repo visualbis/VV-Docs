@@ -20,7 +20,7 @@ In the **Agent Manager** screen, an Admin can:
 
 ## Add Agent
 
-Admins can <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>add new Agents</Link> and assign *Agent Name*, *Server URL*, and *Port* number.
+Admins can <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>add new Agents</Link> and assign *Agent Name*, *Server URL*, and *Port* number.
 
 ## Edit Agent
 
@@ -130,7 +130,7 @@ An Administrator can switch to the **Home** page and view the number of reports 
   	<p>Sync Reports</p>
   </div>
 
-A list of Reports is displayed as:
+A list of Reports are displayed as:
 - **New**: New reports added to the Agent and number of users who have access to the reports.
 - **Updated**: User's access updates on the agent's reports.
 - **Revoked**: Users whose access have been revoked on the reports
@@ -142,6 +142,18 @@ The users can now login into BI Hub and execute the reports they have access to.
 :::note
 Admin can also schedule to run **Sync Reports** automatically using the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-bi')}>Scheduled Synchronization with BI platforms</Link> section.
 :::
+
+## Sync Failure Mail Notification
+
+If the sync(Report/Users) jobs fail, the admin receives an email notification with the failure message.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Failure Notification" src={useBaseUrl('doc-images/admin-guide/agent/sync-failure.png')}/>
+    </Zoom>
+    <p>Sync Failure Notification</p>
+  </div>
+
 ---
 
 ## Instance Manager
@@ -201,6 +213,19 @@ Once you finish updating the instance properties, click **Submit** to save the c
     </Zoom>
   	<p>Edit Instance</p>
   </div>
+
+### Encrypted Password non-updatable
+
+The password field is now encrypted for the agents in the **Edit Instance** screen. Admin cannot update the password here.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Password update not allowed" src={useBaseUrl('doc-images/admin-guide/agent/password-update-fail.png')}/>
+    </Zoom>
+    <p>Password update not allowed</p>
+  </div>
+
+> Only a Server Admin can reset an agent's password property file located in the `<agent installation directory>`.
 
 ### Configure Smart Search
 
