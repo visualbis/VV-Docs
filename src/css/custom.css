@@ -90,10 +90,37 @@ img[alt="icon"] {
     text-align: center;
     position: center;
     padding: 0px 70px; 
-    width: 80%;
+    width: 100%;
 }
 
 .center p{
     text-align: center;
     color: slategray;
+}
+
+#date {
+    width: 105px;
+}
+
+#myTable tr, td{
+    padding: 4em;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #BBB;
+    border-radius: 0 !important;
+    line-height: 1.6em;
+}
+
+#myTable li {
+    text-align: webkit-match-parent;
+}
+
+#myTable th{
+    background-color: #215b9a;
+    color: white;
+}
+
+#release-date {
+    font-size: 12px;
+    color: gray;
 }

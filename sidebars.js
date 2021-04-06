@@ -78,6 +78,8 @@ module.exports = {
 
     },
 
+    "Archived Versions": [ "archived/v2.3.1", "archived/v2.3.0", "archived/v2.2.3", "archived/v2.2.2", "archived/v2.2.1", "archived/v2.2.0", "archived/v2.1.1", "archived/v2.1.0", "archived/v2.0.1", "archived/v2.0.0", "archived/v1.5.5", "archived/v1.5.0", "archived/v1.4.0", "archived/v1.3.0" ],
+
     adminGuide: {
         "Welcome": ["admin-guide/getting-started/welcome",
             {
@@ -131,10 +133,8 @@ module.exports = {
             "admin-guide/agent-manager/cluster",            
         ],
         "User Manager": ["admin-guide/user-manager/user-manager-main",
-            "admin-guide/user-manager/user-manager",
-            "admin-guide/user-manager/add-reports-existing-user",
-            "admin-guide/user-manager/add-users-bi-platform",
-            "admin-guide/user-manager/edit-password-authenticated-user",
+            "admin-guide/user-manager/user-management",
+            "admin-guide/user-manager/group-management",
             "admin-guide/user-manager/power-users",
             "admin-guide/user-manager/dashboard-admin",
         ],
@@ -187,7 +187,6 @@ module.exports = {
         ]
 
     },
-
 
     userGuide: {
         "Getting Started": [
