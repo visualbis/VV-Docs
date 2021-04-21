@@ -41,7 +41,7 @@ module.exports = {
         },
 */
         {
-          to: "/docs/installation-guide/changelog",
+          to: "/docs/installation-guide/releases",
           label: "Release Notes",
           position: "left",
         },

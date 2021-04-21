@@ -66,9 +66,6 @@ Close the **Config utility** after you stop the backend instances before you pro
 * Restart all the backend instances in the *Config utility* one by one.
 
 :::note
-Give some time before starting every instance. Do not immediately start one after the other.
-:::
-
-:::note
-No *Port* number should be asked during the upgrade. If you are prompted for the *port* number, kindly contact the support team at support@bihub.com.
+- Give some time before starting every instance. Do not immediately start one after the other.
+- No *Port* number should be asked during the upgrade. If you are prompted for the *port* number, kindly contact the support team at support@bihub.com.
 :::

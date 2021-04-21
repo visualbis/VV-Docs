@@ -1,7 +1,7 @@
 ---
-id: power-users
-title: Power Users
-sidebar_label: Power Users
+id: group-management
+title: Group Management
+hide_title: true
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -9,7 +9,12 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-Power Users in BI Hub provides the ability to create a group of single/multiple users who can perform some predefined activities of the Admin User. For our example, click the Manager User Group option by navigating to the User Management screen in Admin screen (see Figure below).
+## Manage User Groups
+
+BI Hub admin must create few Power Users who can perform some predefined activities of the Admin user.
+To do so, Admin must first create a customized User Group and enable some admin permissions. Then add users to this User Group.
+
+In the **User Manager** screen, click on **Manage User Groups**.
 
   <div class="center">
     <Zoom>
@@ -17,39 +22,27 @@ Power Users in BI Hub provides the ability to create a group of single/multiple 
     </Zoom>
   </div>
 
- *Manage User Groups*
- 
-In the Manage Users Groups, you can create a group of user(s) by clicking the Add User Group option as shown in the Figure below.
+### Add a new User Group
 
+Click **Add User Group**.
   <div class="center">
     <Zoom>
-      <img alt="Add User Group" src={useBaseUrl('doc-images/admin-guide/power-users/pr2.png')}/>
+      <img alt="Add User Group" src={useBaseUrl('doc-images/admin-guide/power-users/add-user-group.png')}/>
     </Zoom>
   </div>
 
- *Add User Group*
+Enter a name for the User Group and click **Create**.
 
-You will be able to view a pop up for naming the User Group as shown in the Figure below. For our example, the User Group has been named as “VBI View Demo Group”. Now click Create.
+### Manage Permissions
 
+Select the User Group and click **Manage Permissions**.
   <div class="center">
     <Zoom>
-      <img alt="Popup for naming the User Group" src={useBaseUrl('doc-images/admin-guide/power-users/pr3.png')}/>
+      <img alt="Manage Users Groups screen" src={useBaseUrl('doc-images/admin-guide/power-users/select-user-group.png')}/>
     </Zoom>
   </div>
 
-*Pop up for naming the User Group*
-
-Now the VBI View Demo Group will be listed in the Manage User Groups screen. Click the Manage Permissions option for the VBI View Demo Group.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Manage Users Groups screen" src={useBaseUrl('doc-images/admin-guide/power-users/pr4.png')}/>
-    </Zoom>
-  </div>
-
-*Manage Users Groups screen*
-
-In the Manage Permissions Group, you will be able to enable the access for the specific activities of the Admin User in both Report Administration and the System Administration (see Figure below). For our example, all the activities have been enabled.
+Enable the access for specific tasks in both Report Administration and System Administration sections.
 
   <div class="center">
     <Zoom>
@@ -57,38 +50,49 @@ In the Manage Permissions Group, you will be able to enable the access for the s
     </Zoom>
   </div>
 
-*Manage Permissions*
-
-Now navigate to the Manage User Groups and enable the newly created VBI View Demo Group as shown the below Figure. Click Add option to add the number of users to the VBI View Demo Group.
+Also grant the Dashboard administration permissions:
 
   <div class="center">
     <Zoom>
-      <img alt="Add Users to the User Group" src={useBaseUrl('doc-images/admin-guide/power-users/pr6.png')}/>
+      <img alt="Manage Users Groups screen" src={useBaseUrl('doc-images/admin-guide/power-users/sys-dashboard-admin-permissions.png')}/>
     </Zoom>
   </div>
 
-*Add Users to the User Group*
+### Add User ( Power Users ) to the Group
 
-For our example, the users SRV01 and SRV02 have been selected. Click Add to add the users to the User Group (see Figure below).
+Select the User Group ( Power User ) and click **ADD**.
 
   <div class="center">
     <Zoom>
-      <img alt="User Selection" src={useBaseUrl('doc-images/admin-guide/power-users/pr7.png')}/>
+      <img alt="Add Users to the User Group" src={useBaseUrl('doc-images/admin-guide/power-users/add-users.png')}/>
     </Zoom>
+    <p>Add users to the User Group</p>
   </div>
 
-*User Selection*
-
-The users SRV01 and SRV02 have been added to the VBI View Demo Group and the users count will be displayed in the Manager User Groups screen as shown in the below Figure.
+Now, select the users from the drop-down list and click **ADD**.
 
   <div class="center">
     <Zoom>
-      <img alt="User Groups" src={useBaseUrl('doc-images/admin-guide/power-users/pr8.png')}/>
+      <img alt="User Groups" src={useBaseUrl('doc-images/admin-guide/power-users/power-users-added.png')}/>
     </Zoom>
+    <p>Users added to the User Group</p>
   </div>
 
-*User Groups*
+### Edit User Group
 
+Select a User Group and click **Edit**. This allows you to rename a User Group and click **Save**.
+
+### Delete User Group
+
+To delete the User Group, select the group and click **Delete**.
+
+> If you delete a User Group, the users added to the group will lose the admin privileges assigned to them.
+
+### Remove User(s) from a User Group
+
+To revoke admin permissions from a User, select the User Group and click **Remove** against the User name.
+
+<!--
 Based on the access provided by the Admin user, the users SRV01 and SRV02 can also view their Admin Mode screen. For our example, you will be able to view the SRV01 user screen which has a navigation for Admin Mode screen (see Figure below).
 
   <div class="center">
@@ -144,4 +148,4 @@ The user SRV01 can get back to the User Mode using the User Mode option (see Fig
   </div>
 
 *User screen with Admin Mode option*
-
+-->

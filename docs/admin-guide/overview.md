@@ -15,12 +15,12 @@ Following are the modules displayed in the application side panel:
 
 - <Link to={useBaseUrl('#admin-home-page')}>Admin Home Page</Link>
 - <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent-manager-main')}>Agent Manager</Link>
-- User manager
-- Authentication
-- Audit
-- Reports
-- User Requests
-- Settings
+- <Link to={useBaseUrl('docs/admin-guide/user-manager/user-manager-main')}>User manager</Link>
+- <Link to={useBaseUrl('docs/admin-guide/authenticate/authenticate')}>Authentication</Link>
+- <Link to={useBaseUrl('docs/admin-guide/audit')}>Audit</Link>
+- <Link to={useBaseUrl('docs/admin-guide/reports/reports')}>Reports</Link>
+- <Link to={useBaseUrl('docs/admin-guide/request-access-reports-admin')}>User Requests</Link>
+- <Link to={useBaseUrl('docs/admin-guide/settings/settings')}>Settings</Link>
 
 <div class="center">
   <Zoom>
