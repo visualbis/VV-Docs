@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./css/custom.css";
 import "react-medium-image-zoom/dist/styles.css";

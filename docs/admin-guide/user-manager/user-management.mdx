@@ -1,0 +1,193 @@
+---
+id: user-management
+sidebar_label: User Management
+title: User Management 
+hide_title: true
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+## Add a New User
+
+* Click **Add User** at the top-right corner.
+  <div class="center">
+    <Zoom>
+      <img alt="Add User option" src={useBaseUrl('doc-images/admin-guide/user-manager/add-user.png')}/>
+    </Zoom>
+	<p>Add User</p>
+  </div>
+
+* Enter **Fullname**, and select:
+  * **Native** to add a user who will be authenticated by BI Hub (because the user is currently authenticated by BI platforms and not AD). 
+  OR
+  * **Windows AD** to add a user who will be authenticated by Windows AD.
+* Click **Continue**.
+  <div class="center">
+    <Zoom>
+      <img alt="Select Agent(s)" src={useBaseUrl('doc-images/admin-guide/user-manager/select-agent.png')}/>
+    </Zoom>
+	<p>Select Agent(s)</p>
+  </div>
+* Select the agent to be added for the user and the corresponding username. Click **Add** to include more agents.
+* Click **Submit** when you are finished adding the agent(s).
+
+> The added user will be reflected in the User Manager's list.
+
+In order to synchronize reports for this user, one of the following actions can be performed:
+
+* Wait till the next scheduled synchronization activity happens, or
+* Follow steps in Section <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Synchronize Reports of Users</Link> to Sync Reports with a single click, or
+* Manually add reports to the user using User Manager as explained in section <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-reports-to-an-existing-user')}>Add Reports to an existing user</Link>.
+
+### Add Users from other BI Platforms
+
+An Admin can map users who have different user names across BI Platforms into one BI Hub user as follows:
+
+* Go to **User Manager**.
+
+> The users added previously (either from Section <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-users-between-agent-and-bi-hub')}>Synchronize Users between Agent and BI Hub</Link> or <Link to={useBaseUrl('docs/admin-guide/authenticate/synch-ms-ad-bihub')}>Synchronize Microsoft AD users with BI Hub</Link>) will be listed. 
+
+* Select the user and click **Edit**, and then click **Add**.
+  * From the drop-down list boxes, select the appropriate **Agent** name and **User** name. ( To search a user name, start typing the name in the drop-down box. )
+  <div class="center">
+    <Zoom>
+      <img alt="Edit User" height="400" src={useBaseUrl('doc-images/admin-guide/edit-user.jpg')}/>
+    </Zoom>
+	<p>Edit User</p>
+  </div>
+* Click **Update**.
+* 
+Now the BI Hub user chosen in the **User Manager** page has been mapped to the user name from the BI platform. Repeat the steps until users of all BI platforms are mapped. 
+Next, proceed with the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Synchronize reports of Users</Link> section.
+
+## Edit User
+
+Power user can edit user settings such as agents, authentication, and group membership. Select the user and click **Edit**.
+
+### Add a new Agent
+
+To add a new agent, select the **Agent Users** tab and click **Add**.
+  <div class="center">
+    <Zoom>
+      <img alt="Manage Agents" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-agent.png')}/>
+    </Zoom>
+    <p>Manage Agents added to a user</p>
+  </div>
+
+Select the agent name from the drop-down list, and a username.
+> To delete the agent(s), click the Delete ( <img width="25" src={useBaseUrl('img/delete.png')} /> ) icon next to the agent.
+
+### Edit the Authentication type for a user
+
+In the **Authentication** tab, select and edit the Authentication type.
+  <div class="center">
+    <Zoom>
+      <img height="400" alt="Edit Authentication" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-authenticate.png')}/>
+    </Zoom>
+    <p>Edit Authentication</p>
+  </div>
+
+### Add/remove a user to/from a Group
+
+In the **Membership** tab: 
+
+* **Add** and select a Group to add the user to the group.
+* Click **Remove** against a Group's name to remove the user from the assigned group.
+  <div class="center">
+    <Zoom>
+      <img alt="Group Management" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-group.png')}/>
+    </Zoom>
+    <p>Manage User's Groups</p>
+  </div>
+
+## Edit the Password of BI Hub (Native) authenticated user
+
+To reset the lost BI Hub password, the user must request a change password email to BI Hub Admin.
+The BI Hub Admin must take the following steps to set the password to a generic one:
+
+* Go to **User Manager**.
+* Select the user whose password is to be edited and click **Edit**.
+* In the **Edit User** screen, click the **Authentication** tab and expand the **Native** option. Enter a new password and click **Update**.
+  <div class="center">
+    <Zoom>
+      <img alt="Reset Native password" height="400" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/edituserpwd.jpg')}/>
+    </Zoom>
+	<p>Reset Native user Password</p>
+  </div>
+
+An email notification is triggered to the user with the new password.
+When the user logs-in to the BI Hub application, the user will be prompted to change the password that was reset by BI Hub admin.
+
+:::note
+If a user wants to reset the Windows AD password, then the user must approach the Windows AD administrator.
+:::
+
+## Delete User
+
+Delete the entire user information and the user’s reports from the application.
+  <div class="center">
+    <Zoom>
+      <img alt="Delete User" src={useBaseUrl('doc-images/admin-guide/delete-user.png')}/>
+    </Zoom>
+    <p>Delete a user</p>
+  </div>
+
+## Add Reports to an existing User
+
+* In the **User Manager** screen, select the user and click **Manage Reports**.
+
+A list of agents configured for the user will be displayed on the left, and assigned reports on the right.
+
+* Click on the agent name, and then click **Add/Remove Reports**.
+
+> Refer the [Troubleshooting](#troubleshooting) section if the agent is down/inactive.
+  <div class="center">
+    <Zoom>
+      <img alt="Agent User Mapping" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/agentusermapping.jpg')}/>
+    </Zoom>
+    <p>Agent User Mapping</p>
+  </div>
+
+* A list of unassigned reports will be on the left and assigned reports on the right.
+  <div class="center">
+    <Zoom>
+      <img alt="Assigning Reports" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/assigningreports.jpg')}/>
+    </Zoom>
+  </div>
+* Select the reports or folders in the **Unassigned Reports** pane and click **Move** that moves the reports in the **Assigned Reports** section.
+
+> The **Search Reports** on the top-right can be used to search for reports in both Assigned and Unassigned columns. 
+>
+> The breadcrumb on the top sets the context by displaying **BI Hub user name > Agent Name > BI platform user name**.
+
+* To remove the reports displayed under an agent, select the reports or folders in the **Assigned Reports** pane and click **Remove**.
+
+:::note
+Once you complete the reports assignment, a message pops-up on the screen: "Action Completed Successfully".
+:::
+
+Click **Back** to assign/unassign reports for the other agents against the same user. 
+
+To complete the manual assignment of reports to BI Hub, click **Sync Metadata**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Metadata" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/syncmetadata.jpg')}/>
+    </Zoom>
+    <p>Sync Metadata</p>
+  </div>
+
+### Troubleshooting
+
+If the Agent is down/inactive, the Reports cannot be retrieved. An Alert Message is displayed as shown below:
+  <div class="center">
+    <Zoom>
+      <img alt="Reports in disabled status" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/alert1.png')}/>
+    </Zoom>
+    <p>Reports in disabled status</p>
+  </div>
+
+You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link> from the **Agent Manager** screen.

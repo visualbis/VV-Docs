@@ -9,9 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The Row Level Security feature has been implemented for the Power BI and Onedrive Reports.
 There is a 2-step authentication for these 2 agents that requires a sign-in validation from both *Admins (Super Admin/Admins)* and *Users*:
-
 * Admins must create a new instance and authenticate the login credentials.
 * Regular users must also log-in to the agents and validate the credentials to access the reports.
 
@@ -40,7 +38,7 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
 
   <div class="center">
     <Zoom>
-      <img alt="Power BI Administrator Login pop window" src={useBaseUrl('doc-images/admin-guide/admin-mode/rw3.jpg')}/>
+      <img alt="Power BI Administrator Login" src={useBaseUrl('doc-images/admin-guide/admin-mode/rw3.jpg')}/>
     </Zoom>
   </div>
 

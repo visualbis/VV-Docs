@@ -9,6 +9,10 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
+:::important
+Log-in to BI Hub application with the Admin username/password. Switch to the administrator mode by clicking the **Admin mode** button at the top right corner.
+:::
+
 Upon successfully configuring the Agents, connecting the directory services, and a few successful synchronizations, the landing page displays four tiles:
 
 <div class="center">
@@ -20,12 +24,12 @@ Upon successfully configuring the Agents, connecting the directory services, and
 
 ## 1. Instances Configured
 
-List of instances under the agents being configured, number of **Reports** synched, the Agent **Server** URL, the Instance **Port** number, and Instance **Status** is also displayed.
-
+This section lists the instances configured,  number of **Reports** synched, the Agent **Server** URL, the Instance **Port** number, and Instance **Status**. 
+The instances are managed from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent-manager-main')}>Agent Manager</Link> screen.
 
 ## 2. Authentications Configured
 
-List of user authentications **Name**, **Type**, and **Status**.
+This section summarizes the user account types with **Authentication Name**, **Type**, and **Status**. These accounts are managed in the <Link to={useBaseUrl('docs/admin-guide/authenticate/authenticate')}>Authentication</Link> section.
 
 ## 3. Components Configured
 
@@ -33,7 +37,12 @@ List of components like Elastic Search, Message Queue, and SMTP that were config
 
 ## 4. Synchronization Information
 
-Synchronization details for users, reports and authentication. 
+This section displays the Synchronization details of users, reports, and/or authentication accounts.
+These sync reports are triggered from the **Agent Manager > Instance Manager**, and **Authentication** sections.
 
 - To view the recent activities over a period, click on the calendar icon and provide a date range as input.
 - To get a detailed information click on **Sync Users**, or **Sync Reports** or **Sync Authentication**, and the **Synchronization information** window pops up.
+
+:::note
+Refer the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/admin-utilities#synchronization-information')}>Administrator utility Synchronization</Link> section.
+:::

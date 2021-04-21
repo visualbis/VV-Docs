@@ -9,102 +9,39 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-User and Group Management:
-## 1. User Management
-Name - ascending/descending order
-
-## Add User
-
-## Edit User
-
-- Add agent
-- Delete agent
-  <div class="center">
-    <Zoom>
-      <img alt="Manage Agents" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-agent.png')}/>
-    </Zoom>
-    <p>Manage Agents added to a user</p>
-  </div>
-
-  <div class="center">
-    <Zoom>
-      <img height="400" alt="Edit Authentication" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-authenticate.png')}/>
-    </Zoom>
-    <p>Edit Authentication</p>
-  </div>
-
-Add or remove a user to or from a group.
-  <div class="center">
-    <Zoom>
-      <img alt="Group Management" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-group.png')}/>
-    </Zoom>
-    <p>Manage user's groups</p>
-  </div>
-
-
-
-## Delete User
-Delete the entire user information and the user’s reports from the application.
- - Assign/Revoke Reports
-
-## 2. Group Management
- - Add a new Group
- - Add user to a Group
- - Remove user from a group
- - Rename user Group
- - Delete a group
- - Manage Permissions
-  REPORT ADMINISTRATION
-  ADVANCED
-  SYSTEM ADMINISTRATION
-  DASHBOARD ADMINISTRATION
-
-Filtering
-
-- Username
-- Agents name
-- Authentication
-
-Sync Metadata
-
----
-
-- In the **Agents** column, the Agent icons next to each username indicate the number of agents (BI platforms) in which the user account is present.
-- The **Authentication** column, lists the type of authentication assigned to each user.
-- You can select the user and click on the Agent Users tab on the right pane to visualize the BI platforms and the name of the user in that platform.
+This section is used by an admin for managing users and groups. An admin can manage group permissions and also define power users in this section.
 
   <div class="center">
     <Zoom>
       <img alt="User Manager" src={useBaseUrl('doc-images/admin-guide/synch/user-manager.jpg')}/>
     </Zoom>
+    <p>User Manager</p>
   </div>
 
-  *User Manager*
+The screen displays the list of user **Names**, **Agents** configured for each user, and the **Authentication** type.
 
-  The number of users mentioned in parenthesis near the User Manager Label represents the total number of users who exist in BI Hub (see Figure above). The Users can also be filtered based on the platforms and the Authentication types (see Figures below).
+The users count mentioned in parenthesis next to the User Manager Label (27) represents the total number of users existing in BI Hub. 
 
+You can filter the users based on User Names/Agent(s) names, or Authentication types:
   <div class="center">
     <Zoom>
       <img alt="User Manager with Agents Filtering" src={useBaseUrl('doc-images/admin-guide/synch/um2.jpg')}/>
     </Zoom>
+    <p>List of users filtered based on Agents</p>
   </div>
-
-  *User Manager with Agents Filtering*
 
   <div class="center">
     <Zoom>
       <img alt="User Manager with Authentication Filtering" src={useBaseUrl('doc-images/admin-guide/synch/umauth.jpg')}/>
     </Zoom>
+    <p>User Manager with Authentication Filtering</p>
   </div>
 
-  *User Manager with Authentication Filtering*
-
-  The user details such as Instance Name, Username and Environment can also be seen by just clicking on the username (see Figure below).
+To view the user details such as Instance Name, Username and Environment click the ">" icon before the username:
 
   <div class="center">
     <Zoom>
       <img alt="User Manager with User details" src={useBaseUrl('doc-images/admin-guide/synch/um3new.jpg')}/>
     </Zoom>
+    <p>Instance details of a User</p>
   </div>
-
-  *User Manager with User details*

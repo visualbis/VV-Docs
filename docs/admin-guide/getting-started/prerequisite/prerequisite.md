@@ -24,8 +24,8 @@ BI Hub application requires the below components:
 
 Kindly follow the steps given below to configure the BI Platform and make the trusted connection between the respective BI Hub Agent and its BI Platform:
 
-| Agent Name    | Configuration                                                                                                                                              |
-| :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Agent Name    | Configuration                                                                                                                                       |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | BOBJ          | <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/bobj')}>BOBJ Platform Configuration</Link>                   |
 | BOBJ Rest     | <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/bobj-rest-bi')}>BOBJ REST BI Platform Configuration</Link>   |
 | Tableau       | <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/tableau')}>Tableau Platform Configuration</Link>             |

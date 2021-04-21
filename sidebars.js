@@ -6,7 +6,7 @@ module.exports = {
     installationGuide: {
         "Getting Started": [
             "installation-guide/welcome",
-            "installation-guide/changelog",
+            "installation-guide/releases",
             "installation-guide/sys-req",
             "installation-guide/download-bihub",
             "installation-guide/install-pre",
@@ -135,7 +135,6 @@ module.exports = {
         "User Manager": ["admin-guide/user-manager/user-manager-main",
             "admin-guide/user-manager/user-management",
             "admin-guide/user-manager/group-management",
-            "admin-guide/user-manager/power-users",
             "admin-guide/user-manager/dashboard-admin",
         ],
         "Authentication": [

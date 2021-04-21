@@ -11,9 +11,9 @@ import "react-medium-image-zoom/dist/styles.css";
 
 In the **Agent Manager** screen, an Admin can:
 
-1. [Add Agents](#add-agent) that are configured with the BI Platform.
+1. [Add Agent](#add-agent): Add new Agent(s) configured in BI platform. 
 1. [Edit Agent](#edit-agent): Agent's *Name, Server*, and *Port* details.
-1. [Delete Agent](#delete-agent)
+1. [Delete Agent](#delete-agent): Delete Agent(s) configured in BI platform.
 1. [Sync Users](#sync-users-between-agent-and-bi-hub): Synchronize Users between Agent and BI Hub.
 1. [Sync Reports](#sync-reports): Synchronize Reports with the BI Hub users
 1. [Instance Manager](#instance-manager): Manage(add/edit/delete) instances of an Agent.
@@ -283,7 +283,9 @@ Admin can start the Agent's instance to make the Reports accessible to the users
   	<p>Start Instance</p>
   </div>
 
-To start an Instance with a "Yellow" status:
+#### Restart Instance Service when BI Platform not reachable
+
+An <a id="color-orange"><b>Orange</b></a> status indicates, that Instance is unable to reach the platform:
   <div class="center">
     <Zoom>
       <img alt="New Instance added, but not started" src={useBaseUrl('doc-images/admin-guide/agent/instance-orange.png')}/>
@@ -291,13 +293,11 @@ To start an Instance with a "Yellow" status:
     <p>New Instance added, but not started</p>
   </div>  
 
- > The Instance is unable to reach the platform until the Agent service is restarted.
-
-Restart the Agent's Instance Service from the backend Server. 
+You must restart the respective Agent's Instance Service from the backend Server. 
 
 Go to `Start > run > services.msc` and **Restart** the `VBIQlikViewAgent_QlickView_Dev` ( `VBI<agent-name>Agent_<instance-name>` ) service.
 
-The Instance will now be in the **running** state.
+The Instance will now be in the **running** state:
   <div class="center">
     <Zoom>
       <img alt="Instance started" src={useBaseUrl('doc-images/admin-guide/agent/instance-started.png')}/>
