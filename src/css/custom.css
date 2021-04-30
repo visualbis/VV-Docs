@@ -18,7 +18,8 @@
     --ifm-color-primary-light: #296fbc;
     --ifm-color-primary-lighter: #2b74c5;
     --ifm-color-primary-lightest: #3a84d4;
-    --ifm-code-font-size: 95%;
+    --ifm-code-font-size: 90%;
+    font-size: 14px;
 }
 
 .docusaurus-highlight-code-line {
@@ -62,15 +63,20 @@ html[data-theme="dark"] p.hero__subtitle {
 }
 
 #color-red {
-    color: #FC0102;
+    color: #e6531a;
 }
 
 #color-green {
-    color: #66C245;
+/*    color: #66C245; */
+    color: #6ac44d;
 }
 
 #color-orange {
-    color: #FCA620;
+    color: #ff7200;
+}
+
+#color-yellow {
+    color: #fd0;
 }
 
 img[alt="icon"] {
@@ -84,10 +90,37 @@ img[alt="icon"] {
     text-align: center;
     position: center;
     padding: 0px 70px; 
-    width: 80%;
+    width: 100%;
 }
 
 .center p{
     text-align: center;
     color: slategray;
+}
+
+#date {
+    width: 105px;
+}
+
+#myTable tr, td{
+    padding: 4em;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #BBB;
+    border-radius: 0 !important;
+    line-height: 1.6em;
+}
+
+#myTable li {
+    text-align: webkit-match-parent;
+}
+
+#myTable th{
+    background-color: #215b9a;
+    color: white;
+}
+
+#release-date {
+    font-size: 12px;
+    color: gray;
 }

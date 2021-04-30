@@ -1,0 +1,151 @@
+---
+id: group-management
+title: Group Management
+hide_title: true
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+## Manage User Groups
+
+BI Hub admin must create few Power Users who can perform some predefined activities of the Admin user.
+To do so, Admin must first create a customized User Group and enable some admin permissions. Then add users to this User Group.
+
+In the **User Manager** screen, click on **Manage User Groups**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Manage User Groups" src={useBaseUrl('doc-images/admin-guide/power-users/pr1.png')}/>
+    </Zoom>
+  </div>
+
+### Add a new User Group
+
+Click **Add User Group**.
+  <div class="center">
+    <Zoom>
+      <img alt="Add User Group" src={useBaseUrl('doc-images/admin-guide/power-users/add-user-group.png')}/>
+    </Zoom>
+  </div>
+
+Enter a name for the User Group and click **Create**.
+
+### Manage Permissions
+
+Select the User Group and click **Manage Permissions**.
+  <div class="center">
+    <Zoom>
+      <img alt="Manage Users Groups screen" src={useBaseUrl('doc-images/admin-guide/power-users/select-user-group.png')}/>
+    </Zoom>
+  </div>
+
+Enable the access for specific tasks in both Report Administration and System Administration sections.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Manage User Groups" src={useBaseUrl('doc-images/admin-guide/power-users/pr5.png')}/>
+    </Zoom>
+  </div>
+
+Also grant the Dashboard administration permissions:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Manage Users Groups screen" src={useBaseUrl('doc-images/admin-guide/power-users/sys-dashboard-admin-permissions.png')}/>
+    </Zoom>
+  </div>
+
+### Add User ( Power Users ) to the Group
+
+Select the User Group ( Power User ) and click **ADD**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Add Users to the User Group" src={useBaseUrl('doc-images/admin-guide/power-users/add-users.png')}/>
+    </Zoom>
+    <p>Add users to the User Group</p>
+  </div>
+
+Now, select the users from the drop-down list and click **ADD**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Groups" src={useBaseUrl('doc-images/admin-guide/power-users/power-users-added.png')}/>
+    </Zoom>
+    <p>Users added to the User Group</p>
+  </div>
+
+### Edit User Group
+
+Select a User Group and click **Edit**. This allows you to rename a User Group and click **Save**.
+
+### Delete User Group
+
+To delete the User Group, select the group and click **Delete**.
+
+> If you delete a User Group, the users added to the group will lose the admin privileges assigned to them.
+
+### Remove User(s) from a User Group
+
+To revoke admin permissions from a User, select the User Group and click **Remove** against the User name.
+
+<!--
+Based on the access provided by the Admin user, the users SRV01 and SRV02 can also view their Admin Mode screen. For our example, you will be able to view the SRV01 user screen which has a navigation for Admin Mode screen (see Figure below).
+
+  <div class="center">
+    <Zoom>
+      <img alt="User screen with Adming Mode" src={useBaseUrl('doc-images/admin-guide/power-users/pr9.png')}/>
+    </Zoom>
+  </div>
+
+*User screen with Admin Mode option*
+
+By clicking the Admin Mode option, you can view the Admin screens for the SRV01 user. The Figures below represent the Home, User Manager, Reports and the Customization screens for the user SRV01 who has been configured as Admin (see Figures below). The basic functionalities of all these Admin screens have been already explained in the BI Hub Admin Guide.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Home Screen for SRV01 user in Admin Mode" src={useBaseUrl('doc-images/admin-guide/power-users/pr10.png')}/>
+    </Zoom>
+  </div>
+
+*Home Screen for SRV01 user in Admin Mode*
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager Screen for SRV01 user in Admin Mode" src={useBaseUrl('doc-images/admin-guide/power-users/pr11.png')}/>
+    </Zoom>
+  </div>
+
+*User Manager Screen for SRV01 user in Admin Mode*
+
+  <div class="center">
+    <Zoom>
+      <img alt="Reports Screen for SRV01 user in Admin Mode" src={useBaseUrl('doc-images/admin-guide/power-users/pr12.png')}/>
+    </Zoom>
+  </div>
+
+*Reports Screen for SRV01 user in Admin Mode*
+
+The Add to Hub Folder function (Classify Reports feature) in Platform Folders can be also done by the SRV01 user in the Admin Mode.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Customization with Theme Manager screen for SRV01 user in Admin Mode" src={useBaseUrl('doc-images/admin-guide/power-users/pr13.png')}/>
+    </Zoom>
+  </div>
+
+*Customization with Theme Manager screen for SRV01 user in Admin Mode*
+
+The user SRV01 can get back to the User Mode using the User Mode option (see Figure above). After clicking the User Mode option the user will be able to view the User screen with Admin Mode option (see Figure below).
+
+  <div class="center">
+    <Zoom>
+      <img alt="User screen with Admin Mode option" src={useBaseUrl('doc-images/admin-guide/power-users/pr14.png')}/>
+    </Zoom>
+  </div>
+
+*User screen with Admin Mode option*
+-->

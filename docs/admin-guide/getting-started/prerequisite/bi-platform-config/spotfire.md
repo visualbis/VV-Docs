@@ -34,7 +34,6 @@ import "react-medium-image-zoom/dist/styles.css";
   <p>Spotfire External Authentication configurations</p>
   </div>
 
-
     - Select **Yes** to **Enable external authentication** in the right panel.
     -  In the **Type** label, select **Custom Authenticator** from the dropdown list.
     -  In the **Class name** label, enter: **vbi.spotfireagent.VbiExtAuthenticator**.  
@@ -55,7 +54,7 @@ Following are the configuration fields details required from the BI Platform:
 
 ## v7.10.0
 
-* Copy all the files from `<spotfire installation location>/ext_auth/ directory` and paste that to `"tibco\tss\tomcat\lib\webapps\spotfire\WEB-INF\lib"`.
+* Copy all the files from `<spotfire installation location>/ext_auth/ directory` and paste them to the location - `"tibco\tss\tomcat\lib\webapps\spotfire\WEB-INF\lib"`.
 * Go to **Spotfire Server Configuration > External Authentication**, and set the **Type** as **Authentication Filter**. This will enable Spotfire Server to use the custom Java authentication filter.
 * Enter the **Class Name** as - **vbi.spotfireagent.VbiExtAuthenticator**.
 
@@ -65,7 +64,6 @@ Following are the configuration fields details required from the BI Platform:
   </Zoom>
  	<p>Manage Users and Groups account</p>
  </ div>
-
 
 * Create a **Service account** for the *Spotfire* agent with both **API User**, and **Impersonator** user roles.
 * Click **Add Users** and add the user members with the *Display name*, and *Composite name*.

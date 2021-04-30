@@ -17,7 +17,7 @@ When logged in for the first time the users will be able to view their User scre
   </Zoom>
 </div>
 
-By clicking the respective options as shown above, a demo video file will be prompted showing the demo run on how to:
+By clicking the respective options as shown above, a demo video file will be prompted showing the demo run on how-to:
 
 1. Add Reports to your Dashboard
 1. Launch your Reports stored in any BI Platform
@@ -27,7 +27,7 @@ By clicking the respective options as shown above, a demo video file will be pro
 1. View Reports by Function
 1. Collaborate with other users with comment and mention features
 
-The above listed options can be also navigated through the “Next” button that exists in the demo video file.
+The above-listed options can be also navigated through the “Next” button that exists in the demo video file.
 
 <div class="center">
   <Zoom>

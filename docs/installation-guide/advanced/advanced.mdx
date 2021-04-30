@@ -1,0 +1,38 @@
+---
+id: advanced
+title: Advanced Agent Configuration
+sidebar_label: Advanced Agent Configuration
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+Edit the `manager.ini` file to edit the default BI Hub Agent configurations.
+
+- Open the **manager.ini** file in edit mode with administrative privileges. The file is located in `<agent installation location>/` directory.
+
+```json title="C:\Program Files\Visual BI Solutions\VBI View\<agent name>\manager.ini"
+[Main]
+Port=12200 //Agent port number
+
+[Log]
+Log Level=INFO //INFO| Error| All
+Maximum Size of a log file in MB=50
+Number of log files to use=10
+
+[SSL]
+Enable SSL=True //Default value: False
+
+[Configuration]
+Socket Queue Size=1024
+Thread Pool Size=50
+```
+
+- Save the file and restart the agent service manager from **Start > services.msc**.
+> The service name will be `VBI<Agentname>SM`. For example *Tableau* agent service name will be **VBITableauSM**.
+
+:::note
+If you edit the Agent port number in the `manager.ini` file, you must also update the same port number in the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#edit-agent')}>Edit Agent</Link> screen.
+:::

@@ -1,3 +1,28 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/docs/admin-guide/settings/general.md"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "american",
+                "domain": "technical",
+                "emotions": [
+                    "confident",
+                    "optimistic",
+                    "friendly"
+                ],
+                "goals": [
+                    "inform",
+                    "describe"
+                ],
+                "emotion": "mild"
+            }
+        }
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "markdown.extension.preview.autoShowPreviewToSide": true
 }

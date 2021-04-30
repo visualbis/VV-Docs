@@ -1,0 +1,26 @@
+---
+id: agent-manager-main
+sidebar_label: Agent Manager Main Screen
+title: Agent Manager Main Screen
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+**Agent Manager** screen allows Administrators to manage the *Agents* and *Clusters* for users.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Agent Manager" src={useBaseUrl('doc-images/admin-guide/agent/agent-manager-main.png')}/>
+    </Zoom>
+    <p>Agent Manager main screen</p>
+  </div>
+
+The functionalities are categorized as 2 different tabs:
+
+1. <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management')}>Agent Manager</Link>: Agent and instance management
+1. <Link to={useBaseUrl('docs/admin-guide/agent-manager/cluster')}>Cluster Manager</Link>: Cluster management for multiple instances for load balancing
+
+---
