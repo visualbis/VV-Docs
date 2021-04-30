@@ -24,18 +24,19 @@ BI Hub recommends having the proper SSL certificate from the authorized vendor.
 
 Follow the below common steps to configure the *REST* connections from all the agents (except BOBJ agent) to https:
 
-1. Open the **manager.ini** file in edit mode with administrative privileges. The file is located in the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>Agents installation directory</Link>.
+1. Open the **manager.ini** file in edit mode with administrative privileges. The file is located in the `C:\Program Files\Visual BI Solutions\VBI View\<installing agent name>` location.
 1. Change the **SSL** property from **False** to **True** and save the file:
-   ```json {2}
+   
+   ```jsx title="C:\Program Files\Visual BI Solutions\VBI View\<installing agent name>\manager.ini" {2}
    [SSL]
-   enable ssl = True
+   enable ssl = True //Default value is "False"
    ```
-2. Copy and paste the SSL files to the SSL folder - `<Agent Installation Folder>/SSL`.
-3. Rename the file `<your name>.crt` to `public.crt` and `<your name>.key` to `private.key`.
-4. Go to **Start > services.msc** and restart the **Agent Service Manager**.
-> The service name will be `BIHub<Agent name>SM`. 
-> For example for *Tableau* agent the service name will be **VBITableauSM**.
-5. Open the browser and type the url - `<https://Backend server url:<Agent Port Number>`.  
+1. Copy and paste the SSL files to the SSL folder - `<Agent Installation Folder>/SSL`.
+1. Rename the file `<your name>.crt` to `public.crt` and `<your name>.key` to `private.key`.
+1. Go to **Start > services.msc** and restart the **Agent Service Manager**.
+> The service name will be `VBI<Agent name>SM`.
+> For example for *Tableau* agent, the service name will be **VBITableauSM**.
+1. Open the browser and type the url - `<https://Backend server url:<Agent Port Number>`.  
    
   <div class="center">
     <Zoom>

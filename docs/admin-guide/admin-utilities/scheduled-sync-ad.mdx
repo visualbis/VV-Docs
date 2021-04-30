@@ -1,0 +1,43 @@
+---
+id: scheduled-sync-ad
+title: Scheduled Synchronization with AD/LDAP
+sidebar_label: Scheduled Synchronization with AD/LDAP
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+To synchronize the users from Windows AD or LDAP, follow the steps below.
+
+1. Go to `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer\utilities`.
+1. Click on **File > Open in command prompt > Open command prompt as administrator** and type the command:
+
+```bash
+#Authentication synch for Windows AD
+"BI Hub Authentication Synchronization.exe" -a "Windows AD"
+
+#Authentication synch for LDAP
+"BI Hub Authentication Synchronization.exe" -a LDAP
+```
+`-a` flag: stands for authentications for which the synchronization is triggered.
+
+`"Windows AD"` or `"LDAP"` : Name of the Authentication.
+
+> If the authentication name is more than one parameter, it should be enclosed within double quotes (").
+
+  <div class="center">
+    <Zoom>
+      <img alt="Agent Manager" height="50" src={useBaseUrl('doc-images/admin-guide/admin-utilities/auth-synch-success.png')}/>
+    </Zoom>
+    <p>LDAP authorization sync success</p>
+  </div>
+
+:white_check_mark: The users from Windows AD or LDAP Authentication will be synchronized to BI Hub and a success message will be shown.
+
+<Link to={useBaseUrl('docs/admin-guide/admin-utilities/admin-utilities#synchronization-information')}>Synchronization information</Link> is displayed on the Home screen of the Admin.
+In case of errors, check the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/troubleshoot')}>Troubleshooting</Link> section.
+
+> The above commands can be stored in a batch file and scheduled to run using the organization’s scheduling tool.
+

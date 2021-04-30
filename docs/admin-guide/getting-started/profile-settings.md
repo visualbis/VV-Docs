@@ -27,3 +27,5 @@ BI Hub administrator can modify the email address, division, and Profile picture
 :::note
 To change the admin password refer the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/change-passwd')}>Change Password</Link> utility section.
 :::
+
+

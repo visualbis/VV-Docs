@@ -17,7 +17,7 @@ Follow the steps below to install and configure the BI Hub Agents:
 1. Double click on the `<desired agent name>Agent-X.X.X-windows-installer.exe` file to start the installation process.
 1. Click **Next** in the startup page.
 1. Read through the license terms and conditions and click **Next** to continue with the installation.
-1. In the **Directory Selection** screen, choose the directory to install the BI Hub Server.  The default directory is `C:\Program Files\Visual BI Solutions\BI Hub\<installing agent name>Agent`.
+1. In the **Directory Selection** screen, choose the directory to install BI Hub Agent.  The default directory is `C:\Program Files\Visual BI Solutions\VBI View\<installing agent name>Agent`.
 <!-- Present Default directory:  `C:\Program Files\Visual BI Solutions\VBI View\<installing agent name>Agent` keep same as the product : Check with Nithya-->
 1. In the **Agent Port** details screen, accept the default<sup>1</sup> *Port* number or enter your *Port* details. 
 :::note

@@ -1,0 +1,47 @@
+---
+id: user-manager-main
+sidebar_label: User Manager Welcome Screen
+title: User Manager Welcome Screen
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+This section is used by an admin for managing users and groups. An admin can manage group permissions and also define power users in this section.
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager" src={useBaseUrl('doc-images/admin-guide/synch/user-manager.jpg')}/>
+    </Zoom>
+    <p>User Manager</p>
+  </div>
+
+The screen displays the list of user **Names**, **Agents** configured for each user, and the **Authentication** type.
+
+The users count mentioned in parenthesis next to the User Manager Label (27) represents the total number of users existing in BI Hub. 
+
+You can filter the users based on User Names/Agent(s) names, or Authentication types:
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager with Agents Filtering" src={useBaseUrl('doc-images/admin-guide/synch/um2.jpg')}/>
+    </Zoom>
+    <p>List of users filtered based on Agents</p>
+  </div>
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager with Authentication Filtering" src={useBaseUrl('doc-images/admin-guide/synch/umauth.jpg')}/>
+    </Zoom>
+    <p>User Manager with Authentication Filtering</p>
+  </div>
+
+To view the user details such as Instance Name, Username and Environment click the ">" icon before the username:
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Manager with User details" src={useBaseUrl('doc-images/admin-guide/synch/um3new.jpg')}/>
+    </Zoom>
+    <p>Instance details of a User</p>
+  </div>
