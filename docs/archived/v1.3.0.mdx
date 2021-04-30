@@ -1,0 +1,26 @@
+---
+id: v1.3.0
+title: BI Hub V1.3.0
+hide_title: true
+sidebar_label: V1.3.0 (Jun 30, 2017)
+---
+
+import { ReleaseDate } from "../../src/ReleaseDate.js";
+
+<ReleaseDate
+version="BI Hub V1.3.0"
+date="Jun 30, 2017"
+/>
+
+#### Enhancements
+
+* BI Hub leverages the user authentication store of Microsoft AD. By integrating with SSO, a further login prompt is eliminated.
+* BI Hub uses Microsoft AD to authenticate users. If there is no AD, then BI Hub leverages the BI platform authentication.
+* BI Hub supports environments in which one BI platform is integrated with AD and the other ones may use Native authentication.
+* Scheduled/Automated synchronization with AD, BI platform authentication store. Scheduled/Automated synchronization with addition/deletions of reports in the BI platform. Launches SAP WebI, Lumira, Design Studio, Crystal, Tableau, Qlik Sense reports in one page. Support for more BI platforms in future releases.
+* Users can create/delete folders and reorganize reports as per their requirements
+* Ability to mark reports as favorites so that they appear at the top and can be easily accessed. Ability to search for reports/folders based on names.
+* Recently launched reports appear on the landing page of the user.
+* Admin landing page shows a high-level status of agents and # of users.
+* Ability to manually add/delete Users and assign Reports to the users. This is used to override the automated synchronization with BI platforms.
+

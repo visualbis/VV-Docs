@@ -1,0 +1,141 @@
+---
+id: releases
+title: Release Notes
+sidebar_label: Release Notes
+---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
+
+<table id="myTable">
+    <tr>
+        <th id="date">Date</th>
+        <th>Version</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td id="date">2021-01-25</td>
+        <td>2.6.0</td>
+        <td>
+            <ul>
+                <li><b>New Features</b>
+                    <ul>
+                        <li>Set the native user <Link to={useBaseUrl('docs/admin-guide/settings/general#security')}>Password Strength
+                            Validator</Link>.
+                        </li>
+                        <li>User can now prefer to <Link to={useBaseUrl('docs/user-guide/settings#preferences')}>choose the Landing Page</Link>
+                            .
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Enhancements</b>
+                    <ul>
+                        <li>Enabled <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-failure-mail-notification')}>
+                            email notifications for failed Sync jobs(Reports/Users)</Link>.
+                        </li>
+                        <li>Agent's edit Instance configuration screen now encrypts the password inside the agent and
+                            restricts updating the password. [Refer the section <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#encrypted-password-non-updatable')}>
+                            Encrypted Password non-updatable</Link>].
+                        </li>
+                                                                            
+                    </ul>
+                </li>
+                <li>
+                    <b>Bug Fixes</b>
+                    <ul>
+                        <li>All the issues related to custom URL have been fixed.</li>
+                        <li>Issues with the dropdown for windows AD during add or Edit users were fixed.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <details>
+                    <summary>
+                            <b>Resources</b>
+                    </summary>
+                       <a href="https://bihub.com/whats-new-in-bi-hub-v2-6-0/">
+                       <ul></ul>
+                        What’s new in BI Hub v2.6.0?
+                        </a>
+                </details>                    
+                </li>                
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td >2020-09-13</td>
+        <td>2.5.0</td>
+        <td>
+            <ul>
+                <li>
+                    <b>New Features</b>
+                    <ul>
+                        <li>SAML Login Integration support</li>
+                        <li>Agent Sync Users flow now includes Windows AD Authentication</li>
+                        <li>Support for Tableau Agent sub-project</li>
+                        <li>Support for File BI Agent long file path</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>2020-07-20</td>
+        <td>2.4.0</td>
+        <td>
+            <ul>
+                <li><b>New Features</b>
+                    <ul>
+                        <li>Enables Admin to logout from the agents which requires admin login</li>
+                        <li>Implemented User Settings page where User can go and configure available options</li>
+                        <li>Feature which enables User to login and logout from the OAuth agents available to him</li>
+                        <li>Auto OAuth logout if the token expires at any time during synch process</li>
+                        <li>Announcement Feature which enables admin to announce info, warning and alert message in the
+                            specified timeline.</li>
+                        <li>Thumbnail Lazy loading for all the views has been implemented</li>
+                        <li>Clear all Notification feature added for the user</li>
+                        <li>Settings to disable or enable Agent down notification mail has been implemented</li>
+                        <li>Custom CSS feature which enables the User to implement their own advanced CSS styles and
+                            colors</li>
+                        <li>Agent Instance Health Check algorithm has been improved to provide a better health check.
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Bug Fixes</b>
+                    <ul>
+                        <li>Custom URL with special characters validation bug fixed</li>
+                        <li>Admin mode, Advance sync info calendar related issues</li>
+                        <li>User Mode, search, and advanced search performance fixes</li>
+                        <li>CSS changes due to the latest chrome changes</li>
+                        <li>Clustered agent Instances, issues with Pre Sync Action while syncing reports</li>
+                        <li>Power User, dashboard related fixes</li>
+                        <li>Admin Mode, Edit User related fixes</li>
+                        <li>SAC and Tableau agent related fixes with latest changes in the BI Platform</li>
+                    </ul>
+                </li>
+                <li>                    
+                        <details>
+                            <summary>
+                                <b>Resources</b>
+                            </summary>
+                            <a href="https://bihub.com/whats-new-in-bi-hub-2-4-0/">
+                                    <ul></ul>
+                                    What’s new in BI Hub v2.4.0?
+                                </a>
+                        </details>                    
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+### Archived Versions 
+
+Click <a href={useBaseUrl('docs/archived/v2.3.1')}>here <img width="20" src={useBaseUrl('img/archive.svg')} /></a> to view the logs for earlier BI Hub versions.
+
+## Known Issues
+
+1. Multiple mapping of users for the same agent when manual mapping is done to another user account which is not listed in the user manager.
+1. Tableau report shows a log-in screen in Iframe when it is opened in the Chrome Incognito which is inconsistent.
+1. One Drive/Sharepoint – When reports are opened for the first time, the login prompts inside the same tab rather than in the new tab.

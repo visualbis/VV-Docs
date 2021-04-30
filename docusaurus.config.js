@@ -41,6 +41,11 @@ module.exports = {
         },
 */
         {
+          to: "/docs/installation-guide/releases",
+          label: "Release Notes",
+          position: "left",
+        },
+        {
           to: "docs/installation-guide/welcome",
           label: "Installation Guide",
           position: "right",
