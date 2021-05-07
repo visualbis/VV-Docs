@@ -23,6 +23,5 @@
         }
     ],
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "markdown.extension.preview.autoShowPreviewToSide": true
+    "editor.formatOnType": true
 }

@@ -41,24 +41,28 @@ module.exports = {
         },
 */
         {
-          to: "/docs/installation-guide/releases",
+          to: "/docs/releases",
           label: "Release Notes",
           position: "left",
+          activeBasePath: "docs/releases",
         },
         {
           to: "docs/installation-guide/welcome",
           label: "Installation Guide",
           position: "right",
+          activeBasePath: "docs/installation-guide",
         },
         {
           to: "docs/admin-guide/getting-started/welcome",
           label: "Admin Guide",
           position: "right",
+          activeBasePath: "docs/admin-guide",
         },
         {
           to: "docs/user-guide/onboard-info",
           label: "User Guide",
           position: "right",
+          activeBasePath: "docs/user-guide",
         },
       ],
     },

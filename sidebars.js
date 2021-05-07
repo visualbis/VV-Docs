@@ -6,7 +6,6 @@ module.exports = {
     installationGuide: {
         "Getting Started": [
             "installation-guide/welcome",
-            "installation-guide/releases",
             "installation-guide/sys-req",
             "installation-guide/download-bihub",
             "installation-guide/install-pre",
