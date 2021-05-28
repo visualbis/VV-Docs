@@ -26,6 +26,8 @@ Click **Manage Permissions** to open the **Dashboard Administration** Settings.
     <p>Dashboard Administration Settings</p>
   </div>
 
+Following are the Dashboard administration permissions available: 
+
 * **Dashboard Admin**: As a Dashboard Admin, the Power User will have access rights similar to that of Admin for managing both the Dashboard Settings and Custom Dashboard (Refer <Link to={useBaseUrl('docs/admin-guide/settings/user-dashboard')}>Section: User Dashboard</Link>).
 * **Dashboard Manager**: The Power User can manage only the Dashboards created by all the Users and cannot configure the Dashboard settings.
 ( Refer <Link to={useBaseUrl('docs/admin-guide/settings/user-dashboard#custom-dashboard')}>Custom Dashboard</Link> section ).

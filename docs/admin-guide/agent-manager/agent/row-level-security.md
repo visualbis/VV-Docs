@@ -10,6 +10,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 There is a 2-step authentication for these 2 agents that requires a sign-in validation from both *Admins (Super Admin/Admins)* and *Users*:
+
 * Admins must create a new instance and authenticate the login credentials.
 * Regular users must also log-in to the agents and validate the credentials to access the reports.
 
@@ -25,6 +26,7 @@ Admin creates a new Power BI or Onedrive instance in the **Agent Manager > Insta
   </div>
 
 The initial **Status** of the instance will be "Yellow". This status indicates that Authentication is pending for the Agent.
+
 * Select the Instance and click **Login As Admin**.
 
   <div class="center">
@@ -59,13 +61,15 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
   <p>Instance status activated</p>
   </div>
 
-* Go to **Agent Manager**, select Power BI/Onedrive agents and click **Synch Users** and **Synch Reports**.
+* Go to **Agent Manager**, select Power BI/Onedrive agents and click **Sync Users** and **Sync Reports**.
 
 ## Access Reports: User-level authentication
 
 For a *User* to access the Power BI/Onedrive reports, the user has to log-in to the respective agent platform in either of the 2 ways:
+
 1. Go to **BI Platform** and click on the respective report, or
 1. Go to Profile **Settings > Authorize Agents** and click **Login**.
+
   <div class="center">
     <Zoom>
       <img alt="Powerbi agent Login Credentials" src={useBaseUrl('doc-images/admin-guide/agent/authorize-agents.png')}/>

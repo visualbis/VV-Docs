@@ -17,11 +17,12 @@ import "react-medium-image-zoom/dist/styles.css";
     <Zoom>
       <img alt="Add User option" src={useBaseUrl('doc-images/admin-guide/user-manager/add-user.png')}/>
     </Zoom>
-	<p>Add User</p>
+
+ <p>Add User</p>
   </div>
 
 * Enter **Fullname**, and select:
-  * **Native** to add a user who will be authenticated by BI Hub (because the user is currently authenticated by BI platforms and not AD). 
+  * **Native** to add a user who will be authenticated by BI Hub (because the user is currently authenticated by BI platforms and not AD).
   OR
   * **Windows AD** to add a user who will be authenticated by Windows AD.
 * Click **Continue**.
@@ -29,8 +30,10 @@ import "react-medium-image-zoom/dist/styles.css";
     <Zoom>
       <img alt="Select Agent(s)" src={useBaseUrl('doc-images/admin-guide/user-manager/select-agent.png')}/>
     </Zoom>
-	<p>Select Agent(s)</p>
+
+ <p>Select Agent(s)</p>
   </div>
+
 * Select the agent to be added for the user and the corresponding username. Click **Add** to include more agents.
 * Click **Submit** when you are finished adding the agent(s).
 
@@ -48,7 +51,7 @@ An Admin can map users who have different user names across BI Platforms into on
 
 * Go to **User Manager**.
 
-> The users added previously (either from Section <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-users-between-agent-and-bi-hub')}>Synchronize Users between Agent and BI Hub</Link> or <Link to={useBaseUrl('docs/admin-guide/authenticate/synch-ms-ad-bihub')}>Synchronize Microsoft AD users with BI Hub</Link>) will be listed. 
+> The users added previously (either from Section <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-users-between-agent-and-bi-hub')}>Synchronize Users between Agent and BI Hub</Link> or <Link to={useBaseUrl('docs/admin-guide/authenticate/synch-ms-ad-bihub')}>Synchronize Microsoft AD users with BI Hub</Link>) will be listed.
 
 * Select the user and click **Edit**, and then click **Add**.
   * From the drop-down list boxes, select the appropriate **Agent** name and **User** name. ( To search a user name, start typing the name in the drop-down box. )
@@ -56,16 +59,19 @@ An Admin can map users who have different user names across BI Platforms into on
     <Zoom>
       <img alt="Edit User" height="400" src={useBaseUrl('doc-images/admin-guide/edit-user.jpg')}/>
     </Zoom>
-	<p>Edit User</p>
+    <p>Edit User</p>
   </div>
 * Click **Update**.
-* 
-Now the BI Hub user chosen in the **User Manager** page has been mapped to the user name from the BI platform. Repeat the steps until users of all BI platforms are mapped. 
+
+*
+Now the BI Hub user chosen in the **User Manager** page has been mapped to the user name from the BI platform. Repeat the steps until users of all BI platforms are mapped.
 Next, proceed with the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Synchronize reports of Users</Link> section.
 
 ## Edit User
 
-Power user can edit user settings such as agents, authentication, and group membership. Select the user and click **Edit**.
+Power user can edit user settings such as **Agent Users**, **Authentication**, and group **Membership**.
+
+Select the user and click **Edit**.
 
 ### Add a new Agent
 
@@ -92,10 +98,11 @@ In the **Authentication** tab, select and edit the Authentication type.
 
 ### Add/remove a user to/from a Group
 
-In the **Membership** tab: 
+In the **Membership** tab:
 
 * **Add** and select a Group to add the user to the group.
 * Click **Remove** against a Group's name to remove the user from the assigned group.
+
   <div class="center">
     <Zoom>
       <img alt="Group Management" src={useBaseUrl('doc-images/admin-guide/user-manager/edit-user-group.png')}/>
@@ -115,7 +122,8 @@ The BI Hub Admin must take the following steps to set the password to a generic 
     <Zoom>
       <img alt="Reset Native password" height="400" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/edituserpwd.jpg')}/>
     </Zoom>
-	<p>Reset Native user Password</p>
+
+ <p>Reset Native user Password</p>
   </div>
 
 An email notification is triggered to the user with the new password.
@@ -137,29 +145,36 @@ Delete the entire user information and the user’s reports from the application
 
 ## Add Reports to an existing User
 
+To manually add selected reports to a user, an admin can visit this **User Manager > Manage Reports** section.
+
+:::important
+If admin syncs the reports from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Agent Manager</Link> section, then the reports selected here will be over-ridden by all the reports.
+:::
+
 * In the **User Manager** screen, select the user and click **Manage Reports**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Agent User Mapping" src={useBaseUrl('doc-images/admin-guide/agent/agentusermapping.jpg')}/>
+    </Zoom>
+    <p>Agent User Mapping</p>
+  </div>
 
 A list of agents configured for the user will be displayed on the left, and assigned reports on the right.
 
 * Click on the agent name, and then click **Add/Remove Reports**.
 
 > Refer the [Troubleshooting](#troubleshooting) section if the agent is down/inactive.
-  <div class="center">
-    <Zoom>
-      <img alt="Agent User Mapping" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/agentusermapping.jpg')}/>
-    </Zoom>
-    <p>Agent User Mapping</p>
-  </div>
 
 * A list of unassigned reports will be on the left and assigned reports on the right.
   <div class="center">
     <Zoom>
-      <img alt="Assigning Reports" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/assigningreports.jpg')}/>
+      <img alt="Assigning Reports" src={useBaseUrl('doc-images/admin-guide/user-manager/assigningreports.png')}/>
     </Zoom>
   </div>
 * Select the reports or folders in the **Unassigned Reports** pane and click **Move** that moves the reports in the **Assigned Reports** section.
 
-> The **Search Reports** on the top-right can be used to search for reports in both Assigned and Unassigned columns. 
+> The **Search Reports** on the top-right can be used to search for reports in both Assigned and Unassigned columns.
 >
 > The breadcrumb on the top sets the context by displaying **BI Hub user name > Agent Name > BI platform user name**.
 
@@ -169,7 +184,7 @@ A list of agents configured for the user will be displayed on the left, and assi
 Once you complete the reports assignment, a message pops-up on the screen: "Action Completed Successfully".
 :::
 
-Click **Back** to assign/unassign reports for the other agents against the same user. 
+Click **Back** to assign/unassign reports for the other agents against the same user.
 
 To complete the manual assignment of reports to BI Hub, click **Sync Metadata**.
 
@@ -180,9 +195,17 @@ To complete the manual assignment of reports to BI Hub, click **Sync Metadata**.
     <p>Sync Metadata</p>
   </div>
 
+> To make the reports accessible upon searching, it is important that you run "Sync Metadata".
+
 ### Troubleshooting
 
-If the Agent is down/inactive, the Reports cannot be retrieved. An Alert Message is displayed as shown below:
+1. If there are no **Unassigned Reports** listed in the left-hand side panel, contact your Platform admin for report's access.
+If the reports are still not visible, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@bihub.com.
+
+1. To access the reports for Onedrive and sharepoint agents, users must also verify their login credentials under User Settings page.
+
+1. If the Agent is down/inactive, the Reports cannot be retrieved. An Alert Message is displayed as shown below:
+
   <div class="center">
     <Zoom>
       <img alt="Reports in disabled status" src={useBaseUrl('doc-images/admin-guide/admin-functions/maintenance-bihub/alert1.png')}/>
@@ -190,4 +213,4 @@ If the Agent is down/inactive, the Reports cannot be retrieved. An Alert Message
     <p>Reports in disabled status</p>
   </div>
 
-You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link> from the **Agent Manager** screen.
+  You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link> from the **Agent Manager** screen.
