@@ -10,8 +10,10 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 A Super Admin, can add multiple Admins who can access BI Hub with full admin rights except for the below-listed actions:
+
 - Admin User cannot make another account as an Admin.
 - Admin User cannot edit/delete/remove another Admin account.
+
   <div class="center">
     <Zoom>
       <img alt="Multiple Admins" src={useBaseUrl('doc-images/admin-guide/admin-utilities/admin-group.png')}/>
@@ -19,7 +21,8 @@ A Super Admin, can add multiple Admins who can access BI Hub with full admin rig
     <p>Multiple Admins</p>
   </div>
 
-Click **User Manager > Manage User Groups**, and select the **Admin** group checkbox on the left. 
-Click **ADD** and select the username to add it to this admin group.
+* Select **User Manager > Manage User Groups**.
+* Select **Admin** group.
+* Click **ADD** and select the username(s) to add to this admin group.
 
-This Group will also be listed under the Membership Tab while editing/adding the users.
+This Group will also be listed under the **Membership** tab while <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#addremove-a-user-tofrom-a-group')}>editing/adding</Link> the users.

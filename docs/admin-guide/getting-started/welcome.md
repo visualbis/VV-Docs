@@ -1,7 +1,7 @@
 ---
 id: welcome
-title: Welcome to BI Hub Admin Guide’s Documentation!
-sidebar_label: Welcome to BI Hub Admin Guide’s Documentation
+title: BI Hub Admin Guide’s Documentation!
+sidebar_label: BI Hub Admin Guide’s Documentation
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

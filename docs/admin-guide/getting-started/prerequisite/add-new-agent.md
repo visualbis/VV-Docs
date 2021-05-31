@@ -9,16 +9,15 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The agent is the component that establishes connectivity between BI Hub and
-the BI platform and this section is applicable for all the above
-scenarios. 
-- The first step involved in setting up BI Hub is creating
-agents and the instances necessary to connect with BI platforms.
-- <Link to={useBaseUrl('docs/admin-guide/agent-manager/cluster')}>Multiple instances of BI Hub agents</Link> are required for load balancing and high availability purposes.
+The agent is the component that establishes connectivity between BI Hub and BI platform.
+
+The first step involved in setting up BI Hub is creating agents and the instances necessary to connect with BI platforms.
+
+<Link to={useBaseUrl('docs/admin-guide/agent-manager/cluster')}>Multiple instances of BI Hub agents</Link> are required for load balancing and high availability purposes.
 
 ## Adding the Agent/Instances
 
-1. In the **Admin Home** screen, select **Agent Manager** menu from the application pane as shown below.
+1. From the application pane on the left, select **Agent Manager**.
 
  <div class="center">
   <Zoom>
@@ -36,17 +35,16 @@ agents and the instances necessary to connect with BI platforms.
     <p>Add new agent</p>
   </div>
 
-  - Enter **Agent Name, Server**, and **Port** (This is the same *Port* number entered while installing the *Agents*. Refer the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for reference).
+* Enter **Agent Name, Server**, and **Port** (This is the same *Port* number entered while installing the agents. Refer the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for reference).
     <div class="center">
       <Zoom>
         <img alt="Add new agent" height="400" src={useBaseUrl('/doc-images/admin-guide/agent/new-agent-form.png')}/>
       </Zoom>
       <p>Add new agent</p>
     </div>
-  
-  - Click **Continue**.
+* Click **Continue**.
 
-2. In the next **Add Agent** screen, fill in the instance details.
+3. In the next **Add Agent** screen, fill in the instance details.
 
  <div class="center">
   <Zoom>
@@ -69,15 +67,17 @@ agents and the instances necessary to connect with BI platforms.
 
 The Tool-tips provide necessary guidance and show screenshots of the BI platform with the values.
 
-- Click **Submit** to add the instance or click **Submit** & **Add New Instance** to add another instance of the same agent.
- - The **Status** column of the configured instance is displayed in the **Home** page of that agent. Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
-   - <a id="color-green"><b>Green</b></a> : active
-   - <a id="color-red"><b>Red</b></a> : inactive - You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link>.
-   - <a id="color-orange"><b>Orange</b></a> : The Agent is active but the BI platform is inactive or it cannot reach the platform. You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#restart-instance-service-when-bi-platform-not-reachable')}>restart the Agent's Instance Service from the backend Server</Link>.
-   - <a id="color-yellow"><b>Yellow</b></a>: <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/row-level-security')}>Authentication Pending</Link> applicable only for PowerBI and Onedrive agents.
- - In the **Actions** column, you can *Stop ( <img src={useBaseUrl('/img/stop.svg')} width="15"/> )/Restart ( <img src={useBaseUrl('/img/restart.svg')} width="15"/> )* the instance.
+* Click **Submit** to add the instance or click **Submit** & **Add New Instance** to add another instance of the same agent.
 
-After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents as shown below. 
+* The **Status** column of the configured instance is displayed in the **Home** page of that agent. Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
+
+  * <a id="color-green"><b>Green</b></a> : active
+  * <a id="color-red"><b>Red</b></a> : inactive - You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link>.
+  * <a id="color-orange"><b>Orange</b></a> : The Agent is active but the BI platform is inactive or it cannot reach the platform. You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#restart-instance')}>restart the Agent's Instance Service from the backend Server</Link>.
+  * <a id="color-yellow"><b>Yellow</b></a>: <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/row-level-security')}>Authentication Pending</Link> applicable only for PowerBI and Onedrive agents.
+  * In the **Actions** column, you can *Stop ( <img src={useBaseUrl('/img/stop.svg')} width="15"/> )/Restart ( <img src={useBaseUrl('/img/restart.svg')} width="15"/> )* the instance.
+
+After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents as shown below.
 
 <div class="center">
       <Zoom>
@@ -86,10 +86,13 @@ After all the agent instances are successfully created, return to the *Agent Man
 	<p>Agent Manager with list of Agents installed and their details</p>
 </div>
 
-
 :white_check_mark: Agents are now *installed* and are in the *running* state.
 
 ## Next Steps
+
+Sync Users for the added agents (or all agents) from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-users-between-agent-and-bi-hub')}>Agent Manager</Link> screen or from <Link to={useBaseUrl('docs/admin-guide/authenticate/manage-auth#synchronize-microsoft-ad-users-with-bi-hub')}>Authentication Manager</Link> screen.
+
+## Further Steps
 
 - [ ] Agent Configuration with BI Platform
 
