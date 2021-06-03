@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 
 const features = [
     {
-        link: "/docs/installation-guide/welcome",
+        link: "/docs/copyright",
         title: "Installation Guide",
         image: "img/installer-guide.svg",
         description: "Guide with pre-requisites, installation, and configuration steps for all the BI Hub components - BI Hub Server, Web, and Agents",

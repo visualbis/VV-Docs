@@ -13,12 +13,13 @@ BOBJ Agent uses the Trusted Secret Key file mechanism to authenticate itself wit
 Generate and download the Trusted Secret Key for BOBJ authentication with the following steps:
 
 1. **Log-in** to the **BOBJ CMC**
+
  - In the **Central Management Console** Screen, select **Authentication** from the drop-down list.
  - Select **Enterprise** in the *Title* drop-down menu list.
 
  <div class="center">
   <Zoom>
-    <img alt="img" src={useBaseUrl('/doc-images/bobj-central-management-console.png')}/>
+    <img alt="central-management-console" src={useBaseUrl('/doc-images/admin-guide/central-management-console.png')}/>
   </Zoom>
  </div>
 
@@ -46,7 +47,7 @@ Generate and download the Trusted Secret Key for BOBJ authentication with the fo
 
 - :white_check_mark: The `TrustedPrinciple.conf` file will get downloaded. 
 
-<!-- Obselete step ? Confirm with Nithya 
+<!-- Obsolete step ? Confirm with Nithya 
 1. Next, we need to disable the CORS settings by editing the *crossdomain.xml* file.
  Location of the *crossdomain.xml* file: `<Business Objects installation directory>\Tomcat55\webapps\ROOT\`.
 

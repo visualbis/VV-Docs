@@ -47,7 +47,7 @@ module.exports = {
           activeBasePath: "docs/releases",
         },
         {
-          to: "docs/installation-guide/welcome",
+          to: "docs/copyright",
           label: "Installation Guide",
           position: "right",
           activeBasePath: "docs/installation-guide",
