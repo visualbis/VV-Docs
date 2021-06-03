@@ -124,3 +124,10 @@ img[alt="icon"] {
     font-size: 12px;
     color: gray;
 }
+
+#border {
+    margin: 10px 30px;
+    padding: 0px;
+    textAlign: center;
+    border: 1px solid gray;
+}

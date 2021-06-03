@@ -5,6 +5,7 @@ module.exports = {
 
     installationGuide: {
         "Getting Started": [
+            "copyright",
             "installation-guide/welcome",
             "installation-guide/sys-req",
             "installation-guide/download-bihub",
@@ -144,7 +145,6 @@ module.exports = {
         ],
         "Reports": [
             "admin-guide/reports/reports",
-            "admin-guide/reports/hub-folders",
             "admin-guide/reports/upload-metadata-csv",
             "admin-guide/reports/report-details",
             "admin-guide/reports/report-thumbnails",

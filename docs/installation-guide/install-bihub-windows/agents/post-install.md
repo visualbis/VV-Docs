@@ -12,14 +12,14 @@ To verify the successful installation of BI Hub Agents, open the Browser and nav
 
 > Use `https` instead of `http` if you have configured the agents with SSL
 
-You should see the screen as shown in the figure below.
+You should see the screen as shown in the screenshot below:
 
-<div class="center">
+<div class="center" id="border">
   <Zoom>
-<img alt="Agent Success Screen" src={useBaseUrl('/doc-images/post-config/agent-success.jpg')}/>
+<img alt="Agent Success Screen" src={useBaseUrl('/doc-images/post-config/agent-success.png')}/>
   </Zoom>
-  <p>Agent Success Screen</p>
 </div>
+<div class="center"><p>Agent Success Screen</p></div>
 
 ## Next Steps
 

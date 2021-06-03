@@ -22,9 +22,8 @@ When you provide multiple instances, you need to load balance the instances on y
     <Zoom>
       <img alt="BI Hub Server Instances Configuration" src={useBaseUrl('doc-images/installation-guide/bihub-server-instances.png')}/>
     </Zoom>
-	<p>BI Hub Server Instances</p>
+    <p>BI Hub Server Instances</p>
   </div>
-
 
 * Click the **Add instance** button in the top right corner to add a new instance. In the pop-up window, enter an *instance* name and the *Port* number at which the instance will run.
 
@@ -46,4 +45,4 @@ Deleting any instance will not delete data, but just the snapshot of it. The dat
 
 ## Next Steps
 
-- [ ] To verify the configuration, kindly follow the next section.
+* [ ] To verify the configuration, kindly follow the next section.

@@ -22,10 +22,12 @@ Follow the *BI Hub Web* advanced configuration steps, if you need additional SSL
    - For *non-bundled* version of BI Hub Web:
      The `config.json` file is found in the `<installation folder>/`.
 1. Replace the **Host** with the desired URL of BI Hub Server URL.
+
   :::note
   The URL should be DNS resolvable and it should be accessible for all client machines.
   :::
-* Replace the **Port** with the desired BI Hub Server port. **Save** the file. 
+
+* Replace the **Port** with the desired BI Hub Server port. **Save** the file.
 
 :::note
 There is no need for restarting the server. Make sure that the client browser cache has been cleared or restart the client browser for the new configuration to take effect.

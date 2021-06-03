@@ -9,8 +9,9 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-1. Go to `<Installation-Directory>/Visual BI Solutions/VBI View/VBIViewServer` directory. Right-click on **BI Hub Server Config** and click on **Run as administrator**.
-2. Expand **SSL**.
+1. Go to `<Installation-Directory>/Visual BI Solutions/VBI View/VBIViewServer` directory.
+1. Right-click on **BI Hub Server Config** and click on **Run as administrator**.
+1. Select the **Config** tab, and Expand **SSL**.
 
   <div class="center">
     <Zoom>
@@ -19,8 +20,7 @@ import "react-medium-image-zoom/dist/styles.css";
   <p>Select SSL section</p>
   </div>
 
-2. [x] **Enable** the **SSL** config, then choose the **Private Key** with `<filename>.key` extension and **Public Certificate** with `<filename>.crt` extension.
-Click **Continue**.
+1. [x] **Enable** the **SSL** config.
 
   <div class="center">
     <Zoom>
@@ -29,16 +29,19 @@ Click **Continue**.
   <p>Upload Private key and Public Certificate</p>
   </div>
 
+1. Choose the **Private Key** with `<filename>.key` extension and **Public Certificate** with `<filename>.crt` extension.
+1. Select **Continue**.
 1. Click on the **Instances** tab, and restart( <Zoom><img alt="Refresh" src={useBaseUrl('doc-images/installation-guide/refresh.svg')} width="20" height="20"/></Zoom> ) the backend server.
-2. Go to SSL config folder, usually at the path `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer\server\SSL`.
- - Ensure that the files `<filename>.key` and `<filenaem>.crt` are copied in this location.
-5. Open the browser and type the backened url and port number - `<https://Backend server url>:<Port number>`.
-  <div class="center">
+1. Go to SSL config folder, usually at the path `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer\server\SSL`.
+Ensure that the files `<filename>.key` and `<filename>.crt` are copied in this location.
+1. Open the browser and type the backend url and port number - `<https://Backend server url>:<Port number>`.
+
+  <div class="center" id="border">
     <Zoom>
       <img alt="BI Hub Server with secured SSL connection" src={useBaseUrl('doc-images/installation-guide/server-ssl-confirm.png')}/>
     </Zoom>
-  <p>BI Hub Server with secured SSL connection</p>
   </div>
+  <div class="center"><p>BI Hub Server with secured SSL connection</p></div>
 
   :white_check_mark: Your BI Hub Server must be loaded with a secured SSL connection.
 

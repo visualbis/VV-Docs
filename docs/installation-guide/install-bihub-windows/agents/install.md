@@ -10,7 +10,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 This section is applicable and the same for all the agents which are being released and supported by BI Hub.
-Download the required agents from the product downloads page as covered in the <Link to={useBaseUrl('docs/installation-guide/download-bihub')}>BI Hub Download section</Link>
+Download the required agents from the product downloads page as covered in the <Link to={useBaseUrl('docs/installation-guide/download-bihub')}>BI Hub Download section</Link>.
 
 Follow the steps below to install and configure the BI Hub Agents:
 
@@ -18,16 +18,15 @@ Follow the steps below to install and configure the BI Hub Agents:
 1. Click **Next** in the startup page.
 1. Read through the license terms and conditions and click **Next** to continue with the installation.
 1. In the **Directory Selection** screen, choose the directory to install BI Hub Agent.  The default directory is `C:\Program Files\Visual BI Solutions\VBI View\<installing agent name>Agent`.
-<!-- Present Default directory:  `C:\Program Files\Visual BI Solutions\VBI View\<installing agent name>Agent` keep same as the product : Check with Nithya-->
-1. In the **Agent Port** details screen, accept the default<sup>1</sup> *Port* number or enter your *Port* details. 
+1. In the **Agent Port** details screen, accept the default<sup>1</sup> *Port* number or enter your *Port* details.
 :::note
 The *Port* must be free and not used by other applications. 
 Save the *Port* details to be used while configuring the agents in the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>BI Hub Administration Guide, Add New Agent</Link>.
 :::
-1. In the **Installation summary** screen, click **Next** to proceed with the installation. 
+1. In the **Installation summary** screen, click **Next** to proceed with the installation.
 1. A successful installation screen provides options to open the *Readme* file.
 
-:white_check_mark: You have successfully installed the **BI Hub Agent** in your Server.
+:white_check_mark: You have successfully installed **BI Hub Agent** in your Server.
 
 :::info
 Repeat all the above steps to install other required agents.
@@ -37,23 +36,23 @@ Repeat all the above steps to install other required agents.
 <sup>1</sup>
 The recommended Port Requirements for the different Platforms have been listed below:
 
-| Platform | Service Manager Port |
-| :--- | :--- |
-| BOBJ | 12100 |
-| Tableau | 12200 |
-| Qlik | 12300 |
-| File | 12400 |
-| Power BI | 12500 |
-| SSRS | 12600 |
-| SpotFire | 12700 |
-| BOBJ Rest | 12900 |
-| SAC | 13000 |
-| Looker | 13100 |
-| SharePoint | 13200 |
-| One Drive | 13300 |
-| Qlik View | 13400 |
-| Cognos | 13500 |
-| Microstrategy | 13600 |
+| Platform      | Service Manager Port |
+|:--------------|:---------------------|
+| BOBJ          | 12100                |
+| Tableau       | 12200                |
+| Qlik          | 12300                |
+| File          | 12400                |
+| Power BI      | 12500                |
+| SSRS          | 12600                |
+| SpotFire      | 12700                |
+| BOBJ Rest     | 12900                |
+| SAC           | 13000                |
+| Looker        | 13100                |
+| SharePoint    | 13200                |
+| One Drive     | 13300                |
+| Qlik View     | 13400                |
+| Cognos        | 13500                |
+| Microstrategy | 13600                |
 
 *Port Requirements for Platforms*
 :::
