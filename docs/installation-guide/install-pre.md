@@ -15,5 +15,4 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Next Steps
 
-- [ ] Install **BI Hub Server**.
-
+* [ ] Install **BI Hub Server**.

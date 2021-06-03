@@ -24,5 +24,7 @@
     ],
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "markdown.extension.preview.autoShowPreviewToSide": true
-}
+    "cSpell.words": [
+        "bihub"
+    ]
+}w

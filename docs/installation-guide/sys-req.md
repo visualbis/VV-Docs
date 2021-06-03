@@ -6,7 +6,7 @@ sidebar_label: System Requirements
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The following table shows the various scenarios of application installation and their system requirements: 
+The following table shows the various scenarios of application installation and their system requirements:
 
 | Component            | Single Box                   | Multibox BI Hub Server       | Multibox BI Hub Agent        |
 |----------------------|------------------------------|------------------------------|------------------------------|

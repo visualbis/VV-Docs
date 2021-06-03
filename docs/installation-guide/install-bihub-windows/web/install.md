@@ -27,8 +27,8 @@ The installation will not proceed if the URL is not accessible.
    - *BI Hub Web without NGINX* If you have your webserver like *Apache* or *Tomcat* INX
 1. In the **Directory Selection** screen, choose the directory to install the BI Hub Server. The default directory is `C:\Program Files\Visual BI Solutions\BI Hub\BIHubWeb`. 
    1. For *BI Hub Web without NGINX* Component Selection version, choose the *web root* directory of your webserver.
-   > - For *Apache* the directory should be `<Apache installation directory>/htdocs`.
-   > - For *Nginx* the directory should be `<Nginx Installation directory>/html`.
+   > * For *Apache* the directory should be `<Apache installation directory>/htdocs`.
+   > * For *Nginx* the directory should be `<Nginx Installation directory>/html`.
    1. For *BI Hub Web with NGINX(bundled)* in the *NGINX Port* details screen, accept the default port or provide your *Port* details.
 1. Click **Next** to verify the installation details and start installing the *BI Hub Web* with all the selected components.
 1. A successful installation screen provides options to open the *Readme file*.

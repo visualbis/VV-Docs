@@ -20,17 +20,17 @@ To verify the successful installation and configuration of BI Hub Server, perfor
     <Zoom>
       <img alt="BI Hub Server Verification Screen" src={useBaseUrl('/doc-images/installation-guide/bihub-web-welcome-verification.png')}/>
     </Zoom>
-	<p>BI Hub Server Verification Screen</p>
+    <p>BI Hub Server Verification Screen</p>
   </div>
-
 
 :white_check_mark: **BI Hub Server** is successfully installed and verified.
 
 ### Next Steps
 
-- [ ] <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/web/install')}>Install BI Hub Web</Link>.
+* [ ] <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/web/install')}>Install BI Hub Web</Link>.
 
 :::note
-- Verify all the instances are in running state by following the above-mentioned steps
-- After a restart, the server takes a bit longer time to warm up the first time. Kindly be patient.
+
+* Verify all the instances are in running state by following the above-mentioned steps
+* After a restart, the server takes a bit longer time to warm up the first time. Kindly be patient.
 :::
