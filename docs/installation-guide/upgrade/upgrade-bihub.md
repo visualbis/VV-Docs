@@ -27,16 +27,20 @@ The user can upgrade the trial version to either the production version or exten
 * On the next screen click **Next** to confirm the upgrade from the current version to the new version.
 * A successful upgrade screen provides options to open the Readme file.
 
-Similar steps need to be followed for all other agents and BI Hub Web. For BI Hub Server however, we have a couple of extra steps:
+Similar steps need to be followed for all other agents and BI Hub Web.
 
-  1. We need to stop the backend instances before upgrading.
+For BI Hub Server however, we have a couple of extra steps:
+
+1. Before you upgrade, stop the backend instances.
+
    <div class="center">
      <Zoom>
        <img alt="Stop backend instances" src={useBaseUrl('/doc-images/installation-guide/stop-backend-instance.png')}/>
      </Zoom>
    </div>
 
-* Click **Next**. Go to the **Instances** tab in the **Config utility** and stop ( ![icon](/doc-images/installation-guide/stop.svg) ) all the running *instances*.
+* Select **Next**.
+* In the **Config utility** window, select **Instances** tab and stop ( ![icon](/doc-images/installation-guide/stop.svg) ) all the running *instances*.
 
    <div class="center">
      <Zoom>
@@ -45,9 +49,10 @@ Similar steps need to be followed for all other agents and BI Hub Web. For BI Hu
    <p>BI Hub Server instances</p>
    </div>
 
-
 :::warning
 Ensure all the instances listed in the *Config utility* are stopped before proceeding.
+:::
+
 The below screenshot indicates the above *Backend* instance is stopped and the *Play* button ( ![icon](/doc-images/installation-guide/start.svg ) ) is now highlighted.
 
    <div class="center">
@@ -55,17 +60,19 @@ The below screenshot indicates the above *Backend* instance is stopped and the *
        <img alt="BI Hub Server instances" src={useBaseUrl('/doc-images/installation-guide/stopped-instances.png')}/>
      </Zoom>
    </div>
-:::
 
 :::note
 Close the **Config utility** after you stop the backend instances before you proceed with the installer, if not an error will be thrown during the upgrade.
 :::
 
 * Click **Next** to start the upgrade process.
-* On successful upgrade, you will be prompted to open the *Config utility* and the *Readme* file. 
+
+On successful upgrade, you will be prompted to open the *Config utility* and the *Readme* file.
+
 * Restart all the backend instances in the *Config utility* one by one.
 
 :::note
-- Give some time before starting every instance. Do not immediately start one after the other.
+
+- Give some time before starting every instance. Do not start the instances one after the other.
 - No *Port* number should be asked during the upgrade. If you are prompted for the *port* number, kindly contact the support team at support@bihub.com.
 :::

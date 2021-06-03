@@ -9,7 +9,7 @@ SSL certificates create a foundation of trust by establishing a secure connectio
 
 SSL certificates have a key pair: a **public** and a **private** key. These keys work together to establish an encrypted connection.
 
-## Considerations 
+## Considerations
 
 Here are the key points to be considered, if you want to configure all the BI Hub components including the BI Platforms for SSL (Self Signed SSL).
 
@@ -29,4 +29,3 @@ Here is a simple example for converting a **DER** certificate into **PEM**:
 ```json
 openssl x509 -inform der -in der_certificate.cer -out pem_certificate.crt
 ```
-

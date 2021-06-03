@@ -3,6 +3,7 @@ id: welcome
 hide_title: BI Hub Overview
 sidebar_label: BI Hub Overview
 ---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Who Should Read This Guide?
@@ -14,7 +15,7 @@ The Installation Guide for BI Hub application offered by Visual BI is meant for 
 BI Hub is a BI Reporting portal with the one-stop Solution to all your BI content supporting On-prem, Cloud, Self-Service BI and Modern Data Analytics deployment. 
 Discover, Consume, Organize, Collaborate and optimize your BI assets using our Unified BI Platform by ensuring Report Governance.
 
-**Key Features**
+### Key Features
 
 - **Easy access**: Single sign-on BI portal dashboard to all your Analytics assets in BI Hub.
 - **Report Governance**: A simplified Report governance to view and authorize the respective users and collaborate the reports with other users.
