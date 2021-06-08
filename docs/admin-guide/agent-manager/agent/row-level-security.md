@@ -36,7 +36,7 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
     <p>Login as Admin</p>
   </div>
 
-* A pop-up window appears where the Admin must verify the Login credentials:
+* In the pop-up window, enter the credentials of an account with administrative privileges:
 
   <div class="center">
     <Zoom>
@@ -67,8 +67,8 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
 
 For a *User* to access the Power BI/Onedrive reports, the user has to log-in to the respective agent platform in either of the 2 ways:
 
-1. Go to **BI Platform** and click on the respective report, or
-1. Go to Profile **Settings > Authorize Agents** and click **Login**.
+1. In the **BI Platform**, select the the Platform name, or
+1. Go to Profile **Settings > Authorize Agents** and select **Login**.
 
   <div class="center">
     <Zoom>

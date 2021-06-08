@@ -35,13 +35,17 @@ The first step involved in setting up BI Hub is creating agents and the instance
     <p>Add new agent</p>
   </div>
 
-* Enter **Agent Name, Server**, and **Port** (This is the same *Port* number entered while installing the agents. Refer the <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for reference).
-    <div class="center">
+* Enter **Agent Name** ( This can be any relevant name ), **Server**, and **Port** number.
+
+> Server and Port number must be the same that was entered while installing the agents. ( Refer <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for your reference).
+
+<div class="center">
       <Zoom>
         <img alt="Add new agent" height="400" src={useBaseUrl('/doc-images/admin-guide/agent/new-agent-form.png')}/>
       </Zoom>
       <p>Add new agent</p>
-    </div>
+</div>
+
 * Click **Continue**.
 
 3. In the next **Add Agent** screen, fill in the instance details.
@@ -94,6 +98,6 @@ Sync Users for the added agents (or all agents) from the <Link to={useBaseUrl('d
 
 ## Further Steps
 
-- [ ] Agent Configuration with BI Platform
+* [ ] Agent Configuration with BI Platform
 
 Follow the next section to **Configure the BI Platform** and make the trusted connection between the respective *BI Hub Agent* and its *BI Platform*.

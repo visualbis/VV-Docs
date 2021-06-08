@@ -20,12 +20,15 @@ In the **Agent Manager** screen, an Admin can:
 
 ## Add Agent
 
-Admins can <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>add new Agents</Link> and assign *Agent Name*, *Server URL*, and *Port* number.
+To add a new agent, admin must select **Add Agent** and assign *Agent Name*, *Server URL*, and *Port* number. [ refer the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>Add Agent</Link> section. ]
 
 ## Edit Agent
 
-Select the **Agent** name and click **Edit**. You can edit the Agent details such as - **Agent Name**, **Server** URL, and the Agent **Port** number.
-Click **Save**.
+To change the installation Server url or the Port number:
+
+* Select the **Agent** name and select **Edit**.
+* You can edit the Agent details such as - **Agent Name**, **Server** URL, and the Agent **Port** number.
+* Select **Save**.
 
   <div class="center">
     <Zoom>
@@ -49,7 +52,7 @@ Select the **Agent** name and click **Delete**. In the popup screen, click **Del
 
 ## Sync Users between Agent and BI Hub
 
-This feature is used by an administrator to import users from the BI platform into the portal. It is only used in scenarios when the BI platform stores all user credentials and users are authenticated using the BI platform and not a directory service like Microsoft AD/LDAP.
+This feature is used by an administrator to import users from the BI platform into the portal. It is only used in scenarios when the BI platform stores all the user information and users are authenticated using the BI platform and not a directory service like Microsoft AD/LDAP.
 
 An Admin can either synchronize users for a single Agent or multiple Agents.
 
@@ -121,8 +124,8 @@ To manually add reports to users, follow the <Link to={useBaseUrl('docs/admin-gu
    <p>Sync Reports</p>
   </div>
 
-  >All reports of the users of the selected agents will be synchronized with BI Hub.
-  > This synchronization only brings in reports of users with identical user names in BI platforms.
+> All reports of the users of the selected agents will be synchronized with BI Hub.
+> This synchronization only brings in reports of users that are present in the application (obtained by AD/LDAP sync or sync users).
 
 An Administrator can switch to the **Home** page and view the number of reports synchronized. Click on **Sync Reports** to get a detailed summary:
   <div class="center">
@@ -134,9 +137,9 @@ An Administrator can switch to the **Home** page and view the number of reports 
 
 A list of Reports are displayed as:
 
-- **New**: New reports added to the Agent and number of users who have access to the reports.
-- **Updated**: User's access updates on the agent's reports.
-- **Revoked**: Users whose access have been revoked on the reports
+* **New**: New reports added into BI Hub.
+* **Updated**: : Reports that already exists in BI Hub for other users and  given access for new users.
+* **Revoked**: Reports for which access is revoked for the user from the platform.
 
 Admin can also click on the download icon to **Download Logs** for the sync.
 
@@ -156,8 +159,6 @@ If the sync(Report/Users) jobs fail, the admin receives an email notification wi
     </Zoom>
     <p>Sync Failure Notification</p>
   </div>
-
----
 
 ## Instance Manager
 
@@ -309,6 +310,10 @@ The Instance will now be in the **running** state:
     </Zoom>
     <p>Instance started</p>
   </div>  
+
+#### Troubleshooting
+
+If the status is still in 'Orange'; then verify if all the configurations are correct and check the logs for any errors. Contact the platform administrator for further assistance in resolving the issue.
 
 ### Restart Instance
 
