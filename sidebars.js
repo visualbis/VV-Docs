@@ -152,7 +152,7 @@ module.exports = {
             "admin-guide/reports/custom-url",
         ],
         "Audit": ["admin-guide/audit"],
-        "User Requests": ["admin-guide/request-access-reports-admin"],
+        "User Requests": ["admin-guide/user-requests"],
 
         "Settings": [
             "admin-guide/settings/settings",
