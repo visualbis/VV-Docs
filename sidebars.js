@@ -116,9 +116,7 @@ module.exports = {
 
         ],
         "Getting Started": [
-            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/maintenance-of-bihub",
-            "admin-guide/admin-functions",
-            "admin-guide/integrate"
+            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/initial-setup"            
         ],
         "Agent Manager": [
             "admin-guide/agent-manager/agent-manager-main",

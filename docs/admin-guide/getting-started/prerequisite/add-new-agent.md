@@ -21,23 +21,12 @@ The first step involved in setting up BI Hub is creating agents and the instance
 
  <div class="center">
   <Zoom>
-    <img alt="Agent Manager Menu" height="400" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-menu.png')}/>
+    <img alt="Agent Manager" src={useBaseUrl('/doc-images/admin-guide/agent/agent-manager-add-agent.png')}/>
   </Zoom>
   <p>Agent Manager</p>
  </div>
 
 2. Select the **Agent Manager** tab and then click **Add Agent** at the top right corner.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Add new agent" src={useBaseUrl('/doc-images/admin-guide/agent/add-agent.png')}/>
-    </Zoom>
-    <p>Add new agent</p>
-  </div>
-
-* Enter **Agent Name** ( This can be any relevant name ), **Server**, and **Port** number.
-
-> Server and Port number must be the same that was entered while installing the agents. ( Refer <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for your reference).
 
 <div class="center">
       <Zoom>
@@ -45,6 +34,11 @@ The first step involved in setting up BI Hub is creating agents and the instance
       </Zoom>
       <p>Add new agent</p>
 </div>
+
+* Enter **Agent Name** ( This can be any relevant name ), **Server**, and **Port** number.
+
+> Server and Port number must be the same that was entered while installing the agents. ( Refer <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for your reference).
+
 
 * Click **Continue**.
 
@@ -77,7 +71,7 @@ The Tool-tips provide necessary guidance and show screenshots of the BI platform
 
   * <a id="color-green"><b>Green</b></a> : active
   * <a id="color-red"><b>Red</b></a> : inactive - You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link>.
-  * <a id="color-orange"><b>Orange</b></a> : The Agent is active but the BI platform is inactive or it cannot reach the platform. You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#restart-instance')}>restart the Agent's Instance Service from the backend Server</Link>.
+  * <a id="color-orange"><b>Orange</b></a> : The Agent is active but the BI platform is inactive or it cannot reach the platform. You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#restart-instance-service-when-bi-platform-not-reachable')}>restart the Agent's Instance Service from the backend Server</Link>.
   * <a id="color-yellow"><b>Yellow</b></a>: <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/row-level-security')}>Authentication Pending</Link> applicable only for PowerBI and Onedrive agents.
   * In the **Actions** column, you can *Stop ( <img src={useBaseUrl('/img/stop.svg')} width="15"/> )/Restart ( <img src={useBaseUrl('/img/restart.svg')} width="15"/> )* the instance.
 
@@ -94,10 +88,11 @@ After all the agent instances are successfully created, return to the *Agent Man
 
 ## Next Steps
 
-Sync Users for the added agents (or all agents) from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-users-between-agent-and-bi-hub')}>Agent Manager</Link> screen or from <Link to={useBaseUrl('docs/admin-guide/authenticate/manage-auth#synchronize-microsoft-ad-users-with-bi-hub')}>Authentication Manager</Link> screen.
+Import (Sync) users from BI platform into BI Hub portal for the added agents (or all agents).
+You can sync users from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-users-between-agent-and-bi-hub')}>Agent Manager</Link> screen or from <Link to={useBaseUrl('docs/admin-guide/authenticate/manage-auth#synchronize-users-with-bi-hub')}>Authentication Manager</Link> screen.
 
 ## Further Steps
 
 * [ ] Agent Configuration with BI Platform
 
-Follow the next section to **Configure the BI Platform** and make the trusted connection between the respective *BI Hub Agent* and its *BI Platform*.
+Next, **Configure the BI Platform** and make trusted connection between respective *BI Hub Agent(s)* and its *BI Platform*.

@@ -5,9 +5,9 @@ sidebar_label: User Role and Privileges
 ---
 
 BI Hub Web application ensures data security by providing different access permissions to the assigned users.
-These roles define administrative tasks each role is allowed on BI Hub platform.
+These permissions define administrative tasks each role is allowed on BI Hub platform.
 
-We use Microsoft 365 Admin and Windows AD to create user accounts for every user who needs access to BI Hub Reports.
+We use Microsoft 365 and Windows AD to create user accounts for every user who needs access to BI Hub Reports.
 
 BI Hub Super Admin is a pre-defined role, that gets created at the time of installation.  
 

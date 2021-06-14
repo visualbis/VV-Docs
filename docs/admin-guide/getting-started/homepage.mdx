@@ -1,7 +1,7 @@
 ---
 id: homepage
 title: Admin Guide Dashboard
-sidebar_label: Admin Guide Dashboard
+sidebar_label: Admin Home Page
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -10,39 +10,114 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 :::important
-Log-in to BI Hub application with the Admin username/password. Switch to the administrator mode by clicking the **Admin mode** button at the top right corner.
+Log-in to BI Hub application with admin's username/password. Switch to the administrator mode by selecting the **Admin mode** button at the top right corner.
 :::
 
 Upon successfully configuring the Agents, connecting the directory services, and a few successful synchronizations, the landing page displays four tiles:
 
 <div class="center">
   <Zoom>
-<img alt="Landing Page New" src={useBaseUrl('/doc-images/admin-guide/admin-landing-page.png')}/>
+<img alt="Admin's Landing Page" src={useBaseUrl('/doc-images/admin-guide/admin-landing-page.png')}/>
   </Zoom>
-	<p>Admin Landing Page</p>
+	<p>Admin's Home Page</p>
 </div>
 
 ## 1. Instances Configured
 
-This section lists the instances configured,  number of **Reports** synched, the Agent **Server** URL, the Instance **Port** number, and Instance **Status**. 
-The instances are managed from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent-manager-main')}>Agent Manager</Link> screen.
+This section lists the instances configured,  number of **Reports** synched, Agent's **Server** URL, Instance **Port** number, and Instance **Status**.
+The instances are managed from the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#instance-manager')}>Instance Manager</Link> screen.
 
-## 2. Authentications Configured
+## 2. Authentication Configured
 
 This section summarizes the user account types with **Authentication Name**, **Type**, and **Status**. These accounts are managed in the <Link to={useBaseUrl('docs/admin-guide/authenticate/authenticate')}>Authentication</Link> section.
 
 ## 3. Components Configured
 
-List of components like Elastic Search, Message Queue, and SMTP that were configured during Server configuration.
+The components like Elastic Search, Message Queue, and SMTP that were configured during Server configuration are listed in this section.
+You can view **Component Name, Server, Port**, and **Status** indicator.
 
 ## 4. Synchronization Information
 
-This section displays the Synchronization details of users, reports, and/or authentication accounts.
-These sync reports are triggered from the **Agent Manager > Instance Manager**, and **Authentication** sections.
+In this section, you can view the detailed summary of the syncs that were triggered from the **Agent Manager > Instance Manager**, and **Authentication** sections.
 
-- To view the recent activities over a period, click on the calendar icon and provide a date range as input.
-- To get a detailed information click on **Sync Users**, or **Sync Reports** or **Sync Authentication**, and the **Synchronization information** window pops up.
+* Select **Synchronization Information**.
 
-:::note
-Refer the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/admin-utilities#synchronization-information')}>Administrator utility Synchronization</Link> section.
-:::
+ <div class="center">
+   <Zoom>
+     <img alt="Sync information" src={useBaseUrl('/doc-images/admin-guide/synch/sync-info.png')}/>
+   </Zoom>
+  <p>Synchronization Information</p>
+ </div>
+  
+* To view the recent activities over a period, click on the **Calendar** icon and select the period as **Today, Yesterday, Last 7 Days, Last 30 days, This month, Last month**, or select your **Custom range**.
+* Select the type of synchronization you want to view the details of: **Sync Users/Sync Reports/Report Metadata Update/Sync Authentication**.
+
+### Sync Users
+
+In the **Synchronization Information** screen, you get the Sync **Type**, success/failure **Status** of the sync process, **Last updated at** timestamp, **Last updated by** username, and **Agent Instance(s)** names.
+
+ <div class="center">
+   <Zoom>
+     <img alt="Users sync information" src={useBaseUrl('/doc-images/admin-guide/synch/sync-users-info.png')}/>
+   </Zoom>
+  <p>Sync information for Users</p>
+ </div>
+
+The users that are synchronized are categorized as:
+
+* **Inserted**: New Users added to the Agents
+* **Updated**: Existing users updated that are common to the selected Agents
+* **Excluded**: Users not common to the selected Agents
+
+To download the detailed logs of the sync process, select **Download Logs**.
+
+### Sync Reports
+
+In the **Synchronization Information** screen, you get the Sync **Type**, success/failure **Status** of the sync process, **Last updated at** timestamp, **Last updated by** username, and **Agent Instance(s)** names.
+
+ <div class="center">
+   <Zoom>
+     <img alt="Reports sync information" src={useBaseUrl('/doc-images/admin-guide/synch/sync-reports-info.png')}/>
+   </Zoom>
+  <p>Sync information for Reports</p>
+ </div>
+
+The synchronized reports are categorized as:
+
+* **New**: New reports added into BI Hub.
+* **Updated**: : Reports that already exists in BI Hub for other users and  given access for new users.
+* **Revoked**: Reports for which access is revoked for the user from the platform.
+
+To view the of users affected by the sync, click on **No. of Users** column. The list of users are listed in the column on the left.
+
+Select the download icon to **Download Logs** for the sync.
+
+### Report Metadata Update
+
+After you <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-reports-to-an-existing-user')}>Manage Reports</Link> to assign/un-assign reports to a user, you must run a Sync Metadata for the affected agent.
+To view the sync details, select **Home > Synchronization Information > Report Metadata Update**.
+
+ <div class="center">
+   <Zoom>
+     <img alt="Reports Metadata information" src={useBaseUrl('/doc-images/admin-guide/synch/report-meta-sync.png')}/>
+   </Zoom>
+  <p>Report Metadata Update</p>
+ </div>
+
+In the **Synchronization Information** screen, you get the Sync **Type**, success/failure **Status** of the sync process, **Last updated at** timestamp, and **Last updated by** username.
+
+A list of reports **Assigned** and **Unassigned** is displayed.
+You can view further details like the **Report Name, Agent, Path**, and **Users**.
+
+### Sync Authentication
+
+In the **Synchronization Information** screen, you get the Sync **Type**, success/failure **Status** of the sync process, **Last updated at** timestamp, and **Last updated by** username.
+
+ <div class="center">
+   <Zoom>
+     <img alt="Authentication Sync Information" src={useBaseUrl('/doc-images/admin-guide/synch/sync-auth.png')}/>
+   </Zoom>
+  <p>Authentication Sync Details</p>
+ </div>
+
+The list displays user's **Fullname, Authentication User Name**, and **Authentication Type**.
