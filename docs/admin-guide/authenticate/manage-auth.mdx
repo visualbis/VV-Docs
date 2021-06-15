@@ -1,0 +1,160 @@
+---
+id: manage-auth
+title: Authentication
+sidebar_label: Authentication Manager
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+Authentication provides a secured method to validate and provide access to authorized users on the BI platform. The various authentication types BI Hub Platform supports are:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Authentication Manager Menu" src={useBaseUrl('doc-images/admin-guide/auth/auth-main-page.png')}/>
+    </Zoom>
+    <p>Authentication Manager</p>
+  </div>
+
+* **Native**: User credentials are stored in BI platform itself.
+* **Windows AD**: Windows Active Directory services authentication for group and users management, network, and policy administration etc.
+* **LDAP**: Lightweight Directory Access Protocol is an open and cross platform protocol used for directory services authentication.
+* **SAML**: Mapping the user credentials between Microsoft Office 365 and BI Hub Platform.
+
+## Add Authentication
+
+To manage Authentications Admin (bihubadmin) must go the **Authentication > Authentication Manager** section and select **Add Authentication**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Select Authentication type" src={useBaseUrl('doc-images/admin-guide/auth/add-auth.png')}/>
+    </Zoom>
+    <p>Add Authentication type</p>
+  </div>
+
+### Add Microsoft AD details to BI Hub
+
+Windows AD authentication allows the users/groups to be fetched from a Windows Active Directory.
+
+To add MS AD Authentication, select the **Authentication Type** as "LDAP" from the drop-down list.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Authentication Manager Menu" width="400" src={useBaseUrl('doc-images/admin-guide/auth/winad-settings.png')}/>
+    </Zoom>
+    <p>Windows AD Authentication Settings</p>
+  </div>
+
+* Following are the fields and their descriptions:
+
+| Field Name                | Description                                                                                                                                                                                                                                                                                             |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Base DN                   | The Distinguished Name (DN) of the starting point for directory server searches                                                                                                                                                                                                                         |
+| URL                       | The Active Directory host address. Example: `<ldap://xxxdomain.companyname.solutions>`                                                                                                                                                                                                                  |
+| Username                  | username of the account present in Windows AD with admin privileges                                                                                                                                                                                                                                     |
+| Password                  | password of the above user                                                                                                                                                                                                                                                                              |
+| Groups                    | Name of the AD group to synchronize the users from.                                                                                                                                                                                                                                                     |
+| Additional User Attribute | Additional User Attributes that needs to be used for mapping a username                                                                                                                                                                                                                                 |
+| Full SSO                  | If Full SSO setup is established in the organization, then enable the check box and BI Hub will leverage that setup. > In such a scenario, when the user does a sign-on successfully into the company’s network, then BI Hub will not prompt for a login and the user can work on the product directly. |
+| Bring Subgroup Members    | Value can be set to enable/disable. When set to ON, members from the subgroup will also be available into BI Hub                                                                                                                                                                                        |
+
+### Add LDAP Authentication
+
+To setup an LDAP authentication type, select "LDAP" in the **Authentication Type** drop-down menu:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Authentication Manager Menu" src={useBaseUrl('doc-images/admin-guide/auth/add-auth-ldap.png')}/>
+    </Zoom>
+    <p>LDAP Authentication Fields</p>
+  </div>
+
+Enter the vales for each field ( Tooltip provided ) and select **Submit**.
+
+### Add SAML Authentication
+
+Before you add SAML authentication configurations in the BI Hub application, you must setup SSO for an application that you added to your Azure AD tenant. [ Reference Microsoft article: [Set up SAML-based single sign-on (SSO) for an application in your Azure Active Directory (Azure AD) tenant](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-setup-sso) ].
+
+For basic SAML configuration, you should get the values from the application vendor.
+[ Microsoft article reference: [Basic SAML Configuration](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-saml-single-sign-on#basic-saml-configuration) ].
+
+Next, in the BI Hub app; add a new authentication with **Authentication Type** as **SAML**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Authentication Manager Menu" src={useBaseUrl('doc-images/admin-guide/auth/saml-auth.png')}/>
+    </Zoom>
+    <p>SAML Authentication</p>
+  </div>
+
+Following are the fields and their descriptions:
+
+| Field Name                     | Description                                                        |
+|--------------------------------|--------------------------------------------------------------------|
+| Entity ID of Service Provider  | Identifier of your Service Provider                                |
+| Assertion Consumer Service URL | Assertion Consumer Service URL mentioned on your Service Provider  |
+| Logout URL                     | Logout URL of Service Provider                                     |
+| Entity ID of IDP               | This is Azure AD Identifier                                        |
+| Single Sign ON IDP URL         | Login URL of IDP                                                   |
+| Logout URL of IDP              | Logout URL of IDP                                                  |
+| x509cert of IDP                | The x509cert value from Federation Metadata XML                    |
+| Login button text              | This value will be shown on BIHUB Login screen, example: SSO Login |
+| SAML Response Key              | SAML response key to validate the user                             |
+
+Enter all the values and select **Submit**.
+
+## Edit Authentication details in BI Hub
+
+* To edit the authentication details, admin can select the type and click **Edit**.
+* Edit the required fields in the **Edit Authentication**.
+* Select **Save**.
+
+## Synchronize Users with BI Hub
+
+Go to **Authentication** page, select the platform (Windows AD or SAML) and click **Sync Users**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Authentication Manager Menu" src={useBaseUrl('doc-images/admin-guide/synch/sync-ad-users.png')}/>
+    </Zoom>
+  </div>
+
+All the users under the given Authentication information will be added to BI Hub.
+
+View the detailed summary of the sync in the <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-authentication')}>Sync Authentication</Link> section.
+
+:::note
+If users of all BI platforms are authenticated using Microsoft AD/LDAP and user names are identical across platforms, then proceed to <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Synchronize Reports of Users</Link> section. 
+:::
+
+### Next Steps
+
+Consider the scenario When one BI platform authenticates through Microsoft AD and the other BI platform authenticates Native users, also if the user names are different between BI platforms.
+In such a case, the above sync would import the users only with the Microsoft AD authentication.
+
+In order to import users from the other BI Platform(s), proceed to <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-users-from-other-bi-platforms')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link> section.
+
+Next proceed to <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Synchronize Reports of Users</Link> section.
+
+:::important
+You can schedule to sync the Windows AD users automatically using the Authentication Synchronization utility. [Refer the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-ad')}> Scheduled synchronization with AD</Link>] section.
+:::
+
+To set the default Authentication type, select the Authentication name - "Windows AD" and click **Set as Default**:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Authentication Manager - Default Authentication Type" src={useBaseUrl('doc-images/admin-guide/synch/win-ad-default.png')}/>
+    </Zoom>
+    <p>Windows AD selected as the Default Authentication Type</p>
+  </div>
+
+## Delete Authentication in BI Hub
+
+Select the Authentication type and click **Delete**.
+
+:::note
+Deleting the Windows Authentication will delete not only the AD entry but also all the users and reports connected to AD and the operation cannot be undone.
+:::

@@ -136,17 +136,11 @@ module.exports = {
             "admin-guide/user-manager/dashboard-admin",
         ],
         "Authentication": [
-            "admin-guide/authenticate/authenticate",
-            "admin-guide/authenticate/synch-ms-ad-bihub",
-            "admin-guide/authenticate/add-ms-ad",
-            "admin-guide/authenticate/del-msad-bihub",
+            "admin-guide/authenticate/manage-auth"
         ],
         "Reports": [
-            "admin-guide/reports/reports",
-            "admin-guide/reports/upload-metadata-csv",
-            "admin-guide/reports/report-details",
-            "admin-guide/reports/report-thumbnails",
-            "admin-guide/reports/reports-history",
+            "admin-guide/reports/platform-folder",
+            "admin-guide/reports/hub-folder",
             "admin-guide/reports/custom-url",
         ],
         "Audit": ["admin-guide/audit"],
@@ -158,6 +152,7 @@ module.exports = {
             "admin-guide/settings/report",
             "admin-guide/settings/theme",
             "admin-guide/settings/user-dashboard",
+            "admin-guide/settings/announcement",
             "admin-guide/settings/email-template",
         ],
 
