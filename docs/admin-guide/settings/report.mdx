@@ -1,0 +1,74 @@
+---
+id: report
+title: Report Tab
+sidebar_label: Report Tab
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+In addition to the metadata from BI platform, we can have our own metadata for reports.
+From the **Settings > Report** section, you can manage the **Custom Fields** for the reports.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Report Tab" src={useBaseUrl('doc-images/admin-guide/report-tab.png')}/>
+    </Zoom>
+    <p>Report Tab with default Attributes</p>
+  </div>
+
+You cannot edit or delete the default attributes. However, you can only edit the **Certification** attribute but still cannot delete it.
+
+## Add Attributes
+
+* Select **Add Attribute** and enter the field values.
+
+  <div class="center">
+    <Zoom>
+      <img width="300" alt="Add Attribute" src={useBaseUrl('doc-images/admin-guide/add-attribute.png')}/>
+    </Zoom>
+    <p>Add Custom Attribute form</p>
+  </div>
+
+<div style= {{ padding: "0 4em" }}>
+
+* Enter a **Name** for the metadata field, **Label**, **Description**, and the **Type** of Attribute.
+
+| Field Name  | Description                                                                                                                                                                                                       |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Attribute field name                                                                                                                                                                                              |
+| Label       | Custom Field Name to be displayed                                                                                                                                                                                 |
+| Description | Tooltip text description for the field                                                                                                                                                                            |
+| Type        | Type of Attribute: <ul><li>Text: Any text(string) value</li><li>URL: URL link type</li><li>Date: Date range</li><li>List: drop-down menu with a list of Labels and their values  </li><li>User Selected</li></ul> |
+
+</div>
+
+* Select **Submit**.
+
+Below is a screenshot with all the new attributes added:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Attributes List" src={useBaseUrl('doc-images/admin-guide/all-attributes.png')}/>
+    </Zoom>
+  </div>
+
+* Select an attribute(s) (non-default) and select **Edit** to edit the properties.
+* Select and attribute(s) (non-default) and select **Delete**. This will delete the all the report attributes which cannot be retrieved once deleted.
+* To enable/disable the attribute in the Report details screen, use the ON/OFF toggle against each attribute.
+
+## Map Attributes to Report(s)
+
+* Go to **Reports > Platform Folders**.
+* Enter the values for the <Link to={useBaseUrl('docs/admin-guide/reports/platform-folder#custom-fields')}>Custom Fields</Link>
+
+The users can now view the custom fields that you added to the report from **BI Platform**.
+
+  <div class="center">
+    <Zoom>
+      <img height="400" alt="Details of all Custom Attributes" src={useBaseUrl('doc-images/admin-guide/admin-functions/settings/custom-attributes.png')}/>
+    </Zoom>
+    <p>Details of all Custom Attributes</p>
+  </div>

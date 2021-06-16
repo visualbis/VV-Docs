@@ -1,0 +1,106 @@
+---
+id: audit 
+title: Audit
+sidebar_label: Audit
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+Admin can audit the usage of BI Hub platform in the **Audit** section. Select **Audit** from the left navigation panel.
+
+The Audit Menu has three tabs – Administrator, User and Reports.
+
+## Administrator
+
+The **Administrator** section gives an audit summary of the agents and user's activities.
+
+1. **Agents**
+
+You can view the Uptime and Downtime of agents by hovering over the time graph as shown below:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Audit - Administrator Tab" src={useBaseUrl('doc-images/admin-guide/audit1.png')}/>
+    </Zoom>
+    <p>Audit - Administrator Tab</p>
+  </div>
+
+* You can choose a time range located at the top right corner. This allows you to display the audit logs from yesterday/last 7 days/last month or select from a custom range.
+* The screenshot above displays the 3 states of agents, when the **Agent not Created, Agent is Down, Agent is Up**.
+
+2. **Most Viewed Reports**
+
+  <div class="center">
+    <Zoom>
+      <img alt="Most/least viewed reports" src={useBaseUrl('doc-images/admin-guide/most-least-viewed.png')} width="500"/>
+    </Zoom>
+  </div>
+This section displays a list of the reports viewed maximum number of times along with the number of views by the users and the count of favorites added to the report.
+
+3. **Least Viewed Reports**
+
+The section shows the reports that were least accessed.
+
+4. **Most & Least Frequent Users**
+
+  <div class="center">
+    <Zoom>
+      <img alt="Most/least viewed reports" src={useBaseUrl('doc-images/admin-guide/most-least-frequent.png')}/>
+    </Zoom>
+  </div>
+
+Graphical representation of the most and least frequent users on the BI Hub platform.
+
+## User
+
+The **User** tab displays valuable information about specific users.
+In the user tab, select a particular user to view details such as list of **Accessible reports**, list of **Removed reports** or reports revoked from the BI platform for that user and the list of reports **Frequently accessed** by the user.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Audit - User Tab" src={useBaseUrl('doc-images/admin-guide/user-info1.png')}/>
+    </Zoom>
+    <p>User Information - Accessible reports</p>
+  </div>
+
+  <div class="center">
+    <Zoom>
+      <img alt="Audit - User Tab" src={useBaseUrl('doc-images/admin-guide/user-info2.png')}/>
+    </Zoom>
+    <p>User Information - Removed reports</p>
+  </div>
+
+  <div class="center">
+    <Zoom>
+      <img alt="Audit - User Tab" src={useBaseUrl('doc-images/admin-guide/user-info3.png')}/>
+    </Zoom>
+    <p>User Information - Frequently accessed</p>
+  </div>
+
+You can also sort the logs in ascending/descending order based on each of the fields as well as filter out the information with the username.
+
+## Reports
+
+The Reports tab displays report details such as: **Report name, Agent Name, No. of users** who have accessed that Report, **No. of Views** for that Report and **No. of Favorites** assigned to the specific Report:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Audit - Reports tab" src={useBaseUrl('doc-images/admin-guide/audit-reports.png')}/>
+    </Zoom>
+    <p>Audit Reports</p>
+  </div>
+
+* You can filter the reports based on **Report name** and **Agent name**.
+* You can also sort the reports based on **No. of users, No. of Views**, and **No. of Favorites**.
+
+Select any report name to view detailed information such as **User Name**(s) who accessed the report, **Created(ion) Date** of the user and the **Last viewed on** timestamp on the report:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Audit - Reports information" src={useBaseUrl('doc-images/admin-guide/report-info.png')}/>
+    </Zoom>
+    <p>Audit Report's - Information</p>
+  </div>

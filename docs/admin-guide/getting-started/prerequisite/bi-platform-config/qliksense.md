@@ -16,7 +16,7 @@ Follow the below steps to **Generate Qliksense Certificates**:
 
  <div class="center">
   <Zoom>
-    <img alt="img" src={useBaseUrl('/doc-images/qliksense/qlicksense-governance.png')}/>
+    <img alt="img" height="500" src={useBaseUrl('/doc-images/qliksense/certificates.png')}/>
   </Zoom>
  </ div>
 
@@ -24,7 +24,7 @@ Follow the below steps to **Generate Qliksense Certificates**:
 
  <div class="center">
   <Zoom>
-    <img alt="certificates" src={useBaseUrl('/doc-images/qliksense/certificates.png')}/>
+    <img alt="certificates" src={useBaseUrl('/doc-images/qliksense/qliksense-governance.png')}/>
   </Zoom>
  </ div>
 

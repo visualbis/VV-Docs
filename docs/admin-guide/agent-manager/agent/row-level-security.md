@@ -25,6 +25,7 @@ Admin creates a new Power BI or Onedrive instance in the **Agent Manager > Insta
   </div>
 
 The initial **Status** of the instance will be "Yellow". This status indicates that Authentication is pending for the Agent.
+
 * Select the Instance and click **Login As Admin**.
 
   <div class="center">
@@ -34,7 +35,7 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
     <p>Login as Admin</p>
   </div>
 
-* A pop-up window appears where the Admin must verify the Login credentials:
+* In the pop-up window, enter the credentials of an account with administrative privileges:
 
   <div class="center">
     <Zoom>
@@ -59,13 +60,15 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
   <p>Instance status activated</p>
   </div>
 
-* Go to **Agent Manager**, select Power BI/Onedrive agents and click **Synch Users** and **Synch Reports**.
+* Go to **Agent Manager**, select Power BI/Onedrive agents and click **Sync Users** and **Sync Reports**.
 
 ## Access Reports: User-level authentication
 
 For a *User* to access the Power BI/Onedrive reports, the user has to log-in to the respective agent platform in either of the 2 ways:
-1. Go to **BI Platform** and click on the respective report, or
-1. Go to Profile **Settings > Authorize Agents** and click **Login**.
+
+1. In the **BI Platform**, select the the Platform name, or
+1. Go to Profile **Settings > Authorize Agents** and select **Login**.
+
   <div class="center">
     <Zoom>
       <img alt="Powerbi agent Login Credentials" src={useBaseUrl('doc-images/admin-guide/agent/authorize-agents.png')}/>

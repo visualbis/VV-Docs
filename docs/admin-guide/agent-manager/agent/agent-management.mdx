@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 In the **Agent Manager** screen, an Admin can:
 
-1. [Add Agent](#add-agent): Add new Agent(s) configured in BI platform. 
+1. [Add Agent](#add-agent): Add new Agent(s) configured in BI platform.
 1. [Edit Agent](#edit-agent): Agent's *Name, Server*, and *Port* details.
 1. [Delete Agent](#delete-agent): Delete Agent(s) configured in BI platform.
 1. [Sync Users](#sync-users-between-agent-and-bi-hub): Synchronize Users between Agent and BI Hub.
@@ -20,12 +20,15 @@ In the **Agent Manager** screen, an Admin can:
 
 ## Add Agent
 
-Admins can <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>add new Agents</Link> and assign *Agent Name*, *Server URL*, and *Port* number.
+To add a new agent, admin must select **Add Agent** and assign *Agent Name*, *Server URL*, and *Port* number. [ refer the <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/add-new-agent')}>Add Agent</Link> section. ]
 
 ## Edit Agent
 
-Select the **Agent** name and click **Edit**. You can edit the Agent details such as - **Agent Name**, **Server** URL, and the Agent **Port** number.
-Click **Save**.
+To change the installation Server url or the Port number:
+
+* Select the **Agent** name and select **Edit**.
+* You can edit the Agent details such as - **Agent Name**, **Server** URL, and the Agent **Port** number.
+* Select **Save**.
 
   <div class="center">
     <Zoom>
@@ -49,11 +52,12 @@ Select the **Agent** name and click **Delete**. In the popup screen, click **Del
 
 ## Sync Users between Agent and BI Hub
 
-This feature is used by an administrator to import users from the BI platform into the portal. It is only used in scenarios when the BI platform stores all user credentials and users are authenticated using the BI platform and not a directory service like Microsoft AD/LDAP.
+This feature is used by an administrator to import users from the BI platform into the portal. It is only used in scenarios when the BI platform stores all the user information and users are authenticated using the BI platform and not a directory service like Microsoft AD/LDAP.
 
 An Admin can either synchronize users for a single Agent or multiple Agents.
 
-- **Sync Users for a single Agent**: Select the Agent and click **Sync Users**.
+* **Sync Users for a single Agent**: Select the Agent and click **Sync Users**.
+  
   <div class="center">
     <Zoom>
       <img alt="Select a single Agent" src={useBaseUrl('doc-images/admin-guide/agent/sync-users-single-agent.png')}/>
@@ -61,46 +65,28 @@ An Admin can either synchronize users for a single Agent or multiple Agents.
     <p>Sync users for a single Agent</p>
   </div>
 
-> All users from the selected agent will be synchronized with BI Hub.
-
-- **Sync users for multiple Agents**: If the user names are the same across all BI platforms, then select all Agents (except the one that points to a file system folder).
-  If the user names are different between BI platforms, then select the agent, which has the most number of users.
-  Click **Sync Users**.
+* **Sync users for multiple Agents**: Select all the agents and then select **Sync Users**.
 
   <div class="center">
     <Zoom>
       <img alt="Select multiple Agents" src={useBaseUrl('doc-images/admin-guide/agent/sync-users-many-agents.png')}/>
     </Zoom>
-    <p>Sync users for multiple Agents</p>
+    <p>Sync users from multiple Agents</p>
   </div>
 
-> Only users with matching user names across the selected agents will be synchronized with BI Hub.
+### Verify Synchronization
 
-Go to <Link to={useBaseUrl('docs/admin-guide/user-manager/user-manager-main')}>User Manager</Link> screen to view a list of users imported from BI platforms to BI Hub.
+1. To view the the list of imported users from BI platforms into BI Hub, go to <Link to={useBaseUrl('docs/admin-guide/user-manager/user-manager-main')}>User Manager</Link> screen.
 You can filter the list with the Agent's name.
 
-:::note
-When users are added via the "Sync Users" feature, the default login password for the added users will be `<username@123>` (e.g. <adrian@123> for username 'adrian'). During the first login, the users will be asked to change to a new password.
-:::
+  > When users are added via the "Sync Users" feature, the default login password for the added users will be `<username@123>` (e.g. <adrian@123> for username 'adrian'). During the first login, the users will be asked to change to a new password.
 
-Go to **Home > Synchronization Information** and click on **Sync Users** to get a detailed summary: 
+1. To view the detailed summary of the sync, go to **Home > Synchronization Information** and select <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-users')}>Sync Users</Link>.
 
- <div class="center">
-   <Zoom>
-     <img alt="Users sync information" src={useBaseUrl('/doc-images/admin-guide/synch/sync-users-info.png')}/>
-   </Zoom>
-	 <p>Sync information for Users</p>
- </div>
+### Next Steps
 
-A list of users is displayed as:
-- **Inserted**: New Users added to the Agents
-- **Updated**: Users common to the selected Agents
-- **Excluded**: Users not common to the selected Agents
- 
-Admin can also click on the download icon to **Download Logs** for the sync.
-
-> - If the user names are different between BI platforms, to import users from the other BI platform(s), Click Save and proceed to Section <Link to={useBaseUrl('docs/admin-guide/user-manager/add-users-bi-platform')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link>.
-> - If user names are identical across platforms, after synching the users synchronize Reports of Users as explained in the next section.
+1. If the user names are different between BI platforms, to import users from the other BI platform(s), Click Save and proceed to Section <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-users-from-other-bi-platforms')}>Add Users from other BI Platforms (users having different user names across BI Platforms)</Link>.
+1. If user names are identical across platforms then after synching the users, synchronize Reports of Users as explained in the next section.
 
 :::note
 An Admin can also schedule an automatic users sync with the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-ad')}>Scheduled synchronization with AD/LDAP</Link> section.
@@ -109,35 +95,31 @@ An Admin can also schedule an automatic users sync with the Agent Synchronizatio
 ## Sync Reports
 
 Admin uses the **Sync Reports** feature to sync all the reports with the BI Hub users.
-To manually add reports to users, follow the <Link to={useBaseUrl('#')}>Add reports to an existing user</Link> section.
+To manually add reports to users, follow the <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-reports-to-an-existing-user')}>Add reports to an existing user</Link> section.
 
-- Select single/multiple Agents whose user’s reports are to be imported (synchronized) into BI Hub and click **Sync Reports**
+- Select single/multiple Agents whose user’s reports are to be imported (synchronized) into BI Hub and click **Sync Reports**.
+
   <div class="center">
     <Zoom>
       <img alt="Sync Reports" src={useBaseUrl('doc-images/admin-guide/agent/sync-reports.png')}/>
     </Zoom>
-  	<p>Sync Reports</p>
+   <p>Sync Reports</p>
   </div>
 
-  >All reports of the users of the selected agents will be synchronized with BI Hub. 
-  > This synchronization only brings in reports of users with identical user names in BI platforms.
-
-An Administrator can switch to the **Home** page and view the number of reports synchronized. Click on **Sync Reports** to get a detailed summary:
   <div class="center">
     <Zoom>
-      <img alt="Sync Reports" src={useBaseUrl('doc-images/admin-guide/agent/sync-reports-info.png')}/>
+      <img alt="Sync Reports Information" src={useBaseUrl('doc-images/admin-guide/agent/sync-reports-info.png')} width="400" />
     </Zoom>
-  	<p>Sync Reports</p>
+   <p>Sync Reports Information</p>
   </div>
 
-A list of Reports are displayed as:
-- **New**: New reports added to the Agent and number of users who have access to the reports.
-- **Updated**: User's access updates on the agent's reports.
-- **Revoked**: Users whose access have been revoked on the reports
+> This synchronization only brings in reports of users that are present in the application (obtained by AD/LDAP sync or sync users).
 
-Admin can also click on the download icon to **Download Logs** for the sync.
+### Verify Synchronization
 
-The users can now login into BI Hub and execute the reports they have access to.
+To view the detailed summary of the sync, go to **Home > Synchronization Information** and select <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-reports')}>Sync Reports</Link>.
+
+The users can now login into BI Hub and view the reports they have access to.
 
 :::note
 Admin can also schedule to run **Sync Reports** automatically using the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-bi')}>Scheduled Synchronization with BI platforms</Link> section.
@@ -153,8 +135,6 @@ If the sync(Report/Users) jobs fail, the admin receives an email notification wi
     </Zoom>
     <p>Sync Failure Notification</p>
   </div>
-
----
 
 ## Instance Manager
 
@@ -184,6 +164,7 @@ Admin can perform the following actions:
 An Instance is a running state of an Agent. You can have multiple instances of a single Agent, all pointing to the same Agent in the BI Platform.
 
 1. Click on an Agent and then click **Add Instance** at the top right corner.
+
   <div class="center">
     <Zoom>
       <img alt="Add a new Instance" src={useBaseUrl('doc-images/admin-guide/agent/add-instance.png')}/>
@@ -211,35 +192,34 @@ Once you finish updating the instance properties, click **Submit** to save the c
     <Zoom>
       <img alt="Edit Instance" src={useBaseUrl('doc-images/admin-guide/agent/edit-instance.png')}/>
     </Zoom>
-  	<p>Edit Instance</p>
+   <p>Edit Instance</p>
   </div>
 
-### Encrypted Password non-updatable
+### Encrypted Password
 
-The password field is now encrypted for the agents in the **Edit Instance** screen. Admin cannot update the password here.
+For security reasons, the password value is encrypted for the agents in the **Edit Instance** screen.
 
   <div class="center">
     <Zoom>
-      <img alt="Password update not allowed" src={useBaseUrl('doc-images/admin-guide/agent/password-update-fail.png')}/>
+      <img alt="Password encrypted" src={useBaseUrl('doc-images/admin-guide/agent/password-encrypt.png')}/>
     </Zoom>
-    <p>Password update not allowed</p>
+    <p>Encrypted Password</p>
   </div>
-
-> Only a Server Admin can reset an agent's password property file located in the `<agent installation directory>`.
 
 ### Configure Smart Search
 
-**Smart Search** is a feature by which the users can see a set of reports that are not accessible to them but accessible to other users and can request access for the reports. 
-This can be configured at the agent level. 
+**Smart Search** is a feature by which the users can see a set of reports that are not accessible to them but accessible to other users and can request access for the reports.
+This can be configured at the agent level.
+
 - The **Smart Search** toggle in the **Instance Manager > Edit Instance** is enabled by default which
-allows all users to utilize the "Not Accessible" Reports. 
+allows all users to utilize the "Not Accessible" Reports.
 - An administrator can turn off this toggle for an agent and that will prevent all users of BI Hub from seeing a list of not accessible reports for that agent.
 
   <div class="center">
     <Zoom>
       <img alt="Smart Search toggle in Instance Manager" src={useBaseUrl('doc-images/admin-guide/agent/instance-smart-search.png')}/>
     </Zoom>
-  	<p>Smart Search toggle in Instance Manager</p>
+   <p>Smart Search toggle in Instance Manager</p>
   </div>
 
 ### Delete Instance
@@ -252,7 +232,7 @@ Click on an Agent name, select the Instance and click **Delete**.
     <Zoom>
       <img alt="Delete Instance" src={useBaseUrl('doc-images/admin-guide/agent/del-instance.png')}/>
     </Zoom>
-  	<p>Delete Instance</p>
+   <p>Delete Instance</p>
   </div>
 
 If there is another instance configured for the same agent, the users and reports will be accessible on that running instance.
@@ -268,7 +248,7 @@ To stop an instance, select the instance and click the stop( <img width="15" src
     <Zoom>
       <img alt="Stop Instance" src={useBaseUrl('doc-images/admin-guide/agent/stop-instance.png')}/>
     </Zoom>
-  	<p>Stop Instance</p>
+   <p>Stop Instance</p>
   </div>
 
 > Users cannot access the reports for the Agent whose instance is stopped.
@@ -280,7 +260,7 @@ Admin can start the Agent's instance to make the Reports accessible to the users
     <Zoom>
       <img alt="Start Instance" src={useBaseUrl('doc-images/admin-guide/agent/start-instance.png')}/>
     </Zoom>
-  	<p>Start Instance</p>
+   <p>Start Instance</p>
   </div>
 
 #### Restart Instance Service when BI Platform not reachable
@@ -293,9 +273,9 @@ An <a id="color-orange"><b>Orange</b></a> status indicates, that Instance is una
     <p>New Instance added, but not started</p>
   </div>  
 
-You must restart the respective Agent's Instance Service from the backend Server. 
+You must restart the respective Agent's Instance Service from the backend Server.
 
-Go to `Start > run > services.msc` and **Restart** the `VBIQlikViewAgent_QlickView_Dev` ( `VBI<agent-name>Agent_<instance-name>` ) service.
+Go to `Start > run > services.msc` and **Restart** the `VBIQlikViewAgent_QlikView_Dev` ( `VBI<agent-name>Agent_<instance-name>` ) service.
 
 The Instance will now be in the **running** state:
   <div class="center">
@@ -305,6 +285,12 @@ The Instance will now be in the **running** state:
     <p>Instance started</p>
   </div>  
 
+#### Troubleshooting
+
+If the status is still in 'Orange'; then verify if all the configurations are correct and check the logs for any errors. Contact the platform administrator for further assistance in resolving the issue.
+
+If you still find an 'Orange' status for the instance, kindly contact the BI Hub Support Team by raising a ticket in the support portal or by sending an email to support@bihub.com.
+
 ### Restart Instance
 
 Select an Instance and click restart ( <img width="15" src={useBaseUrl('img/restart.svg')} /> ) icon.
@@ -312,7 +298,7 @@ Select an Instance and click restart ( <img width="15" src={useBaseUrl('img/rest
     <Zoom>
       <img alt="Restart Instance" src={useBaseUrl('doc-images/admin-guide/agent/restart-instance.png')}/>
     </Zoom>
-  	<p>Restart Instance</p>
+   <p>Restart Instance</p>
   </div>
 
 ### Download Logs for Agent Instance
@@ -336,9 +322,11 @@ This downloads the Service Manager logs, the instance and backend logs for the A
 
 ### Sync Instance Users
 
-All users from the selected instances will be synchronized with BI Hub.
+To synchronize all users with BI Hub from the selected instance:
 
-Click on the Agent and select an Instance. Click **Sync Users**.
+* In the **Agent Manager** screen, select an instance.
+* In the **Instance Manage** screen, select **Sync Users**.
+
   <div class="center">
     <Zoom>
       <img alt="Sync Instance Users" src={useBaseUrl('doc-images/admin-guide/agent/instance-sync-users.png')}/>
@@ -346,11 +334,15 @@ Click on the Agent and select an Instance. Click **Sync Users**.
     <p>Sync Instance Users</p>
   </div>
 
+See the <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-users')}>Sync Users</Link> section for summary of the sync.
+
 ### Sync Instance Reports
 
-From the selected instance(s), only reports which are accessible to the users already imported into BI Hub will be synchronized.
 
-Click on the Agent and select an Instance. Click **Sync Reports**.
+To sync the reports already accessible to the users from the selected instances(s). 
+
+* In the **Agent Manager** screen, select an instance.
+* In the **Instance Manage** screen, select **Sync Reports**.
 
   <div class="center">
     <Zoom>
@@ -358,3 +350,5 @@ Click on the Agent and select an Instance. Click **Sync Reports**.
     </Zoom>
     <p>Sync Instance Reports</p>
   </div>
+
+See the <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-reports')}>Sync Reports</Link> section for summary of the sync.
