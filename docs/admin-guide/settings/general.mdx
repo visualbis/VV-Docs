@@ -9,19 +9,16 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The **General** tab, has four different categories:
-1. <Link to={useBaseUrl('#navigation')}>Navigation</Link>
-1. Security
-1. <Link to={useBaseUrl('#search')}>Search</Link>
-1. <Link to={useBaseUrl('#views')}>Views</Link>
-1. <Link to={useBaseUrl('#customization')}>Customization</Link>
+In the **General** page, an admin can configure general settings related to application navigation, security, reports, and agents.
+
+Following are the configurations available in the General page:
 
 ## Navigation
 
 To customize the **Navigation Panel** for other users, the super Admin can:
 
-- **Drag to rearrange** the navigation menus,
-- **Rename** the navigation labels,
+- **Drag to rearrange** the navigation menus by selecting the drag and order ( <img width="20" src={useBaseUrl('img/drag-order.png')}/> ) icon.
+- **Rename** the navigation labels by selecting the edit ( <img width="20" src={useBaseUrl('img/edit.png')}/> ) icon.
 - Enable/disable the navigation menus with the **ON/OFF** toggle.
 
 Let's consider the highlighted changes done by the Admin:
@@ -47,7 +44,7 @@ The **Navigation** menu items change will reflect for all the other users as ind
 ## Security - Password Strength Validator
 
 Admin can set the native user password strength validator under **Settings > General > Security** section.
-The values can be set to "Low/Medium/High".
+The values can be set to "Low/Medium/High" (Tooltip in the app provides the details of the security settings).
 
   <div class="center">
     <Zoom>
@@ -56,13 +53,13 @@ The values can be set to "Low/Medium/High".
     <p>Native user password validator</p>
   </div>
 
-> Any new user created must adhere to the password validation.
+> Any new user created must adhere to the password validation rules to set the new password string.
 
 ## Search
 
 By default the **Search** section allows users to search and request the reports they do not have access to.
 
-If the Admin wishes to hide the inaccessible report, the Admin can turn OFF the **Show Inaccessible reports** toggle.
+If you wish to hide listing the inaccessible reports, then you must turn OFF the **Show Inaccessible reports** toggle here.
 
   <div class="center">
     <Zoom>
@@ -114,6 +111,8 @@ The Admin can allow users to **Launch Reports In New Tab** with the ON/OFF toggl
 
 - When Admin enables this option, by default **Open Report in new tab** is enabled for the users when they login for the first time.
 
-- The user can later choose to enable/disable this option from the **Settings > Customization Settings** section.
+- The user can later choose to enable/disable this option from **Settings > Customization Settings** section.
 
-> User customized settings take precedence over customizations done by Admin.
+:::note
+User customized settings take precedence over customizations done by Admin.
+:::

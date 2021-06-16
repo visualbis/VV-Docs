@@ -13,8 +13,11 @@ To access MicroStrategy reports through BI Hub, SSO should be configured and ena
 
 The following steps are to be followed to achieve the same:
 
-* Mapping Windows AD users:
-  - In MicroStrategy Developer, select a user group under **Administration > User Manager**, right-click on each user and select Edit
+1. Mapping Windows AD users:
+
+* In MicroStrategy Developer, select expand the **Administration** section.
+* In the right-hand side window, select **User Manager**.
+* Right-click on each user and select **Edit**.
 
   <div class="center">
     <Zoom>
@@ -22,7 +25,8 @@ The following steps are to be followed to achieve the same:
     </Zoom>
   </div>
 
-  - Go to **Authentication > Metadata** and select the corresponding Windows AD user in the Link Windows user section
+* In the User Editor window, from the **Authentication** menu select **Metadata**.
+* In the **Link Windows user** section on the right-hand side, select **Browse** to chose the corresponding Windows AD user.
 
   <div class="center">
     <Zoom>
@@ -30,9 +34,9 @@ The following steps are to be followed to achieve the same:
     </Zoom>
   </div>
 
-* Create a Group Policy object for Internet Explorer:
+2. Create a Group Policy object for Internet Explorer:
   
-  - In the Group Policy Management, go to **User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page > Site to Zone Assignment List**, and select the **Enabled** option.
+* In Group Policy Management window, go to **User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page > Site to Zone Assignment List**.
   
   <div class="center">
     <Zoom>
@@ -41,7 +45,9 @@ The following steps are to be followed to achieve the same:
   	<p>Site to Zone Assignment List</p>
   </div>
 
-  - Click on the show button and add MicroStrategy Server URL in Value Name and 2 in value to mark it as a trusted Server
+* Select the **Enabled** option.
+* Next, select the **Show** button.
+* Add MicroStrategy Server URL in the **Value Name** field and 2 in the **Value** field to mark it as a trusted Server.
 
   <div class="center">
     <Zoom>
@@ -49,7 +55,8 @@ The following steps are to be followed to achieve the same:
     </Zoom>
   </ div>
 
-* In Windows **Control Panel > Internet Options >Advanced**, check *Enable Integrated Windows Authentication*.
+* Go to Windows **Control Panel > Internet Options > Advanced** tab.
+* Enable the *Enable Integrated Windows Authentication* option and select **OK**.
 
   <div class="center">
     <Zoom>
@@ -57,7 +64,7 @@ The following steps are to be followed to achieve the same:
     </Zoom>
   </div>
 
-* In **MicroStrategy Web Administrator > Default Properties**, Enable the Windows Authentication and make it default and un-check all the other login mode and change the 'Trusted Authentication Providers' to Custom SSO
+* Select **MicroStrategy Web Administrator > Default Properties** option.
 
 <div class="center">
   <Zoom>
@@ -65,7 +72,11 @@ The following steps are to be followed to achieve the same:
   </Zoom>
 </ div>
 
-* Restart the server for the changes to take place.
+* In the **Login** section on the right, enable **Windows Authentication** and make it the default authentication.
+* Un-check all the other login mode options.
+* In the **Trusted Authentication Providers** option, select **Custom SSO** from the drop-down list.
+
+Restart the server for the changes to take place.
 
 :::note
 It is recommended to do the above configuration in IIS Server.

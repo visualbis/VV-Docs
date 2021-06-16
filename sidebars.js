@@ -7,7 +7,6 @@ module.exports = {
         "Getting Started": [
             "copyright",
             "installation-guide/welcome",
-            "installation-guide/releases",
             "installation-guide/sys-req",
             "installation-guide/download-bihub",
             "installation-guide/install-pre",
@@ -117,9 +116,7 @@ module.exports = {
 
         ],
         "Getting Started": [
-            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/maintenance-of-bihub",
-            "admin-guide/admin-functions",
-            "admin-guide/integrate"
+            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/initial-setup"            
         ],
         "Agent Manager": [
             "admin-guide/agent-manager/agent-manager-main",
@@ -139,21 +136,15 @@ module.exports = {
             "admin-guide/user-manager/dashboard-admin",
         ],
         "Authentication": [
-            "admin-guide/authenticate/authenticate",
-            "admin-guide/authenticate/synch-ms-ad-bihub",
-            "admin-guide/authenticate/add-ms-ad",
-            "admin-guide/authenticate/del-msad-bihub",
+            "admin-guide/authenticate/manage-auth"
         ],
         "Reports": [
-            "admin-guide/reports/reports",
-            "admin-guide/reports/upload-metadata-csv",
-            "admin-guide/reports/report-details",
-            "admin-guide/reports/report-thumbnails",
-            "admin-guide/reports/reports-history",
+            "admin-guide/reports/platform-folder",
+            "admin-guide/reports/hub-folder",
             "admin-guide/reports/custom-url",
         ],
         "Audit": ["admin-guide/audit"],
-        "User Requests": ["admin-guide/request-access-reports-admin"],
+        "User Requests": ["admin-guide/user-requests"],
 
         "Settings": [
             "admin-guide/settings/settings",
@@ -161,6 +152,7 @@ module.exports = {
             "admin-guide/settings/report",
             "admin-guide/settings/theme",
             "admin-guide/settings/user-dashboard",
+            "admin-guide/settings/announcement",
             "admin-guide/settings/email-template",
         ],
 

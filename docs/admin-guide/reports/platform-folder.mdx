@@ -1,0 +1,151 @@
+---
+id: platform-folder
+title: Platform Folders
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+The reports are initially added by a Server admin from the backend into the BI Platform. The Server admin then manages groups/users and assigns report's access to them.
+
+### Add To Hub Folders
+
+You can classify the reports in 2 ways:
+
+1. Navigate to the listed Platform folders, and select **Add to Hub Folders**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Add to Hub Folders" src={useBaseUrl('doc-images/admin-guide/reports/add-platform-folders.png')}/>
+    </Zoom>
+    <p>Select and add reports to Hub Folders</p>
+  </div>
+
+1. Search for the reports across all the platforms, and select **Add to Hub Folders**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Search and add to Hub Folders" src={useBaseUrl('doc-images/admin-guide/reports/search-move-to-hub.png')}/>
+    </Zoom>
+    <p>Search and add reports to Hub Folders</p>
+  </div>
+
+From the list of already added Hub Folders, select the location you want to move the reports to.
+Select **Add Here**.
+
+### Upload Report's Metadata using `csv`
+
+In addition to classifying reports functionally, you can upload metadata of the reports in `.csv` format.
+The screenshot below, displays the list of metadata attributes:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Report's metadata attributes" src={useBaseUrl('doc-images/admin-guide/reports/metadata-csv.png')} width="900" />
+    </Zoom>
+    <p>Report's metadata attributes</p>
+  </div>
+
+  <div class="center">
+    <Zoom>
+      <img alt="Sample CSV File" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp6.png')}/>
+    </Zoom>
+    <p>Hub Folders column denotes the Hub Folders path in BI Hub</p>
+  </div>
+
+* To upload your report's metadata, select **Upload**.
+* Navigate to the `.csv` file and select **Open**.
+
+### Download Metadata
+
+You can download the metadata of a single report or multiple report(s).
+
+* Select the report(s) and select **Download**.
+
+This extracts all the attributes of the reports to a CSV file which can be updated by the administrator with the help of business owners and administrators of those BI platforms.
+
+:::note
+You can edit the Hub Folders location path of the reports by editing the "Hub Folder" column in the `.csv` file.
+
+If the folder is available in Hub Folders Tab, then the reports are moved into that folder. If the Hub Folder does not exist, a folder will be created in that name and the reports will be placed under that folder.
+:::
+
+### Sync Metadata
+
+You can also import metadata for the selected reports only from the BI Platform into BI Hub.
+To do so, select the reports and then select **Sync Metadata**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Metadata" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp8.png')}/>
+    </Zoom>
+    <p>Sync Metadata for the selected reports</p>
+  </div>
+
+### Report Details
+
+To view more details of any report, navigate to the report's path and select the details icon ( <img width="20" src={useBaseUrl('img/details-icon.png')} /> ) next to the report.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Report Details Pane" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp9.png')}/>
+    </Zoom>
+    <p>Report Details fetched from BI Platform</p>
+  </div>
+
+### Report Thumbnails
+
+Each report can be given a unique thumbnail to identify it easier. 
+Select the upload icon ( <img width="20" src={useBaseUrl('img/upload-icon.png')} /> ) next to the selected report.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Select & Upload Image" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp10.png')}/>
+    </Zoom>
+  </div>
+
+In the **Image** tab, you can **Upload Image** or **Delete Image**.
+
+The thumbnail uploaded by the admin above will get displayed for the respective report(s) when the user logs-in
+
+  <div class="center">
+    <Zoom>
+      <img alt="Reports Display in User Login" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rp12.png')}/>
+    </Zoom>
+    <p>Thumbnail view of the reports in the User mode</p>
+  </div>
+
+> If there is no thumbnail uploaded for a report, then a default image will be shown.
+
+### Custom Fields
+
+Custom fields are the user-defined fields created by admin to describe the reports.
+
+Navigate to the desired report and select the Details ( <img width="20" src={useBaseUrl('img/details-icon.png')} /> ) icon or the Edit ( <img width="20" src={useBaseUrl('img/edit.png')} /> ) icon.
+
+* Select **Custom Fields**.
+
+  <div class="center">
+    <Zoom>
+      <img width="400" alt="Custom Fields" src={useBaseUrl('doc-images/admin-guide/custom-fields.png')}/>
+    </Zoom>
+	<p>Custom Fields</p>
+  </div>
+
+* Enter the desired value for the custom fields(attributes) and select **Submit**.
+
+To indicate if the report is compatible with the mobile devices, set the **Mobile Enabled** attribute to **True**.
+
+### Report's History
+
+To view the edit history on a report, select the **History** tab in the Report's details page.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Reports History" src={useBaseUrl('doc-images/admin-guide/admin-functions/reports/rh1.png')}/>
+    </Zoom>
+    <p>Edit history of a report</p>
+  </div>
+
+Select **Submit** to save your changes.

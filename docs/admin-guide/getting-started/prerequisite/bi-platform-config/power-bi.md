@@ -22,9 +22,9 @@ Contact the Active Directory Administrator to perform the following steps as som
 :::
 
 There are 3 main steps to configure Power BI agent:
-- [Set up the Application in Azure](#set-up-the-application-in-azure)
-- [Create the Application Secret](#create-the-application-secret)
-- [Configure Permissions for the Application](#configure-permissions-for-the-application)
+1. [Set up the Application in Azure](#set-up-the-application-in-azure)
+1. [Create the Application Secret](#create-the-application-secret)
+1. [Configure Permissions for the Application](#configure-permissions-for-the-application)
 
 ### Set up the Application in Azure
  - Open the Azure portal > https://portal.azure.com
@@ -121,29 +121,98 @@ Copy the client secret value. You will not be able to retrieve if after you perf
  - Click **Add a permission**.
  - Map the permissions for the API's referring to the table below for **Microsoft Graph API , Windows Azure Active Directory API** and **Microsoft Power BI** API.
 
-| **API**                              | **Permissions**            | **Access Details**                         |
-| ------------------------------------ | -------------------------- | ------------------------------------------ |
-| **Microsoft Graph**                  | Profile                    | View Users Basic Profile                   |
-|                                      | Email                      | View Users Email Address                   |
-|                                      | Group.Read.All             | Read All Groups                            |
-|                                      | User.Read.All              | Read all users' full profile               |
-| **Microsoft Azure Active Directory** | Directory.Read.All         | Read Directory Data                        |
-|                                      | Group.Read.All             | Read All Groups                            |
-|                                      | User.Read.All              | Read All Users' full profiles              |
-|                                      | User.Read                  | Sign in and read user profile              |
-|                                      | Directory.AccessAsUser.All | Access the directory as the signed-in user |
-| **Power BI Service**                 | Dashboard.Read.All         | View All Dashboards                        |
-|                                      | Dataset.Read.All           | View all datasets                          |
-|                                      | Metadata.View_Any          | View Content Properties                    |
-|                                      | Report.Read.All            | View All Reports                           |
-|                                      | Group.Read.All             | View All Groups                            |
-|                                      | Group.Read                 | View User's Group                          |
-|                                      | App.Read.All               | View All PowerBI Apps                      |
-|                                      | Capacity.Read.All          | View all capacities                        |
-|                                      | Tenant.Read.All            | View All content in tenant                 |
-|                                      | Workspace.Read.All         | View all workspaces                        |
-
-<div class="center"><p>API Permissions</p></div>
+<div class="center">
+<table>
+    <thead>
+        <tr>
+            <th>API</th>
+            <th>Permissions</th>
+            <th>Access Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="4">Microsoft Graph</th>
+            <td>Profile</td>
+            <td>View Users Basic Profile</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>View Users Email Address</td>
+        </tr>
+        <tr>
+            <td>Group.Read.All</td>
+            <td>Read All Groups</td>
+        </tr>
+        <tr>
+            <td>User.Read.All</td>
+            <td>Read all users' full profile</td>
+        </tr>
+        <tr>
+            <th rowspan="5">Microsoft Azure Active Directory</th>
+            <td>Directory.Read.All</td>
+            <td>Read Directory Data</td>
+        </tr>
+        <tr>
+            <td>Group.Read.All</td>
+            <td>Read All Groups</td>
+        </tr>
+        <tr>            
+            <td>User.Read.All</td>
+            <td>Read All Users' full profiles</td>
+        </tr>
+        <tr>            
+            <td>User.Read</td>
+            <td>Sign in and read user profile</td>
+        </tr>
+        <tr>
+            <td>Directory.AccessAsUser.All</td>
+            <td>Access the directory as the signed-in user</td>
+        </tr>
+        <tr>
+            <th rowspan="10">Power BI Service</th>
+            <td>Dashboard.Read.All</td>
+            <td>View All Dashboards</td>
+        </tr>
+        <tr>
+            <td>Dataset.Read.All</td>
+            <td>View all datasets</td>
+        </tr>
+        <tr>
+            <td>Metadata.View_Any</td>
+            <td>View Content Properties</td>
+        </tr>
+        <tr>
+            <td>Report.Read.All</td>
+            <td>View All Reports</td>
+        </tr>
+        <tr>
+            <td>Group.Read.All</td>
+            <td>View All Groups</td>
+        </tr>
+        <tr>
+            <td>Group.Read</td>
+            <td>View User's Group</td>
+        </tr>
+        <tr>
+            <td>App.Read.All</td>
+            <td>View All PowerBI Apps</td>
+        </tr>
+        <tr>
+            <td>Capacity.Read.All</td>
+            <td>View all capacities</td>
+        </tr>
+        <tr>
+            <td>Tenant.Read.All</td>
+            <td>View All content in tenant</td>
+        </tr>
+        <tr>
+            <td>Workspace.Read.All</td>
+            <td>View all workspaces</td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
  - Click **Save** and then click **Grant Permissions** to delegate the permissions to the service account.
 
