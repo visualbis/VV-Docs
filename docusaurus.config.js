@@ -68,14 +68,13 @@ module.exports = {
     },
     footer: {
       style: "dark",
-
       copyright: `
     <div class="row">
       <div class="col" style="text-align:left">Copyright © ${new Date().getFullYear()} Visual BI Solutions.</div>
       <div class="col" style="text-align:right">
-        <a href="https://twitter.com/vbi_hub" target="_blank"><img src="img/twitter.svg" width="21px" height="16px"></a>
-        <a href="https://www.facebook.com/vbihub/" target="_blank" style="padding-left:10px"><img src="img/facebook.svg" width="18px" height="17px"></a>
-        <a href="https://www.linkedin.com/company/bi-hub/" target="_blank" style="padding-left:10px"><img src="img/linkedin.svg" width="18px" height="17px"></a>
+        <a href="https://twitter.com/vbi_hub" target="_blank"><img src="https://raw.githubusercontent.com/visualbis/VV-Docs/master/static/img/twitter.svg" width="21px" height="16px"></a>
+        <a href="https://www.facebook.com/vbihub/" target="_blank" style="padding-left:10px"><img src="https://raw.githubusercontent.com/divyabhushan/VV-Docs/master/static/img/facebook.svg" width="18px" height="17px"></a>
+        <a href="https://www.linkedin.com/company/bi-hub/" target="_blank" style="padding-left:10px"><img src="https://raw.githubusercontent.com/divyabhushan/VV-Docs/master/static/img/linkedin.svg" width="18px" height="17px"></a>
       </div>
     </div>
       `,
