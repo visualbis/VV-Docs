@@ -1,0 +1,163 @@
+---
+id: reports
+title: Introduction to BI Hub Reports
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+You can only view the reports from the BI platform that admin has given you the access to.
+
+These reports can be categorized based on different parameters in various sections such as: **Favorites, My Folders, Hub Folders**, and **BI Platform**.
+
+All the reports have some general attributes and some common actions that you can perform on the reports from any section.
+
+## Report's Display view
+
+You can change the display of reports to List or tiles view.
+
+* List view: Default list view.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Default list view" src={useBaseUrl('doc-images/user-guide/list-view.png')}/>
+    </Zoom>
+  </div>
+
+* Large tiles display the report's thumbnail along with other details.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Large Tiles View" src={useBaseUrl('doc-images/user-guide/cf14.png')}/>
+    </Zoom>
+  </div>
+
+* Small tiles display all the report's details except for the thumbnail.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Small Tiles View" src={useBaseUrl('doc-images/user-guide/cf15.png')}/>
+    </Zoom>
+  </div>
+
+## Report's Column Headers
+
+You can select the Column Headers to be displayed by selecting the Columns ( <img width="25" src={useBaseUrl('img/filter-cols.png')} /> ) icon at the top right corner.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Column Filter" src={useBaseUrl('doc-images/user-guide/cf31.png')}/>
+    </Zoom>
+  </div>
+
+The drop-down list includes a list of custom attributes.
+
+**Name** and **Actions** are the only default columns that cannot be hidden.
+
+1. **Name**: Name of the Report
+1. **Actions**: The actions that you can perform on the reports as mentioned in the below sections.
+
+Following are the report's fields displayed:
+
+1. **Views**: Number of times the report has been viewed by you and other users.
+1. **Instance Name**: Agent's instance name the report belongs to.
+1. **Folder Path**: BI Hub platform location where the report is stored.
+
+### Filter and Sort Reports
+
+* To display selected reports, use the filter ( <img width="25" src={useBaseUrl('img/filter.png')} /> ) icon next to the column(s).
+* To sort the reports in ascending/descending order click on the up/down arrow on the column name.
+* To re-arrange the column order, hold and drag the columns.
+
+## User Actions on the report
+
+### 1. View a report
+
+Click on the report and the report either opens within BI Hub, or in a separate tab in the browser ( if you have toggled the <Link to={useBaseUrl('docs/user-guide/settings')}>Open report in new tab</Link> option ON ).
+
+#### Multi-tab view
+
+You can open multiple reports at a time and switch between the tabs within BI Hub application.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Report Tab view in BI Hub Application" src={useBaseUrl('doc-images/user-guide/cf12.png')}/>
+    </Zoom>
+    <p>Report Tab view in BI Hub Application</p>
+  </div>
+
+#### Full screen view
+
+To view a report(s) in full screen view for presentation purpose, open the report then select the full screen ( <img src={useBaseUrl('/img/fullscreen.png')} /> ) icon.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Full Screen View" src={useBaseUrl('doc-images/user-guide/cf21.png')}/>
+    </Zoom>
+  </div>
+
+Press 'Esc' to exit the full screen mode.
+
+### 2. Favorite the report(s)
+
+Mark the report(s) as <Link to={useBaseUrl('docs/user-guide/favorites')}>favorite</Link> ( <img width="25" src={useBaseUrl('/img/favorites.png')} /> ).
+
+### 3.Commenting
+
+Comment ( <img width="25" src={useBaseUrl('/img/comments.png')} /> ) on a report for better collaboration.
+To mention another user in a comment select `@` followed by the username.
+The respective user will be notified by an email and in-app notification.
+
+You can create/edit/delete your comments on the report.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Public Comment" width="350" src={useBaseUrl('doc-images/user-guide/public.png')}/>
+    </Zoom>
+  </div>
+
+By default, the comments are public and shared with all.
+
+To make your comments private, check the **Private** box at the bottom of the comment section. 
+
+Enter your comments and select **COMMENT**.
+
+### 4. Report details
+
+You can only view the report's details ( <img width="25" src={useBaseUrl('/img/details-icon.png')} /> ) along with the custom and user-defined attributes on the report.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Report Details View" src={useBaseUrl('doc-images/user-guide/cf23.png')} width="380" />
+    </Zoom>
+  </div>
+
+You can also create your own tags to enhance the Search functionality.
+
+> You cannot edit the report's details here. You must be an admin and use the **Edit** option to do so.
+
+### 5. Open report in new tab
+
+To open a report in a separate browser tab, select the **Open report in new tab** ( <img width="25" src={useBaseUrl('/img/new-tab.png')} /> ) icon next to the report.
+
+### 6. Reload Report
+
+To refresh the report, open the report and select **Reload report** ( <img width="25" src={useBaseUrl('/img/reload.png')} /> ).
+
+### 7. Add to My Folders
+
+You can add any accessible report(s) to the folders created in the 'My Folders' section in two ways:
+
+1. Search and open any report, then select **Add to My Folders** ( <img width="25" src={useBaseUrl('/img/add-to.png')} /> ) icon.
+   * In the **Move Item(s)** pop-up window, select the directories listed and then select **Move Here**.
+1. Select a report(s)/folder(s) from any section **Dashboard/My Folders/Hub Folders/BI Platform/History**, and then select **Add to My Folders**.
+   * Next, select any of the 'My Folders' directory and then select **Add Here**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Add to My Folders" src={useBaseUrl('doc-images/user-guide/add-to-my-folder.png')} />
+    </Zoom>
+    <p>Select folders to add</p>
+  </div>

@@ -8,30 +8,26 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom"; 
 import "react-medium-image-zoom/dist/styles.css";
 
-The user can request access for the specific Report to the Admin from the Inaccessible page and the Admin will receive a Request Access Notification mail for the Report. Similarly the user will also receive the Access Notification mail from the Admin.
+This section explains how to request permission to view the Inaccessible reports.
 
-The following steps explains the Request Access flow:
-
-1. Login into BI Hub Screen as a User.
-1. Navigate to the Inaccessible Reports page by searching with the respective Report Folder Name. In our example, the user has selected **"Analysis"** Folder and the **"Mechanical Downtime Analysis"** Report has been selected for Access Request (see Figure below).
+Search for the report(s) and select the **Inaccessible** tab. Select the report(s) and then select **Request Access**.
 
   <div class="center">
     <Zoom>
-      <img alt="Reports selected for Request Access" src={useBaseUrl('doc-images/user-guide/rq1.png')}/>
+      <img alt="Request Access" src={useBaseUrl('doc-images/user-guide/rq1.png')}/>
     </Zoom>
+    <p>Request Access on the report(s)</p>
   </div>
 
- *Report selected for Request Access*
-
-1. Now click the Request Access as shown in the Figure above. You will be navigated to the Request Access Window and click "Yes" to request access for the "Mechanical Downtime Analysis" Report (see Figure below).
+You can chose to enter appropriate comments to the admin for request approval.
 
   <div class="center">
     <Zoom>
-      <img alt="Request Access Window" src={useBaseUrl('doc-images/user-guide/rq2.png')}/>
+      <img alt="Request Access Window" src={useBaseUrl('doc-images/user-guide/rq2.png')} width="350" />
     </Zoom>
   </div>
 
-  *Request Access Window*
+Once you raise the request, it triggers both a notification pop-up and an access request mail notification to admin.
+Once the admin approves/rejects your request, a similar access notification mail will be sent to you as well. A similar message also pops-up on your screen.
 
-2. The Access requested by the user will be triggered as mail message as well as notification pop up to the Admin User and the Access Notification will be sent as mail message as well as notification pop up to the requested user.
-
+You can also view a list of all the requests raised by you under <Link to={useBaseUrl('docs/user-guide/home-page/my-requests')}>My Requests</Link> section.

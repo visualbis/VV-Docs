@@ -1,0 +1,51 @@
+---
+id: my-folders
+title: My Folders
+sidebar_label: My Folders
+---
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+In the **My Folders** section, you can re-organize the reports in your own folders structure.
+
+This hierarchal folders/reports structure is private to your profile.
+
+  <div class="center">
+    <Zoom>
+      <img alt="My Folders" src={useBaseUrl('doc-images/user-guide/my-folders.png')}/>
+    </Zoom>
+  </div>
+
+## Add
+
+To create a folder/sub-folder structure, select **Add** from the top menu.
+
+* You can select **New Folder** or **New URL**.
+  * In the **ADD FOLDER** pop-up window, enter a folder name and then select **Add**.
+  * To create a URL referral, select a folder then select **Add URL**. In the navigational pane on the right, enter the custom URL details as explained in the <Link to={useBaseUrl('docs/user-guide/my-folders/custom-url')}>Custom URL</Link> section.
+* Select **Submit**.
+
+> To Add report(s) to any of the folders created here, you must search and add reports to the respective folders. Refer the <Link to={useBaseUrl('docs/user-guide/reports#7-add-to-my-folders')}>Add to My Folders</Link> section.
+
+## Move To
+
+To move the reports from once folder(sub) to another folder(sub), select the folder/report(s) and then select **Move To**.
+
+Select the folder and select **Move Here**.
+
+## Rename My Folders
+
+To rename a folder, select the folder name and then select **Rename**.
+
+Enter a new name and select **Save**.
+
+> You can only rename a folder but not a report name.
+
+## Delete a report/folder from My Folders
+
+To remove report(s)/folders from My Folders, navigate to the desired folder path and select the report(s)/folders.
+Select **Delete**.
+
+The selected report(s)/folders(s) will only be deleted from the **My Folders** section but still be present in the BI Platform.

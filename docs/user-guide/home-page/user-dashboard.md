@@ -9,38 +9,37 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom"; 
 import "react-medium-image-zoom/dist/styles.css";
 
-In addition to my dashboard, the admin created dashboards will also be seen in the home page as tabs. Also, if the specific user has the access for the reports in User Mode, then those reports will be live loaded. If the specific user do not have access for the reports in User Mode, then those reports will be loaded as thumbnail reports (see Figure below).
+The dashboards created and managed by BI Hub admin is available to the authorized users/groups.
+
+You can view the User Dashboards as tabs if admin has given access to you on these dashboards.
 
   <div class="center">
     <Zoom>
       <img alt="User Dashboard with Reports" src={useBaseUrl('doc-images/user-guide/userdb1_.png')}/>
     </Zoom>
+    <p>User Dashboards managed by admin</p>
   </div>
 
-If any report is being represented with lock icon, then it indicates that there is no access to the report and the report can be requested for access. By clicking the report with the lock icon, then the access can be requested for that report which follows the same functionality as explained in <Link to={useBaseUrl('docs/user-guide/home-page/request-access-inaccessible')}>Section: Request Access for Inaccessible Reports</Link>.
+* To re-order the User Dashboard preference, select the drag and order ( <img width="25" src={useBaseUrl('img/drag-drop.png')}/> ) icon.
+
+:::note
+Drag and order icon will not be functional if BI Hub admin has disabled the functionality.
+:::
+
+For the reports that you do not have an access to; you can click on the report and request an access from the Admin.
 
   <div class="center">
     <Zoom>
       <img alt="Reports with Lock icon" src={useBaseUrl('doc-images/user-guide/userdb2.png')}/>
     </Zoom>
+    <p>No access on the report</p>
   </div>
 
-*Reports wit Lock icon*
-
-Once the Reports have been requested for access, then the Reports will be displayed with the Text Message as "Request Pending" as shown in the below Figure.
+The reports that you have requested an access for will be displayed as "Request Pending".
 
   <div class="center">
     <Zoom>
       <img alt="Reports with Request Pending Message" src={useBaseUrl('doc-images/user-guide/userdb3.png')}/>
     </Zoom>
+    <p>Request pending for approval</p>
   </div>
-
-When the Admin disables the order preference option and enable my dashboard option in the <Link to={useBaseUrl('docs/admin-guide/admin-functions/settings/user-dashboard')}>Dashboard settings</Link>, then the user cannot set the order and can only view *My Dashboard* in the User Page (see Figure below).
-
-  <div class="center">
-    <Zoom>
-      <img alt="User Page with disabled status for order preference and my dashboard options" src={useBaseUrl('doc-images/user-guide/userdb4.png')}/>
-    </Zoom>
-  </div>
-
-*User Page with disabled status for order preference and my dashboard options*

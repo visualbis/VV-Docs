@@ -1,0 +1,57 @@
+---
+id: search-reports
+title: Search Reports
+---
+import useBaseUrl from "@docusaurus/useBaseUrl"; 
+import Link from '@docusaurus/Link'; 
+import Zoom from "react-medium-image-zoom"; 
+import "react-medium-image-zoom/dist/styles.css";
+
+You can search for all the reports across the BI Platform in the **Search** box located at the top of every section.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Search based on BI Platform Tags" src={useBaseUrl('doc-images/user-guide/cf2.png')}/>
+    </Zoom>
+  </div>
+
+The searching parameters that you use are: **Report Name, Report Description, Path, Hub Folders and User Tags**.
+
+The matching reports are fetched and displayed on the same page.
+
+
+  <div class="center">
+    <Zoom>
+      <img alt="Accessible Reports" src={useBaseUrl('doc-images/user-guide/cf4.png')}/>
+    </Zoom>
+    <p>Searched reports</p>
+  </div>
+
+The Reports are categorized as **Accessible** and **Inaccessible** with a count of the reports in the brackets.
+
+You can view the **Accessible** reports, and request access for the **Inaccessible** (accessible by other users) reports.
+
+## Advanced Search Reports
+
+Use the **Advanced search** feature for a more precise report search.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Advanced Search" src={useBaseUrl('doc-images/user-guide/avs1.png')}/>
+    </Zoom>
+  </div>
+
+You can search reports based on the following parameters:
+
+1. Report Name: Enter complete report's name or part of (regex) the report's name and select **Search**.
+1. Report Description: Search for a text description that appears within the report(s).
+1. Report Owner: Name of the report's owner.
+1. Platform: Reports based on platforms (Agents) configured in BI Hub.
+1. Report Tags: Search tagged reports. When you click in the **Report Tags** box, a list of all the tag keywords as set by admin are listed. You can select more than one tags as appropriate for your search.
+1. Custom Attribute: Reports based on default custom attribute as set by the admin.
+   Select **More** at the top-right corner to show/hide the attributes on the reports.
+1. User defined Custom Attribute: Attributes set on the report(s) other than the default ones.
+
+Based on your above search criteria appropriate search reports will be listed.
+
+To resume the default search criteria to show all the reports, select **Reset**.
