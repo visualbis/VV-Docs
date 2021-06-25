@@ -90,7 +90,7 @@ The chosen reports will be added to the dashboard.
     <p>Sales Dashboard Details Page</p>
   </div>
 
-* To delete a Dashobar, select the Delete ( <img width="20" src={useBaseUrl('img/delete.png')} /> ) icon to next to the Dashboard.
+* To delete a Dashboard, select the Delete ( <img width="20" src={useBaseUrl('img/delete.png')} /> ) icon to next to the Dashboard.
 
 :::note
 If you delete all the reports, an empty Dashboard will be created and will be set to unpublished by default.

@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 Admin can perform the following functions to integrate BI Hub with the various BI platforms:
 
 * Set up trusted Authentication(s) between BI Platform and BI Hub application.
-* Establish connectivity between BI Hub, directory service and BI platforms by creating Agents.
+* Establish connectivity between BI Hub, directory service, and BI platforms by creating Agents.
 * Synchronize and maintain BI Hub users and accessibility to reports.
 * Create and maintain metadata of the reports.
 * Configure settings for all BI Hub users.
@@ -20,7 +20,7 @@ Admin can perform the following functions to integrate BI Hub with the various B
 
 ## Maintenance of BI Hub
 
-Once the initial setup is complete, following are some of the on-going maintenance activities that you must perform:
+Once the initial setup is complete, here are some of the ongoing maintenance activities that you must perform:
 
 1. <Link to={useBaseUrl('docs/admin-guide/admin-functions/maintenance-bihub/add-new-user')}>Adding a new user to BI Hub</Link>: To add new users manually without synchronizing from Microsoft AD or other LDAP.
 2. <Link to={useBaseUrl('docs/admin-guide/admin-functions/maintenance-bihub/add-reports-existing-user')}>Add Reports to an existing User</Link>: To add reports to a user manually without performing bulk synchronization.

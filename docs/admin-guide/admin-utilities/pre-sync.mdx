@@ -1,0 +1,71 @@
+---
+id: pre-sync
+title: Presync Reports
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+Pre-Sync Reports utility is used by a Server Admin to trigger reports sync for selected agent(s)/instance(s).
+This utility helps in reducing the overhead transactions made to the Server and results in an increased performance.
+
+## Pre-requisite
+
+The agent must be configured and in running state.
+
+## Trigger Presync Reports
+
+* Navigate to the Server location: `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer\utilities`.
+* Click on "BI Hub Presync Operation.exe".
+* Select **File > Open in command prompt > Open command prompt as administrator**.
+
+  <div class="center">
+    <Zoom>
+        <img alt="Admin Utilities in the Server"
+        src={useBaseUrl('doc-images/admin-guide/admin-utilities/admin-utilities.png')}/>
+    </Zoom>
+    <p>Admin Utilities</p>
+  </div>
+
+* Enter the command: `BI Hub Presync Operation.exe`.
+
+  <div class="center">
+    <Zoom>
+        <img alt="Admin Utilities in the Server"
+        src={useBaseUrl('doc-images/admin-guide/admin-utilities/script-run-server.png')}/>
+    </Zoom>
+    <p>Admin Utilities</p>
+  </div>
+
+  * The application accepts 2 arguments:
+    * -a: Agent name for which the Pre-sync reports is triggered.
+    * -i: Instances configured for the agent.
+
+* Run the application as:
+  
+  ```xml
+    BI Hub Presync Operation.exe -a Cognos
+  ```
+
+  <div class="center">
+    <Zoom>
+        <img alt="PreSync Utility in the Server"
+        src={useBaseUrl('doc-images/admin-guide/admin-utilities/pre-sync-running.png')}/>
+    </Zoom>
+    <p>Pre-sync utility triggered</p>
+  </div>
+
+:::note
+Agent's name is case-sensitive and must be the exact name as configured in BI Hub application.
+:::
+
+You can view the status and summary of the sync process in the <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#4-synchronization-information')}>Home Page</Link>.
+The information will be listed as run by a 'bot' when triggered as a utility from the backend server.
+
+## Troubleshooting
+
+If the sync fails with a response code `400`, this indicates that the agent is down or inactive.
+
+Check the agent's status in Agent Manager and start the agent's instance.

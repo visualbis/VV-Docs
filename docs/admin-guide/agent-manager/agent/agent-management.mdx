@@ -74,7 +74,7 @@ An Admin can either synchronize users for a single Agent or multiple Agents.
     <p>Sync users from multiple Agents</p>
   </div>
 
-### Verify Synchronization
+### Verify Sync Users Info
 
 1. To view the the list of imported users from BI platforms into BI Hub, go to <Link to={useBaseUrl('docs/admin-guide/user-manager/user-manager-main')}>User Manager</Link> screen.
 You can filter the list with the Agent's name.
@@ -97,7 +97,7 @@ An Admin can also schedule an automatic users sync with the Agent Synchronizatio
 Admin uses the **Sync Reports** feature to sync all the reports with the BI Hub users.
 To manually add reports to users, follow the <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-reports-to-an-existing-user')}>Add reports to an existing user</Link> section.
 
-- Select single/multiple Agents whose user’s reports are to be imported (synchronized) into BI Hub and click **Sync Reports**.
+* Select single/multiple Agents whose user’s reports are to be imported (synchronized) into BI Hub and click **Sync Reports**.
 
   <div class="center">
     <Zoom>
@@ -115,15 +115,33 @@ To manually add reports to users, follow the <Link to={useBaseUrl('docs/admin-gu
 
 > This synchronization only brings in reports of users that are present in the application (obtained by AD/LDAP sync or sync users).
 
-### Verify Synchronization
+:::note
+Admin can also schedule to run **Sync Reports** automatically using the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-bi')}>Scheduled Synchronization with BI platforms</Link> section.
+:::
+
+### Presync Reports
+
+Admin can trigger reports pre synchronization for MSTR, Qlik View, and Cognos agents. By doing so just the reports which are accessible to the users already imported into BI Hub will be pre-synchronised.
+
+Select any or all of the 3 above listed agents and select **Presync Reports**.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Presync Reports" src={useBaseUrl('doc-images/admin-guide/agent/presync-reports.png')} />
+    </Zoom>
+   <p>Presync Reports</p>
+  </div>
+
+
+:::note
+To run/schedule the same utility from the server, refer the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/pre-sync')}>PreSync Reports</Link> section.
+:::
+
+### Verify Sync Reports Info
 
 To view the detailed summary of the sync, go to **Home > Synchronization Information** and select <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-reports')}>Sync Reports</Link>.
 
 The users can now login into BI Hub and view the reports they have access to.
-
-:::note
-Admin can also schedule to run **Sync Reports** automatically using the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-bi')}>Scheduled Synchronization with BI platforms</Link> section.
-:::
 
 ## Sync Failure Mail Notification
 
@@ -211,9 +229,8 @@ For security reasons, the password value is encrypted for the agents in the **Ed
 **Smart Search** is a feature by which the users can see a set of reports that are not accessible to them but accessible to other users and can request access for the reports.
 This can be configured at the agent level.
 
-- The **Smart Search** toggle in the **Instance Manager > Edit Instance** is enabled by default which
-allows all users to utilize the "Not Accessible" Reports.
-- An administrator can turn off this toggle for an agent and that will prevent all users of BI Hub from seeing a list of not accessible reports for that agent.
+* The **Smart Search** toggle in the **Instance Manager > Edit Instance** is enabled by default which allows all users to utilize the "Not Accessible" Reports.
+* An administrator can turn off this toggle for an agent and that will prevent all users of BI Hub from seeing a list of not accessible reports for that agent.
 
   <div class="center">
     <Zoom>
@@ -338,8 +355,7 @@ See the <Link to={useBaseUrl('docs/admin-guide/getting-started/homepage#sync-use
 
 ### Sync Instance Reports
 
-
-To sync the reports already accessible to the users from the selected instances(s). 
+To sync the reports already accessible to the users from the selected instances(s).
 
 * In the **Agent Manager** screen, select an instance.
 * In the **Instance Manage** screen, select **Sync Reports**.

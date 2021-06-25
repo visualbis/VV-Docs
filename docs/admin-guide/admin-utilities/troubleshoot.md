@@ -10,6 +10,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 If any of the synchronizations failed with the "red" status:
+
 - In the BI Hub app, click on the Sync information to fetch more details and download sync logs:
 
   <div class="center">

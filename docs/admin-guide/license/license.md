@@ -31,11 +31,11 @@ BI Hub in the license details. This can be done in two ways: Sync Online and Syn
 
 ## Sync Online
 
-Sync online is done when there is an internet connection in the server hosting the BI Hub Product. Once the admin is notified that the change has been done, they can click on the license details and click on sync online. The changes that were done will now be reflected in the license details table.
+Sync online is done when there is an internet connection in the server hosting the BI Hub Product. Once the admin is notified that the change has been done, they can click on the license details and select **sync online**. The changes that were done will now be reflected in the license details table.
 
 ## Sync Offline
 
-Sync offline is done when there is no internet connection in the server hosting the BI Hub Product. In such a case, once the admin is notified that the changes are done, they need to follow the below steps for the license details to be updated:
+Sync offline is done when there is no internet connection in the server hosting the BI Hub Product. In such a case, once the admin is notified that the changes are done, admin can follow the below steps for the license details to be updated:
 
 1. From the help icon select **License Details**.
 1. Select **SYNC OFFLINE**.
