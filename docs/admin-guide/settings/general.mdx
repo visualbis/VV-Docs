@@ -13,6 +13,13 @@ In the **General** page, an admin can configure general settings related to appl
 
 Following are the configurations available in the General page:
 
+  <div class="center">
+    <Zoom>
+      <img alt="Admin page's general settings" src={useBaseUrl('doc-images/admin-guide/settings/general-settings.png')}/>
+    </Zoom>
+    <p>General Settings on the admin's page</p>
+  </div>
+
 ## Navigation
 
 To customize the **Navigation Panel** for other users, the super Admin can:
@@ -21,37 +28,17 @@ To customize the **Navigation Panel** for other users, the super Admin can:
 - **Rename** the navigation labels by selecting the edit ( <img width="20" src={useBaseUrl('img/edit.png')}/> ) icon.
 - Enable/disable the navigation menus with the **ON/OFF** toggle.
 
-Let's consider the highlighted changes done by the Admin:
+Navigation menu for all users will appear in the order and with the names as set by an admin in this section.
 
-  <div class="center">
-    <Zoom>
-      <img alt="Admin customizes Navigation Panel" src={useBaseUrl('doc-images/admin-guide/navpanel-customized.png')}/>
-    </Zoom>
-    <p>Admin customizes the Navigation Panel</p>
-  </div>
+## User Specific - Report Sync
 
-The **Navigation** menu items change will reflect for all the other users as indicated in the screenshot:
-
-  <div class="center">
-    <Zoom>
-      <img alt="Navigation Panel for other users" src={useBaseUrl('doc-images/admin-guide/navpanel-users.png')}/>
-    </Zoom>
-    <p>Navigation Panel as seen by all other users</p>
-  </div>
-
-'Favorites' renamed as 'My Favorites', 'BI Platform', and 'History' menus disabled.
+You can now enable/disable the **Sync Reports** feature for the users in their BI Hub profile.
+To do so, use the **User Specific - Report Sync** toggle ON/OFF.
 
 ## Security - Password Strength Validator
 
 Admin can set the native user password strength validator under **Settings > General > Security** section.
 The values can be set to "Low/Medium/High" (Tooltip in the app provides the details of the security settings).
-
-  <div class="center">
-    <Zoom>
-      <img alt="Native user password validator" src={useBaseUrl('doc-images/admin-guide/settings/passwd-strength.png')}/>
-    </Zoom>
-    <p>Native user password validator</p>
-  </div>
 
 > Any new user created must adhere to the password validation rules to set the new password string.
 
@@ -59,14 +46,7 @@ The values can be set to "Low/Medium/High" (Tooltip in the app provides the deta
 
 By default the **Search** section allows users to search and request the reports they do not have access to.
 
-If you wish to hide listing the inaccessible reports, then you must turn OFF the **Show Inaccessible reports** toggle here.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Search - Show Inaccessible Reports" src={useBaseUrl('doc-images/admin-guide/settings/enable-inaccessible-reports.png')}/>
-    </Zoom>
-    <p><b>Show Inaccessible reports</b> enabled by default</p>
-  </div>
+To hide listing the inaccessible reports, turn OFF the **Show Inaccessible reports** toggle here.
 
 When the users search for the reports, the **Inaccessible** reports would be visible or hidden based on the selection made by the Admin.
 
@@ -80,37 +60,20 @@ When the users search for the reports, the **Inaccessible** reports would be vis
 ## Views
 
 By default, the **Show Agent Instance** is enabled for each report for all the users.
-Admin can choose to hide the agent instance by turning this toggle OFF.
-
-  <div class="center">
-    <Zoom>
-      <img alt="View - Show Agent Instance option" src={useBaseUrl('doc-images/admin-guide/settings/general-settings-views.png')}/>
-    </Zoom>
-    <p>Agent Instance display ON</p>
-  </div>
-
-When the **Show Agent Instance** is enabled, the *user* can view the Report with the **Instance Agent** details:
+To hide the agent instance, turn OFF this toggle.
 
   <div class="center">
     <Zoom>
       <img alt="Report with Instance Agent Display" src={useBaseUrl('doc-images/admin-guide/settings/view-instance-name.png')}/>
     </Zoom>
-    <p>Report with Instance Agent name</p>
+    <p>Report with Instance Agent name displayed</p>
   </div>
 
 ## Customization
 
-The Admin can allow users to **Launch Reports In New Tab** with the ON/OFF toggle:
+You allow users to **Launch Reports In New Tab** with the ON/OFF toggle.
 
-  <div class="center">
-    <Zoom>
-      <img alt="Customization – Launch Reports in New Tab" src={useBaseUrl('doc-images/admin-guide/settings/settings-customization.png')}/>
-    </Zoom>
-    <p>Customization – Launch Reports in New Tab</p>
-  </div>
-
-- When Admin enables this option, by default **Open Report in new tab** is enabled for the users when they login for the first time.
-
+- When you enable this option, by default **Open Report in new tab** is enabled for the users when they login for the first time.
 - The user can later choose to enable/disable this option from **Settings > Customization Settings** section.
 
 :::note
