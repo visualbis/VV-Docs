@@ -9,8 +9,10 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The application log contains events that happen in the application. 
+The application log contains events that happen in the application.
+
 There are three Logger Levels:
+
 1. **Info** : Represents all information messages that capture the events occurring during the usage of the application
 1. **Error** : Represents error events that occur during the application
 1. **Warning** : Represents warning messages
@@ -22,7 +24,7 @@ To change the logger level in the Server, go to the location `C:\Program Files\V
   <div class="center">
     <Zoom>
         <img alt="BI Hub Server Config Utility"
-        src={useBaseUrl('doc-images/admin-guide/server-info-level.png')}/>        
+        src={useBaseUrl('doc-images/admin-guide/server-info-level.png')}/>
     </Zoom>
     <p>BI Hub Server Config Utility</p>
   </div>
@@ -43,14 +45,14 @@ Here is a screenshot of the Server running logs with 'INFO' and 'ERROR' log type
   <div class="center">
     <Zoom>
         <img alt="Server Running Logs"
-        src={useBaseUrl('doc-images/admin-guide/server-logs.png')}/>        
+        src={useBaseUrl('doc-images/admin-guide/server-logs.png')}/>
     </Zoom>
     <p>Server Running Logs</p>
   </div>
 
 ## Agents Logs and Configuration
 
-To change the logger level for agents, go to the `<agent installation directory>`. 
+To change the logger level for agents, go to the `<agent installation directory>`.
 
 For example change location to `C:\Program Files\Visual BI Solutions\VBI View\TableauAgent` for Tableau agent, and edit the `manager.ini` file.
 
@@ -68,7 +70,7 @@ Restart the instances/ services for the log level changes to take place
   <div class="center">
     <Zoom>
         <img alt="Tableau Agent Logs"
-        src={useBaseUrl('doc-images/admin-guide/agent-log.png')}/>        
+        src={useBaseUrl('doc-images/admin-guide/agent-log.png')}/>
     </Zoom>
     <p>Tableau Agent Logs</p>
   </div>

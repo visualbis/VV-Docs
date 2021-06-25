@@ -1,7 +1,6 @@
 ---
 id: group-management
 title: Group Management
-hide_title: true
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -9,12 +8,12 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-## Manage User Groups
-
-BI Hub admin must create few Power Users who can perform some predefined activities of the Admin user.
+BI Hub admin must create few Power Users who can perform some predefined activities similar to the Admin user.
 To do so, Admin must first create a customized User Group and enable some admin permissions. Then add users to this User Group.
 
-In the **User Manager** screen, click on **Manage User Groups**.
+## Manage User Groups
+
+In the **User Manager** screen, select **Manage User Groups**.
 
   <div class="center">
     <Zoom>
@@ -42,7 +41,7 @@ Select the User Group and click **Manage Permissions**.
     </Zoom>
   </div>
 
-Enable the access for specific tasks in both Report Administration and System Administration sections.
+Enable the access for specific tasks in both **REPORT ADMINISTRATION** and **SYSTEM ADMINISTRATION** sections.
 
   <div class="center">
     <Zoom>
@@ -50,13 +49,24 @@ Enable the access for specific tasks in both Report Administration and System Ad
     </Zoom>
   </div>
 
-Also grant the Dashboard administration permissions:
+Assign the required **DASHBOARD ADMINISTRATION** permissions:
 
   <div class="center">
     <Zoom>
       <img alt="Manage Users Groups screen" src={useBaseUrl('doc-images/admin-guide/power-users/sys-dashboard-admin-permissions.png')}/>
     </Zoom>
+    <p>Dashboard admin settings</p>
   </div>
+
+* **Dashboard Admin**: As a Dashboard Admin, the Power User will have access rights similar to that of Admin for managing both the Dashboard Settings and Custom Dashboard (Refer <Link to={useBaseUrl('docs/admin-guide/settings/user-dashboard')}>Section: User Dashboard</Link>).
+* **Dashboard Manager**: The Power User can manage only the Dashboards created by all the Users and cannot configure the Dashboard settings.
+( Refer <Link to={useBaseUrl('docs/admin-guide/settings/user-dashboard#custom-dashboard')}>Custom Dashboard</Link> section ).
+* **Dashboard Creator**: As a Dashboard Creator, the Power User do not have the access rights for managing both the Dashboard Settings and Custom Dashboard. Instead, Power User can only create and manage Dashboard for the self profile.
+* **None**: No Dashboard Administration settings are visible.
+
+:::note
+Reports for which the Power User has access in the User Mode will be live loaded and the Reports for which the Power User has no access in the User Mode will be shown as default thumbnail reports.
+:::
 
 ### Add User ( Power Users ) to the Group
 
