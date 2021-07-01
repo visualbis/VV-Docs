@@ -13,6 +13,27 @@ import Link from '@docusaurus/Link';
         <th>Description</th>
     </tr>
     <tr>
+        <td id="date">2021-07-01</td>
+        <td>2.7.0</td>
+        <ul>
+            <li><b>New Features</b></li>
+            <ul>
+                <li>Introduced user specific Sync Reports for better optimization.</li>
+                <li>Session timeout setting is now dynamic using a parameter instead of hardcoded value.</li>
+            </ul>
+            <li><b>Enhancements</b></li>
+            <ul>
+                <li><Link to={useBaseUrl('docs/admin-guide/admin-utilities/pre-sync')}>Presync utility</Link> and <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#presync-reports')}>Presync feature</Link> implemented in the admin mode for MSTR, Qlik View, and Cognos agents.</li>
+                <li>Mobile App - SAML Implementation</li>
+            </ul>
+            <li><b>Bug Fixes</b></li>
+            <ul>
+                <li>In User Mode, the Sharepoint PDF reports now open accurately in PDF format in a new browser tab.</li>
+                <li>Issue during upgrade installer interruption fixed. If interrupted, the version now rolls back to the base build instead of deleting all the files.</li>
+            </ul>
+        </ul>
+    </tr>
+    <tr>
         <td id="date">2021-01-25</td>
         <td>2.6.0</td>
         <td>
@@ -136,5 +157,6 @@ Click <a href={useBaseUrl('docs/archived/v2.3.1')}>here <img width="20" src={use
 ## Known Issues
 
 1. Multiple mapping of users for the same agent when manual mapping is done to another user account which is not listed in the user manager.
-1. Tableau report shows a log-in screen in Iframe when it is opened in the Chrome Incognito which is inconsistent.
+1. Tableau report shows a log-in screen in Iframe when it is opened in the Chrome Incognito.
 1. One Drive/Sharepoint – When reports are opened for the first time, the login prompts inside the same tab rather than in the new tab.
+1. QlikView reports not loading in Iframe in Chrome and Chromium Edge.
