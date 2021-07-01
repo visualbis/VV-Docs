@@ -39,7 +39,6 @@ The first step involved in setting up BI Hub is creating agents and the instance
 
 > Server and Port number must be the same that was entered while installing the agents. ( Refer <Link to={useBaseUrl('docs/installation-guide/install-bihub-windows/agents/install')}>BI Hub Installation Guide - Port Requirements</Link> for your reference).
 
-
 * Click **Continue**.
 
 3. In the next **Add Agent** screen, fill in the instance details.
@@ -52,7 +51,7 @@ The first step involved in setting up BI Hub is creating agents and the instance
  </div>
 
  > Attributes will be accepted depending on the agent type being added.
- > For example: *BOBJ* agent instance attributes are different from the *Qlik* agent instance. 
+ > For example: *BOBJ* agent instance attributes are different from the *Qlik* agent instance.
   
  For easy maintenance, the *Port* number must be entered in the same series as that of the agent.
  > For example; If the agent is at *12100*, then the instances must be in *12101,12102,...* series.  
@@ -67,7 +66,8 @@ The Tool-tips provide necessary guidance and show screenshots of the BI platform
 
 * Click **Submit** to add the instance or click **Submit** & **Add New Instance** to add another instance of the same agent.
 
-* The **Status** column of the configured instance is displayed in the **Home** page of that agent. Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
+* The **Status** indicator against each agent represents the agent's health.
+  Following is the color-coding indicating the status of the *Agent* and *BI Platform*:
 
   * <a id="color-green"><b>Green</b></a> : active
   * <a id="color-red"><b>Red</b></a> : inactive - You must <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#start-the-instance')}>Start the Instance</Link>.
@@ -75,7 +75,7 @@ The Tool-tips provide necessary guidance and show screenshots of the BI platform
   * <a id="color-yellow"><b>Yellow</b></a>: <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/row-level-security')}>Authentication Pending</Link> applicable only for PowerBI and Onedrive agents.
   * In the **Actions** column, you can *Stop ( <img src={useBaseUrl('/img/stop.svg')} width="15"/> )/Restart ( <img src={useBaseUrl('/img/restart.svg')} width="15"/> )* the instance.
 
-After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents as shown below.
+After all the agent instances are successfully created, return to the *Agent Manager* screen to view the *status* and details of all agents.
 
 <div class="center">
       <Zoom>
@@ -95,4 +95,4 @@ You can sync users from the <Link to={useBaseUrl('docs/admin-guide/agent-manager
 
 * [ ] Agent Configuration with BI Platform
 
-Next, **Configure the BI Platform** and make trusted connection between respective *BI Hub Agent(s)* and its *BI Platform*.
+Next, **Configure the BI Platform** and make a trusted connection between respective *BI Hub Agent(s)* and its *BI Platform*.

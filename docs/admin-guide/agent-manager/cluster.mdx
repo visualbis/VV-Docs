@@ -24,8 +24,9 @@ Or in other words, you can only create clusters on one or more newly created ins
 ## Create a Cluster
 
 1. Configure the nginx conf file to include the instances to be clustered and the cluster port number.
- - Go to the Server location `C:\nginx-1.14.2\nginx-1.15.12\conf`, and open the `nginx.conf` file.
- - In the `http` section, enter the instances `<url>:<port number>` to be clustered.
+
+* Go to the Server location `C:\nginx-1.14.2\nginx-1.15.12\conf`, and open the `nginx.conf` file.
+* In the `http` section, enter the instances `<url>:<port number>` to be clustered.
 
  ```json title="nginx.conf" {3,4,7-9}
  http {
@@ -41,7 +42,7 @@ Or in other words, you can only create clusters on one or more newly created ins
  }
  ```
 
- - In the `server` section, give the port number for the Cluster in the same sequence as that of the Instance port number.
+* In the `server` section, give the port number for the Cluster in the same sequence as that of the Instance port number.
  This port number is used in the BI Hub "Add Cluster" form.
 
  ```json title="nginx.conf" {2,11}
@@ -95,7 +96,7 @@ C:\nginx-1.14.2\nginx-1.15.12>nginx -s reload
     <Zoom>
       <img alt="Enter Cluster details" src={useBaseUrl('doc-images/admin-guide/agent/create-cluster-form.png')}/>
     </Zoom>
-	<p>Enter Cluster details</p>
+  <p>Enter Cluster details</p>
   </div>
 
  - Click **Submit**.

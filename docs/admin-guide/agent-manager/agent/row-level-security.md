@@ -15,7 +15,7 @@ There is a 2-step authentication for these 2 agents that requires a sign-in vali
 
 ## Create Instance: Admin-level authentication
 
-Admin creates a new Power BI or Onedrive instance in the **Agent Manager > Instance Manager ** screen by clicking **Add Instance**.
+Admin creates a new Power BI or Onedrive instance in the **Agent Manager > Instance Manager** screen by clicking **Add Instance**.
 
   <div class="center">
     <Zoom>
@@ -39,7 +39,7 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
 
   <div class="center">
     <Zoom>
-      <img alt="Power BI Administrator Login" src={useBaseUrl('doc-images/admin-guide/admin-mode/rw3.jpg')}/>
+      <img alt="Power BI Administrator Login" width="400" src={useBaseUrl('doc-images/admin-guide/agent/ms-sign-in.jpg')}/>
     </Zoom>
   </div>
 
@@ -47,7 +47,7 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
 
   <div class="center">
     <Zoom>
-      <img alt="Successful User Authentication" src={useBaseUrl('doc-images/admin-guide/admin-mode/rw4.jpg')}/>
+      <img alt="Successful User Authentication" width="500" src={useBaseUrl('doc-images/admin-guide/admin-mode/rw4.png')}/>
     </Zoom>
   </div>
 
@@ -61,35 +61,6 @@ The initial **Status** of the instance will be "Yellow". This status indicates t
   </div>
 
 * Go to **Agent Manager**, select Power BI/Onedrive agents and click **Sync Users** and **Sync Reports**.
-
-## Access Reports: User-level authentication
-
-For a *User* to access the Power BI/Onedrive reports, the user has to log-in to the respective agent platform in either of the 2 ways:
-
-1. In the **BI Platform**, select the the Platform name, or
-1. Go to Profile **Settings > Authorize Agents** and select **Login**.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Powerbi agent Login Credentials" src={useBaseUrl('doc-images/admin-guide/agent/authorize-agents.png')}/>
-    </Zoom>
-  </div>
-
-In both cases, the credentials to be given in the pop-up window must be the same as the platform username mapped for the user.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Powerbi agent Login Credentials" src={useBaseUrl('doc-images/admin-guide/agent/ms-sign-in.jpg')}/>
-    </Zoom>
-    <p>Microsoft Sign-in screen</p>
-  </div>
-
-  <div class="center">
-    <Zoom>
-      <img alt="Powerbi agent Login Credentials" src={useBaseUrl('doc-images/admin-guide/admin-mode/rw4.jpg')}/>
-    </Zoom>
-    <p>Success credential verification screen</p>
-  </div>
 
 :::note
 If there is a mismatch in the platform user mapping and the user credentials, then the below authentication error will be shown:

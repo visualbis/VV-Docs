@@ -11,11 +11,11 @@ import "react-medium-image-zoom/dist/styles.css";
 
 1. Go to `C:\Program Files\Visual BI Solutions\VBI View\VBIViewServer\utilities`.
 1. Right-click on **BI Hub Change Admin Password.exe** and select **Run as administrator**.
-   
+
   <div class="center">
     <Zoom>
         <img alt="Admin change password utility"
-        src={useBaseUrl('doc-images/admin-guide/passwd/admin-passwd-utility.png')}/>        
+        src={useBaseUrl('doc-images/admin-guide/passwd/admin-passwd-utility.png')}/>
     </Zoom>
     <p>Admin change password utility</p>
   </div>

@@ -116,7 +116,7 @@ module.exports = {
 
         ],
         "Getting Started": [
-            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/initial-setup"            
+            "admin-guide/overview", "admin-guide/getting-started/homepage", "admin-guide/getting-started/profile-settings", "admin-guide/getting-started/notifications", "admin-guide/getting-started/initial-setup"            
         ],
         "Agent Manager": [
             "admin-guide/agent-manager/agent-manager-main",
@@ -133,7 +133,6 @@ module.exports = {
         "User Manager": ["admin-guide/user-manager/user-manager-main",
             "admin-guide/user-manager/user-management",
             "admin-guide/user-manager/group-management",
-            "admin-guide/user-manager/dashboard-admin",
         ],
         "Authentication": [
             "admin-guide/authenticate/manage-auth"
@@ -170,6 +169,7 @@ module.exports = {
             "admin-guide/admin-utilities/change-passwd",
             "admin-guide/admin-utilities/scheduled-sync-ad",
             "admin-guide/admin-utilities/scheduled-sync-bi",
+            "admin-guide/admin-utilities/pre-sync",
             "admin-guide/admin-utilities/troubleshoot",
         ],
 

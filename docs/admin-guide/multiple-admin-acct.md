@@ -24,7 +24,7 @@ A Super Admin, can add multiple Admins who can access BI Hub with full admin rig
 * Select **User Manager > Manage User Groups**.
 * Select **Admin** group.
 * Click **ADD**.
-* In the **Add user to group(s) pop-up window, search the list of user(s) from the drop-down list.
+* In the **Add user to group(s)** pop-up window, search the list of user(s) from the drop-down list.
 * Select **ADD**.
 
 The user(s) that you selected here will be added to the **Admin** group and will have administrative privileges.
