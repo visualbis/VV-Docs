@@ -45,16 +45,8 @@ Select **Submit**.
     <p>New URL created</p>
   </div>
 
-* To edit the details of a URL, select the URL and then select edit ( <img width="25" src={useBaseUrl('img/edit.png')} /> ) icon.
+* To edit the details of a URL, select the edit ( <img width="25" src={useBaseUrl('img/edit.png')} /> ) icon next to a URL.
 * To move the URL to another folder location, select the URL and then select **Move To**.
-* To delete a URL, select the URL and then select **Delete**.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Loading Page of the Custom URL in the Home Page of the User screen" src={useBaseUrl('doc-images/user-guide/le1.png')}/>
-    </Zoom>
-    <p>Loading Page of the Custom URL in the Home Page of the User screen</p>
-  </div>
 
 Here is a screenshot that displays the Custom URL "Visual BI" opens in a separate tab:
 
@@ -64,3 +56,5 @@ Here is a screenshot that displays the Custom URL "Visual BI" opens in a separat
     </Zoom>
     <p>URL opened in a separate Tab</p>
   </div>
+
+* To delete a URL, select the URL and then select **Delete**.

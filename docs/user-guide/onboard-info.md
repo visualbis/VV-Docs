@@ -26,7 +26,7 @@ On the log-in page, enter your user credentials and select your authentication t
 
 ## Change Password
 
-On successfully logging in for the first time, you will be asked to change your default password.
+On successfully logging in for the first time, native users will be asked to change the default password.
 
 <div class="center">
   <Zoom>
@@ -49,9 +49,13 @@ Next, you must enter your profile settings:
 
 Enter your **EMAIL**, and **DIVISION**. You may also **Upload Profile Picture** and select **CONTINUE**.
 
+* On the next screen, you may be asked to login to authorize the agents that are configured with 2-step authentication. You may login now or skip the step. You may authorize these agents later from the <Link to={useBaseUrl('docs/user-guide/settings#authorize-agents')}>Settings > Authorize Agents</Link> section.
+
 ## Onboarding Information
 
 When you log-in for the first time, the welcome message pops-up with the quick product tour videos.
+You may get started with the videos or skip tutorial.
+
 You can access the same Onboarding demo videos by selecting the Help( <img width="25" src={useBaseUrl('img/help.png')} /> ) icon and then select **Show Onboarding Tips**.
 
 <div class="center">

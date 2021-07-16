@@ -47,7 +47,7 @@ On this page, you have both your private (My Dashboard) and admin managed Dashbo
     <p>Reports displayed in large tile view</p>
   </div>
 
-* To open and view the complete report, click on the report. The report opens in a full-screen mode in BI Hub app.
+* To open and view the complete report, click on the report. The report opens in an Iframe in BI Hub app.
 
   <div class="center">
     <Zoom>
@@ -55,6 +55,4 @@ On this page, you have both your private (My Dashboard) and admin managed Dashbo
     </Zoom>
   </div>
 
-* To open a report in a new tab in the browser, enable the <Link to={useBaseUrl('docs/user-guide/settings')}>Open Report in new tab</Link> option.
-
-* To refresh the selected report, select the **Reload report** ( <img width="25" src={useBaseUrl('img/reload.png')} /> ) icon.
+> You can also open the report in a new tab in the browser, to do so toggle the **Open Report in new tab** button under Settings.

@@ -23,7 +23,7 @@ In Dashboard Settings, you have four different options as listed below:
     <p>User Dashboard Tab Settings</p>
   </div>
 
-1. **Embed Report in User Dashboard**: When enabled with the toggle "ON", will will load the reports live inside the thumbnail in tile view:
+1. **Embed Report in User Dashboard**: When enabled with the toggle "ON", will load the reports live inside the thumbnail in tile view:
 
   <div class="center">
     <Zoom>

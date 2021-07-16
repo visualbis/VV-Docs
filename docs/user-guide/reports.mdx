@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 You can only view the reports from the BI platform that admin has given you the access to.
 
-These reports can be categorized based on different parameters in various sections such as: **Favorites, My Folders, Hub Folders**, and **BI Platform**.
+These reports can be categorized based on different parameters in various sections such as: **Favorites, My Folders, Hub Folder, BI Platform**, and **History**.
 
 All the reports have some general attributes and some common actions that you can perform on the reports from any section.
 
@@ -18,7 +18,7 @@ All the reports have some general attributes and some common actions that you ca
 
 You can change the display of reports to List or tiles view.
 
-* List view: Default list view.
+* List view: Default view.
 
   <div class="center">
     <Zoom>
@@ -26,7 +26,7 @@ You can change the display of reports to List or tiles view.
     </Zoom>
   </div>
 
-* Large tiles display the report's thumbnail along with other details.
+* Large tiles display the report's thumbnail along with report's action items.
 
   <div class="center">
     <Zoom>
@@ -34,7 +34,7 @@ You can change the display of reports to List or tiles view.
     </Zoom>
   </div>
 
-* Small tiles display all the report's details except for the thumbnail.
+* Small tiles display all the report's action items except for the thumbnail.
 
   <div class="center">
     <Zoom>
@@ -59,17 +59,21 @@ The drop-down list includes a list of custom attributes.
 1. **Name**: Name of the Report
 1. **Actions**: The actions that you can perform on the reports as mentioned in the below sections.
 
-Following are the report's fields displayed:
+By default, the following report fields are displayed:
 
 1. **Views**: Number of times the report has been viewed by you and other users.
 1. **Instance Name**: Agent's instance name the report belongs to.
 1. **Folder Path**: BI Hub platform location where the report is stored.
+
+> To filter the column headers check/uncheck the highlighted drop-down menu.
 
 ### Filter and Sort Reports
 
 * To display selected reports, use the filter ( <img width="25" src={useBaseUrl('img/filter.png')} /> ) icon next to the column(s).
 * To sort the reports in ascending/descending order click on the up/down arrow on the column name.
 * To re-arrange the column order, hold and drag the columns.
+
+> You cannot reorder the **Name** column, this column is always the first column by default.
 
 ## User Actions on the report
 
@@ -120,13 +124,15 @@ You can create/edit/delete your comments on the report.
 
 By default, the comments are public and shared with all.
 
-To make your comments private, check the **Private** box at the bottom of the comment section. 
+To make your comments private, check the **Private** box at the bottom of the comment section.
+
+However, the private comments will be available and restricted to the user(s) who is mentioned by `@username`.
 
 Enter your comments and select **COMMENT**.
 
 ### 4. Report details
 
-You can only view the report's details ( <img width="25" src={useBaseUrl('/img/details-icon.png')} /> ) along with the custom and user-defined attributes on the report.
+You can only view the report's details ( <img width="25" src={useBaseUrl('/img/details-icon.png')} /> ) along with the custom attributes on the report.
 
   <div class="center">
     <Zoom>
@@ -144,16 +150,15 @@ To open a report in a separate browser tab, select the **Open report in new tab*
 
 ### 6. Reload Report
 
-To refresh the report, open the report and select **Reload report** ( <img width="25" src={useBaseUrl('/img/reload.png')} /> ).
+To refresh the report with live data, open the report and select **Reload report** ( <img width="25" src={useBaseUrl('/img/reload.png')} /> ).
 
 ### 7. Add to My Folders
 
 You can add any accessible report(s) to the folders created in the 'My Folders' section in two ways:
 
-1. Search and open any report, then select **Add to My Folders** ( <img width="25" src={useBaseUrl('/img/add-to.png')} /> ) icon.
-   * In the **Move Item(s)** pop-up window, select the directories listed and then select **Move Here**.
-1. Select a report(s)/folder(s) from any section **Dashboard/My Folders/Hub Folders/BI Platform/History**, and then select **Add to My Folders**.
-   * Next, select any of the 'My Folders' directory and then select **Add Here**.
+* Search and open any report, then select **Add to My Folders** ( <img width="25" src={useBaseUrl('/img/add-to.png')} /> ) icon.
+* Select report(s)/folder(s) from any section **Dashboard/My Folders/Hub Folders/BI Platform/History**, and then select **Add to My Folders**.
+* Next, you can either select any of the folder listed, or create a new directory (hierarchy) by selecting "New Folder" and entering a directory name.
 
   <div class="center">
     <Zoom>
@@ -161,3 +166,7 @@ You can add any accessible report(s) to the folders created in the 'My Folders' 
     </Zoom>
     <p>Select folders to add</p>
   </div>
+
+* Select **Add Here**.
+
+> These report's actions can be accessed from any of the sections.
