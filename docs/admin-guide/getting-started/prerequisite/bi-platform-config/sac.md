@@ -90,7 +90,7 @@ By default embedding SAC stories in iframes is not allowed. Thus, we have to cha
 
 <div class="center">
   <Zoom>
-<img alt="" src={useBaseUrl('/doc-images/sac/add-trusted-origin2.png')}/>
+<img alt="" src={useBaseUrl('/doc-images/sac/trusted-origin.png')}/>
   </Zoom>
 	<p>Trusted Origins</p>
 </div>
@@ -100,7 +100,7 @@ In the section **Trusted Origins**, specify the origins for which you want to al
 
 <div class="center">
   <Zoom>
-<img alt="" src={useBaseUrl('/doc-images/sac/add-trusted-origin3.png')}/>
+<img alt="" src={useBaseUrl('/doc-images/sac/add-trusted-origin.png')}/>
   </Zoom>
 	<p>SAC - Add a Trusted Origin</p>
 </div>
