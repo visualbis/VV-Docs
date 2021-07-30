@@ -99,7 +99,15 @@ module.exports = {
                             "admin-guide/getting-started/prerequisite/bi-platform-config/tableau",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/qliksense",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/file-bi",
-                            "admin-guide/getting-started/prerequisite/bi-platform-config/power-bi",
+                            {
+                                type: "category",
+                                label: "Power BI",
+                                items: [
+                                    "admin-guide/getting-started/prerequisite/bi-platform-config/power-bi",
+                                    "admin-guide/getting-started/prerequisite/bi-platform-config/power-bi-service",
+                                ],
+
+                            },
                             "admin-guide/getting-started/prerequisite/bi-platform-config/ssrs",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/spotfire",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/sac",
@@ -126,6 +134,7 @@ module.exports = {
                 items: [            
                     "admin-guide/agent-manager/agent/agent-management",
                     "admin-guide/agent-manager/agent/row-level-security",
+                    "admin-guide/agent-manager/agent/service-principal",
                         ],
             },
             "admin-guide/agent-manager/cluster",            
@@ -183,48 +192,35 @@ module.exports = {
         "Getting Started": [
             "user-guide/onboard-info",
         ],
-        "Home Page": [
+        "Home": [
 
-            "user-guide/home-page/home-page",
+            "user-guide/home-page/my-dashboard",
             "user-guide/home-page/user-dashboard",
-            "user-guide/home-page/search-function",
-            "user-guide/home-page/advanced-search",
+            "user-guide/home-page/search-reports",
             "user-guide/home-page/request-access-inaccessible",
-            "user-guide/home-page/request-access-reports",
-
+            "user-guide/home-page/my-requests",    
+            "user-guide/home-page/notifications",
 
         ],
-        "Profile Settings": [
-            "user-guide/profile-settings"
-        ],
-        "Comments": [
-            "user-guide/comments/comments",
-            "user-guide/comments/notifications"
+        "Reports": [
+            "user-guide/reports",
+            "user-guide/sync-reports",
         ],
         "Favorites": [
-            "user-guide/favorites/favorites"
+            "user-guide/favorites"
         ],
         "My Folders": [
             "user-guide/my-folders/my-folders",
-            "user-guide/my-folders/add-folder",
-            "user-guide/my-folders/move-to-folder",
-            "user-guide/my-folders/rename-folder",
-            "user-guide/my-folders/del-folder",
             "user-guide/my-folders/custom-url"
         ],
         "Hub Folders": [
-            "user-guide/hub-folder/hubfolders"
+            "user-guide/hubfolders"
         ],
         "BI Platform": [
             "user-guide/bi-platform/bi-platform",
-            "user-guide/bi-platform/tab",
-            "user-guide/bi-platform/report-view",
-            "user-guide/bi-platform/report-icon-actions",
-            "user-guide/bi-platform/col-headers",
-            "user-guide/bi-platform/col-filter",
         ],
         "History": [
-            "user-guide/history/history"
+            "user-guide/history"
         ],
         "Settings": [
             "user-guide/settings",

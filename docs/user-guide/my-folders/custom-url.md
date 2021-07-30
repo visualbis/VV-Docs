@@ -8,113 +8,53 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-Custom URL
-----------
+In addition to adding reports, you can also create a URL link to another resource.
 
-The Custom URL can be also created by the User in the "My Folders" page. To create the Custom URL, the User needs to create a New Folder by clicking the New Folder option under Add button as shown in the below Figure.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Create New Folder" src={useBaseUrl('doc-images/user-guide/cu1.png')}/>
-    </Zoom>
-  </div>
-
-*Create New Folder*
-
-After clicking the New Folder, you will be navigated to the Add Folder window. For our example, set the Folder Name as "Visual BI" and click "ADD" as shown below.
+To do so, in the **My Folders** section, navigate to a folder location and select **Add**.
+Then select **New URL**.
 
   <div class="center">
     <Zoom>
-      <img alt="Add Folder Window" src={useBaseUrl('doc-images/user-guide/cu2.png')}/>
+      <img alt="Add URL" src={useBaseUrl('doc-images/user-guide/add-url.png')}/>
     </Zoom>
   </div>
 
-*Add Folder Window*
-
-The Folder "Visual BI" will be created in the "My Folders" page as shown below.
+In **Add URL** pane, enter the required fields.
 
   <div class="center">
     <Zoom>
-      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/cu3.png')}/>
+      <img alt="Add URL Page" src={useBaseUrl('doc-images/user-guide/cu6.png')} width="300" />
     </Zoom>
   </div>
 
-*Visual BI Folder created in My Folders page*
+* In the **Details** tab, you can enter:
+  * Name: Name of the URL.
+  * URL: Complete URL path of the resource such as a report or website.
+  * Description: Precise description of the resource.
+  * Live Embed option: Enable the toggle to view a thumbnail of the loading page of the URL in **My Dashboard** section of the home page.
+  * Launch in New Tab: Select the option to launch the URL in a new browser tab.
+* In the **Image** tab, you can upload/delete the thumbnail image for the URL.
+* In the **Optional Fields** tab, enter the values for Report's attributes ( default and custom ).
 
-Now click the Folder Visual BI and you will be navigated to the Visual BI Folder page (see Figure below).
+Select **Submit**.
 
   <div class="center">
     <Zoom>
-      <img alt="Visual BI Folder" src={useBaseUrl('doc-images/user-guide/cu4.png')}/>
+      <img alt="URL Link created" src={useBaseUrl('doc-images/user-guide/cu7.png')}/>
     </Zoom>
+    <p>New URL created</p>
   </div>
 
+* To edit the details of a URL, select the edit ( <img width="25" src={useBaseUrl('img/edit.png')} /> ) icon next to a URL.
+* To move the URL to another folder location, select the URL and then select **Move To**.
 
-*Visual BI Folder*
-
-Now click the New URL option under Add button (see Figure below).
-
-  <div class="center">
-    <Zoom>
-      <img alt="New URL option" src={useBaseUrl('doc-images/user-guide/cu5.png')}/>
-    </Zoom>
-  </div>
-
-New URL option*
-
-Now you will be navigated to the Add URL page as shown below.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Add URL Page" src={useBaseUrl('doc-images/user-guide/cu6.png')}/>
-    </Zoom>
-  </div>
-
-*Add URL page*
-
-For our example, set the following details in the Add URL page (see Figure above).
-
-1. Name: Visual BI
-1. URL: `<https://visualbi.com>`
-1. Description: Visual BI website
-1. Live Embed option
-
-It is to be noted that when the "Live Embed" option is enabled for the Custom URL "Visual BI" in the Add URL page, then you will be able to view the loading page of the Custom URL "Visual BI" as a Thumbnail in the Home Page of the User screen while adding the Reports (see Figure below). If the "Live Embed" option is disabled, then you will be able to view the Custom URL "Visual BI" as customized image or Report Thumbnail based on the settings.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Loading Page of the Custom URL in the Home Page of the User screen" src={useBaseUrl('doc-images/user-guide/le1.png')}/>
-    </Zoom>
-  </div>
-
-*Loading Page of the Custom URL in the Home Page of the User screen*
-
-You can also add the details for Image and Optional Fields Tabs as the process follows the similar steps given for the other platforms. Now click Submit and the Custom URL "Visual BI" will be updated successfully in the Visual BI Folder under My Folders page (see Figure below).
-
-  <div class="center">
-    <Zoom>
-      <img alt="Delete Folder" src={useBaseUrl('doc-images/user-guide/cu7.png')}/>
-    </Zoom>
-  </div>
-
-*Custom URL in Visual BI Folder under My Folders page*
-
-The User can also edit the Custom URL by clicking the Edit icon as shown below.
-
-  <div class="center">
-    <Zoom>
-      <img alt="Edit Custom URL" src={useBaseUrl('doc-images/user-guide/cu7a.png')}/>
-    </Zoom>
-  </div>
-
-*Edit Custom URL*
-
-Now click the Custom URL "Visual BI" and the URL will be opened in a separate Tab as shown below.
+Here is a screenshot that displays the Custom URL "Visual BI" opens in a separate tab:
 
   <div class="center">
     <Zoom>
       <img alt="URL opened in a separate Tab" src={useBaseUrl('doc-images/user-guide/cu8.png')}/>
     </Zoom>
+    <p>URL opened in a separate Tab</p>
   </div>
 
-*URL opened in a separate Tab*
+* To delete a URL, select the URL and then select **Delete**.

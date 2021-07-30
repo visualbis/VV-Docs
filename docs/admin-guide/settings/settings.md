@@ -6,12 +6,14 @@ sidebar_label: Settings
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 The **Settings** section allows an admin to configure BI Hub for all users.
 
   <div class="center">
     <Zoom>
-      <img alt="BI Hub settings" src={useBaseUrl('doc-images/admin-guide/settings/settings.png')}/>
+      <img alt="BI Hub settings" src={useBaseUrl('doc-images/admin-guide/settings/settings-general.png')}/>
     </Zoom>
     <p>BI Hub settings</p>
   </div>

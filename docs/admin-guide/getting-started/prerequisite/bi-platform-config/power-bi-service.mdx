@@ -1,0 +1,151 @@
+---
+id: power-bi-service
+title: Power BI Service Principal Configuration
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<!--
+Power BI Service Principal is an authentication method used to let BI Hub access Power BI agent content and APIs.
+-->
+
+This Service Principal is used to provide administration authentication for Power BI agent without admin oauth credentials.
+
+System Admin must configure this Service in the platform. Once configured, the bihubadmin adds the service principal in the bi hub application (Refer the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/service-principal')}>Service Principal Authentication</Link> section).
+
+Configuring service principal involves the following steps:
+
+1. Set up the application in Azure
+1. Create the application secret
+1. Add application to a security group
+1. Enable service principal authentication in Power BI
+1. Configure Permissions for the Application
+
+## Step 1: Set up the Application in Azure
+
+* Open the Azure portal > https://portal.azure.com
+* Go to **Azure Active Directory > App registrations > New registration**.
+
+  <div class="center">
+  <Zoom>
+    <img alt="Azure Application Registration" src={useBaseUrl('/doc-images/powerbi/azure-new-registration.png')}/>
+  </Zoom>
+ 	<p>Azure new application registration</p>
+  </ div>
+
+* Enter the following field values for the application:
+  * **Name**: The display name for service principal.
+  * **Supported account types** as **Accounts in this organizational directory only (Default Directory only - Single tenant)**.
+  * **Redirect URI** of the application. The port number that you enter here must be the same as the backend port for Power BI agent.
+  
+  <div class="center">
+  <Zoom>
+    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/register-service-app.png')}/>
+  </Zoom>
+ 	<p>Application Registration</p>
+  </div>
+
+* Select **Register**.
+
+  <div class="center">
+  <Zoom>
+    <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/service-registered.png')}/>
+  </Zoom>
+ 	<p>Application Registration</p>
+  </div>
+
+> Make a note of the **Application (client) ID, Object ID**, and **Directory (tenant) ID**.
+
+## Step 2: Create the Application Secret
+
+* Go to **Azure Portal > Azure Active Directory > App registrations**.
+* Select **BI Hub - Service Principal**.
+* From the left navigational panel, select **Certificates & secrets**.
+
+  <div class="center">
+  <Zoom>
+    <img alt="Client secret" src={useBaseUrl('/doc-images/powerbi/client-secret.png')}/>
+  </Zoom>
+ 	<p>Generate Client Secret</p>
+  </div>
+
+* Select **New client secret**.
+* Specify a **Description** and **Expiry** duration for client secret and select **Add**.
+* The Client secret is generated with a **Value** and a **Secret ID**.
+
+  <div class="center">
+  <Zoom>
+    <img alt="User Client secret" src={useBaseUrl('/doc-images/powerbi/service-principal-clientsecret.png')}/>
+  </Zoom>
+ 	<p>User Client Secret added</p>
+  </div>
+
+:::important
+Save the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
+:::
+
+## Step 3: Add Application to a Security Group
+
+* In the [Azure AD admin center](https://aad.portal.azure.com/), select **Azure Active Directory**.
+* Select **Groups**.
+* To create a new security group, select **New group**. (Kindly ignore if you wish to use the existing security group).
+  * Add the service principal application that you created inside the security group obtained in the above step.
+* Select **Create**.
+
+## Step 4: Enable service principal authentication in Power BI
+
+Administer the Power BI portal to configure the tenant settings for your application.
+
+Tenant settings are used to restrict capabilities and features to a limited set of users/groups.
+
+* Sign in to [Power BI](https://app.powerbi.com/) using your admin account credentials.
+* From the page header, select **... > Settings > Admin portal**.
+* Select **Tenant Settings**.
+  <div class="center">
+  <Zoom>
+    <img alt="Power BI Admin portal Menu" src={useBaseUrl('/doc-images/powerbi/powerbi-admin-portal.png')}/>
+  </Zoom>
+ 	<p>Power BI Admin portal Menu</p>
+  </div>
+* Under **Developer settings**, toggle on **Enabled** for **Allow service principals to use Power BI APIs** option.
+* Under **Apply to** section, select **Specific security groups**.
+  * Add the security group where your Power BI Service Principal application is added. ( group of which principal is a member of)
+* Under **Admin API settings**, toggle on **Enabled** for **Allow service principals to use read-only Power BI admin APIs (Preview)**.
+  <div class="center">
+  <Zoom>
+    <img alt="Power BI Admin portal Menu" src={useBaseUrl('/doc-images/powerbi/admin-api-settings.png')}/>
+  </Zoom>
+ 	<p>Power BI Admin portal Menu</p>
+  </div>
+* In the **Apply to** section, select **Specific security groups** and add the group where the application is a member of.
+
+## Step 5: Configure Permissions for the Application
+
+The application requires some permission level actions on behalf of the user.
+
+* Go to **[Azure portal](https://portal.azure.com) > Azure Active Directory > App registrations**.
+* Click on your application and select **API permissions**.
+* Click **Add a permission**.
+* Map the permissions for service principal to work in BI Hub.
+  <div class="center">
+  <Zoom>
+    <img width="550" alt="Microsoft Graph API permissions" src={useBaseUrl('/doc-images/powerbi/microsoft-graph.png')}/>
+  </Zoom>
+ 	<p>Microsoft Graph API permissions</p>
+  </div>
+
+  <div class="center">
+  <Zoom>
+    <img width="550" alt="Power BI service API permissions" src={useBaseUrl('/doc-images/powerbi/powerbi-service.png')}/>
+  </Zoom>
+ 	<p>Power BI service API permissions</p>
+  </div>
+
+:::note
+Do not give Tenant.Read.All and Tenant.ReadWrite.All permissions under Power BI Service permissions. That will prevent reports coming into BIHUB.
+:::
+
+Your Power BI Service Principal can now access Azure AD tenant resources.
