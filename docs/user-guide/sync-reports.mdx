@@ -1,0 +1,57 @@
+---
+id: sync-reports
+title: Sync Reports
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+As a BI Hub user you can trigger sync reports from your user profile.
+This sync reports operation initiates a sync for only the reports that are mapped for your user profile in the BI Platform.
+
+:::note
+If **Sync Reports** button is not visible in your navigation panel, kindly contact your BI Hub admin to enable this option.
+:::
+
+Select **Sync Reports** from the bottom of the Navigation Panel.
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Settings Page" height="600" src={useBaseUrl('doc-images/user-guide/reports/nav-panel-sync-reports.png')}/>
+    </Zoom>
+    <p>User Settings Page</p>
+  </div>
+
+Once the sync is completed, a pop-up notification indicates the status of the sync.
+
+You can also view sync details by selecting Notifications ( <img width="25" src={useBaseUrl('img/bell.png')} /> ) icon at the top right-corner of your screen.
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Notifications" src={useBaseUrl('doc-images/user-guide/reports/sync-reports.png')}/>
+    </Zoom>
+    <p>Sync reports notification</p>
+  </div>
+
+Select a completed sync.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Sync Summary" src={useBaseUrl('doc-images/user-guide/reports/user-sync-report-summary.png')}/>
+    </Zoom>
+    <p>Sync reports summary with added/revoked reports</p>
+  </div>
+
+The **Sync Summary** pop-up window displays a list of granted and revoked reports.
+
+> Only the users mapped to your username will be synched from the BI Platform into the BI Hub application.
+
+:::important
+The number of user sync reports process that can run concurrently depends on the value (x) set by the admin.
+
+If the maximum number of allowed user sync reports is exceeded, the next sync request will be in queue.
+
+As the initial sync reports are completed, the next queued requests will be taken in ( x reports buffered at a time ) and completed.
+:::
