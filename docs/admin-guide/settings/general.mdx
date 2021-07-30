@@ -9,13 +9,11 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-In the **General** page, an admin can configure general settings related to application navigation, security, reports, and agents.
-
-Following are the configurations available in the General page:
+In **General** page, you can configure general settings for the application such as navigation panel, password security, user specific sync reports, and customizations.
 
   <div class="center">
     <Zoom>
-      <img alt="Admin page's general settings" src={useBaseUrl('doc-images/admin-guide/settings/general-settings.png')}/>
+      <img alt="Admin page's general settings" src={useBaseUrl('doc-images/admin-guide/settings/settings-general-tab.png')}/>
     </Zoom>
     <p>General Settings on the admin's page</p>
   </div>
@@ -30,11 +28,6 @@ To customize the **Navigation Panel** for other users, the super Admin can:
 
 Navigation menu for all users will appear in the order and with the names as set by an admin in this section.
 
-## User Specific - Report Sync
-
-You can now enable/disable the **Sync Reports** feature for the users in their BI Hub profile.
-To do so, use the **User Specific - Report Sync** toggle ON/OFF.
-
 ## Security - Password Strength Validator
 
 Admin can set the native user password strength validator under **Settings > General > Security** section.
@@ -42,13 +35,33 @@ The values can be set to "Low/Medium/High" (Tooltip in the app provides the deta
 
 > Any new user created must adhere to the password validation rules to set the new password string.
 
+## User Specific-Report Sync
+
+To enable/disable the **Sync Reports** feature for the users in their BI Hub profile, toggle ON/OFF the following permissions:
+
+<div>
+
+| Permission            | Description                                                                              | Prerequisite                       |
+|-----------------------|------------------------------------------------------------------------------------------|------------------------------------|
+| **Sync Reports**      | Enable user specific report synchronization in the user mode                             |                                    |
+| **Auto Sync Reports** | Enable user specific report auto synchronization in the user mode                        | `Sync Reports`                     |
+| **Refresh Time**      | Number of days after which automatic synchronization to be triggered (default value = 7) | `Sync Reports > Auto Sync Reports` |
+
+<div class="center"><p>Sync reports Permissions and dependencies</p></div>
+</div>
+
+:::note
+An upgrade from BI Hub version 2.7.0 to 2.7.1 requires you to refresh (turn OFF and then back ON) the **Sync Reports** toggle.
+This is needed for the Elasticsearch index to be rebuilt.
+:::
+
 ## Search
 
 By default the **Search** section allows users to search and request the reports they do not have access to.
 
 To hide listing the inaccessible reports, turn OFF the **Show Inaccessible reports** toggle here.
 
-When the users search for the reports, the **Inaccessible** reports would be visible or hidden based on the selection made by the Admin.
+When users search for the reports, the **Inaccessible** reports would be visible or hidden based on the selection made by the Admin.
 
   <div class="center">
     <Zoom>
@@ -71,7 +84,14 @@ To hide the agent instance, turn OFF this toggle.
 
 ## Customization
 
-You allow users to **Launch Reports In New Tab** with the ON/OFF toggle.
+You allow users to open all report/URl in a new browser tab, toggle ON the **Launch Reports In New Tab** option.
+
+  <div class="center">
+    <Zoom>
+      <img alt="Launch Reports In New Tab" src={useBaseUrl('doc-images/admin-guide/settings/launch-reports-new-tab.png')}/>
+    </Zoom>
+    <p>Launch Reports In New Tab</p>
+  </div>
 
 - When you enable this option, by default **Open Report in new tab** is enabled for the users when they login for the first time.
 - The user can later choose to enable/disable this option from **Settings > Customization Settings** section.

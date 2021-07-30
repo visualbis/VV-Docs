@@ -1,7 +1,6 @@
 ---
-id: power-bi 
-sidebar_label: POWER BI 
-title: Power BI Platform Configuration
+id: power-bi
+title: Power BI Admin Authentication Configuration
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -21,21 +20,24 @@ This guideline assumes that the user has a tenant in Azure. If the tenant is not
 Contact the Active Directory Administrator to perform the following steps as some of the actions will require administrator consent.
 :::
 
+Power BI agent requires oauth authentication for both admin and users.
+
 There are 3 main steps to configure Power BI agent:
 1. [Set up the Application in Azure](#set-up-the-application-in-azure)
 1. [Create the Application Secret](#create-the-application-secret)
 1. [Configure Permissions for the Application](#configure-permissions-for-the-application)
 
 ### Set up the Application in Azure
- - Open the Azure portal > https://portal.azure.com
- - Go to **Azure Active Directory > App registrations > New registration**.
+
+* Open the Azure portal > https://portal.azure.com
+* Go to **Azure Active Directory > App registrations > New registration**.
 
   <div class="center">
   <Zoom>
     <img alt="Azure Application Registration" src={useBaseUrl('/doc-images/powerbi/azure-new-registration.png')}/>
   </Zoom>
  	<p>Azure new application registration</p>
-  </ div>
+  </div>
 
 * Set **Name, Supported account types**, and **Redirect URI** of the application:
   
@@ -44,7 +46,7 @@ There are 3 main steps to configure Power BI agent:
     <img alt="Application Registration" src={useBaseUrl('/doc-images/powerbi/register_app.png')}/>
   </Zoom>
  	<p>Application Registration</p>
-  </ div>
+  </div>
 
 :::note
 The type should be Native and the Redirect URI must be formatted as `https://servername:port/Redirect` 
@@ -81,8 +83,8 @@ The type should be Native and the Redirect URI must be formatted as `https://ser
 </div>
 
 ### Create the Application Secret
-   
- - Go to **Azure portal > azure active directory > App registrations** and click on your application.
+
+ - Go to **Azure Portal > Azure Active Directory > App registrations** and click on your application.
  - Navigate to **Certificates & Secrets** and click on **New Client secret** to add a new key.
  <div class="center">
   <Zoom>
@@ -224,5 +226,6 @@ Copy the client secret value. You will not be able to retrieve if after you perf
 </div>
 
 The permissions must be given to the BI Hub Power BI Agent service account:
+
 - Office 365 Global Administrator
 - Power BI Service Administrator

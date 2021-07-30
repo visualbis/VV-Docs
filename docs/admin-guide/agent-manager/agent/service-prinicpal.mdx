@@ -1,0 +1,50 @@
+---
+id: service-principal
+title: Power BI Service Principal Authentication
+sidebar_title: Service Principal Authentication
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+Power BI agent uses a security identity called Power BI service principal. This service principal allows bihub app to access power BI specific azure resources.
+
+As a bihubadmin, you must also add an instance for service principal along with Power BI agent instance.
+
+## Pre-requisite
+
+* Power BI Service principal application setup and configured in Azure. [ Refer <Link to={useBaseUrl('docs/admin-guide/getting-started/prerequisite/bi-platform-config/power-bi-service')}>Service Principal configuration</Link> section ].
+* **Directory (Tenant) ID**: Obtained while registering the application in Azure Active Directory.
+* **Application (Client) ID**: The ClientID of the application that is registered in Azure Active Directory.
+* **Client Secret**: The ClientSecret for the application registered in Azure Active Directory.
+
+## Add a Service Principal instance in BI hub
+
+* From the left navigation menu, select **Agent Manager > Power BI**.
+* In the **Instance Manager** screen, select **Add Instance**.
+* Fill in the field values in the **Add Instance** editor.
+  <div class="center">
+    <Zoom>
+      <img alt="Service Principal" src={useBaseUrl('doc-images/admin-guide/agent/service-principal-instance.png')}/>
+    </Zoom>
+    <p>Power BI Service Principal</p>
+  </div>
+
+In the field - **Power BI Authentication Type**, select **Service Principal**.
+
+For **PowerBI Admin Authentication** agent instance select the **Power BI Authentication Type** as **Admin Authentication**:
+
+  <div class="center">
+    <Zoom>
+      <img alt="Power BI Admin Authentication" src={useBaseUrl('doc-images/admin-guide/agent/powerbi-admin-auth.png')}/>
+    </Zoom>
+    <p>Power BI Admin Authentication</p>
+  </div>
+
+> The value of **Power BI Authentication Type** field entered at the time of creation, cannot be edited later.
+
+:::note
+Service principal requires no admin oauth credentials login.
+:::

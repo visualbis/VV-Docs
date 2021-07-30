@@ -99,7 +99,15 @@ module.exports = {
                             "admin-guide/getting-started/prerequisite/bi-platform-config/tableau",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/qliksense",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/file-bi",
-                            "admin-guide/getting-started/prerequisite/bi-platform-config/power-bi",
+                            {
+                                type: "category",
+                                label: "Power BI",
+                                items: [
+                                    "admin-guide/getting-started/prerequisite/bi-platform-config/power-bi",
+                                    "admin-guide/getting-started/prerequisite/bi-platform-config/power-bi-service",
+                                ],
+
+                            },
                             "admin-guide/getting-started/prerequisite/bi-platform-config/ssrs",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/spotfire",
                             "admin-guide/getting-started/prerequisite/bi-platform-config/sac",
@@ -126,6 +134,7 @@ module.exports = {
                 items: [            
                     "admin-guide/agent-manager/agent/agent-management",
                     "admin-guide/agent-manager/agent/row-level-security",
+                    "admin-guide/agent-manager/agent/service-principal",
                         ],
             },
             "admin-guide/agent-manager/cluster",            
