@@ -23,7 +23,7 @@ Generate and download the Trusted Secret Key for BOBJ authentication with the fo
   </Zoom>
  </div>
 
- - Next scroll down to the **Trusted Authentication** segment and enable the checkbox **Trusted Authentication is enabled**.
+ - Next, scroll down to the **Trusted Authentication** segment and enable the checkbox **Trusted Authentication is enabled**.
 
  <div class="center">
   <Zoom>

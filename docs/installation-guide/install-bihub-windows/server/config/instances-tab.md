@@ -28,7 +28,7 @@ When you provide multiple instances, you need to load balance the instances on y
 * Click the **Add instance** button in the top right corner to add a new instance. In the pop-up window, enter an *instance* name and the *Port* number at which the instance will run.
 
 :::note
-Every newly added instance has to be started and must be in the running state.
+Every newly added instance has to be started and must be in running state.
 :::
 
 * To start the instances press the play button ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/start.svg')} width="15"/></Zoom> ) for that instance.
@@ -36,7 +36,7 @@ Every newly added instance has to be started and must be in the running state.
 * To stop the already started instances, press the stop button ( <Zoom><img alt="Stop" src={useBaseUrl('doc-images/installation-guide/stop.svg')} width="15"/></Zoom> ) for that instance.
 
 :::note
-Deleting any instance will not delete data, but just the snapshot of it. The data is safely backed up on the database that you configured.
+Deleting any instance will not delete data, but just a snapshot of it. The data is safely backed up on the database that you configured.
 :::
 
 * To delete an instance press trash icon ( <Zoom><img alt="Play" src={useBaseUrl('doc-images/installation-guide/delete.svg')} width="15"/></Zoom> ) for that instance.

@@ -13,7 +13,7 @@ To ensure high availability or perform load balancing when a large number of con
 platform.
 
 For example, two *Tableau* agents are created to form a cluster and these two agents point to the same Tableau platform. If one agent fails, the load will be taken by another instance, thus ensuring high availability.
-Similarly, if a large number of BI Hub concurrent users launch Tableau reports, these two agents perform load balancing. Tying up the two agents to form an agent cluster is accomplished using the BI Hub cluster manager. This BI Hub agent cluster interacts with the cluster/load balancer already setup in the enterprise to handle load balancing/high availability. In fact, the details entered during BI Hub cluster setup such as URL, Port etc., is based on the configuration of
+Similarly, if a large number of BI Hub concurrent users launch Tableau reports, these two agents perform load balancing. Tying up the two agents to form an agent cluster is accomplished using the BI Hub cluster manager. This BI Hub agent cluster interacts with the cluster/load balancer already set up in the enterprise to handle load balancing/high availability. The details entered during BI Hub cluster set up such as URL, Port, etc., is based on the configuration of
 the Load Balancer used in the enterprise.
 
 :::warning

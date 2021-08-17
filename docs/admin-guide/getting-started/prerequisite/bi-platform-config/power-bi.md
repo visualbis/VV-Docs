@@ -10,17 +10,17 @@ import "react-medium-image-zoom/dist/styles.css";
 
 To configure Power BI, We need to set the application in Azure Active Directory.
 
-This application will be the communication point for the PowerBIAgent. All calls to the Microsoft API's will be made on behalf of this application.
+This application will be the communication point for the PowerBIAgent. All calls to the Microsoft APIs will be made on behalf of this application.
 
 :::note
-This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer [How to set up an Azure tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant) for steps to acquire a tenant.
+This guideline assumes that the user has a tenant in Azure. If the tenant is not present, please refer to [How to set up an Azure tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant) for steps to acquire a tenant.
 :::
 
 :::important
 Contact the Active Directory Administrator to perform the following steps as some of the actions will require administrator consent.
 :::
 
-Power BI agent requires oauth authentication for both admin and users.
+Power BI agent requires oAuth authentication for both admin and users.
 
 There are 3 main steps to configure Power BI agent:
 1. [Set up the Application in Azure](#set-up-the-application-in-azure)
@@ -112,16 +112,16 @@ The UserClient secret is added and the value is displayed. Provide this under th
   </div>
 
 :::note
-Copy the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
+Copy the client secret value. You will not be able to retrieve it after you perform another operation or leave this blade. If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
 :::
 
 ### Configure Permissions for the Application
 
- The application requires some permission level actions on behalf of the user. 
+ The application requires some permission-level actions on behalf of the user. 
  - Go to **[Azure portal](https://portal.azure.com) > Azure Active Directory > App registrations**.
  - Click on your application and select **API permissions**.
  - Click **Add a permission**.
- - Map the permissions for the API's referring to the table below for **Microsoft Graph API , Windows Azure Active Directory API** and **Microsoft Power BI** API.
+ - Map the permissions for the APIs referring to the table below for **Microsoft Graph API, Windows Azure Active Directory API** and **Microsoft Power BI** API.
 
 <div class="center">
 <table>

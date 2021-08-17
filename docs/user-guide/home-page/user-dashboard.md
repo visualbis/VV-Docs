@@ -4,14 +4,14 @@ title: User Dashboard
 sidebar_label: User Dashboard
 ---
 
-import useBaseUrl from "@docusaurus/useBaseUrl"; 
-import Link from '@docusaurus/Link'; 
-import Zoom from "react-medium-image-zoom"; 
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The dashboards created and managed by BI Hub admin is available to the authorized users/groups.
+The dashboards created and managed by BI Hub admin are available to the authorized users/groups.
 
-You can view the User Dashboards as tabs if admin has given access to you on these dashboards.
+You can view the User Dashboards as tabs if the admin has given access to you on these dashboards.
 
   <div class="center">
     <Zoom>
@@ -23,10 +23,10 @@ You can view the User Dashboards as tabs if admin has given access to you on the
 * To re-order the User Dashboard preference, select the drag and order ( <img width="25" src={useBaseUrl('img/drag-drop.png')}/> ) icon.
 
 :::note
-Drag and order icon will not be functional if BI Hub admin has disabled the functionality.
+The Drag and order icons will not be functional if the BI Hub admin has disabled the functionality.
 :::
 
-For the reports that you do not have an access to; you can click on the report and request an access from the Admin.
+For the reports that you do not have an access to; you can click on the report and request access from the Admin.
 
   <div class="center">
     <Zoom>
@@ -35,7 +35,7 @@ For the reports that you do not have an access to; you can click on the report a
     <p>No access on the report</p>
   </div>
 
-The reports that you have requested an access for will be displayed as "Request Pending".
+The reports that you have requested access for will be displayed as "Request Pending".
 
   <div class="center">
     <Zoom>

@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-Admin utilities are run by Server admin to carry out admin tasks such as changing the admin password and setting-up scheduled synchronization between BI Hub and BI platforms.
+Admin utilities are run by the Server admin to carry out admin tasks such as changing the admin password and setting up scheduled synchronization between BI Hub and BI platforms.
 
 These utilities are located and managed in the backend server.
 
@@ -23,7 +23,7 @@ These utilities are located and managed in the backend server.
 
 ## Synchronization Information in BI Hub
 
-A summary of synchronizations initiated by both the BI Hub admin and Server admin are displayed in the **Home > Synchronization Information** section page.
+A summary of synchronizations initiated by both the BI Hub admin and Server admin is displayed in the **Home > Synchronization Information** section page.
 
   <div class="center">
     <Zoom>
@@ -33,4 +33,4 @@ A summary of synchronizations initiated by both the BI Hub admin and Server admi
   </div>
 
 - The sync utilities executed by the Server Admin is listed as **"Bot"** in the **Last Updated By** column.
-- The Utilities run by an Admin from BI Hub app are listed as **"Admin"** in the **Last Updated By** column.
+- The Utilities run by an Admin from the BI Hub app are listed as **"Admin"** in the **Last Updated By** column.

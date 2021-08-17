@@ -19,7 +19,7 @@ Search for the report(s) and select the **Inaccessible** tab. Select the report(
     <p>Request Access on the report(s)</p>
   </div>
 
-You can chose to enter appropriate comments to the admin for request approval.
+You can choose to enter appropriate comments to the admin for request approval.
 
   <div class="center">
     <Zoom>
@@ -27,7 +27,7 @@ You can chose to enter appropriate comments to the admin for request approval.
     </Zoom>
   </div>
 
-Once you raise the request, it triggers both a notification pop-up and an access request mail notification to admin.
-Once the admin approves/rejects your request, a similar access notification mail will be sent to you as well. A similar message also pops-up on your screen.
+Once you raise the request, it triggers both a notification pop-up and an access request mail notification to the admin.
+Once the admin approves/rejects your request, a similar access notification mail will be sent to you as well. A similar message also pops up on your screen.
 
 You can also view a list of all the requests raised by you under <Link to={useBaseUrl('docs/user-guide/home-page/my-requests')}>My Requests</Link> section.

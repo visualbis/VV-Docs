@@ -7,7 +7,7 @@ sidebar_label: BI Hub Web Configuration
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
 
-:white_check_mark: In the previous section, you installed *BI Hub Web* and configured with basic default configurations.
+:white_check_mark: In the previous section, you installed *BI Hub Web* and configured it with basic default configurations.
 
 Follow the *BI Hub Web* advanced configuration steps, if you need additional SSL configuration or want to change the default configuration.
 
@@ -38,7 +38,7 @@ There is no need for restarting the server. Make sure that the client browser ca
 <!-- 
 ## SSL Configuration
 
-If you have installed BI Hub Web without Nginx, then configuring SSL will be out of the scope for this documentation. If you have installed BI Hub Web with Nginx, then follow the steps below to properly configure SSL.
+If you have installed BI Hub Web without Nginx, then configuring SSL will be out of the scope for this document. If you have installed BI Hub Web with Nginx, then follow the steps below to properly configure SSL.
 
 By default,the bundled Nginx will contain the self-signed SSL certificate issued to example.com. Kindly have the proper SSL certificate from the authorized vendor in .crt format and key file. You can also have your own Self-Signed SSL certificate, but you need to make sure that certificate to a trusted certificate store by following the configuration steps provided by the particular browser which is out of scope for this document. BI Hub recommends to have the proper SSL certificate from the authorized vendor.
 

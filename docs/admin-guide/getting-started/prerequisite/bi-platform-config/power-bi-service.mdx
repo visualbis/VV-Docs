@@ -12,7 +12,7 @@ import "react-medium-image-zoom/dist/styles.css";
 Power BI Service Principal is an authentication method used to let BI Hub access Power BI agent content and APIs.
 -->
 
-This Service Principal is used to provide administration authentication for Power BI agent without admin oauth credentials.
+This Service Principal is used to provide administration authentication for Power BI agents without admin oAuth credentials.
 
 System Admin must configure this Service in the platform. Once configured, the bihubadmin adds the service principal in the bi hub application (Refer the <Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/service-principal')}>Service Principal Authentication</Link> section).
 
@@ -84,7 +84,7 @@ Configuring service principal involves the following steps:
   </div>
 
 :::important
-Save the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
+Save the client secret value. You will not be able to retrieve it after you perform another operation or leave this blade. If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
 :::
 
 ## Step 3: Add Application to a Security Group
@@ -124,7 +124,7 @@ Tenant settings are used to restrict capabilities and features to a limited set 
 
 ## Step 5: Configure Permissions for the Application
 
-The application requires some permission level actions on behalf of the user.
+The application requires some permission-level actions on behalf of the user.
 
 * Go to **[Azure portal](https://portal.azure.com) > Azure Active Directory > App registrations**.
 * Click on your application and select **API permissions**.
@@ -145,7 +145,7 @@ The application requires some permission level actions on behalf of the user.
   </div>
 
 :::note
-Do not give Tenant.Read.All and Tenant.ReadWrite.All permissions under Power BI Service permissions. That will prevent reports coming into BIHUB.
+Do not give `Tenant.Read.All` and `Tenant.ReadWrite.All` permissions under Power BI Service permissions. That will prevent reports from coming into BIHUB.
 :::
 
 Your Power BI Service Principal can now access Azure AD tenant resources.

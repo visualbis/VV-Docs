@@ -21,7 +21,7 @@ All the Agents must be configured in the BI Hub platform and the instances must 
 * The command accepts 2 parameters:
    1. **Synchronization option**: It can either be Users or Reports to synchronize users and reports respectively.
    1. **Instance list**: List of configured Instances for which the synchronization process should take place.
-   > An Instance name with more than one word must be included in double quotes(").
+   > An Instance name with more than one word must be included in double-quotes(").
 
 Here are some sample commands that can be stored in a batch file and scheduled to run using the organization’s scheduling tool:
 
@@ -35,8 +35,8 @@ Here are some sample commands that can be stored in a batch file and scheduled t
 "BI Hub Instance Synchronisation.exe" --u –i "BOBJ_Rest SSL" Tableau "QlikSense SSL"
 ```
 
-* `--u` : Users
-* `-i` : Instance
+* `--u`: Users
+* `-i`: Instance
 * `BOBJ, Tableau and Qlik Sense` : Instance names configured in BI Hub.
 
 :::note
@@ -59,8 +59,8 @@ Only common users from all the agents will be synchronized, rest excluded.
 "BI Hub Instance Synchronisation.exe" --r –i BOBJ Tableau
 ```
 
-* `--r` : Reports
-* `-i` : Instance
-* `BOBJ, Tableau` : Instance names configured in BI Hub.
+* `--r`: Reports
+* `-i`: Instance
+* `BOBJ, Tableau`: Instance names configured in BI Hub.
 
 In case of a failure, refer the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/troubleshoot')}>Troubleshooting</Link> section.

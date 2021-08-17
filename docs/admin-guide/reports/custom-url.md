@@ -41,7 +41,7 @@ In the **Add URL** page, enter the following details:
 1. Name: Visual BI
 1. URL: `<https://visualbi.com>`
 1. Description: Visual BI website
-1. Share with All (or) particular User/Group - Based on the respective selection, the Custom URL details can be viewed by all the users or specific user.
+1. Share with All (or) particular User/Group - Based on the respective selection, the Custom URL details can be viewed by all the users or specific users.
 1. Enable the Live Embed option
 1. Enable the Launch in New Tab option
 

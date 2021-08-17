@@ -29,7 +29,7 @@ The user can upgrade the trial version to either the production version or exten
 
 Similar steps need to be followed for all other agents and BI Hub Web.
 
-For BI Hub Server however, we have a couple of extra steps:
+For BI Hub Server, however we have a couple of extra steps:
 
 1. Before you upgrade, stop the backend instances.
 

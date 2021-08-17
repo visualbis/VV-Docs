@@ -9,9 +9,10 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-There is a 2-step authentication for these 2 agents that requires a sign-in validation from both *Admins (Super Admin/Admins)* and *Users*:
+There is a 2-step authentication for these 2 agents that requires a sign in validation from both *Admins (Super Admin/Admins)*, and *Users*:
+
 * Admins must create a new instance and authenticate the login credentials.
-* Regular users must also log-in to the agents and validate the credentials to access the reports.
+* Regular users must also log in to the agents and validate the credentials to access the reports.
 
 ## Create Instance: Admin-level authentication
 
@@ -72,5 +73,5 @@ If there is a mismatch in the platform user mapping and the user credentials, th
   </div>
 
 Check the Microsoft Office login credentials for any other user log-in.
-You must log out the other user and sign-in as your logged-in user credentials.
+You must log out the other user and sign in as your logged-in user credentials.
 :::

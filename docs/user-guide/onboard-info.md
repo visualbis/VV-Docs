@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 BI Hub User guide is written for any BI Hub user that is configured in the BI Hub platform.
 
-This guide will help you understand and use the BI Hub application and it's features.
+This guide will help you understand and use the BI Hub application and its features.
 
 ## Log-in to BI Hub application
 
@@ -49,12 +49,12 @@ Next, you must enter your profile settings:
 
 Enter your **EMAIL**, and **DIVISION**. You may also **Upload Profile Picture** and select **CONTINUE**.
 
-* On the next screen, you may be asked to login to authorize the agents that are configured with 2-step authentication. You may login now or skip the step. You may authorize these agents later from the <Link to={useBaseUrl('docs/user-guide/settings#authorize-agents')}>Settings > Authorize Agents</Link> section.
+* On the next screen, you may be asked to log in to authorize the agents that are configured with 2-step authentication. You may log in now or skip the step. You may authorize these agents later from the <Link to={useBaseUrl('docs/user-guide/settings#authorize-agents')}>Settings > Authorize Agents</Link> section.
 
 ## Onboarding Information
 
-When you log-in for the first time, the welcome message pops-up with the quick product tour videos.
-You may get started with the videos or skip tutorial.
+When you log in for the first time, the welcome message pops up with the quick product tour videos.
+You may get started with the videos or the skip tutorial.
 
 You can access the same Onboarding demo videos by selecting the Help( <img width="25" src={useBaseUrl('img/help.png')} /> ) icon and then select **Show Onboarding Tips**.
 
@@ -72,7 +72,7 @@ Following are the topics covered in the demo videos:
 1. Search for Reports across multiple platforms easily
 1. Advance Search
 1. View Reports by Function
-1. Collaborate with other users with comment and mention features
+1. Collaborate with other users with comments and mention features
 
 ## Next Steps
 

@@ -21,7 +21,7 @@ Before we connect the *SharePoint* site to BI Hub, we need to set up the **Share
    <Zoom>
     <img alt="App Registration" src={useBaseUrl('/doc-images/sharepoint/app-register.png')}/>
    </Zoom>
- 	<p>Sharepoint App registration</p>
+ 	<p>SharePoint App registration</p>
  </div>
 
  :::note
@@ -153,7 +153,7 @@ The UserClient secret is added and the value is displayed. Provide this under th
   </div>
 
 :::note
-Copy the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
+Copy the client secret value. You will not be able to retrieve it after you perform another operation or leave this blade. If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
 :::
 
 ## Configure permission for the App

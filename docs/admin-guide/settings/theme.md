@@ -27,7 +27,7 @@ In the Theme Tab, the Admin can configure the following attributes:
 ## Theme Color
 
 In this section, you can select the Theme color for the entire BI Hub Screen.
-For a better visibility the Contrast Ratio should be set to 4.5:1 or greater than that. For further details you can click the help icon ( <img width="20" src={useBaseUrl("img/help.png")} /> ).
+For better visibility, the Contrast Ratio should be set to 4.5:1 or greater than that. For further details you can click the help icon ( <img width="20" src={useBaseUrl("img/help.png")} /> ).
 
  <div class="center">
    <Zoom>
@@ -128,5 +128,5 @@ To edit the browser tab header, enter a name in the **Tab Title** box.
   </div>
 
 :::note
-To restore the default theme settings, select **Reset to default** in the end of the screen.
+To restore the default theme settings, select **Reset to default** at the end of the screen.
 :::

@@ -20,14 +20,14 @@ Authentication provides a secured method to validate and provide access to autho
 
 Following are the authentication types BI Hub Platform supports:
 
-* **Native**: User credentials are stored in BI platform itself.
-* **Windows AD**: Windows Active Directory services authentication for group and users management, network, and policy administration etc.
-* **LDAP**: Lightweight Directory Access Protocol is an open and cross platform protocol used for directory services authentication.
+* **Native**: User credentials are stored in the BI platform itself.
+* **Windows AD**: Windows Active Directory services authentication for group and users management, network, and policy administration, etc.
+* **LDAP**: Lightweight Directory Access Protocol is an open and cross-platform protocol used for directory services authentication.
 * **SAML**: Mapping the user credentials between Microsoft Office 365 and BI Hub Platform.
 
 ## Add Authentication
 
-To manage Authentications Admin (bihubadmin) must go the **Authentication > Authentication Manager** section and select **Add Authentication**.
+To manage Authentications Admin (bihubadmin) must go to the **Authentication > Authentication Manager** section and select **Add Authentication**.
 
   <div class="center">
     <Zoom>
@@ -73,11 +73,11 @@ To setup an LDAP authentication type, select "LDAP" in the **Authentication Type
     <p>LDAP Authentication Fields</p>
   </div>
 
-Enter the vales for each field ( Tooltip provided ) and select **Submit**.
+Enter the values for each field ( Tooltip provided ) and select **Submit**.
 
 ### Add SAML Authentication
 
-Before you add SAML authentication configurations in the BI Hub application, you must setup SSO for an application that you added to your Azure AD tenant. [ Reference Microsoft article: [Set up SAML-based single sign-on (SSO) for an application in your Azure Active Directory (Azure AD) tenant](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-setup-sso) ].
+Before you add SAML authentication configurations in the BI Hub application, you must set up SSO for an application that you added to your Azure AD tenant. [ Reference Microsoft article: [Set up SAML-based single sign-on (SSO) for an application in your Azure Active Directory (Azure AD) tenant](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-setup-sso) ].
 
 For basic SAML configuration, you should get the values from the application vendor.
 [ Microsoft article reference: [Basic SAML Configuration](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-saml-single-sign-on#basic-saml-configuration) ].
@@ -93,29 +93,29 @@ Next, in the BI Hub app; add a new authentication with **Authentication Type** a
 
 Following are the fields and their descriptions:
 
-| Field Name                     | Description                                                        |
-|--------------------------------|--------------------------------------------------------------------|
-| Entity ID of Service Provider  | Identifier of your Service Provider                                |
-| Assertion Consumer Service URL | Assertion Consumer Service URL mentioned on your Service Provider  |
-| Logout URL                     | Logout URL of Service Provider                                     |
-| Entity ID of IDP               | This is Azure AD Identifier                                        |
-| Single Sign ON IDP URL         | Login URL of IDP                                                   |
-| Logout URL of IDP              | Logout URL of IDP                                                  |
-| x509cert of IDP                | The x509cert value from Federation Metadata XML                    |
-| Login button text              | This value will be shown on BIHUB Login screen, example: SSO Login |
-| SAML Response Key              | SAML response key to validate the user                             |
+| Field Name                     | Description                                                            |
+|--------------------------------|------------------------------------------------------------------------|
+| Entity ID of Service Provider  | Identifier of your Service Provider                                    |
+| Assertion Consumer Service URL | Assertion Consumer Service URL mentioned on your Service Provider      |
+| Logout URL                     | Logout URL of Service Provider                                         |
+| Entity ID of IDP               | This is Azure AD Identifier                                            |
+| Single Sign ON IDP URL         | Login URL of IDP                                                       |
+| Logout URL of IDP              | Logout URL of IDP                                                      |
+| x509cert of IDP                | The x509cert value from Federation Metadata XML                        |
+| Login button text              | This value will be shown on the BIHUB Login screen, example: SSO Login |
+| SAML Response Key              | SAML response key to validate the user                                 |
 
 Enter all the values and select **Submit**.
 
 ## Edit Authentication details in BI Hub
 
-* To edit the authentication details, admin can select the type and click **Edit**.
+* To edit the authentication details, the admin can select the type and click **Edit**.
 * Edit the required fields in the **Edit Authentication**.
 * Select **Save**.
 
 ## Synchronize Users with BI Hub
 
-Go to **Authentication** page, select the platform (Windows AD or SAML) and click **Sync Users**.
+Go to the **Authentication** page, select the platform (Windows AD or SAML), and click **Sync Users**.
 
   <div class="center">
     <Zoom>

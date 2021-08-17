@@ -9,13 +9,13 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-This section explains the steps to *configure the SSL*, if you have installed *BI Hub Web with Nginx*.
+This section explains the steps to *configure the SSL* if you have installed *BI Hub Web with Nginx*.
 
 :::note
 If you have installed BI Hub Web without Nginx, then configuring SSL will be out of the scope for this document.
 :::
 
-By default,the bundled Nginx will contain the self-signed SSL certificate issued to example.com.
+By default, the bundled Nginx will contain the self-signed SSL certificate issued to example.com.
 
 Kindly have the proper SSL certificate from the authorized vendor in `.crt` format and key file.
 You can also have your Self-Signed SSL certificate, but you need to make sure that the certificate belongs to a trusted certificate store by following the configuration steps provided by the particular browser which is out of scope for this document.
@@ -65,7 +65,7 @@ If you continue to have the problem, you could raise the support ticket in the s
 :::
 
 :::important
-If you are going to configure SSL, please make sure that BI Hub Server and BI Hub Agents and its respective BI platforms should also be configured with proper SSL. 
+If you are going to configure SSL, please make sure that BI Hub Server and BI Hub Agents and their respective BI platforms should also be configured with proper SSL.
 
-You cannot access HTTP content from the https protocol. The browser will throw the mixed content error if you try to access HTTP content from the https URL.
+You cannot access HTTP content from the https protocol. The browser will throw a mixed content error if you try to access HTTP content from the https URL.
 :::

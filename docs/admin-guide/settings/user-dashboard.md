@@ -37,7 +37,7 @@ In Dashboard Settings, you have four different options as listed below:
 
 ## Custom Dashboard
 
-In Custom Dashboard panel, an admin can create a Dashboard for the user(s) and embed the reports for the user view in the Dashboard.
+In the Custom Dashboard panel, an admin can create a Dashboard for the user(s) and embed the reports for the user view in the Dashboard.
 
 ## Custom Dashboard - Add Dashboard
 
@@ -71,7 +71,7 @@ Next to add reports to this new Custom Dashboard, select **ADD REPORT**.
 In the **Add Report** panel on the right-hand side, pick and select the reports.
 The chosen reports will be added to the dashboard.
 
-* Once you finish adding the reports to the new Custom Dashboard, select **Save** at the rop-right corner.
+* Once you finish adding the reports to the new Custom Dashboard, select **Save** at the top-right corner.
 * To make the new Dashboard visible for all the users, you must select **Publish** at the top-right corner of the screen.
 
   <div class="center">
@@ -81,7 +81,7 @@ The chosen reports will be added to the dashboard.
     <p>Custom Dashboards</p>
   </div>
 
-* The Details icon give a summary of the Dashboard settings.
+* The Details icon gives a summary of the Dashboard settings.
 
   <div class="center">
     <Zoom>

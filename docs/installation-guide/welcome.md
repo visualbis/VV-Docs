@@ -8,11 +8,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Who Should Read This Guide?
 
-The Installation Guide for BI Hub application offered by Visual BI is meant for people who will perform the installation of the software.
+The Installation Guide for BI Hub application offered by Visual BI is meant for people who will install the software.
 
 ## What is BI Hub
 
-BI Hub is a BI Reporting portal with the one-stop Solution to all your BI content supporting On-prem, Cloud, Self-Service BI and Modern Data Analytics deployment. 
+BI Hub is a BI Reporting portal with the one-stop solution to all your BI content supporting On-prem, Cloud, Self-Service BI, and Modern Data Analytics deployment.
 Discover, Consume, Organize, Collaborate and optimize your BI assets using our Unified BI Platform by ensuring Report Governance.
 
 ### Key Features

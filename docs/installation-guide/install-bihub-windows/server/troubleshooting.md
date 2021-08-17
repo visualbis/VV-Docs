@@ -13,7 +13,7 @@ If you didn’t get the webpage response then kindly follow the steps below to t
 * Open the log files from the location (default) `<installation folder>/server/log/app-log/<instance_name>.log` and check for any errors.
 
 :::note
-For more information you have to set the log type. Please change the **Log Level** as **info** in the **General Section** of the **Configuration Utility**.
+For more information, you have to set the log type. Please change the **Log Level** as **info** in the **General Section** of the **Configuration Utility**.
 Remember to restart the instance after changing the value.
 :::
 

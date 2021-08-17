@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-In the **Notifications** panel, you can view the status of reports synchronization process and user comments on the reports.
+In the **Notifications** panel, you can view the status of the reports synchronization process and user comments on the reports.
 
 Select the Bell ( <img width="25" src={useBaseUrl('img/bell.png')} /> ) icon next to your user profile at the top right corner of your screen.
 

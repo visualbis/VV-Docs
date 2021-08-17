@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The Onedrive agent needs no special configuration, apart from setting the application in Azure and creating the application secret.
+The OneDrive agent needs no special configuration, apart from setting the application in Azure and creating the application secret.
 
 ## Set up the Application in Azure.
 
@@ -32,12 +32,11 @@ The Onedrive agent needs no special configuration, apart from setting the applic
  	<p>Application Registration</p>
   </ div>
 
-  
- :::note
- The type should be  Native and  the  Redirect  URI  must  be formatted as: `https://servername:port/Redirect`.
- :::
+:::note
+The type should be  Native and the Redirect URI must be formatted as:`https://servername:port/Redirect`.
+:::
 
-* Click **Register**. 
+* Click **Register**.
   
 :::note
 This URI should reflect the OneDrive Agent machine hostname or public IP address and the port at which the new agent instance needs to be created.
@@ -62,7 +61,7 @@ This URI should reflect the OneDrive Agent machine hostname or public IP address
 	<p>Authentication</p>
 </div>
 
-- Select the tokens to be issued at authorization endpoints and also choose the supported account types. 
+- Select the tokens to be issued at authorization endpoints and also choose the supported account types.
 
 <div class="center">
   <Zoom>
@@ -73,8 +72,8 @@ This URI should reflect the OneDrive Agent machine hostname or public IP address
 
 ## Create the Application Secret 
 
- - Go to **Azure portal > azure active directory > App registrations** and click on your application.
- - Navigate to **Certificates & secrets** and click on **New Client secret** to add a new key.
+- Go to **Azure portal > azure active directory > App registrations** and click on your application.
+- Navigate to **Certificates & secrets** and click on **New Client secret** to add a new key.
  
   <div class="center">
   <Zoom>
@@ -103,7 +102,7 @@ The UserClient secret is added and the value is displayed. Provide this under th
   </div>
 
 :::note
-Copy the client secret value. You will not be able to retrieve if after you perform another operation or leave this blade . If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
+Copy the client secret value. You will not be able to retrieve it after you perform another operation or leave this blade. If failed to note down the value, please repeat the step [Set up the application in Azure](#setup-the-application-in-azure) to create a new key.
 :::
 
 <!-- Check with Mohan if required?

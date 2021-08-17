@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom"; 
 import "react-medium-image-zoom/dist/styles.css";
 
-In the **HOME** page, you can customize your Dashboard and add reports from the BI Hub platform.
+On the **HOME** page, you can customize your Dashboard and add reports from the BI Hub platform.
 
   <div class="center">
     <Zoom>
@@ -16,7 +16,7 @@ In the **HOME** page, you can customize your Dashboard and add reports from the 
     </Zoom>
   </div>
 
-On this page, you have both your private (My Dashboard) and admin managed Dashboards.
+On this page, you have both your private (My Dashboard) and admin-managed Dashboards.
 
 ## Add Reports to My Dashboard
 
@@ -30,7 +30,7 @@ On this page, you have both your private (My Dashboard) and admin managed Dashbo
     </Zoom>
   </div>
 
-* You can chose to display the reports in either Large tiles or Small tiles by selecting the icons at the top-right corner.
+* You can choose to display the reports in either Large tiles or Small tiles by selecting the icons at the top-right corner.
 
   <div class="center">
     <Zoom>
@@ -47,7 +47,7 @@ On this page, you have both your private (My Dashboard) and admin managed Dashbo
     <p>Reports displayed in large tile view</p>
   </div>
 
-* To open and view the complete report, click on the report. The report opens in an Iframe in BI Hub app.
+* To open and view the complete report, click on the report. The report opens in an Iframe in the BI Hub app.
 
   <div class="center">
     <Zoom>
