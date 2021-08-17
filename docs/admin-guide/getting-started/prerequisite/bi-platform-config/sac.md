@@ -40,12 +40,12 @@ To Register an OAuth client, follow the below steps:
  </div>
 
 :::note
-Authorization URL and Token URL show in the form is required in your `config.json` file of the SAC Agent.
+Authorization URL and Token URL shown in the form are required in your `config.json` file of the SAC Agent.
 :::
 
 ## AuthorizationCodeGrant (three-legged) - User
 
-Register an **OAuth Client** Purpose **’Interactive Usage** as shown in the image below.
+Register an **OAuth Client** Purpose **Interactive Usage** as shown in the image below.
 
  <div class="center">
   <Zoom>
@@ -68,7 +68,7 @@ This flow does not belong to a specific user. This configuration is for the reso
 :::
 
 You need to pass the resource owner(admin) credentials to access and get all users available on SAC.
-Register an **OAuth Client** as a Purpose **’Interactive Usage and API Access** as shown in the image below.
+Register an **OAuth Client** as a Purpose **Interactive Usage and API Access** as shown in the image below.
 
 * **Name** – Enter any relevant name.
 * **OAuth Client ID** – This will be the Client ID in the `config.json` file of SAC Agent.

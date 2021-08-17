@@ -13,7 +13,7 @@ Follow the sequence of steps explained in this Installation guide for a smooth i
 :::
 
 :::note
-Every installation step also carry out the success/failure checks of the installation process.
+Every installation step also carries out the success/failure checks of the installation process.
 :::
 
 :::important

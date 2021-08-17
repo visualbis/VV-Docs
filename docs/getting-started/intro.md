@@ -10,15 +10,15 @@ import Link from '@docusaurus/Link';
 
 BI Hub is a web-based Visual BI product.
 
-BI Hub enables users to view and analyze reports built-in various BI platforms in one page, without having to login into those platforms individually.
+BI Hub enables users to view and analyze reports built-in various BI platforms on one page, without having to login into those platforms individually.
 
-Highlights of this product includes but not limited to:
+Highlights of this product include but are not limited to:
 
 * **Smart view and Discovery of BI assets** - Discover not accessible assets and request access
 
-* **Unified view of BI assets** – A consolidated view of reports from multiple BI platforms in one page.
+* **Unified view of BI assets** – A consolidated view of reports from multiple BI platforms on one page.
 
-* **Incredibly easy setup and maintenance** – Easy to setup and 100% automated synchronization between BI Hub and BI platforms.
+* **Incredibly easy setup and maintenance** – Easy to set up and 100% automated synchronization between BI Hub and BI platforms.
 
 BI Hub consists of **BI Hub Server, BI Hub Web, and BI Hub Agents**.
 
@@ -38,4 +38,3 @@ import TabItem from '@theme/TabItem';
   <TabItem value="Admin Guide"><Link to={useBaseUrl('docs/admin-guide/getting-started/welcome')}>Admin Guide</Link></TabItem>
   <TabItem value="User Guide"><Link to={useBaseUrl('docs/user-guide/onboard')}>User Guide</Link></TabItem>
 </Tabs>
-

@@ -21,7 +21,6 @@ To integrate QlikView into BIHUB, you must first install the QlikView Agent.
 - WSDL - QlikView WSDL URL 
 
 :::note
-- Admin user must be in the "QlikView Administrator Group" 
-- Users must be in the "QlikView Management API" and "QlikView EDX" group 
+- Admin user must be in the "QlikView Administrator Group".
+- Users must be in the "QlikView Management API" and "QlikView EDX" group.
 :::
-

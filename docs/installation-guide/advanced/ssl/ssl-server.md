@@ -46,5 +46,5 @@ Ensure that the files `<filename>.key` and `<filename>.crt` are copied in this l
   :white_check_mark: Your BI Hub Server must be loaded with a secured SSL connection.
 
 :::note
-If the Server loads up with an "in-secure" connection, please check if the certificate files are valid.
+If the Server loads up with an "insecure" connection, please check if the certificate files are valid.
 :::

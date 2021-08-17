@@ -43,13 +43,13 @@ This section lists out the general BI Hub Server configuration fields.
 | Log Level                            | Level of detail at which the log is written                                                                                     | <ul><li>**Info** – Will log all the available information</li><li>**Warning** – Will log all the warnings and errors</li><li>**Error** (Default) – Will log only errors.</li></ul> |
 | Agent Timeout                        | Timeout for the Agent health check in seconds                                                                                   | Default value - 5                                                                                                                                                                  |
 | Session Timeout                      | Session timeout duration in minutes                                                                                             | Minimum timeout period is 30 minutes.                                                                                                                                              |
-| User Sync Worker Thread Per Process  | Number of worker threads process that can run parallely                                                                         | Maximum number of concurrent user sync reports will be 2x the value being set for this field.                                                                                      |
+| User Sync Worker Thread Per Process  | Number of worker threads process that can run parallelly                                                                        | Maximum number of concurrent user sync reports will be 2x the value being set for this field.                                                                                      |
 | Cache Timeout                        | Timeout for the cache storage of BI Hub Server                                                                                  | Default value - 1 hour                                                                                                                                                             |
 | CORS (Cross-origin resource sharing) | Settings for the BI Hub Server. To be more secure please set this value of the DNS URL of your machine.                         | Default value - *                                                                                                                                                                  |
 
 ## Database Section
 
-This section defines the configuration fields (same as audit database below) related to the main database connection to the BI Hub server. 
+This section defines the configuration fields (same as the audit database below) related to the main database connection to the BI Hub server.
 
 ## Audit Database Section
 
@@ -59,9 +59,9 @@ Audit database connection to the server configurations.
 |:------------------------|:---------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Type                    | Type of the database in which the metadata is stored                                                           | MySQL/MSSQL/Oracle/PostgreSQL                                                                                                                                                                              |
 | Driver                  | Only available for MSSQL database type                                                                         | Kindly provide the name of the MSSQL driver installed in the current system. For other database types, this field won’t be available                                                                       |
-| Host Name               | Host name of the preferred database server                                                                     | Default value : 127.0.0.1                                                                                                                                                                                  |
-| Port                    | Database server port at which the database server is running                                                   | Default value : 3306                                                                                                                                                                                       |
-| Name                    | Schema to connect to                                                                                           | Default DB Name : bihubaudit                                                                                                                                                                               |
+| Host Name               | Host name of the preferred database server                                                                     | Default value: 127.0.0.1                                                                                                                                                                                   |
+| Port                    | Database server port at which the database server is running                                                   | Default value: 3306                                                                                                                                                                                        |
+| Name                    | Schema to connect to                                                                                           | Default DB Name: bihubaudit                                                                                                                                                                                |
 | Username                | Enter the database username                                                                                    | It should have all the privileges for the provided schema. <br></br>Provide the username that you used while installing the BI Hub Server                                                                  |
 | Password                | Password of the above-provided username.                                                                       | <br></br>Provide the password that you used while installing the BI Hub Server                                                                                                                             |
 | Extra Connection String | Additional Connection String                                                                                   | Send the additional parameter to your database                                                                                                                                                             |
@@ -71,7 +71,7 @@ Audit database connection to the server configurations.
 
 ## SSL Section
 
-This section establishes a secure connection via SSL between browser and BI Hub Server. 
+This section establishes a secure connection via SSL between the browser and BI Hub Server.
 For the initial configuration please skip this section without any changes.
 To configure SSL in all the BI Hub configuration, please follow the <Link to={useBaseUrl('docs/installation-guide/advanced/ssl/ssl')}>SSL Configuration</Link> section.
 
@@ -85,7 +85,7 @@ If you want to use your Elastic Search instance, you will be allowed to provide 
 | Property | Purpose                                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |:---------|:-------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | URL      | Provide the URL to reach the elastic search server                                                                 | <ul><li>If you are using pre-installed Elastic Search, provide the following values: `https://127.0.0.1:<https_port>/elasticsearch`. <br></br>Note: https_port is the port number that you gave while installing BI Hub Server Elastic Search Port configuration Page. The default value is 9443</li><li>If you are using your own Elastic Search, then use the following details: `{http/https}://<hostname>:<port>`</li></ul> |
-| Username | Username of the Elastic search which is provided in the Elastic Search user configuration section of the installer | Default username : esadmin <br></br>Provide the username that you used while installing the BI Hub Server                                                                                                                                                                                                                                                                                                                       |
+| Username | Username of the Elastic search which is provided in the Elastic Search user configuration section of the installer | Default username: esadmin <br></br>Provide the username that you used while installing the BI Hub Server                                                                                                                                                                                                                                                                                                                        |
 | Password | Password of the user which is provided in the Elastic Search user configuration section of the installer           | Provide the password that you used while installing the BI Hub Server                                                                                                                                                                                                                                                                                                                                                           |
 | Index    | Name of the index under which all the metadata needs to be stored                                                  | Default index : bihub                                                                                                                                                                                                                                                                                                                                                                                                           |
 
@@ -93,21 +93,21 @@ If you want to use your Elastic Search instance, you will be allowed to provide 
 
 Configure the mail server connection details that is used to send emails from the Smart Search feature of BI Hub.
 
-| Type       | Purpose                                                                                 | Description              |
-|:-----------|:----------------------------------------------------------------------------------------|:-------------------------|
-| ServerMail | Server host name                                                                        | Ex: smtp.office365.com   |
-| Port       | Port which should be used to connect with mail server                                   | Default value : 567      |
-| Encryption | Encryption type that needs to be used                                                   | Default Encryption : TLS |
-| Username   | Username that needs to be used for login into the SMTP server.                          |                          |
-| Password   | Password that needs to be used for login into the SMTP server                           |                          |
-| Sender     | Sender email address. Emails generated by Smart Search will use this address in From    |                          |
-| CC Sender  | Address that needs to be provided in CC, to audit all the emails triggered from VBIView |                          |
+| Type       | Purpose                                                                                 | Description             |
+|:-----------|:----------------------------------------------------------------------------------------|:------------------------|
+| ServerMail | Server host name                                                                        | Ex: smtp.office365.com  |
+| Port       | Port which should be used to connect with mail server                                   | Default value: 567      |
+| Encryption | Encryption type that needs to be used                                                   | Default Encryption: TLS |
+| Username   | Username that needs to be used for login into the SMTP server.                          |                         |
+| Password   | Password that needs to be used for login into the SMTP server                           |                         |
+| Sender     | Sender email address. Emails generated by Smart Search will use this address in From    |                         |
+| CC Sender  | Address that needs to be provided in CC, to audit all the emails triggered from VBIView |                         |
 
 After configuring all this section, press save and continue to start configuring Instances.
 
 ## Web Config
 
-This section defines the URL and Port configuration required to setup the BI Hub Web.
+This section defines the URL and Port configuration required to set up the BI Hub Web.
 
 | Type | Purpose                                           | Description                                                                |
 |------|---------------------------------------------------|----------------------------------------------------------------------------|

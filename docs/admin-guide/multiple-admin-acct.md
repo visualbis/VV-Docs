@@ -9,7 +9,7 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-A Super Admin, can add multiple Admins who can access BI Hub with full admin rights except for the below-listed actions:
+A Super Admin can add multiple Admins who can access BI Hub with full admin rights except for the below-listed actions:
 
 - Admin User cannot make another account as an Admin.
 - Admin User cannot edit/delete/remove another Admin account.

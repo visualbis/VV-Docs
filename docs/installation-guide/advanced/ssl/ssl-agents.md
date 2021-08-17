@@ -59,7 +59,7 @@ For BOBJ Agent, the SSL certificates also need to be in `.jks` (Java Key Store) 
 1. Import the SSL Certificate and key into the Java KeyStore.
 1. Make sure that the Java KeyStore file is generated with the name **BOBJ_Keystore.jks**.
 1. Move the **BOBJ_Keystore.jks** file to the SSL folder: `<BOBJ Instance installation location>/SSL`.
-1. Enter an appropriate password of the generated KeyStore file in the SSL Password field in the `manager.ini` file.( This must be given after the SSL field ).
+1. Enter an appropriate password of the generated KeyStore file in the SSL Password field in the `manager.ini` file. ( This must be given after the SSL field ).
 
    > Example : `SSL Password = password` of the *keystore.jks*
 

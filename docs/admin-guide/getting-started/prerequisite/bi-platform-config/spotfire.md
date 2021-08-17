@@ -24,7 +24,7 @@ $ register-api-client --name="BIHubAPIClient" -S api.soap.user-directory-service
 
 2. Copy both the **Client ID** and **Client Secret** displayed on the output screen.
 
-> These details are displayed just once, and lost once you close the screen.
+> These details are displayed just once and lost once you close the screen.
 
 3. Copy and paste the contents of `<Spotfire Agent installation folder>/ext_auth` to the `<Server installation dir>/tomcat/webapps/spotfire/WEB-INF/lib` location.
 

@@ -34,7 +34,7 @@ Following are the modules displayed in the application side panel:
 BI Hub administrator-mode and user-mode uses the same product URL and depending on the
 login (as admin or user name) appropriate modules of the application are rendered.
 
-* After launching the product, the administrator can log into the application by entering the user ID as *bihubadmin* and password as *password*.
+* After launching the product, the administrator can log in to the application by entering the user ID as *bihubadmin* and password as *password*.
 * A Set Admin Password screen pops up during the first login to accept a new password.
 
 > Note: An admin logins with the authentication type set as **Native**; whereas users login with authentication type set as **Microsoft AD/LDAP**, or **SSO Login**. Refer the <Link to={useBaseUrl('docs/admin-guide/authenticate/manage-auth')}>Authentication</Link> section more details.

@@ -13,9 +13,9 @@ In the **User Requests** screen an admin can only view a summary of the report's
 
 :::note
 When a user raises a request to view an inaccessible report, a mail is triggered to the admin.
-The mail specifies the report name, instance name and the platform path location.
+The mail specifies the report name, instance name, and the platform path location.
 
-Once the platform admin provides access on the report to the user, the BI Hub admin can approve a user's access on the report.
+Once the platform admin provides access to the report to the user, the BI Hub admin can approve a user's access on the report.
 To do so, the BI Hub admin must manually grant permission to the user as explained in the <Link to={useBaseUrl('docs/admin-guide/user-manager/user-management#add-reports-to-an-existing-user')}>Add Reports to an existing User</Link> section.
 :::
 

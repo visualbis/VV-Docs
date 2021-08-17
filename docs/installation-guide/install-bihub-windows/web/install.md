@@ -16,17 +16,17 @@ Before you install and configure the **BI Hub Web** the following prerequisites 
 Follow the steps below to install the BI Hub Web:
 
 1. Double click the <Link to={useBaseUrl('docs/installation-guide/download-bihub')}>BIHubWeb-X.X.X-windows-installer.exe</Link> file that you downloaded to start the installation process.
-1. Click **Next** in the startup page.
+1. Click **Next** on the startup page.
 1. Read through the license terms and conditions. To proceed further accept the license terms and click **Next** to continue.
 1. In the next screen provide the *DNS resolvable URL* and *Port details* of the **BI Hub Server instance**. This URL should be accessed by the Users (i.e., External URL of the BI Hub Server).
 :::note
 The installation will not proceed if the URL is not accessible.
 :::
 1. In the **Component Selection** screen select either:
-   - *BI Hub Web with NGINX* if you prefer the bundled NGINX webserver or
-   - *BI Hub Web without NGINX* If you have your webserver like *Apache* or *Tomcat* INX
+   - *BI Hub Web with NGINX* if you prefer the bundled NGINX web server or
+   - *BI Hub Web without NGINX* If you have your web server like *Apache* or *Tomcat* INX
 1. In the **Directory Selection** screen, choose the directory to install the BI Hub Server. The default directory is `C:\Program Files\Visual BI Solutions\BI Hub\BIHubWeb`. 
-   1. For *BI Hub Web without NGINX* Component Selection version, choose the *web root* directory of your webserver.
+   1. For *BI Hub Web without NGINX* Component Selection version, choose the *webroot* directory of your web server.
    > * For *Apache* the directory should be `<Apache installation directory>/htdocs`.
    > * For *Nginx* the directory should be `<Nginx Installation directory>/html`.
    1. For *BI Hub Web with NGINX(bundled)* in the *NGINX Port* details screen, accept the default port or provide your *Port* details.
