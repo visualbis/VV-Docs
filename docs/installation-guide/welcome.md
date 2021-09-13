@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Who Should Read This Guide?
 
-The Installation Guide for BI Hub application offered by Visual BI is meant for people who will install the software.
+The Installation Guide for BI Hub application offered by VBI View LLC is meant for people who will install the software.
 
 ## What is BI Hub
 

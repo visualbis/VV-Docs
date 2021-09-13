@@ -38,7 +38,7 @@ The Admin User can create the Custom URL by navigating to the **Platforms Folder
 
 In the **Add URL** page, enter the following details:
 
-1. Name: Visual BI
+1. Name: VBI View LLC
 1. URL: `<https://visualbi.com>`
 1. Description: Visual BI website
 1. Share with All (or) particular User/Group - Based on the respective selection, the Custom URL details can be viewed by all the users or specific users.

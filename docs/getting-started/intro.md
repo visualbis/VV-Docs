@@ -8,7 +8,7 @@ slug: /
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 
-BI Hub is a web-based Visual BI product.
+BI Hub is a web-based VBI View LLC product.
 
 BI Hub enables users to view and analyze reports built-in various BI platforms on one page, without having to login into those platforms individually.
 
