@@ -9,16 +9,13 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The Admin User can create the Custom URL by navigating to the **Platforms Folder** Tab in Reports Menu.
+This page describes how to create a Custom URL, that is a shortcut to another website.
 
-  <div class="center">
-    <Zoom>
-      <img alt="Custom URL in Platforms Folder" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/csu1.png')}/>
-    </Zoom>
-  </div>
+## Add a New URL
 
-* Select the **URL** icon.
-* In the URL folder, select **+ Add**.
+* Select the **Reports** menu from the left navigation pane.
+* Select the **Platform Folders** tab
+* Click **+ Add**, and then select **New URL**.
 
   <div class="center">
     <Zoom>
@@ -26,51 +23,71 @@ The Admin User can create the Custom URL by navigating to the **Platforms Folder
     </Zoom>
   </div>
 
-* From the drop-down list, select **New URL**.
+The **Add URL** page has 4 tabs - **Details, Thumbnail, Custom Fields**, and **History**.
+
+### URL Details
+
+General URL details with the following fields:
+  <div class="center">
+    <Zoom>
+      <img alt="Add URL Page" width="400" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/csu4.png')}/>
+    </Zoom>
+    <p>Add a new url</p>
+  </div>
+
+* Name: A title for the URL
+* URL: `<https://url.com>`
+* Description: Short detail describing your url.
+* Share with All (or) particular User/Group - Based on the respective selection, the Custom URL details can be viewed by all the users or specific users.
+* Enable the **Live Embed** option, to view the loading page of the custom URL as a thumbnail in the Home Page of the User screen.
 
   <div class="center">
     <Zoom>
-      <img alt="Add URL Page" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/csu4.png')}/>
+      <img alt="Loading Page of the Custom URL in the Home Page" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/live-embed-on-off.png')}/>
     </Zoom>
+    <p>Custom URL preview screen with Live embed option enabled vs disabled</p>
   </div>
 
-  *Add URL Page*
+  When **Live Embed** is disabled, then the custom URL is displayed as a customized image or report thumbnail based on the settings.
 
-In the **Add URL** page, enter the following details:
+* Enable the **Launch in New Tab** option, to open the report in a new browser tab.
 
-1. Name: VBI View LLC
-1. URL: `<https://visualbi.com>`
-1. Description: Visual BI website
-1. Share with All (or) particular User/Group - Based on the respective selection, the Custom URL details can be viewed by all the users or specific users.
-1. Enable the Live Embed option
-1. Enable the Launch in New Tab option
+### Customize the URL Thumbnail
 
-:::note
-When the "Live Embed" option is enabled for the Custom URL "Visual BI" in the Add URL page, then you will be able to view the loading page of the Custom URL "Visual BI" as a Thumbnail in the Home Page of the User screen while adding the Reports (as shown in the below screenshot.)
-:::
-
-If the "Live Embed" option is disabled, then you will be able to view the Custom URL "Visual BI" as customized image or Report Thumbnail based on the settings.
-  <div class="center">
-    <Zoom>
-      <img alt="Loading Page of the Custom URL in the Home Page of the User screen" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/lee1.png')}/>
-    </Zoom>
-    <p>Loading Page of the Custom URL in the Home Page of the User screen</p>
-  </div>
-
-The URL can be also added to the Hub Folder. The URLs created by the Admin User can be viewed by the User in the BI Platform pane as shown below:
+In the **Thumbnail** tab you can customize the report preview screen.
 
   <div class="center">
     <Zoom>
-      <img alt="URLs in BI Platform" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/crl1.png')}/>
+      <img alt="Edit thumbnail" width="450" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/thumbnail.png')}/>
     </Zoom>
-    <p>URLs in BI Platform</p>
+    <p>Edit the Thumbnail</p>
   </div>
 
-You can also add details for Image and Custom Fields Tabs just like other platforms.
+### Edit the Custom Fields
 
-* Select **Submit**.
+You can edit the custom fields attributes for the URL.
 
-Custom URL "Visual BI" will be updated successfully in the Platform Folders:
+  <div class="center">
+    <Zoom>
+      <img alt="Edit Custom Fields" width="450" height="550" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/url-custom-fields.png')}/>
+    </Zoom>
+    <p>Custom Fields</p>
+  </div>
+
+### URL History
+
+In the **History** tab, you can track the URL edits such as who did what change and at what time.
+
+  <div class="center">
+    <Zoom>
+      <img alt="History" width="450" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/url-history.png')}/>
+    </Zoom>
+    <p>History of changes</p>
+  </div>
+
+Select **Submit** to save your changes and create the URL.
+
+The Custom URL is now listed in the Platform Folders.
 
   <div class="center">
     <Zoom>
@@ -79,13 +96,6 @@ Custom URL "Visual BI" will be updated successfully in the Platform Folders:
     <p>Custom URL in Platform Folders</p>
   </div>
 
-The Admin User can also edit the Custom URL by clicking the Edit icon as shown below.
-  <div class="center">
-    <Zoom>
-      <img alt="Edit Custom URL" src={useBaseUrl('doc-images/admin-guide/admin-functions/custom-url/csu5a.png')}/>
-    </Zoom>
-  </div>
+Once the URL is created, you can also add the URL to **Hub Folders**. The URLs created by admin will be viewed by BIHub users in the BI Platform pane.
 
-Similarly, users can also create custom URLs.
-
-> If you enable the "Launch in New Tab" option for the Custom URL - “Visual BI”, then the Custom URL will always be opened as a new Browser Tab for the user.
+You can use the shortcut icons next to the URL to view report details (<img width="20" src={useBaseUrl('img/details-icon.png')}/>), upload the thumbnail (<img width="20" src={useBaseUrl('img/upload.png')}/>), and edit (<img width="20" src={useBaseUrl('img/edit.png')}/>) the URL details.
