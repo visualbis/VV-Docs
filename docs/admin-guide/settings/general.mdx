@@ -9,13 +9,13 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-On the **General** page, you can configure general settings for the application such as navigation panel, password security, user-specific sync reports, and customizations.
+On the **General** page, you can configure general settings for the application such as navigation panel, password security, user-specific sync reports, Elastic search, and other customizations.
 
   <div class="center">
     <Zoom>
       <img alt="Admin page's general settings" src={useBaseUrl('doc-images/admin-guide/settings/settings-general-tab.png')}/>
     </Zoom>
-    <p>General Settings on the admin's page</p>
+    <p>General Settings on the admin page</p>
   </div>
 
 ## Navigation
@@ -38,6 +38,13 @@ The values can be set to "Low/Medium/High" (Tooltip in the app provides the deta
 ## User Specific-Report Sync
 
 To enable/disable the **Sync Reports** feature for the users in their BI Hub profile, toggle ON/OFF the following permissions:
+
+  <div class="center">
+    <Zoom>
+      <img alt="User Specific-Report Sync" src={useBaseUrl('doc-images/admin-guide/settings/user-specific-sync-report.png')}/>
+    </Zoom>
+    <p>User Specific - Report Sync</p>
+  </div>
 
 <div>
 
@@ -99,3 +106,14 @@ You allow users to open all report/URl in a new browser tab, toggle ON the **Lau
 :::note
 User customized settings take precedence over customizations done by Admin.
 :::
+
+## Elastic Search
+
+To re-build the elastic search from the scratch for all the reports in BiHub, click the **Reindex** button.
+
+  <div class="center">
+    <Zoom>
+      <img alt="" src={useBaseUrl('doc-images/admin-guide/settings/elastic-search.png')}/>
+    </Zoom>
+    <p>Launch Reports In New Tab</p>
+  </div>

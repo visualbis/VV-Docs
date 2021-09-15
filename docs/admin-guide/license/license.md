@@ -47,7 +47,7 @@ Sync offline is done when there is no internet connection in the server hosting 
   </div>
 
 1. Select **GENERATE KEY**.
-1. Copy and paste the generated key at <https://products.visualbi.com/license-generator/>
+1. Copy and paste the generated key at https://shop.bihub.com/license-generator/
 1. Enter the **Email ID** and **License Key** given during the subscription to get the `license.licx` file.
 1. Now select **UPLOAD** in the **License Details** pop-up window to upload the `license.licx` file.
 
