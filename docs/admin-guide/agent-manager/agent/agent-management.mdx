@@ -115,6 +115,12 @@ To manually add reports to users, follow the <Link to={useBaseUrl('docs/admin-gu
 
 > This synchronization only brings in reports of users that are present in the application (obtained by AD/LDAP sync or sync users).
 
+:::important
+The Sync Reports feature runs a partial indexing of the synched reports alone and do no re-build the index from the scratch. This makes the synchronization faster.
+
+An admin may enable a full elastic search for all the reports from <Link to={useBaseUrl('docs/admin-guide/settings/general#elastic-search')}>Settings > General</Link> section.
+:::
+
 :::note
 Admin can also schedule to run **Sync Reports** automatically using the Agent Synchronization utility as explained in the <Link to={useBaseUrl('docs/admin-guide/admin-utilities/scheduled-sync-bi')}>Scheduled Synchronization with BI platforms</Link> section.
 :::

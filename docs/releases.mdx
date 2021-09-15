@@ -13,6 +13,21 @@ import Link from '@docusaurus/Link';
         <th>Description</th>
     </tr>
     <tr>
+        <td id="date">2021-09-15</td>
+        <td>2.7.2</td>
+        <td>
+            <ul><li><b>New Features</b></li>
+            <ul>
+            <li>License Changes from Visual BI to VBI View LLC</li>
+            <li>Implemented complete re-index <Link to={useBaseUrl('docs/admin-guide/settings/general#elastic-search')}>Elastic search (ES)</Link> from database in admin settings</li></ul>
+            <li><b>Enhancements</b></li>
+            <ul><li><Link to={useBaseUrl('docs/admin-guide/agent-manager/agent/agent-management#sync-reports')}>Sync Reports</Link> feature triggers a partial elastic search for the synched reports instead of a full re-index, this speeds up the synchronization</li>
+            <li>When User specific <Link to={useBaseUrl('docs/admin-guide/settings/general#user-specific-report-sync')}>Sync Reports</Link> is disabled, the number of processes running will be reduced to increase performance</li>
+            </ul>
+            </ul>
+        </td>
+    </tr>
+    <tr>
         <td id="date">2021-07-30</td>
         <td>2.7.1</td>
         <td>
@@ -27,7 +42,7 @@ import Link from '@docusaurus/Link';
             <ul><li>SAC Analytic Application is now imported in BI Hub.</li></ul>
         </ul>
         </td>
-    </tr>    
+    </tr>
     <tr>
         <td id="date">2021-07-01</td>
         <td>2.7.0</td>
