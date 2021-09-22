@@ -47,6 +47,12 @@ module.exports = {
           activeBasePath: "docs/releases",
         },
         {
+          to: "/docs/opensource-attribution/web",
+          label: "Open Source Attribution",
+          position: "left",
+          activeBasePath: "docs/opensource-attribution",
+        },
+        {
           to: "docs/copyright",
           label: "Installation Guide",
           position: "right",

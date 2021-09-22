@@ -131,3 +131,14 @@ img[alt="icon"] {
     textAlign: center;
     border: 1px solid gray;
 }
+
+.attribution {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.attribution tr td{
+    margin: 0px;
+    padding: 5px;
+}

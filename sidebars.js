@@ -226,4 +226,8 @@ module.exports = {
             "user-guide/settings",
         ]
     },
+    OpenSourceAttribution: {
+        Attribution: ["opensource-attribution/web",
+        "opensource-attribution/server"],
+    },
 }
