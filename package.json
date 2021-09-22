@@ -11,8 +11,8 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.60",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.60",
+    "@docusaurus/core": "2.0.0-alpha.73",
+    "@docusaurus/preset-classic": "2.0.0-alpha.73",
     "@mdx-js/react": "^1.5.8",
     "@u-wave/react-vimeo": "^0.8.1",
     "autocomplete.js": "^0.37.0",
