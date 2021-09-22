@@ -11,20 +11,20 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.60",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.60",
-    "@mdx-js/react": "^1.5.8",
-    "@u-wave/react-vimeo": "^0.8.1",
-    "autocomplete.js": "^0.37.0",
-    "classnames": "^2.2.6",
-    "clsx": "^1.1.1",
-    "docusaurus-lunr-search": "^1.0.2",
-    "hogan": "^1.0.2",
-    "joi": "^17.1.1",
-    "lunr": "^2.3.8",
-    "react": "^16.14.0",
-    "react-dom": "^16.8.4",
-    "react-medium-image-zoom": "^4.3.1"
+    "@docusaurus/core": "2.0.0-alpha.73",
+    "@docusaurus/preset-classic": "2.0.0-alpha.73",
+    "@mdx-js/react": "1.6.22",
+    "@u-wave/react-vimeo": "0.8.3",
+    "autocomplete.js": "0.37.1",
+    "classnames": "2.3.1",
+    "clsx": "1.1.1",
+    "docusaurus-lunr-search": "1.0.3",
+    "hogan": "1.0.2",
+    "joi": "17.4.0",
+    "lunr": "2.3.9",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-medium-image-zoom": "4.3.3"
   },
   "browserslist": {
     "production": [
