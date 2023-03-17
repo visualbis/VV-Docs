@@ -22,8 +22,8 @@
     "hogan": "^1.0.2",
     "joi": "^17.1.1",
     "lunr": "^2.3.8",
-    "react": "^16.14.0",
-    "react-dom": "^16.8.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-medium-image-zoom": "^4.3.1"
   },
   "browserslist": {
