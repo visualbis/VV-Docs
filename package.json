@@ -18,7 +18,7 @@
     "autocomplete.js": "^0.37.0",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
-    "docusaurus-lunr-search": "^1.0.2",
+    "docusaurus-lunr-search": "^2.0.0",
     "hogan": "^1.0.2",
     "joi": "^17.1.1",
     "lunr": "^2.3.8",
