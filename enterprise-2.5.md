@@ -47,4 +47,4 @@
 - **Data Input Reference to Existing Columns:** Users can now create data input that references existing columns.
 
 **Customer Requirement:**
-- **URL Removal Option:** Added an option to remove URLs in duplicate reports listing, meeting Disney's specific requirements.
+- **URL Removal Option:** Added an option to remove URLs in duplicate reports listing, meeting specific requirements.
